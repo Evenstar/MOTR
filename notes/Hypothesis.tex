@@ -1,0 +1,33 @@
+\documentclass[12pt, reqno]{article}
+\usepackage{tikz}
+\usetikzlibrary{positioning}
+\usepackage{listings}
+\usepackage{color}
+\usepackage{verbatim}
+\usepackage{amsmath,amssymb,amsfonts,amsthm}
+%\addtolength{\oddsidemargin}{-1.5in}
+\usepackage{fullpage}
+\title{Hypothesis List}
+\begin{document}
+1. Multiple layers or stacked nonlinearity is necessary for robust representations. It might be possible to prove that a linear transform followed by a pointwise nonlinearity cannot achieve robustness.
+
+2. The ultimate goal is to establish a mathematical framework for object recognition. Mathematically, the task of objection recognition amounts to assign an identity to the object, it could be a vector that represents object without loss of information or a label that indicates the class the object belongs to. The starting point is to establish some principles that we hold essential for objection recognition tasks. The list of axioms is growing and is task dependent, we try to keep it minimum. As for now, we think the most important principle is the following:
+\newline
+\centerline{\emph{The representation must be robust to identity preserving transformations.}}
+\newline
+The second principle I consider important is the \emph{sparsity} of the representations. That is:
+\newline
+\centerline{\emph{The represeantation should be as sparse as possible.}}\\
+
+The first principle is intuitively very reasonable and is biologically inspired. I'm not aware of the biological evidence of the second principle, but at least from our past experience in image processing and other machine tasks, the importance of sparsity is recognized, both from the performance and from an algorithmic point of view. 
+
+I think the sensible way to build such a grand theory is the following: draw inspirations from the biological structures; rigorous mathematical analysis; proposing hypothesis and doing experiments to prove or reject it.
+
+The goal is a mathematical theory which starts with very basic principles. The sources of such principles can only from our intuition and the constraints of biological neural circuits, and the understanding of current deep learning models. It would be nice if we can really propose new fundamental concepts in object recognition and quantify the constraints that must be satisfied by computational models. That is, we propose the concepts and constraints that are to be the touchstone of the machine learning models. And hopefully, we can build new models that satisfy such principles. 
+
+Sometimes the criterion is not so clear, the answer is not yes or no, but effective and more effective. We can always demonstrate this optimality criterion. 
+
+
+
+
+\end{document}
