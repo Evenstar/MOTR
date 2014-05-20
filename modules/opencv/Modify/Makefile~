@@ -1,0 +1,2 @@
+all : modify.cpp
+	g++ -o display modify.cpp  -lopencv_core -lopencv_imgproc -lopencv_highgui

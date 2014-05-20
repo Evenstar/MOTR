@@ -1,0 +1,197 @@
+\documentclass[12pt, reqno]{amsart}
+\usepackage{tikz}
+\usetikzlibrary{positioning}
+\usepackage{listings}
+\usepackage{color}
+\usepackage{verbatim}
+\usepackage{algorithmicx }
+\usepackage{float}
+\usepackage{algpseudocode}
+\usepackage{amsmath,amssymb,amsfonts,amsthm}
+%\addtolength{\oddsidemargin}{-1.in}
+\usepackage{fullpage}
+\title{MOTR Journal }
+\author{Cheng Tai}
+\date{May 14,2014}
+\begin{document}
+\newtheorem{theorem}{Theorem}
+\newtheorem{lemma}{Lemma}
+\maketitle
+\section*{Earth Mover's Distance}
+I read two papers on earth mover's distance this afternoon, \cite{levina2001earth,sheorey2008car} and learned something about EMD. Below is some notes.
+
+Levina et.al think the EMD is the Mallows distance, but it seems few people use this term, so I still stick to the name EMD. The EMD provides a way to measure the distance between two distributions, which can be probability distributions or signatures(unnormalized version). We focus on EMD on probability distributions.
+
+Let $X$ and $Y$ be two random variables with distribution $P$ and $Q$ in $\mathbb{R}^d$ respectively. The EMD between $P$ and $Q$ is defined as the minimum of the expected difference between $X$ and $Y$,taken over all joint probability distributions $F$ over the product space $(X,Y)$ such that the marginal distribution of $X$ is $P$ and the marginal of $Y$ is $Q$:
+\begin{equation}
+	M_p(P,Q):=\min_{F}\left( E_F\|X-Y\|^p\right)^{1/p}: (X,Y)\sim F, X\sim P, Y\sim Q.
+\end{equation}
+The most interesting choices of $p$ are $p=1$ and $p=2$. For the definition to make sense, $P$ and $Q$ must have finite $p$-th moments.
+
+Now let us write out this definition for the case of two discrete distributions: $P=\{(x_1,p_1),\cdots,(x_m,p_m)\}$ and $Q=\{(y_1,q_1),\cdots, (y_n,q_n)\}$. We need to minimize the expectation under $F=(f_{ij})$, the joint distribution of $X$ and $Y$:
+\begin{equation}
+	E_F\|X-Y\|^p=\sum_{i=1}^{m}\sum_{j=1}^{n}f_{ij}\|x_i-y_j\|^p = \sum_{i=1}^{m}\sum_{j=1}^{n}f_{ij}d_{ij}
+\end{equation}
+The distribution $F$ is subject to the following constraints:
+\begin{eqnarray}
+	f_{ij} & \geq & 0, \quad 1\leq i\leq m,\quad 1\leq j\leq n\\
+	\sum_{j=1}^{n} f_{ij} & = & p_i,\quad 1\leq i\leq m \\
+\sum_{i=1}^{m} f_{ij} & = & q_j,\quad 1\leq j\leq n \\
+\sum_{i=1}^{m}\sum_{j=1}^{n} f_{ij} &=& \sum_{i=1}^{m} p_i = \sum_{j=1}^{n} q_j = 1
+\end{eqnarray}
+
+From the definition, it can be seen that EMD is a true metric on distributions. The above minimization is a linear program hence can be solved in polynomial time. In theory, the EMD can be computed for any probability distributions; in practice, it is convenient to use optimization algorithms to solve the transportation problem. The problem can be stated especially compactly if we have two samples of the same size $X=\{x_1,\cdots, x_n\}$ and $Y=\{y_1,\cdots, y_n\}$ and use the empirical distribution function as our estimates( give every point $1/n$ weight and do not bin). Then the EMD between the empirical distribution is 
+\begin{equation}
+	M_p(X,Y)=\left(\frac{1}{n} \min_{j_1,\cdots, j_n} \sum_{i=1}^{n} \|x_i - x_{j_i}\|^p\right)^{1/p}
+\end{equation}
+where the minimum is taken over all permutations of $\{1,\cdots, n\}$. In this case, it is convenient to use the Hungarian algorithm for the optimal assignment problem. In particular, if the observation is one dimensional, the optimization problem can be solved explicitly: let $x_{(1)}\leq \cdots \leq x_{(n)}$ and $y_{(1)}\leq \cdots \leq y_{(n)}$ be the sorted vector of $X$ and $Y$, then the EMD is just eh $L^p$ distance between the sorted vectors:
+\begin{equation}
+	M_p(X,Y) = \left(\frac{1}{n} \sum_{i=1}^{n} |x_{(i)}-y_{(i)}|\right)^{1/p}
+\end{equation}
+
+
+\section*{Approximation by Wavelets in Linear Time}
+The EMD is an important and conceptually meaningful metric for comparing distributions, but it suffers from high computational complexity $O(n^3\log n)$. \cite{sheorey2008car} propose a way to approximate the EMD using wavelets in linear time and show that the approximation metric is equivalent to the EMD.
+
+This equivalence can be seen only in the continuous setting, which is the following. Let $P_1$ and $P_2$ be probability distributions with density $p_1$ and $p_2$ respectively, defined on a compact space $S\subset \mathbb{R}^n$. $c$ is a continuous cost function on the Cartesian product space $S\times S$. Here, we will restrict $c$ to be of the form $\|x-y\|^s$ with $0 < s \leq 1$. The Kantorovich-Rubinstein transshipment problem (KRP) is to find
+\begin{equation}
+	\dot{\mu}_s =\inf_q \int \|x-y\|^s q(x,y) dx dy
+\end{equation}
+where the infimum is over all joint probability distributions $Q$ with density $q$ on $S\times S$ and $q$ must satisfy the mass conservation constraint
+\begin{equation}
+	p_1(u) - p_2(u) = \int q(u,y)dy - \int q(x,u)dx
+\end{equation}
+$p:=p_1-p_2$ is a difference density with the property that $\int p=0$.  That is, the primal problem is to solve
+\begin{equation}
+\begin{aligned}
+	\dot{\mu}_s:=\inf_q \int c(x,y)q(x,y)dxdy  &&\\
+\textrm{s.t.}\quad \int q(u,y)dy - \int q(x,u)du &=& p(u) \\
+\quad \quad q(x,y)&\geq& 0
+\end{aligned}
+\end{equation}
+From the knowledge of linear programming, we know the problem admits a dual representation:
+\begin{equation}
+\label{KRP:dual}
+	\begin{aligned}
+	\dot{\mu}_s:=\sup\int f(x)p(x)dx &&\\
+	\textrm{s.t.} \quad f(x)-f(y)&&\leq &&c(x,y)\\
+\end{aligned}
+\end{equation}
+With the choice $c(x,y)=\|x-y\|^2$, the constraint in the dual form becomes the order $s$ H\"{o}lder continuity condition:
+\begin{equation}
+	f(x)-f(y)\leq \|x-y\|^s,\quad\textrm{for all } x,y\in S.
+\end{equation}
+
+The potential $f$ thus belongs to a homogeneous H\"{o}lder space of functions of order $s$ denoted by $\dot{C}^{s}$.  For $0<s<1$, a bounded continuous function $f$ belongs to the homogeneous H\"{o}lder class $\dot{C}^s$ if the following supremum is finite:
+\begin{equation}
+	C_H(f):=\sup_{x\neq y} \frac{|f(x)-f(y)|}{\|x-y\|^s}
+\end{equation}
+This defines the H\"{o}lder seminorm of $f$. We can now state the constraint in \eqref{KRP:dual} simply as
+\begin{equation}
+	C_H(f) < 1.
+\end{equation}
+
+Now we will look at the dual problem in the wavelet domain. First, we will explain some notations about the wavelet series representation of a function. A function $f$ with domain in $\mathbb{R}^n$ can be expressed in terms of a wavelet series as:
+\begin{equation}
+	f(x)=\sum_{k} f_k\phi(x-k) + \sum_{\lambda} f_\lambda \psi_\lambda(x)
+\end{equation}
+$\phi$ and $\psi$ are the scaling function and wavelet respectively. $k$ runs through all integer $n$-tuple and $\lambda:=(\epsilon,j,k)$. In $n$ dimensions, we need $2^n-1$ different wavelet functions which are indexed by $\epsilon$. The set of all possible $\lambda$ for a scale $j\geq 0$ is denoted by $\Lambda_j$ and 
+\begin{equation}
+	\psi_\lambda(x):=2^{nj/2}\psi^{\epsilon}(2^jx-k).
+\end{equation}
+
+The following theorem from Meyer(\cite{meyer1992wavelets} section 6.4) can be used to characterize functions in $C^{s}(\mathbb{R}^n)$.
+\begin{theorem}
+A function $f\in L_{loc}^1(\mathbb{R}^n)$,(i.e. $|f|$ is integrable over all compact subsets of $\mathbb{R}^n$) belongs to $C^{s}(\mathbb{R}^n)$ if and only if, in a wavelet decomposition of regularity $r\geq 1 > s$, the approximation coefficients $f_k$ and detail coefficients $f_\lambda$ satisfy:
+\begin{equation}
+	\label{thm1}
+	\begin{aligned}
+	&|f_k| \leq C_0,\quad k\in \mathbb{Z}^n \textrm{ and } &\\ 
+	&|f_\lambda| \leq C_1 2^{-j(n/2+s)},\quad \lambda\in \Lambda_j,\quad j\geq 0&
+\end{aligned}
+\end{equation}
+for some constants $C_0$ and $C_1$.
+\end{theorem}
+
+A little modification of the proof of this theorem gives the following lemma:
+\begin{lemma}
+	For $0<s<1$, if the wavelet coefficients of the function $f$ are bounded as in \eqref{thm1}, then $f\in C^{s}$ with $C_H(f)<C$ such that 
+\begin{equation}
+	a_{12}(\psi;s)C_1\leq C \leq a_{21}(\psi;s)C_0+a_{22}(\psi;s)C_1
+\end{equation}
+for some positive constants $a_{12},a_{21}$ and $a_{22}$ that depend only on the wavelets and $s$. For discrete distributions, if wen change the definition of $C_H(f)$ to 
+\begin{equation}
+	C_H(f):=\sup_{|x-y|\geq 1} \frac{|f(x)-f(y)|}{\|x-y\|^s},
+\end{equation}
+the same condition holds for $s=1$ as well.
+\end{lemma}
+
+The main results is the following theorem:
+\begin{theorem}
+	Consider the KR problem with cost function $c(x,y)=\|x-y\|^s, s<1$. Let $p_k$ and $p_\lambda$ be the wavelet coefficients of the difference density $p$ generated by some orthonormal wavelet  scaling function pair $\phi$ and $\psi$ with regularity $r \geq 1 > s$. Then for any non-negative constants $C_0$ and $C_1 >0$, 
+\begin{equation}
+\label{thm2}
+	\hat{\mu}_s =C_0\sum_k{|p_k|}  + C_1 \sum_{k} 2^{-j(s+n/2)}|p_\lambda|
+\end{equation}
+is an equivalent metric to the KR metric $\dot{\mu}_s$; i.e. there exist positive constants $C_L$ and $C_U$ (depending on the wavelet used) such that 
+\begin{equation}
+	C_L \dot{\mu}_s \leq \hat{\mu}_s \leq C_U\dot{\mu}_s.
+\end{equation}
+For discrete distributions, the same result holds for $s=1$ as well.
+\end{theorem}
+
+The idea of the proof is consider an auxiliary wavelet domain problem.
+\begin{proof}
+Consider the auxiliary wavelet domain problem:
+\begin{equation}
+	\begin{aligned}
+	\max_f p^Tf = \sum_{k} p_kf_k + \sum_{\lambda}p_\lambda f_\lambda \\
+	\textrm{s.t.}\quad |f_k|\leq C_0 \quad\textrm{and}\quad |f_\lambda| \leq C_1 2^{-j(s+n/2)}
+	\end{aligned}
+\end{equation}
+It is easy to see the solution to this problem is given by $\hat{\mu}_s$  in equation \eqref{thm2}. 
+
+
+Note that changing the constraint in the KR dual problem $C_H(f) < 1$ to $C_H(f)< K$ for any $K>0$ will simply have the effect of scaling the optimal value by $K$, since for every function $f$ allowed by the original constraint, there is a corresponding function $Kf$ allowed by the new constraint. Now, the auxiliary problem will allow functions with $C_H(f) < C$ and $C$ is bounded up and below by $C_U$ and $C_L$. Hence, all functions with $C_H(f$ below $C_L$ is included in the feasible set and no function with $C_H(f)$ greater than $C_U$ is included in the feasible set.  Consequently, the optimal is scaled by a factor $C$ that obeys the upper and lower bounds. The wavelet EMD metric is equivalent to EMD.
+\end{proof}
+
+In practice, we can set $C_0=0$ because this gives us the tightest bounds.
+
+Wavelets provide a tight (if and only if) characterization that enables to construct an equivalent wavelet domain norm. We know that a Fourier transform also characterizes H\"{o}lder or Lipschitz continuity. THe two principal results concerning Fourier series and Lipschitz functions are 
+\begin{equation}
+	\textrm{ For } s>0 \int_\mathbb{R} |\hat{f}(\omega)|(1+|\omega|^2)d\omega < \infty \Longrightarrow f\in C^{s}(\mathbb{R}) \Longrightarrow |\hat{f}(\omega)| \leq \frac{K}{1+|\omega|^2} \textrm{ for some } K > 0
+\end{equation}
+Neither of these two conditions gives a complete characterization of the H\"{o}lder space. Hence, we cannot use the Fourier characterization for approximating EMD. However, another orthonormal representation can be used instead of wavelets if it provides a tight characterization of H\"{o}lder continuity. 
+
+{\color{red} Given what has been described above, it might be possible to use adaptive wavelet tight frames to approximate EMD. In particular, I guess that use redundant approximation may yield additional robustness.}
+
+The proof of Lemma 1 is a good example of analysis style proof, as we will see below.
+
+
+
+\begin{proof}
+Parts of this proof is adapted from \cite{meyer1992wavelets}(section 6.4). Start with  the first half $1_11(\psi;s)C_1 \leq C$. That is for all functions in $C^{s}(\mathbb{R}^n), 0 < s \leq 1$ with the seminorm $C_H(f)$, we compute the bounds on their wavelet series coefficients.
+
+Suppose the bounds are attained, we have
+\end{proof}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+\bibliography{journal}{}
+\bibliographystyle{apalike}
+\end{document}
