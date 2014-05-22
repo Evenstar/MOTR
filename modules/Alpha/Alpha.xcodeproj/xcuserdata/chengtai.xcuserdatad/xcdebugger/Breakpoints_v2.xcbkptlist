@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Alpha/helper.cpp"
+            timestampString = "422487658.554103"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "18"
+            endingLineNumber = "18"
+            landmarkName = "LoadFilter(vector&lt;FilterType&gt;&amp; filter, string fname)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Alpha/helper.cpp"
+            timestampString = "422487658.554103"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "28"
+            endingLineNumber = "28"
+            landmarkName = "LoadFilter(vector&lt;FilterType&gt;&amp; filter, string fname)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "LoadFilter(std::__1::vector&lt;Eigen::Matrix&lt;double, -1, -1, 0, -1, -1&gt;, std::__1::allocator&lt;Eigen::Matrix&lt;double, -1, -1, 0, -1, -1&gt; &gt; &gt;&amp;, std::__1::basic_string&lt;char, std::__1::char_traits&lt;char&gt;, std::__1::allocator&lt;char&gt; &gt;)"
+                  moduleName = "Alpha"
+                  urlString = "file://localhost/Users/chengtai/Documents/2014/topics2014/Alpha/Alpha/helper.cpp"
+                  timestampString = "422487489.788435"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "26"
+                  endingLineNumber = "26"
+                  offsetFromSymbolStart = "1551">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "LoadFilter(std::__1::vector&lt;Eigen::Matrix&lt;double, -1, -1, 0, -1, -1&gt;, std::__1::allocator&lt;Eigen::Matrix&lt;double, -1, -1, 0, -1, -1&gt; &gt; &gt;&amp;, std::__1::basic_string&lt;char, std::__1::char_traits&lt;char&gt;, std::__1::allocator&lt;char&gt; &gt;)"
+                  moduleName = "Alpha"
+                  urlString = "file://localhost/Users/chengtai/Documents/2014/topics2014/Alpha/Alpha/helper.cpp"
+                  timestampString = "422487489.788686"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "26"
+                  endingLineNumber = "26"
+                  offsetFromSymbolStart = "1578">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "LoadFilter(std::__1::vector&lt;Eigen::Matrix&lt;double, -1, -1, 0, -1, -1&gt;, std::__1::allocator&lt;Eigen::Matrix&lt;double, -1, -1, 0, -1, -1&gt; &gt; &gt;&amp;, std::__1::basic_string&lt;char, std::__1::char_traits&lt;char&gt;, std::__1::allocator&lt;char&gt; &gt;)"
+                  moduleName = "Alpha"
+                  urlString = "file://localhost/Users/chengtai/Documents/2014/topics2014/Alpha/Alpha/helper.cpp"
+                  timestampString = "422487489.788868"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "26"
+                  endingLineNumber = "26"
+                  offsetFromSymbolStart = "1593">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>

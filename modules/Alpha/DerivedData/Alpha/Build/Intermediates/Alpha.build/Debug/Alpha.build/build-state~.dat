@@ -1,0 +1,290 @@
+TAlpha
+v6
+r1
+cCheck dependencies
+cCompileC DerivedData/Alpha/Build/Intermediates/Alpha.build/Debug/Alpha.build/Objects-normal/x86_64/main.o /Users/chengtai/Documents/2014/topics2014/Alpha/Alpha/main.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/SDKSettings.plist
+c00000000537E511E000000000000044C
+t1400787230
+s1100
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/CoreServices/SystemVersion.plist
+c00000000537E511E00000000000001DE
+t1400787230
+s478
+
+N/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/5.1/include/module.map
+c00000000537E51250000000000000ADC
+t1400787237
+s2780
+
+N/Users/chengtai/Documents/2014/topics2014/Alpha/Alpha/main.cpp
+c00000000537E60E80000000000000140
+t1400791272
+s320
+
+N/Users/chengtai/Documents/2014/topics2014/Alpha/DerivedData/Alpha/Build/Intermediates/Alpha.build/Debug/Alpha.build/Objects-normal/x86_64/main.o
+t2
+s0
+
+CBuild AST from /Users/chengtai/Documents/2014/topics2014/Alpha/Alpha/main.cpp
+r0
+
+CCheck dependencies
+r0
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection18"Check dependencies18"Check dependenciesc2c3586a982eb941^22355d6a982eb941^---0#1#1#--18"Check dependencies36"BCB249F2-166F-4C01-BD26-DF79A7658DF1-
+
+CCompileC DerivedData/Alpha/Build/Intermediates/Alpha.build/Debug/Alpha.build/Objects-normal/x86_64/main.o /Users/chengtai/Documents/2014/topics2014/Alpha/Alpha/main.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler
+s422484074.365341
+e422484075.406875
+r0
+xCompileC
+xDerivedData/Alpha/Build/Intermediates/Alpha.build/Debug/Alpha.build/Objects-normal/x86_64/main.o
+x/Users/chengtai/Documents/2014/topics2014/Alpha/Alpha/main.cpp
+xnormal
+xx86_64
+xc++
+xcom.apple.compilers.llvm.clang.1_0.compiler
+d/Users/chengtai/Documents/2014/topics2014/Alpha/Alpha/main.cpp
+d/Users/chengtai/Documents/2014/topics2014/Alpha/Alpha/convlayer.h
+d/Users/chengtai/Documents/2014/topics2014/Alpha/Alpha/utils.h
+d/Users/chengtai/Documents/2014/topics2014/Alpha/Eigen/Dense
+d/Users/chengtai/Documents/2014/topics2014/Alpha/Eigen/Core
+d/Users/chengtai/Documents/2014/topics2014/Alpha/Eigen/src/Core/util/DisableStupidWarnings.h
+d/Users/chengtai/Documents/2014/topics2014/Alpha/Eigen/src/Core/util/Macros.h
+d/Users/chengtai/Documents/2014/topics2014/Alpha/Eigen/src/Core/util/MKL_support.h
+d/Users/chengtai/Documents/2014/topics2014/Alpha/Eigen/src/Core/util/Constants.h
+d/Users/chengtai/Documents/2014/topics2014/Alpha/Eigen/src/Core/util/ForwardDeclarations.h
+d/Users/chengtai/Documents/2014/topics2014/Alpha/Eigen/src/Core/util/Meta.h
+d/Users/chengtai/Documents/2014/topics2014/Alpha/Eigen/src/Core/util/StaticAssert.h
+d/Users/chengtai/Documents/2014/topics2014/Alpha/Eigen/src/Core/util/XprHelper.h
+d/Users/chengtai/Documents/2014/topics2014/Alpha/Eigen/src/Core/util/Memory.h
+d/Users/chengtai/Documents/2014/topics2014/Alpha/Eigen/src/Core/NumTraits.h
+d/Users/chengtai/Documents/2014/topics2014/Alpha/Eigen/src/Core/MathFunctions.h
+d/Users/chengtai/Documents/2014/topics2014/Alpha/Eigen/src/Core/GenericPacketMath.h
+d/Users/chengtai/Documents/2014/topics2014/Alpha/Eigen/src/Core/arch/SSE/PacketMath.h
+d/Users/chengtai/Documents/2014/topics2014/Alpha/Eigen/src/Core/arch/SSE/MathFunctions.h
+d/Users/chengtai/Documents/2014/topics2014/Alpha/Eigen/src/Core/arch/SSE/Complex.h
+d/Users/chengtai/Documents/2014/topics2014/Alpha/Eigen/src/Core/arch/Default/Settings.h
+d/Users/chengtai/Documents/2014/topics2014/Alpha/Eigen/src/Core/Functors.h
+d/Users/chengtai/Documents/2014/topics2014/Alpha/Eigen/src/Core/DenseCoeffsBase.h
+d/Users/chengtai/Documents/2014/topics2014/Alpha/Eigen/src/Core/DenseBase.h
+d/Users/chengtai/Documents/2014/topics2014/Alpha/Eigen/src/plugins/BlockMethods.h
+d/Users/chengtai/Documents/2014/topics2014/Alpha/Eigen/src/Core/MatrixBase.h
+d/Users/chengtai/Documents/2014/topics2014/Alpha/Eigen/src/plugins/CommonCwiseUnaryOps.h
+d/Users/chengtai/Documents/2014/topics2014/Alpha/Eigen/src/plugins/CommonCwiseBinaryOps.h
+d/Users/chengtai/Documents/2014/topics2014/Alpha/Eigen/src/plugins/MatrixCwiseUnaryOps.h
+d/Users/chengtai/Documents/2014/topics2014/Alpha/Eigen/src/plugins/MatrixCwiseBinaryOps.h
+d/Users/chengtai/Documents/2014/topics2014/Alpha/Eigen/src/Core/EigenBase.h
+d/Users/chengtai/Documents/2014/topics2014/Alpha/Eigen/src/Core/Assign.h
+d/Users/chengtai/Documents/2014/topics2014/Alpha/Eigen/src/Core/util/BlasUtil.h
+d/Users/chengtai/Documents/2014/topics2014/Alpha/Eigen/src/Core/DenseStorage.h
+d/Users/chengtai/Documents/2014/topics2014/Alpha/Eigen/src/Core/NestByValue.h
+d/Users/chengtai/Documents/2014/topics2014/Alpha/Eigen/src/Core/ForceAlignedAccess.h
+d/Users/chengtai/Documents/2014/topics2014/Alpha/Eigen/src/Core/ReturnByValue.h
+d/Users/chengtai/Documents/2014/topics2014/Alpha/Eigen/src/Core/NoAlias.h
+d/Users/chengtai/Documents/2014/topics2014/Alpha/Eigen/src/Core/PlainObjectBase.h
+d/Users/chengtai/Documents/2014/topics2014/Alpha/Eigen/src/Core/Matrix.h
+d/Users/chengtai/Documents/2014/topics2014/Alpha/Eigen/src/Core/Array.h
+d/Users/chengtai/Documents/2014/topics2014/Alpha/Eigen/src/Core/CwiseBinaryOp.h
+d/Users/chengtai/Documents/2014/topics2014/Alpha/Eigen/src/Core/CwiseUnaryOp.h
+d/Users/chengtai/Documents/2014/topics2014/Alpha/Eigen/src/Core/CwiseNullaryOp.h
+d/Users/chengtai/Documents/2014/topics2014/Alpha/Eigen/src/Core/CwiseUnaryView.h
+d/Users/chengtai/Documents/2014/topics2014/Alpha/Eigen/src/Core/SelfCwiseBinaryOp.h
+d/Users/chengtai/Documents/2014/topics2014/Alpha/Eigen/src/Core/Dot.h
+d/Users/chengtai/Documents/2014/topics2014/Alpha/Eigen/src/Core/StableNorm.h
+d/Users/chengtai/Documents/2014/topics2014/Alpha/Eigen/src/Core/MapBase.h
+d/Users/chengtai/Documents/2014/topics2014/Alpha/Eigen/src/Core/Stride.h
+d/Users/chengtai/Documents/2014/topics2014/Alpha/Eigen/src/Core/Map.h
+d/Users/chengtai/Documents/2014/topics2014/Alpha/Eigen/src/Core/Block.h
+d/Users/chengtai/Documents/2014/topics2014/Alpha/Eigen/src/Core/VectorBlock.h
+d/Users/chengtai/Documents/2014/topics2014/Alpha/Eigen/src/Core/Ref.h
+d/Users/chengtai/Documents/2014/topics2014/Alpha/Eigen/src/Core/Transpose.h
+d/Users/chengtai/Documents/2014/topics2014/Alpha/Eigen/src/Core/DiagonalMatrix.h
+d/Users/chengtai/Documents/2014/topics2014/Alpha/Eigen/src/Core/Diagonal.h
+d/Users/chengtai/Documents/2014/topics2014/Alpha/Eigen/src/Core/DiagonalProduct.h
+d/Users/chengtai/Documents/2014/topics2014/Alpha/Eigen/src/Core/PermutationMatrix.h
+d/Users/chengtai/Documents/2014/topics2014/Alpha/Eigen/src/Core/Transpositions.h
+d/Users/chengtai/Documents/2014/topics2014/Alpha/Eigen/src/Core/Redux.h
+d/Users/chengtai/Documents/2014/topics2014/Alpha/Eigen/src/Core/Visitor.h
+d/Users/chengtai/Documents/2014/topics2014/Alpha/Eigen/src/Core/Fuzzy.h
+d/Users/chengtai/Documents/2014/topics2014/Alpha/Eigen/src/Core/IO.h
+d/Users/chengtai/Documents/2014/topics2014/Alpha/Eigen/src/Core/Swap.h
+d/Users/chengtai/Documents/2014/topics2014/Alpha/Eigen/src/Core/CommaInitializer.h
+d/Users/chengtai/Documents/2014/topics2014/Alpha/Eigen/src/Core/Flagged.h
+d/Users/chengtai/Documents/2014/topics2014/Alpha/Eigen/src/Core/ProductBase.h
+d/Users/chengtai/Documents/2014/topics2014/Alpha/Eigen/src/Core/GeneralProduct.h
+d/Users/chengtai/Documents/2014/topics2014/Alpha/Eigen/src/Core/TriangularMatrix.h
+d/Users/chengtai/Documents/2014/topics2014/Alpha/Eigen/src/Core/SelfAdjointView.h
+d/Users/chengtai/Documents/2014/topics2014/Alpha/Eigen/src/Core/products/GeneralBlockPanelKernel.h
+d/Users/chengtai/Documents/2014/topics2014/Alpha/Eigen/src/Core/products/Parallelizer.h
+d/Users/chengtai/Documents/2014/topics2014/Alpha/Eigen/src/Core/products/CoeffBasedProduct.h
+d/Users/chengtai/Documents/2014/topics2014/Alpha/Eigen/src/Core/products/GeneralMatrixVector.h
+d/Users/chengtai/Documents/2014/topics2014/Alpha/Eigen/src/Core/products/GeneralMatrixMatrix.h
+d/Users/chengtai/Documents/2014/topics2014/Alpha/Eigen/src/Core/SolveTriangular.h
+d/Users/chengtai/Documents/2014/topics2014/Alpha/Eigen/src/Core/products/GeneralMatrixMatrixTriangular.h
+d/Users/chengtai/Documents/2014/topics2014/Alpha/Eigen/src/Core/products/SelfadjointMatrixVector.h
+d/Users/chengtai/Documents/2014/topics2014/Alpha/Eigen/src/Core/products/SelfadjointMatrixMatrix.h
+d/Users/chengtai/Documents/2014/topics2014/Alpha/Eigen/src/Core/products/SelfadjointProduct.h
+d/Users/chengtai/Documents/2014/topics2014/Alpha/Eigen/src/Core/products/SelfadjointRank2Update.h
+d/Users/chengtai/Documents/2014/topics2014/Alpha/Eigen/src/Core/products/TriangularMatrixVector.h
+d/Users/chengtai/Documents/2014/topics2014/Alpha/Eigen/src/Core/products/TriangularMatrixMatrix.h
+d/Users/chengtai/Documents/2014/topics2014/Alpha/Eigen/src/Core/products/TriangularSolverMatrix.h
+d/Users/chengtai/Documents/2014/topics2014/Alpha/Eigen/src/Core/products/TriangularSolverVector.h
+d/Users/chengtai/Documents/2014/topics2014/Alpha/Eigen/src/Core/BandMatrix.h
+d/Users/chengtai/Documents/2014/topics2014/Alpha/Eigen/src/Core/CoreIterators.h
+d/Users/chengtai/Documents/2014/topics2014/Alpha/Eigen/src/Core/BooleanRedux.h
+d/Users/chengtai/Documents/2014/topics2014/Alpha/Eigen/src/Core/Select.h
+d/Users/chengtai/Documents/2014/topics2014/Alpha/Eigen/src/Core/VectorwiseOp.h
+d/Users/chengtai/Documents/2014/topics2014/Alpha/Eigen/src/Core/Random.h
+d/Users/chengtai/Documents/2014/topics2014/Alpha/Eigen/src/Core/Replicate.h
+d/Users/chengtai/Documents/2014/topics2014/Alpha/Eigen/src/Core/Reverse.h
+d/Users/chengtai/Documents/2014/topics2014/Alpha/Eigen/src/Core/ArrayBase.h
+d/Users/chengtai/Documents/2014/topics2014/Alpha/Eigen/src/plugins/ArrayCwiseUnaryOps.h
+d/Users/chengtai/Documents/2014/topics2014/Alpha/Eigen/src/plugins/ArrayCwiseBinaryOps.h
+d/Users/chengtai/Documents/2014/topics2014/Alpha/Eigen/src/Core/ArrayWrapper.h
+d/Users/chengtai/Documents/2014/topics2014/Alpha/Eigen/src/Core/GlobalFunctions.h
+d/Users/chengtai/Documents/2014/topics2014/Alpha/Eigen/src/Core/util/ReenableStupidWarnings.h
+d/Users/chengtai/Documents/2014/topics2014/Alpha/Eigen/LU
+d/Users/chengtai/Documents/2014/topics2014/Alpha/Eigen/src/misc/Solve.h
+d/Users/chengtai/Documents/2014/topics2014/Alpha/Eigen/src/misc/Kernel.h
+d/Users/chengtai/Documents/2014/topics2014/Alpha/Eigen/src/misc/Image.h
+d/Users/chengtai/Documents/2014/topics2014/Alpha/Eigen/src/LU/FullPivLU.h
+d/Users/chengtai/Documents/2014/topics2014/Alpha/Eigen/src/LU/PartialPivLU.h
+d/Users/chengtai/Documents/2014/topics2014/Alpha/Eigen/src/LU/Determinant.h
+d/Users/chengtai/Documents/2014/topics2014/Alpha/Eigen/src/LU/Inverse.h
+d/Users/chengtai/Documents/2014/topics2014/Alpha/Eigen/src/LU/arch/Inverse_SSE.h
+d/Users/chengtai/Documents/2014/topics2014/Alpha/Eigen/Cholesky
+d/Users/chengtai/Documents/2014/topics2014/Alpha/Eigen/src/Cholesky/LLT.h
+d/Users/chengtai/Documents/2014/topics2014/Alpha/Eigen/src/Cholesky/LDLT.h
+d/Users/chengtai/Documents/2014/topics2014/Alpha/Eigen/QR
+d/Users/chengtai/Documents/2014/topics2014/Alpha/Eigen/Jacobi
+d/Users/chengtai/Documents/2014/topics2014/Alpha/Eigen/src/Jacobi/Jacobi.h
+d/Users/chengtai/Documents/2014/topics2014/Alpha/Eigen/Householder
+d/Users/chengtai/Documents/2014/topics2014/Alpha/Eigen/src/Householder/Householder.h
+d/Users/chengtai/Documents/2014/topics2014/Alpha/Eigen/src/Householder/HouseholderSequence.h
+d/Users/chengtai/Documents/2014/topics2014/Alpha/Eigen/src/Householder/BlockHouseholder.h
+d/Users/chengtai/Documents/2014/topics2014/Alpha/Eigen/src/QR/HouseholderQR.h
+d/Users/chengtai/Documents/2014/topics2014/Alpha/Eigen/src/QR/FullPivHouseholderQR.h
+d/Users/chengtai/Documents/2014/topics2014/Alpha/Eigen/src/QR/ColPivHouseholderQR.h
+d/Users/chengtai/Documents/2014/topics2014/Alpha/Eigen/SVD
+d/Users/chengtai/Documents/2014/topics2014/Alpha/Eigen/src/SVD/JacobiSVD.h
+d/Users/chengtai/Documents/2014/topics2014/Alpha/Eigen/src/SVD/UpperBidiagonalization.h
+d/Users/chengtai/Documents/2014/topics2014/Alpha/Eigen/Geometry
+d/Users/chengtai/Documents/2014/topics2014/Alpha/Eigen/src/Geometry/OrthoMethods.h
+d/Users/chengtai/Documents/2014/topics2014/Alpha/Eigen/src/Geometry/EulerAngles.h
+d/Users/chengtai/Documents/2014/topics2014/Alpha/Eigen/src/Geometry/Homogeneous.h
+d/Users/chengtai/Documents/2014/topics2014/Alpha/Eigen/src/Geometry/RotationBase.h
+d/Users/chengtai/Documents/2014/topics2014/Alpha/Eigen/src/Geometry/Rotation2D.h
+d/Users/chengtai/Documents/2014/topics2014/Alpha/Eigen/src/Geometry/Quaternion.h
+d/Users/chengtai/Documents/2014/topics2014/Alpha/Eigen/src/Geometry/AngleAxis.h
+d/Users/chengtai/Documents/2014/topics2014/Alpha/Eigen/src/Geometry/Transform.h
+d/Users/chengtai/Documents/2014/topics2014/Alpha/Eigen/src/Geometry/Translation.h
+d/Users/chengtai/Documents/2014/topics2014/Alpha/Eigen/src/Geometry/Scaling.h
+d/Users/chengtai/Documents/2014/topics2014/Alpha/Eigen/src/Geometry/Hyperplane.h
+d/Users/chengtai/Documents/2014/topics2014/Alpha/Eigen/src/Geometry/ParametrizedLine.h
+d/Users/chengtai/Documents/2014/topics2014/Alpha/Eigen/src/Geometry/AlignedBox.h
+d/Users/chengtai/Documents/2014/topics2014/Alpha/Eigen/src/Geometry/Umeyama.h
+d/Users/chengtai/Documents/2014/topics2014/Alpha/Eigen/src/Geometry/arch/Geometry_SSE.h
+d/Users/chengtai/Documents/2014/topics2014/Alpha/Eigen/Eigenvalues
+d/Users/chengtai/Documents/2014/topics2014/Alpha/Eigen/src/Eigenvalues/Tridiagonalization.h
+d/Users/chengtai/Documents/2014/topics2014/Alpha/Eigen/src/Eigenvalues/RealSchur.h
+d/Users/chengtai/Documents/2014/topics2014/Alpha/Eigen/src/Eigenvalues/HessenbergDecomposition.h
+d/Users/chengtai/Documents/2014/topics2014/Alpha/Eigen/src/Eigenvalues/EigenSolver.h
+d/Users/chengtai/Documents/2014/topics2014/Alpha/Eigen/src/Eigenvalues/SelfAdjointEigenSolver.h
+d/Users/chengtai/Documents/2014/topics2014/Alpha/Eigen/src/Eigenvalues/GeneralizedSelfAdjointEigenSolver.h
+d/Users/chengtai/Documents/2014/topics2014/Alpha/Eigen/src/Eigenvalues/ComplexSchur.h
+d/Users/chengtai/Documents/2014/topics2014/Alpha/Eigen/src/Eigenvalues/ComplexEigenSolver.h
+d/Users/chengtai/Documents/2014/topics2014/Alpha/Eigen/src/Eigenvalues/RealQZ.h
+d/Users/chengtai/Documents/2014/topics2014/Alpha/Eigen/src/Eigenvalues/GeneralizedEigenSolver.h
+d/Users/chengtai/Documents/2014/topics2014/Alpha/Eigen/src/Eigenvalues/MatrixBaseEigenvalues.h
+oIn file included from /Users/chengtai/Documents/2014/topics2014/Alpha/Alpha/main.cpp:10:
+o/Users/chengtai/Documents/2014/topics2014/Alpha/Alpha/convlayer.h:18:27: error: redefinition of enumerator 'Full'
+oenum BoundaryType {Valid, Full};
+o                          ^
+o/Users/chengtai/Documents/2014/topics2014/Alpha/Alpha/convlayer.h:17:23: note: previous definition is here
+oenum LayerType {Conv, Full};
+o                      ^
+o/Users/chengtai/Documents/2014/topics2014/Alpha/Alpha/convlayer.h:25:5: error: no template named 'vector'; did you mean 'std::vector'?
+o    vector<FilterType> filter;
+o    ^~~~~~
+o    std::vector
+oIn file included from /Users/chengtai/Documents/2014/topics2014/Alpha/Alpha/main.cpp:10:
+oIn file included from /Users/chengtai/Documents/2014/topics2014/Alpha/Alpha/convlayer.h:12:
+oIn file included from /Users/chengtai/Documents/2014/topics2014/Alpha/Alpha/utils.h:15:
+o/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/c++/v1/vector:481:29: note: 'std::vector' declared here
+oclass _LIBCPP_TYPE_VIS_ONLY vector
+o                            ^
+oIn file included from /Users/chengtai/Documents/2014/topics2014/Alpha/Alpha/main.cpp:10:
+o/Users/chengtai/Documents/2014/topics2014/Alpha/Alpha/convlayer.h:26:5: error: no template named 'vector'; did you mean 'std::vector'?
+o    vector<MatType> indata;
+o    ^~~~~~
+o    std::vector
+oIn file included from /Users/chengtai/Documents/2014/topics2014/Alpha/Alpha/main.cpp:10:
+oIn file included from /Users/chengtai/Documents/2014/topics2014/Alpha/Alpha/convlayer.h:12:
+oIn file included from /Users/chengtai/Documents/2014/topics2014/Alpha/Alpha/utils.h:15:
+o/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/c++/v1/vector:481:29: note: 'std::vector' declared here
+oclass _LIBCPP_TYPE_VIS_ONLY vector
+o                            ^
+oIn file included from /Users/chengtai/Documents/2014/topics2014/Alpha/Alpha/main.cpp:10:
+o/Users/chengtai/Documents/2014/topics2014/Alpha/Alpha/convlayer.h:27:5: error: no template named 'vector'; did you mean 'std::vector'?
+o    vector<MatType> outdata;
+o    ^~~~~~
+o    std::vector
+oIn file included from /Users/chengtai/Documents/2014/topics2014/Alpha/Alpha/main.cpp:10:
+oIn file included from /Users/chengtai/Documents/2014/topics2014/Alpha/Alpha/convlayer.h:12:
+oIn file included from /Users/chengtai/Documents/2014/topics2014/Alpha/Alpha/utils.h:15:
+o/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/c++/v1/vector:481:29: note: 'std::vector' declared here
+oclass _LIBCPP_TYPE_VIS_ONLY vector
+o                            ^
+oIn file included from /Users/chengtai/Documents/2014/topics2014/Alpha/Alpha/main.cpp:10:
+o/Users/chengtai/Documents/2014/topics2014/Alpha/Alpha/convlayer.h:29:5: error: no template named 'vector'; did you mean 'std::vector'?
+o    vector<set> receiveset;
+o    ^~~~~~
+o    std::vector
+oIn file included from /Users/chengtai/Documents/2014/topics2014/Alpha/Alpha/main.cpp:10:
+oIn file included from /Users/chengtai/Documents/2014/topics2014/Alpha/Alpha/convlayer.h:12:
+oIn file included from /Users/chengtai/Documents/2014/topics2014/Alpha/Alpha/utils.h:15:
+o/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/c++/v1/vector:481:29: note: 'std::vector' declared here
+oclass _LIBCPP_TYPE_VIS_ONLY vector
+o                            ^
+oIn file included from /Users/chengtai/Documents/2014/topics2014/Alpha/Alpha/main.cpp:10:
+o/Users/chengtai/Documents/2014/topics2014/Alpha/Alpha/convlayer.h:29:12: error: use of undeclared identifier 'set'; did you mean 'std::set'?
+o    vector<set> receiveset;
+o           ^~~
+o           std::set
+oIn file included from /Users/chengtai/Documents/2014/topics2014/Alpha/Alpha/main.cpp:10:
+oIn file included from /Users/chengtai/Documents/2014/topics2014/Alpha/Alpha/convlayer.h:12:
+oIn file included from /Users/chengtai/Documents/2014/topics2014/Alpha/Alpha/utils.h:17:
+o/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/c++/v1/set:398:29: note: 'std::set' declared here
+oclass _LIBCPP_TYPE_VIS_ONLY set
+o                            ^
+oIn file included from /Users/chengtai/Documents/2014/topics2014/Alpha/Alpha/main.cpp:10:
+o/Users/chengtai/Documents/2014/topics2014/Alpha/Alpha/convlayer.h:29:12: error: no template named 'set'; did you mean 'std::set'?
+o    vector<set> receiveset;
+o           ^~~
+o           std::set
+oIn file included from /Users/chengtai/Documents/2014/topics2014/Alpha/Alpha/main.cpp:10:
+oIn file included from /Users/chengtai/Documents/2014/topics2014/Alpha/Alpha/convlayer.h:12:
+oIn file included from /Users/chengtai/Documents/2014/topics2014/Alpha/Alpha/utils.h:17:
+o/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/c++/v1/set:398:29: note: 'std::set' declared here
+oclass _LIBCPP_TYPE_VIS_ONLY set
+o                            ^
+oIn file included from /Users/chengtai/Documents/2014/topics2014/Alpha/Alpha/main.cpp:10:
+o/Users/chengtai/Documents/2014/topics2014/Alpha/Alpha/convlayer.h:29:12: error: use of class template 'set' requires template arguments
+o    vector<set> receiveset;
+o           ^~~
+oIn file included from /Users/chengtai/Documents/2014/topics2014/Alpha/Alpha/main.cpp:10:
+oIn file included from /Users/chengtai/Documents/2014/topics2014/Alpha/Alpha/convlayer.h:12:
+oIn file included from /Users/chengtai/Documents/2014/topics2014/Alpha/Alpha/utils.h:17:
+o/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/c++/v1/set:398:29: note: template is declared here
+oclass _LIBCPP_TYPE_VIS_ONLY set
+o                            ^
+o8 errors generated.
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection70"Compile /Users/chengtai/Documents/2014/topics2014/Alpha/Alpha/main.cpp182"CompileC DerivedData/Alpha/Build/Intermediates/Alpha.build/Debug/Alpha.build/Objects-normal/x86_64/main.o Alpha/main.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compilerfca55d6a982eb941^f624686b982eb941^-5680"In file included from /Users/chengtai/Documents/2014/topics2014/Alpha/Alpha/main.cpp:10:/Users/chengtai/Documents/2014/topics2014/Alpha/Alpha/convlayer.h:18:27: error: redefinition of enumerator 'Full'enum BoundaryType {Valid, Full};                          ^/Users/chengtai/Documents/2014/topics2014/Alpha/Alpha/convlayer.h:17:23: note: previous definition is hereenum LayerType {Conv, Full};                      ^/Users/chengtai/Documents/2014/topics2014/Alpha/Alpha/convlayer.h:25:5: error: no template named 'vector'; did you mean 'std::vector'?    vector<FilterType> filter;    ^~~~~~    std::vectorIn file included from /Users/chengtai/Documents/2014/topics2014/Alpha/Alpha/main.cpp:10:In file included from /Users/chengtai/Documents/2014/topics2014/Alpha/Alpha/convlayer.h:12:In file included from /Users/chengtai/Documents/2014/topics2014/Alpha/Alpha/utils.h:15:/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/c++/v1/vector:481:29: note: 'std::vector' declared hereclass _LIBCPP_TYPE_VIS_ONLY vector                            ^In file included from /Users/chengtai/Documents/2014/topics2014/Alpha/Alpha/main.cpp:10:/Users/chengtai/Documents/2014/topics2014/Alpha/Alpha/convlayer.h:26:5: error: no template named 'vector'; did you mean 'std::vector'?    vector<MatType> indata;    ^~~~~~    std::vectorIn file included from /Users/chengtai/Documents/2014/topics2014/Alpha/Alpha/main.cpp:10:In file included from /Users/chengtai/Documents/2014/topics2014/Alpha/Alpha/convlayer.h:12:In file included from /Users/chengtai/Documents/2014/topics2014/Alpha/Alpha/utils.h:15:/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/c++/v1/vector:481:29: note: 'std::vector' declared hereclass _LIBCPP_TYPE_VIS_ONLY vector                            ^In file included from /Users/chengtai/Documents/2014/topics2014/Alpha/Alpha/main.cpp:10:/Users/chengtai/Documents/2014/topics2014/Alpha/Alpha/convlayer.h:27:5: error: no template named 'vector'; did you mean 'std::vector'?    vector<MatType> outdata;    ^~~~~~    std::vectorIn file included from /Users/chengtai/Documents/2014/topics2014/Alpha/Alpha/main.cpp:10:In file included from /Users/chengtai/Documents/2014/topics2014/Alpha/Alpha/convlayer.h:12:In file included from /Users/chengtai/Documents/2014/topics2014/Alpha/Alpha/utils.h:15:/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/c++/v1/vector:481:29: note: 'std::vector' declared hereclass _LIBCPP_TYPE_VIS_ONLY vector                            ^In file included from /Users/chengtai/Documents/2014/topics2014/Alpha/Alpha/main.cpp:10:/Users/chengtai/Documents/2014/topics2014/Alpha/Alpha/convlayer.h:29:5: error: no template named 'vector'; did you mean 'std::vector'?    vector<set> receiveset;    ^~~~~~    std::vectorIn file included from /Users/chengtai/Documents/2014/topics2014/Alpha/Alpha/main.cpp:10:In file included from /Users/chengtai/Documents/2014/topics2014/Alpha/Alpha/convlayer.h:12:In file included from /Users/chengtai/Documents/2014/topics2014/Alpha/Alpha/utils.h:15:/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/c++/v1/vector:481:29: note: 'std::vector' declared hereclass _LIBCPP_TYPE_VIS_ONLY vector                            ^In file included from /Users/chengtai/Documents/2014/topics2014/Alpha/Alpha/main.cpp:10:/Users/chengtai/Documents/2014/topics2014/Alpha/Alpha/convlayer.h:29:12: error: use of undeclared identifier 'set'; did you mean 'std::set'?    vector<set> receiveset;           ^~~           std::setIn file included from /Users/chengtai/Documents/2014/topics2014/Alpha/Alpha/main.cpp:10:In file included from /Users/chengtai/Documents/2014/topics2014/Alpha/Alpha/convlayer.h:12:In file included from /Users/chengtai/Documents/2014/topics2014/Alpha/Alpha/utils.h:17:/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/c++/v1/set:398:29: note: 'std::set' declared hereclass _LIBCPP_TYPE_VIS_ONLY set                            ^In file included from /Users/chengtai/Documents/2014/topics2014/Alpha/Alpha/main.cpp:10:/Users/chengtai/Documents/2014/topics2014/Alpha/Alpha/convlayer.h:29:12: error: no template named 'set'; did you mean 'std::set'?    vector<set> receiveset;           ^~~           std::setIn file included from /Users/chengtai/Documents/2014/topics2014/Alpha/Alpha/main.cpp:10:In file included from /Users/chengtai/Documents/2014/topics2014/Alpha/Alpha/convlayer.h:12:In file included from /Users/chengtai/Documents/2014/topics2014/Alpha/Alpha/utils.h:17:/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/c++/v1/set:398:29: note: 'std::set' declared hereclass _LIBCPP_TYPE_VIS_ONLY set                            ^In file included from /Users/chengtai/Documents/2014/topics2014/Alpha/Alpha/main.cpp:10:/Users/chengtai/Documents/2014/topics2014/Alpha/Alpha/convlayer.h:29:12: error: use of class template 'set' requires template arguments    vector<set> receiveset;           ^~~In file included from /Users/chengtai/Documents/2014/topics2014/Alpha/Alpha/main.cpp:10:In file included from /Users/chengtai/Documents/2014/topics2014/Alpha/Alpha/convlayer.h:12:In file included from /Users/chengtai/Documents/2014/topics2014/Alpha/Alpha/utils.h:17:/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/c++/v1/set:398:29: note: template is declared hereclass _LIBCPP_TYPE_VIS_ONLY set                            ^8 errors generated.8(36%IDEClangDiagnosticActivityLogMessage2@33"Redefinition of enumerator 'Full'-422484075#18446744073709551615#0#2(2@88"In file included from /Users/chengtai/Documents/2014/topics2014/Alpha/Alpha/main.cpp:10:-422484075#18446744073709551615#0#-0#27"com.apple.dt.IDE.diagnostic23%DVTTextDocumentLocation3@78"file://localhost/Users/chengtai/Documents/2014/topics2014/Alpha/Alpha/main.cpp0000000000000000^9#9#9#9#133#0#21"Apple LLVM 5.0 Notice--2@27"Previous definition is here-422484075#18446744073709551615#0#-0#27"com.apple.dt.IDE.diagnostic3@81"file://localhost/Users/chengtai/Documents/2014/topics2014/Alpha/Alpha/convlayer.h0000000000000000^16#22#16#22#275#0#21"Apple LLVM 5.0 Notice--2#27"com.apple.dt.IDE.diagnostic3@81"file://localhost/Users/chengtai/Documents/2014/topics2014/Alpha/Alpha/convlayer.h0000000000000000^17#26#17#26#308#0#14"Semantic Issue--2@55"No template named 'vector'; did you mean 'std::vector'?-422484075#18446744073709551615#0#2(2@88"In file included from /Users/chengtai/Documents/2014/topics2014/Alpha/Alpha/main.cpp:10:-422484075#18446744073709551615#0#-0#27"com.apple.dt.IDE.diagnostic3@78"file://localhost/Users/chengtai/Documents/2014/topics2014/Alpha/Alpha/main.cpp0000000000000000^9#9#9#9#133#0#21"Apple LLVM 5.0 Notice--2@27"'std::vector' declared here-422484075#18446744073709551615#0#-0#27"com.apple.dt.IDE.diagnostic3@116"file://localhost/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/c++/v1/vector0000000000000000^480#28#480#28#17162#0#14"Semantic Issue--2#27"com.apple.dt.IDE.diagnostic3@81"file://localhost/Users/chengtai/Documents/2014/topics2014/Alpha/Alpha/convlayer.h0000000000000000^24#4#24#4#389#0#14"Semantic Issue1(3@81"file://localhost/Users/chengtai/Documents/2014/topics2014/Alpha/Alpha/convlayer.h0000000000000000^24#4#24#10#389#6#-2@55"No template named 'vector'; did you mean 'std::vector'?-422484075#18446744073709551615#0#2(2@88"In file included from /Users/chengtai/Documents/2014/topics2014/Alpha/Alpha/main.cpp:10:-422484075#18446744073709551615#0#-0#27"com.apple.dt.IDE.diagnostic3@78"file://localhost/Users/chengtai/Documents/2014/topics2014/Alpha/Alpha/main.cpp0000000000000000^9#9#9#9#133#0#21"Apple LLVM 5.0 Notice--2@27"'std::vector' declared here-422484075#18446744073709551615#0#-0#27"com.apple.dt.IDE.diagnostic3@116"file://localhost/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/c++/v1/vector0000000000000000^480#28#480#28#17162#0#14"Semantic Issue--2#27"com.apple.dt.IDE.diagnostic3@81"file://localhost/Users/chengtai/Documents/2014/topics2014/Alpha/Alpha/convlayer.h0000000000000000^25#4#25#4#420#0#14"Semantic Issue1(3@81"file://localhost/Users/chengtai/Documents/2014/topics2014/Alpha/Alpha/convlayer.h0000000000000000^25#4#25#10#420#6#-2@55"No template named 'vector'; did you mean 'std::vector'?-422484075#18446744073709551615#0#2(2@88"In file included from /Users/chengtai/Documents/2014/topics2014/Alpha/Alpha/main.cpp:10:-422484075#18446744073709551615#0#-0#27"com.apple.dt.IDE.diagnostic3@78"file://localhost/Users/chengtai/Documents/2014/topics2014/Alpha/Alpha/main.cpp0000000000000000^9#9#9#9#133#0#21"Apple LLVM 5.0 Notice--2@27"'std::vector' declared here-422484075#18446744073709551615#0#-0#27"com.apple.dt.IDE.diagnostic3@116"file://localhost/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/c++/v1/vector0000000000000000^480#28#480#28#17162#0#14"Semantic Issue--2#27"com.apple.dt.IDE.diagnostic3@81"file://localhost/Users/chengtai/Documents/2014/topics2014/Alpha/Alpha/convlayer.h0000000000000000^26#4#26#4#448#0#14"Semantic Issue1(3@81"file://localhost/Users/chengtai/Documents/2014/topics2014/Alpha/Alpha/convlayer.h0000000000000000^26#4#26#10#448#6#-2@55"No template named 'vector'; did you mean 'std::vector'?-422484075#18446744073709551615#0#2(2@88"In file included from /Users/chengtai/Documents/2014/topics2014/Alpha/Alpha/main.cpp:10:-422484075#18446744073709551615#0#-0#27"com.apple.dt.IDE.diagnostic3@78"file://localhost/Users/chengtai/Documents/2014/topics2014/Alpha/Alpha/main.cpp0000000000000000^9#9#9#9#133#0#21"Apple LLVM 5.0 Notice--2@27"'std::vector' declared here-422484075#18446744073709551615#0#-0#27"com.apple.dt.IDE.diagnostic3@116"file://localhost/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/c++/v1/vector0000000000000000^480#28#480#28#17162#0#14"Semantic Issue--2#27"com.apple.dt.IDE.diagnostic3@81"file://localhost/Users/chengtai/Documents/2014/topics2014/Alpha/Alpha/convlayer.h0000000000000000^28#4#28#4#502#0#14"Semantic Issue1(3@81"file://localhost/Users/chengtai/Documents/2014/topics2014/Alpha/Alpha/convlayer.h0000000000000000^28#4#28#10#502#6#-2@60"Use of undeclared identifier 'set'; did you mean 'std::set'?-422484075#18446744073709551615#0#2(2@88"In file included from /Users/chengtai/Documents/2014/topics2014/Alpha/Alpha/main.cpp:10:-422484075#18446744073709551615#0#-0#27"com.apple.dt.IDE.diagnostic3@78"file://localhost/Users/chengtai/Documents/2014/topics2014/Alpha/Alpha/main.cpp0000000000000000^9#9#9#9#133#0#21"Apple LLVM 5.0 Notice--2@24"'std::set' declared here-422484075#18446744073709551615#0#-0#27"com.apple.dt.IDE.diagnostic3@113"file://localhost/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/c++/v1/set0000000000000000^397#28#397#28#15483#0#14"Semantic Issue--2#27"com.apple.dt.IDE.diagnostic3@81"file://localhost/Users/chengtai/Documents/2014/topics2014/Alpha/Alpha/convlayer.h0000000000000000^28#11#28#11#509#0#14"Semantic Issue1(3@81"file://localhost/Users/chengtai/Documents/2014/topics2014/Alpha/Alpha/convlayer.h0000000000000000^28#11#28#14#509#3#-2@49"No template named 'set'; did you mean 'std::set'?-422484075#18446744073709551615#0#2(2@88"In file included from /Users/chengtai/Documents/2014/topics2014/Alpha/Alpha/main.cpp:10:-422484075#18446744073709551615#0#-0#27"com.apple.dt.IDE.diagnostic3@78"file://localhost/Users/chengtai/Documents/2014/topics2014/Alpha/Alpha/main.cpp0000000000000000^9#9#9#9#133#0#21"Apple LLVM 5.0 Notice--2@24"'std::set' declared here-422484075#18446744073709551615#0#-0#27"com.apple.dt.IDE.diagnostic3@113"file://localhost/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/c++/v1/set0000000000000000^397#28#397#28#15483#0#14"Semantic Issue--2#27"com.apple.dt.IDE.diagnostic3@81"file://localhost/Users/chengtai/Documents/2014/topics2014/Alpha/Alpha/convlayer.h0000000000000000^28#11#28#11#509#0#14"Semantic Issue1(3@81"file://localhost/Users/chengtai/Documents/2014/topics2014/Alpha/Alpha/convlayer.h0000000000000000^28#11#28#14#509#3#-2@55"Use of class template 'set' requires template arguments-422484075#18446744073709551615#0#2(2@88"In file included from /Users/chengtai/Documents/2014/topics2014/Alpha/Alpha/main.cpp:10:-422484075#18446744073709551615#0#-0#27"com.apple.dt.IDE.diagnostic3@78"file://localhost/Users/chengtai/Documents/2014/topics2014/Alpha/Alpha/main.cpp0000000000000000^9#9#9#9#133#0#21"Apple LLVM 5.0 Notice--2@25"Template is declared here-422484075#18446744073709551615#0#-0#27"com.apple.dt.IDE.diagnostic3@113"file://localhost/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/c++/v1/set0000000000000000^397#28#397#28#15483#0#14"Semantic Issue--2#27"com.apple.dt.IDE.diagnostic3@81"file://localhost/Users/chengtai/Documents/2014/topics2014/Alpha/Alpha/convlayer.h0000000000000000^28#11#28#11#509#0#14"Semantic Issue1(3@81"file://localhost/Users/chengtai/Documents/2014/topics2014/Alpha/Alpha/convlayer.h0000000000000000^28#11#28#14#509#0#-0#0#1#-19%DVTDocumentLocation4@78"file://localhost/Users/chengtai/Documents/2014/topics2014/Alpha/Alpha/main.cpp0000000000000000^3204"CompileC DerivedData/Alpha/Build/Intermediates/Alpha.build/Debug/Alpha.build/Objects-normal/x86_64/main.o Alpha/main.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/chengtai/Documents/2014/topics2014/Alpha    export LANG=en_US.US-ASCII    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x c++ -arch x86_64 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -std=gnu++11 -stdlib=libc++ -fmodules -fmodules-cache-path=/Users/chengtai/Documents/2014/topics2014/Alpha/DerivedData/ModuleCache -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Werror=return-type -Werror=deprecated-objc-isa-usage -Werror=objc-root-class -Wno-non-virtual-dtor -Wno-overloaded-virtual -Wno-exit-time-destructors -Wno-missing-braces -Wparentheses -Wswitch -Wunused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wconditional-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wbool-conversion -Wenum-conversion -Wshorten-64-to-32 -Wno-newline-eof -Wno-c++11-extensions -DDEBUG=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk -fasm-blocks -fstrict-aliasing -Wdeprecated-declarations -Winvalid-offsetof -mmacosx-version-min=10.8 -g -fvisibility-inlines-hidden -Wno-sign-conversion -iquote /Users/chengtai/Documents/2014/topics2014/Alpha/DerivedData/Alpha/Build/Intermediates/Alpha.build/Debug/Alpha.build/Alpha-generated-files.hmap -I/Users/chengtai/Documents/2014/topics2014/Alpha/DerivedData/Alpha/Build/Intermediates/Alpha.build/Debug/Alpha.build/Alpha-own-target-headers.hmap -I/Users/chengtai/Documents/2014/topics2014/Alpha/DerivedData/Alpha/Build/Intermediates/Alpha.build/Debug/Alpha.build/Alpha-all-target-headers.hmap -iquote /Users/chengtai/Documents/2014/topics2014/Alpha/DerivedData/Alpha/Build/Intermediates/Alpha.build/Debug/Alpha.build/Alpha-project-headers.hmap -I/Users/chengtai/Documents/2014/topics2014/Alpha/DerivedData/Alpha/Build/Products/Debug/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Users/chengtai/Documents/2014/topics2014/Alpha/DerivedData/Alpha/Build/Intermediates/Alpha.build/Debug/Alpha.build/DerivedSources/x86_64 -I/Users/chengtai/Documents/2014/topics2014/Alpha/DerivedData/Alpha/Build/Intermediates/Alpha.build/Debug/Alpha.build/DerivedSources -F/Users/chengtai/Documents/2014/topics2014/Alpha/DerivedData/Alpha/Build/Products/Debug -MMD -MT dependencies -MF /Users/chengtai/Documents/2014/topics2014/Alpha/DerivedData/Alpha/Build/Intermediates/Alpha.build/Debug/Alpha.build/Objects-normal/x86_64/main.d --serialize-diagnostics /Users/chengtai/Documents/2014/topics2014/Alpha/DerivedData/Alpha/Build/Intermediates/Alpha.build/Debug/Alpha.build/Objects-normal/x86_64/main.dia -c /Users/chengtai/Documents/2014/topics2014/Alpha/Alpha/main.cpp -o /Users/chengtai/Documents/2014/topics2014/Alpha/DerivedData/Alpha/Build/Intermediates/Alpha.build/Debug/Alpha.build/Objects-normal/x86_64/main.o36"E1450F07-BBCB-4F95-84FC-E71972F3AD40-
+b8B82F9B1-E67E-4877-BDF1-EB2DC1BCC381
+
+CLd /Users/chengtai/Documents/2014/topics2014/Alpha/DerivedData/Alpha/Build/Products/Debug/Alpha normal x86_64
+r0
+
