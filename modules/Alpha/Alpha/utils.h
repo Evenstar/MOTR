@@ -24,7 +24,7 @@ enum LayerType {Convolution, FullyConnected};
 enum BoundaryType {Valid, Full};
 enum NonlinearityType {Sigmoid, ReLU};
 
-typedef Eigen::MatrixXd FilterType;
-typedef Eigen::MatrixXd MatType;
-
+typedef Eigen::MatrixXf FilterType;
+typedef Eigen::MatrixXf MatType;
+typedef float ScalarType;
 #endif

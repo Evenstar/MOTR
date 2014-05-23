@@ -8,6 +8,8 @@
 
 #include "utils.h"
 using namespace std;
+
+
 void LoadFilter(vector<FilterType>& filter, string fname)
 {
     ifstream fin(fname.c_str());
@@ -27,3 +29,50 @@ void LoadFilter(vector<FilterType>& filter, string fname)
     }
     fin.close();
 }
+
+
+MatType Conv2_Valid(const MatType& a, const MatType& b)
+{
+    long m=a.rows();
+    long n=a.cols();
+    long l1=b.rows();
+    long l2=b.cols();
+    MatType g;
+    g=MatType(m-l1+1,n-l2+1);
+    for (long k1=0; k1<m-l1+1;k1++){
+        for (long k2=0; k2<n-l2+1; k2++){
+            ScalarType s=0;
+            for (long j1=0; j1<l1; j1++){
+                for (long j2=0; j2<l2; j2++){
+                    s+=a(k1+j1,k2+j2)*b(l1-1-j1,l2-1-j2);
+                }
+            }
+            g(k1,k2)=s;
+        }
+    }
+    return g;
+}
+
+MatType Conv2(const MatType& a, const MatType& b, BoundaryType boundarytype){
+    if (boundarytype!=Valid && boundarytype!=Full)
+    {
+        cerr<<"Invalid boundary type.\n";
+        exit(-1);
+    }
+    if (boundarytype==Valid)
+    {
+        return Conv2_Valid(a,b);
+    }
+    else
+    {
+        MatType aext=MatType::Zero(a.rows()+2*(b.rows()-1),a.cols()+2*(b.cols()-1));
+        long r1=b.rows()-1;
+        long r2=b.cols()-1;
+        aext.block(r1,r2,a.rows(),a.cols())=a;
+        return Conv2_Valid(aext, b);
+    }
+}
+
+
+
+

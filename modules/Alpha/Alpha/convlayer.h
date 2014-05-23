@@ -24,7 +24,7 @@ public:
     
     void SetFilter( const vector<FilterType> &) ;
     
-    void SetReceiveset(const vector<set<int> >)&;
+    void SetReceiveset(const vector<set<int> >);
     
     void ApplyFilter();
     

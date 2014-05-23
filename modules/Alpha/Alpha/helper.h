@@ -11,5 +11,8 @@
 
 void LoadFilter(vector<FilterType>& filter, string fname);
 
+MatType Conv2_Valid(const MatType& a, const MatType& b);
+
+MatType Conv2(const MatType& a, const MatType& b, BoundaryType boundarytype);
 
 #endif
