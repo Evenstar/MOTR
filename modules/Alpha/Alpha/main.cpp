@@ -31,9 +31,9 @@ int main(int argc, char** argv)
     vector<FilterType> filter;
     LoadFilter(filter, "/Users/chengtai/Documents/2014/MOTR/modules/Alpha/data/filter.txt");
     //test(argc,argv);
-   
     ConvLayer convlayer;
     convlayer.SetFilter(filter);
+
     
     vector<FilterType> it=convlayer.filter;
     for (int i=0; i<1;i++)
@@ -43,6 +43,18 @@ int main(int argc, char** argv)
     Mat img=test(argc,argv);
     MatType mat=Img2Mat(img);
     //LoadFilter(filter, "../data/filter.txt");
-    cout<<mat<<endl;
+    vector<MatType> vmat;
+    vmat.push_back(mat);
+    convlayer.SetIndata(&vmat);
+    
+    MatType mat2;
+    cout<<filter[1]<<endl;
+    mat2=Conv2(mat,filter[1],Valid);
+    ImgType img2;
+    img2=Mat2Img(mat2);
+    normalize(img2,img2,0,1,NORM_MINMAX,CV_32F);
+    namedWindow("gray",CV_WINDOW_AUTOSIZE);
+    imshow("gray", img2);
+    waitKey(0);
     return 0;
 }

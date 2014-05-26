@@ -73,11 +73,11 @@ MatType Conv2(const MatType& a, const MatType& b, BoundaryType boundarytype){
 }
 
 
-MatType Img2Mat(cv::Mat& img)
+MatType Img2Mat(ImgType& img)
 {
     int rows=img.rows;
     int cols=img.cols;
-    cout<<rows<<cols<<endl;
+    cout<<"Channels"<<img.channels()<<endl;
     MatType mat(rows,cols);
     float* p;
     for (int i=0; i<rows; i++){
@@ -90,7 +90,21 @@ MatType Img2Mat(cv::Mat& img)
 }
 
 
-
+ImgType Mat2Img(MatType& mat)
+{
+    long rows=mat.rows();
+    long cols=mat.cols();
+    ImgType img(rows,cols,CV_32FC1);
+    cout<<rows<<cols<<endl;
+    float* p;
+    for (int i=0; i<rows; i++){
+        p=img.ptr<float>(i);
+        for(int j=0; j<cols; j++){
+            p[j]=mat(i,j);
+        }
+    }
+    return img;
+}
 
 
 
