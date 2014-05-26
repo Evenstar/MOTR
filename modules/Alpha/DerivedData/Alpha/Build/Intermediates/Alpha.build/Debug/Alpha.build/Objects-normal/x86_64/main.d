@@ -2,6 +2,37 @@ dependencies: \
   /Users/chengtai/Documents/2014/MOTR/modules/Alpha/Alpha/main.cpp \
   /Users/chengtai/Documents/2014/MOTR/modules/Alpha/Alpha/convlayer.h \
   /Users/chengtai/Documents/2014/MOTR/modules/Alpha/Alpha/utils.h \
+  /usr/local/include/opencv2/core/core.hpp \
+  /usr/local/include/opencv2/core/types_c.h \
+  /usr/local/include/opencv2/core/version.hpp \
+  /usr/local/include/opencv2/core/operations.hpp \
+  /usr/local/include/opencv2/core/mat.hpp \
+  /usr/local/include/opencv2/highgui/highgui.hpp \
+  /usr/local/include/opencv2/highgui/highgui_c.h \
+  /usr/local/include/opencv2/core/core_c.h \
+  /usr/local/include/opencv2/opencv.hpp \
+  /usr/local/include/opencv2/flann/miniflann.hpp \
+  /usr/local/include/opencv2/flann/defines.h \
+  /usr/local/include/opencv2/flann/config.h \
+  /usr/local/include/opencv2/imgproc/imgproc_c.h \
+  /usr/local/include/opencv2/imgproc/types_c.h \
+  /usr/local/include/opencv2/imgproc/imgproc.hpp \
+  /usr/local/include/opencv2/photo/photo.hpp \
+  /usr/local/include/opencv2/photo/photo_c.h \
+  /usr/local/include/opencv2/video/video.hpp \
+  /usr/local/include/opencv2/video/tracking.hpp \
+  /usr/local/include/opencv2/video/background_segm.hpp \
+  /usr/local/include/opencv2/features2d/features2d.hpp \
+  /usr/local/include/opencv2/objdetect/objdetect.hpp \
+  /usr/local/include/opencv2/calib3d/calib3d.hpp \
+  /usr/local/include/opencv2/ml/ml.hpp \
+  /usr/local/include/opencv2/contrib/contrib.hpp \
+  /usr/local/include/opencv2/contrib/retina.hpp \
+  /usr/local/include/opencv2/contrib/openfabmap.hpp \
+  /usr/local/include/opencv/cvaux.h \
+  /usr/local/include/opencv2/legacy/legacy.hpp \
+  /usr/local/include/opencv2/legacy/compat.hpp \
+  /usr/local/include/opencv2/legacy/blobtrack.hpp \
   /Users/chengtai/Documents/2014/MOTR/modules/Alpha/Alpha/../Eigen/Dense \
   /Users/chengtai/Documents/2014/MOTR/modules/Alpha/Alpha/../Eigen/Core \
   /Users/chengtai/Documents/2014/MOTR/modules/Alpha/Alpha/../Eigen/src/Core/util/DisableStupidWarnings.h \
@@ -152,4 +183,5 @@ dependencies: \
   /Users/chengtai/Documents/2014/MOTR/modules/Alpha/Alpha/../Eigen/src/Eigenvalues/RealQZ.h \
   /Users/chengtai/Documents/2014/MOTR/modules/Alpha/Alpha/../Eigen/src/Eigenvalues/GeneralizedEigenSolver.h \
   /Users/chengtai/Documents/2014/MOTR/modules/Alpha/Alpha/../Eigen/src/Eigenvalues/MatrixBaseEigenvalues.h \
-  /Users/chengtai/Documents/2014/MOTR/modules/Alpha/Alpha/helper.h
+  /Users/chengtai/Documents/2014/MOTR/modules/Alpha/Alpha/helper.h \
+  /Users/chengtai/Documents/2014/MOTR/modules/Alpha/Alpha/visual.h

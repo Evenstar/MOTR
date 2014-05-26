@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.7">
+  <compounddef id="dir_7ff9d841aedbc9f9c4fc73f6d1f5acbd" kind="dir">
+    <compoundname>/Users/chengtai/Documents/2014/MOTR</compoundname>
+    <innerdir refid="dir_5e296e242b88e877ced0311df988eff1">/Users/chengtai/Documents/2014/MOTR/modules</innerdir>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/Users/chengtai/Documents/2014/MOTR/"/>
+  </compounddef>
+</doxygen>

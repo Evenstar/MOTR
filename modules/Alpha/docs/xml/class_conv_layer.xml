@@ -1,0 +1,266 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.7">
+  <compounddef id="class_conv_layer" kind="class" prot="public">
+    <compoundname>ConvLayer</compoundname>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_conv_layer_1a5c9ac97672cb4025adaea24830cf1409" prot="private" static="no" mutable="no">
+        <type>vector&lt; FilterType &gt;</type>
+        <definition>vector&lt;FilterType&gt; ConvLayer::filter</definition>
+        <argsstring></argsstring>
+        <name>filter</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/chengtai/Documents/2014/MOTR/modules/Alpha/Alpha/convlayer.h" line="37" column="1" bodyfile="/Users/chengtai/Documents/2014/MOTR/modules/Alpha/Alpha/convlayer.h" bodystart="37" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_conv_layer_1ae90ccdaf98509ac518dc8158abb53540" prot="private" static="no" mutable="no">
+        <type>vector&lt; MatType &gt; *</type>
+        <definition>vector&lt;MatType&gt;* ConvLayer::indata</definition>
+        <argsstring></argsstring>
+        <name>indata</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/chengtai/Documents/2014/MOTR/modules/Alpha/Alpha/convlayer.h" line="38" column="1" bodyfile="/Users/chengtai/Documents/2014/MOTR/modules/Alpha/Alpha/convlayer.h" bodystart="38" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_conv_layer_1afee4ff21cc91013563dd16a4a617f934" prot="private" static="no" mutable="no">
+        <type>vector&lt; MatType &gt; *</type>
+        <definition>vector&lt;MatType&gt;* ConvLayer::outdata</definition>
+        <argsstring></argsstring>
+        <name>outdata</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/chengtai/Documents/2014/MOTR/modules/Alpha/Alpha/convlayer.h" line="39" column="1" bodyfile="/Users/chengtai/Documents/2014/MOTR/modules/Alpha/Alpha/convlayer.h" bodystart="39" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_conv_layer_1abb72df40265f9b3c7667318a8e3014c0" prot="private" static="no" mutable="no">
+        <type>LayerType</type>
+        <definition>LayerType ConvLayer::layertype</definition>
+        <argsstring></argsstring>
+        <name>layertype</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/chengtai/Documents/2014/MOTR/modules/Alpha/Alpha/convlayer.h" line="40" column="1" bodyfile="/Users/chengtai/Documents/2014/MOTR/modules/Alpha/Alpha/convlayer.h" bodystart="40" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_conv_layer_1a611e9895011c49713221b074abfc521f" prot="private" static="no" mutable="no">
+        <type>vector&lt; set&lt; int &gt; &gt;</type>
+        <definition>vector&lt;set&lt;int&gt; &gt; ConvLayer::receiveset</definition>
+        <argsstring></argsstring>
+        <name>receiveset</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/chengtai/Documents/2014/MOTR/modules/Alpha/Alpha/convlayer.h" line="41" column="1" bodyfile="/Users/chengtai/Documents/2014/MOTR/modules/Alpha/Alpha/convlayer.h" bodystart="41" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_conv_layer_1a16a5c6cfb93d0676b8c8d2264c487e54" prot="private" static="no" mutable="no">
+        <type>BoundaryType</type>
+        <definition>BoundaryType ConvLayer::boundarytype</definition>
+        <argsstring></argsstring>
+        <name>boundarytype</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/chengtai/Documents/2014/MOTR/modules/Alpha/Alpha/convlayer.h" line="42" column="1" bodyfile="/Users/chengtai/Documents/2014/MOTR/modules/Alpha/Alpha/convlayer.h" bodystart="42" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_conv_layer_1a7fbd91b7f63e49fb43fa931de225c280" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int ConvLayer::stride</definition>
+        <argsstring></argsstring>
+        <name>stride</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/chengtai/Documents/2014/MOTR/modules/Alpha/Alpha/convlayer.h" line="44" column="1" bodyfile="/Users/chengtai/Documents/2014/MOTR/modules/Alpha/Alpha/convlayer.h" bodystart="44" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_conv_layer_1a941ec7552673506cbb7580e41e982494" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int ConvLayer::side</definition>
+        <argsstring></argsstring>
+        <name>side</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/chengtai/Documents/2014/MOTR/modules/Alpha/Alpha/convlayer.h" line="45" column="1" bodyfile="/Users/chengtai/Documents/2014/MOTR/modules/Alpha/Alpha/convlayer.h" bodystart="45" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_conv_layer_1a1b3fb2e086eee6768b79a260f2035ee8" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int ConvLayer::pooldim</definition>
+        <argsstring></argsstring>
+        <name>pooldim</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/chengtai/Documents/2014/MOTR/modules/Alpha/Alpha/convlayer.h" line="46" column="1" bodyfile="/Users/chengtai/Documents/2014/MOTR/modules/Alpha/Alpha/convlayer.h" bodystart="46" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_conv_layer_1a791713b4ac5619f2cc20a20cb64ea885" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>ConvLayer::ConvLayer</definition>
+        <argsstring>()</argsstring>
+        <name>ConvLayer</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/chengtai/Documents/2014/MOTR/modules/Alpha/Alpha/convlayer.h" line="22" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_conv_layer_1a277fbb31369014bcb607c51f52c61032" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>ConvLayer::~ConvLayer</definition>
+        <argsstring>()</argsstring>
+        <name>~ConvLayer</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/chengtai/Documents/2014/MOTR/modules/Alpha/Alpha/convlayer.h" line="23" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_conv_layer_1a16a423c0e8ce590ab4757819159b015c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ConvLayer::SetFilter</definition>
+        <argsstring>(const vector&lt; FilterType &gt; &amp;)</argsstring>
+        <name>SetFilter</name>
+        <param>
+          <type>const vector&lt; FilterType &gt; &amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/chengtai/Documents/2014/MOTR/modules/Alpha/Alpha/convlayer.h" line="25" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_conv_layer_1aa2c01fc18b295fc3ddf2d48497653206" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ConvLayer::SetReceiveset</definition>
+        <argsstring>(const vector&lt; set&lt; int &gt; &gt;)</argsstring>
+        <name>SetReceiveset</name>
+        <param>
+          <type>const vector&lt; set&lt; int &gt; &gt;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/chengtai/Documents/2014/MOTR/modules/Alpha/Alpha/convlayer.h" line="27" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_conv_layer_1a70111098046a07416fcbdffdbe8f0cfd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ConvLayer::ApplyFilter</definition>
+        <argsstring>()</argsstring>
+        <name>ApplyFilter</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/chengtai/Documents/2014/MOTR/modules/Alpha/Alpha/convlayer.h" line="29" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_conv_layer_1aa7d700a3f6622d2df0d3f0a33519e8ec" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>const vector&lt; MatType &gt; *</type>
+        <definition>const vector&lt;MatType&gt;* ConvLayer::input</definition>
+        <argsstring>() const </argsstring>
+        <name>input</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/chengtai/Documents/2014/MOTR/modules/Alpha/Alpha/convlayer.h" line="31" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_conv_layer_1ae89c7d8838a35cf1d1b1d47a4deddd48" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>const vector&lt; MatType &gt; *</type>
+        <definition>const vector&lt;MatType&gt;* ConvLayer::output</definition>
+        <argsstring>() const </argsstring>
+        <name>output</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/chengtai/Documents/2014/MOTR/modules/Alpha/Alpha/convlayer.h" line="33" column="1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="class_conv_layer_1aaf06dbe432bc185fbb2de71702f05f8f" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ConvLayer::ApplyNonlinearity</definition>
+        <argsstring>(NonlinearityType)</argsstring>
+        <name>ApplyNonlinearity</name>
+        <param>
+          <type>NonlinearityType</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/chengtai/Documents/2014/MOTR/modules/Alpha/Alpha/convlayer.h" line="50" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/Users/chengtai/Documents/2014/MOTR/modules/Alpha/Alpha/convlayer.h" line="20" column="1" bodyfile="/Users/chengtai/Documents/2014/MOTR/modules/Alpha/Alpha/convlayer.h" bodystart="20" bodyend="54"/>
+    <listofallmembers>
+      <member refid="class_conv_layer_1a70111098046a07416fcbdffdbe8f0cfd" prot="public" virt="non-virtual"><scope>ConvLayer</scope><name>ApplyFilter</name></member>
+      <member refid="class_conv_layer_1aaf06dbe432bc185fbb2de71702f05f8f" prot="private" virt="non-virtual"><scope>ConvLayer</scope><name>ApplyNonlinearity</name></member>
+      <member refid="class_conv_layer_1a16a5c6cfb93d0676b8c8d2264c487e54" prot="private" virt="non-virtual"><scope>ConvLayer</scope><name>boundarytype</name></member>
+      <member refid="class_conv_layer_1a791713b4ac5619f2cc20a20cb64ea885" prot="public" virt="non-virtual"><scope>ConvLayer</scope><name>ConvLayer</name></member>
+      <member refid="class_conv_layer_1a5c9ac97672cb4025adaea24830cf1409" prot="private" virt="non-virtual"><scope>ConvLayer</scope><name>filter</name></member>
+      <member refid="class_conv_layer_1ae90ccdaf98509ac518dc8158abb53540" prot="private" virt="non-virtual"><scope>ConvLayer</scope><name>indata</name></member>
+      <member refid="class_conv_layer_1aa7d700a3f6622d2df0d3f0a33519e8ec" prot="public" virt="non-virtual"><scope>ConvLayer</scope><name>input</name></member>
+      <member refid="class_conv_layer_1abb72df40265f9b3c7667318a8e3014c0" prot="private" virt="non-virtual"><scope>ConvLayer</scope><name>layertype</name></member>
+      <member refid="class_conv_layer_1afee4ff21cc91013563dd16a4a617f934" prot="private" virt="non-virtual"><scope>ConvLayer</scope><name>outdata</name></member>
+      <member refid="class_conv_layer_1ae89c7d8838a35cf1d1b1d47a4deddd48" prot="public" virt="non-virtual"><scope>ConvLayer</scope><name>output</name></member>
+      <member refid="class_conv_layer_1a1b3fb2e086eee6768b79a260f2035ee8" prot="private" virt="non-virtual"><scope>ConvLayer</scope><name>pooldim</name></member>
+      <member refid="class_conv_layer_1a611e9895011c49713221b074abfc521f" prot="private" virt="non-virtual"><scope>ConvLayer</scope><name>receiveset</name></member>
+      <member refid="class_conv_layer_1a16a423c0e8ce590ab4757819159b015c" prot="public" virt="non-virtual"><scope>ConvLayer</scope><name>SetFilter</name></member>
+      <member refid="class_conv_layer_1aa2c01fc18b295fc3ddf2d48497653206" prot="public" virt="non-virtual"><scope>ConvLayer</scope><name>SetReceiveset</name></member>
+      <member refid="class_conv_layer_1a941ec7552673506cbb7580e41e982494" prot="private" virt="non-virtual"><scope>ConvLayer</scope><name>side</name></member>
+      <member refid="class_conv_layer_1a7fbd91b7f63e49fb43fa931de225c280" prot="private" virt="non-virtual"><scope>ConvLayer</scope><name>stride</name></member>
+      <member refid="class_conv_layer_1a277fbb31369014bcb607c51f52c61032" prot="public" virt="non-virtual"><scope>ConvLayer</scope><name>~ConvLayer</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -17,7 +17,10 @@
 #include <set>
 #include <fstream>
 #include <string>
-
+#include <opencv2/core/core.hpp>
+#include <opencv2/highgui/highgui.hpp>
+#include <opencv2/opencv.hpp>
+#include <opencv/cvaux.h>
 #include "../Eigen/Dense"
 
 enum LayerType {Convolution, FullyConnected};
@@ -26,5 +29,6 @@ enum NonlinearityType {Sigmoid, ReLU};
 
 typedef Eigen::MatrixXf FilterType;
 typedef Eigen::MatrixXf MatType;
+typedef cv::Mat ImgType;
 typedef float ScalarType;
 #endif

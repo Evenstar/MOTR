@@ -1,0 +1,930 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.7">
+  <compounddef id="main_8cpp" kind="file">
+    <compoundname>main.cpp</compoundname>
+    <includes refid="convlayer_8h" local="yes">convlayer.h</includes>
+    <includes refid="helper_8h" local="yes">helper.h</includes>
+    <incdepgraph>
+      <node id="277">
+        <label>/Users/chengtai/Documents/2014/MOTR/modules/Alpha/Eigen/src/Core/products/TriangularMatrixVector.h</label>
+      </node>
+      <node id="303">
+        <label>/Users/chengtai/Documents/2014/MOTR/modules/Alpha/Eigen/Cholesky</label>
+      </node>
+      <node id="306">
+        <label>/Users/chengtai/Documents/2014/MOTR/modules/Alpha/Eigen/QR</label>
+      </node>
+      <node id="319">
+        <label>/Users/chengtai/Documents/2014/MOTR/modules/Alpha/Eigen/Geometry</label>
+      </node>
+      <node id="331">
+        <label>/Users/chengtai/Documents/2014/MOTR/modules/Alpha/Eigen/src/Geometry/ParametrizedLine.h</label>
+      </node>
+      <node id="200">
+        <label>functional</label>
+      </node>
+      <node id="203">
+        <label>limits</label>
+      </node>
+      <node id="258">
+        <label>/Users/chengtai/Documents/2014/MOTR/modules/Alpha/Eigen/src/Core/IO.h</label>
+      </node>
+      <node id="333">
+        <label>/Users/chengtai/Documents/2014/MOTR/modules/Alpha/Eigen/src/Geometry/Umeyama.h</label>
+      </node>
+      <node id="211">
+        <label>/Users/chengtai/Documents/2014/MOTR/modules/Alpha/Eigen/src/Core/util/Memory.h</label>
+      </node>
+      <node id="294">
+        <label>/Users/chengtai/Documents/2014/MOTR/modules/Alpha/Eigen/src/Core/util/ReenableStupidWarnings.h</label>
+      </node>
+      <node id="240">
+        <label>/Users/chengtai/Documents/2014/MOTR/modules/Alpha/Eigen/src/Core/SelfCwiseBinaryOp.h</label>
+      </node>
+      <node id="287">
+        <label>/Users/chengtai/Documents/2014/MOTR/modules/Alpha/Eigen/src/Core/Replicate.h</label>
+      </node>
+      <node id="307">
+        <label>/Users/chengtai/Documents/2014/MOTR/modules/Alpha/Eigen/Jacobi</label>
+      </node>
+      <node id="215">
+        <label>/Users/chengtai/Documents/2014/MOTR/modules/Alpha/Eigen/src/Core/arch/Default/Settings.h</label>
+      </node>
+      <node id="269">
+        <label>/Users/chengtai/Documents/2014/MOTR/modules/Alpha/Eigen/src/Core/products/GeneralMatrixVector.h</label>
+      </node>
+      <node id="327">
+        <label>/Users/chengtai/Documents/2014/MOTR/modules/Alpha/Eigen/src/Geometry/Transform.h</label>
+      </node>
+      <node id="291">
+        <label>/Users/chengtai/Documents/2014/MOTR/modules/Alpha/Eigen/src/plugins/ArrayCwiseBinaryOps.h</label>
+      </node>
+      <node id="276">
+        <label>/Users/chengtai/Documents/2014/MOTR/modules/Alpha/Eigen/src/Core/products/SelfadjointRank2Update.h</label>
+      </node>
+      <node id="299">
+        <label>/Users/chengtai/Documents/2014/MOTR/modules/Alpha/Eigen/src/LU/FullPivLU.h</label>
+      </node>
+      <node id="209">
+        <label>/Users/chengtai/Documents/2014/MOTR/modules/Alpha/Eigen/src/Core/util/StaticAssert.h</label>
+      </node>
+      <node id="345">
+        <label>/Users/chengtai/Documents/2014/MOTR/modules/Alpha/Eigen/src/Eigenvalues/MatrixBaseEigenvalues.h</label>
+      </node>
+      <node id="323">
+        <label>/Users/chengtai/Documents/2014/MOTR/modules/Alpha/Eigen/src/Geometry/RotationBase.h</label>
+      </node>
+      <node id="268">
+        <label>/Users/chengtai/Documents/2014/MOTR/modules/Alpha/Eigen/src/Core/products/CoeffBasedProduct.h</label>
+      </node>
+      <node id="335">
+        <label>/Users/chengtai/Documents/2014/MOTR/modules/Alpha/Eigen/src/Eigenvalues/Tridiagonalization.h</label>
+      </node>
+      <node id="288">
+        <label>/Users/chengtai/Documents/2014/MOTR/modules/Alpha/Eigen/src/Core/Reverse.h</label>
+      </node>
+      <node id="228">
+        <label>/Users/chengtai/Documents/2014/MOTR/modules/Alpha/Eigen/src/Core/DenseStorage.h</label>
+      </node>
+      <node id="297">
+        <label>/Users/chengtai/Documents/2014/MOTR/modules/Alpha/Eigen/src/misc/Kernel.h</label>
+      </node>
+      <node id="267">
+        <label>/Users/chengtai/Documents/2014/MOTR/modules/Alpha/Eigen/src/Core/products/Parallelizer.h</label>
+      </node>
+      <node id="246">
+        <label>/Users/chengtai/Documents/2014/MOTR/modules/Alpha/Eigen/src/Core/Block.h</label>
+      </node>
+      <node id="191">
+        <label>../Eigen/Dense</label>
+      </node>
+      <node id="313">
+        <label>/Users/chengtai/Documents/2014/MOTR/modules/Alpha/Eigen/src/QR/HouseholderQR.h</label>
+      </node>
+      <node id="298">
+        <label>/Users/chengtai/Documents/2014/MOTR/modules/Alpha/Eigen/src/misc/Image.h</label>
+      </node>
+      <node id="185">
+        <label>cmath</label>
+      </node>
+      <node id="199">
+        <label>cassert</label>
+      </node>
+      <node id="317">
+        <label>/Users/chengtai/Documents/2014/MOTR/modules/Alpha/Eigen/src/SVD/JacobiSVD.h</label>
+      </node>
+      <node id="230">
+        <label>/Users/chengtai/Documents/2014/MOTR/modules/Alpha/Eigen/src/Core/ForceAlignedAccess.h</label>
+      </node>
+      <node id="224">
+        <label>/Users/chengtai/Documents/2014/MOTR/modules/Alpha/Eigen/src/plugins/MatrixCwiseBinaryOps.h</label>
+      </node>
+      <node id="233">
+        <label>/Users/chengtai/Documents/2014/MOTR/modules/Alpha/Eigen/src/Core/PlainObjectBase.h</label>
+      </node>
+      <node id="284">
+        <label>/Users/chengtai/Documents/2014/MOTR/modules/Alpha/Eigen/src/Core/Select.h</label>
+      </node>
+      <node id="207">
+        <label>/Users/chengtai/Documents/2014/MOTR/modules/Alpha/Eigen/src/Core/util/ForwardDeclarations.h</label>
+      </node>
+      <node id="213">
+        <label>/Users/chengtai/Documents/2014/MOTR/modules/Alpha/Eigen/src/Core/MathFunctions.h</label>
+      </node>
+      <node id="328">
+        <label>/Users/chengtai/Documents/2014/MOTR/modules/Alpha/Eigen/src/Geometry/Translation.h</label>
+      </node>
+      <node id="282">
+        <label>/Users/chengtai/Documents/2014/MOTR/modules/Alpha/Eigen/src/Core/CoreIterators.h</label>
+      </node>
+      <node id="190">
+        <label>string</label>
+      </node>
+      <node id="310">
+        <label>/Users/chengtai/Documents/2014/MOTR/modules/Alpha/Eigen/src/Householder/Householder.h</label>
+      </node>
+      <node id="241">
+        <label>/Users/chengtai/Documents/2014/MOTR/modules/Alpha/Eigen/src/Core/Dot.h</label>
+      </node>
+      <node id="283">
+        <label>/Users/chengtai/Documents/2014/MOTR/modules/Alpha/Eigen/src/Core/BooleanRedux.h</label>
+      </node>
+      <node id="322">
+        <label>/Users/chengtai/Documents/2014/MOTR/modules/Alpha/Eigen/src/Geometry/Homogeneous.h</label>
+      </node>
+      <node id="262">
+        <label>/Users/chengtai/Documents/2014/MOTR/modules/Alpha/Eigen/src/Core/ProductBase.h</label>
+      </node>
+      <node id="321">
+        <label>/Users/chengtai/Documents/2014/MOTR/modules/Alpha/Eigen/src/Geometry/EulerAngles.h</label>
+      </node>
+      <node id="346">
+        <label>helper.h</label>
+        <link refid="helper_8h"/>
+      </node>
+      <node id="187">
+        <label>map</label>
+      </node>
+      <node id="248">
+        <label>/Users/chengtai/Documents/2014/MOTR/modules/Alpha/Eigen/src/Core/Ref.h</label>
+      </node>
+      <node id="225">
+        <label>/Users/chengtai/Documents/2014/MOTR/modules/Alpha/Eigen/src/Core/EigenBase.h</label>
+      </node>
+      <node id="339">
+        <label>/Users/chengtai/Documents/2014/MOTR/modules/Alpha/Eigen/src/Eigenvalues/SelfAdjointEigenSolver.h</label>
+      </node>
+      <node id="292">
+        <label>/Users/chengtai/Documents/2014/MOTR/modules/Alpha/Eigen/src/Core/ArrayWrapper.h</label>
+      </node>
+      <node id="265">
+        <label>/Users/chengtai/Documents/2014/MOTR/modules/Alpha/Eigen/src/Core/SelfAdjointView.h</label>
+      </node>
+      <node id="320">
+        <label>/Users/chengtai/Documents/2014/MOTR/modules/Alpha/Eigen/src/Geometry/OrthoMethods.h</label>
+      </node>
+      <node id="220">
+        <label>/Users/chengtai/Documents/2014/MOTR/modules/Alpha/Eigen/src/Core/MatrixBase.h</label>
+      </node>
+      <node id="234">
+        <label>/Users/chengtai/Documents/2014/MOTR/modules/Alpha/Eigen/src/Core/Matrix.h</label>
+      </node>
+      <node id="244">
+        <label>/Users/chengtai/Documents/2014/MOTR/modules/Alpha/Eigen/src/Core/Stride.h</label>
+      </node>
+      <node id="222">
+        <label>/Users/chengtai/Documents/2014/MOTR/modules/Alpha/Eigen/src/plugins/CommonCwiseBinaryOps.h</label>
+      </node>
+      <node id="193">
+        <label>/Users/chengtai/Documents/2014/MOTR/modules/Alpha/Eigen/src/Core/util/DisableStupidWarnings.h</label>
+      </node>
+      <node id="196">
+        <label>/Users/chengtai/Documents/2014/MOTR/modules/Alpha/Eigen/src/Core/util/MKL_support.h</label>
+      </node>
+      <node id="231">
+        <label>/Users/chengtai/Documents/2014/MOTR/modules/Alpha/Eigen/src/Core/ReturnByValue.h</label>
+      </node>
+      <node id="189">
+        <label>fstream</label>
+      </node>
+      <node id="239">
+        <label>/Users/chengtai/Documents/2014/MOTR/modules/Alpha/Eigen/src/Core/CwiseUnaryView.h</label>
+      </node>
+      <node id="181">
+        <label>convlayer.h</label>
+        <link refid="convlayer_8h_source"/>
+        <childnode refid="182" relation="include">
+        </childnode>
+        <childnode refid="192" relation="include">
+        </childnode>
+        <childnode refid="193" relation="include">
+        </childnode>
+        <childnode refid="194" relation="include">
+        </childnode>
+        <childnode refid="195" relation="include">
+        </childnode>
+        <childnode refid="196" relation="include">
+        </childnode>
+        <childnode refid="197" relation="include">
+        </childnode>
+        <childnode refid="198" relation="include">
+        </childnode>
+        <childnode refid="184" relation="include">
+        </childnode>
+        <childnode refid="185" relation="include">
+        </childnode>
+        <childnode refid="199" relation="include">
+        </childnode>
+        <childnode refid="200" relation="include">
+        </childnode>
+        <childnode refid="201" relation="include">
+        </childnode>
+        <childnode refid="202" relation="include">
+        </childnode>
+        <childnode refid="190" relation="include">
+        </childnode>
+        <childnode refid="203" relation="include">
+        </childnode>
+        <childnode refid="204" relation="include">
+        </childnode>
+        <childnode refid="205" relation="include">
+        </childnode>
+        <childnode refid="206" relation="include">
+        </childnode>
+        <childnode refid="207" relation="include">
+        </childnode>
+        <childnode refid="208" relation="include">
+        </childnode>
+        <childnode refid="209" relation="include">
+        </childnode>
+        <childnode refid="210" relation="include">
+        </childnode>
+        <childnode refid="211" relation="include">
+        </childnode>
+        <childnode refid="212" relation="include">
+        </childnode>
+        <childnode refid="213" relation="include">
+        </childnode>
+        <childnode refid="214" relation="include">
+        </childnode>
+        <childnode refid="215" relation="include">
+        </childnode>
+        <childnode refid="216" relation="include">
+        </childnode>
+        <childnode refid="217" relation="include">
+        </childnode>
+        <childnode refid="218" relation="include">
+        </childnode>
+        <childnode refid="219" relation="include">
+        </childnode>
+        <childnode refid="220" relation="include">
+        </childnode>
+        <childnode refid="221" relation="include">
+        </childnode>
+        <childnode refid="222" relation="include">
+        </childnode>
+        <childnode refid="223" relation="include">
+        </childnode>
+        <childnode refid="224" relation="include">
+        </childnode>
+        <childnode refid="225" relation="include">
+        </childnode>
+        <childnode refid="226" relation="include">
+        </childnode>
+        <childnode refid="227" relation="include">
+        </childnode>
+        <childnode refid="228" relation="include">
+        </childnode>
+        <childnode refid="229" relation="include">
+        </childnode>
+        <childnode refid="230" relation="include">
+        </childnode>
+        <childnode refid="231" relation="include">
+        </childnode>
+        <childnode refid="232" relation="include">
+        </childnode>
+        <childnode refid="233" relation="include">
+        </childnode>
+        <childnode refid="234" relation="include">
+        </childnode>
+        <childnode refid="235" relation="include">
+        </childnode>
+        <childnode refid="236" relation="include">
+        </childnode>
+        <childnode refid="237" relation="include">
+        </childnode>
+        <childnode refid="238" relation="include">
+        </childnode>
+        <childnode refid="239" relation="include">
+        </childnode>
+        <childnode refid="240" relation="include">
+        </childnode>
+        <childnode refid="241" relation="include">
+        </childnode>
+        <childnode refid="242" relation="include">
+        </childnode>
+        <childnode refid="243" relation="include">
+        </childnode>
+        <childnode refid="244" relation="include">
+        </childnode>
+        <childnode refid="245" relation="include">
+        </childnode>
+        <childnode refid="246" relation="include">
+        </childnode>
+        <childnode refid="247" relation="include">
+        </childnode>
+        <childnode refid="248" relation="include">
+        </childnode>
+        <childnode refid="249" relation="include">
+        </childnode>
+        <childnode refid="250" relation="include">
+        </childnode>
+        <childnode refid="251" relation="include">
+        </childnode>
+        <childnode refid="252" relation="include">
+        </childnode>
+        <childnode refid="253" relation="include">
+        </childnode>
+        <childnode refid="254" relation="include">
+        </childnode>
+        <childnode refid="255" relation="include">
+        </childnode>
+        <childnode refid="256" relation="include">
+        </childnode>
+        <childnode refid="257" relation="include">
+        </childnode>
+        <childnode refid="258" relation="include">
+        </childnode>
+        <childnode refid="259" relation="include">
+        </childnode>
+        <childnode refid="260" relation="include">
+        </childnode>
+        <childnode refid="261" relation="include">
+        </childnode>
+        <childnode refid="262" relation="include">
+        </childnode>
+        <childnode refid="263" relation="include">
+        </childnode>
+        <childnode refid="264" relation="include">
+        </childnode>
+        <childnode refid="265" relation="include">
+        </childnode>
+        <childnode refid="266" relation="include">
+        </childnode>
+        <childnode refid="267" relation="include">
+        </childnode>
+        <childnode refid="268" relation="include">
+        </childnode>
+        <childnode refid="269" relation="include">
+        </childnode>
+        <childnode refid="270" relation="include">
+        </childnode>
+        <childnode refid="271" relation="include">
+        </childnode>
+        <childnode refid="272" relation="include">
+        </childnode>
+        <childnode refid="273" relation="include">
+        </childnode>
+        <childnode refid="274" relation="include">
+        </childnode>
+        <childnode refid="275" relation="include">
+        </childnode>
+        <childnode refid="276" relation="include">
+        </childnode>
+        <childnode refid="277" relation="include">
+        </childnode>
+        <childnode refid="278" relation="include">
+        </childnode>
+        <childnode refid="279" relation="include">
+        </childnode>
+        <childnode refid="280" relation="include">
+        </childnode>
+        <childnode refid="281" relation="include">
+        </childnode>
+        <childnode refid="282" relation="include">
+        </childnode>
+        <childnode refid="283" relation="include">
+        </childnode>
+        <childnode refid="284" relation="include">
+        </childnode>
+        <childnode refid="285" relation="include">
+        </childnode>
+        <childnode refid="286" relation="include">
+        </childnode>
+        <childnode refid="287" relation="include">
+        </childnode>
+        <childnode refid="288" relation="include">
+        </childnode>
+        <childnode refid="289" relation="include">
+        </childnode>
+        <childnode refid="290" relation="include">
+        </childnode>
+        <childnode refid="291" relation="include">
+        </childnode>
+        <childnode refid="292" relation="include">
+        </childnode>
+        <childnode refid="293" relation="include">
+        </childnode>
+        <childnode refid="294" relation="include">
+        </childnode>
+        <childnode refid="295" relation="include">
+        </childnode>
+        <childnode refid="296" relation="include">
+        </childnode>
+        <childnode refid="297" relation="include">
+        </childnode>
+        <childnode refid="298" relation="include">
+        </childnode>
+        <childnode refid="299" relation="include">
+        </childnode>
+        <childnode refid="300" relation="include">
+        </childnode>
+        <childnode refid="301" relation="include">
+        </childnode>
+        <childnode refid="302" relation="include">
+        </childnode>
+        <childnode refid="303" relation="include">
+        </childnode>
+        <childnode refid="304" relation="include">
+        </childnode>
+        <childnode refid="305" relation="include">
+        </childnode>
+        <childnode refid="306" relation="include">
+        </childnode>
+        <childnode refid="307" relation="include">
+        </childnode>
+        <childnode refid="308" relation="include">
+        </childnode>
+        <childnode refid="309" relation="include">
+        </childnode>
+        <childnode refid="310" relation="include">
+        </childnode>
+        <childnode refid="311" relation="include">
+        </childnode>
+        <childnode refid="312" relation="include">
+        </childnode>
+        <childnode refid="313" relation="include">
+        </childnode>
+        <childnode refid="314" relation="include">
+        </childnode>
+        <childnode refid="315" relation="include">
+        </childnode>
+        <childnode refid="316" relation="include">
+        </childnode>
+        <childnode refid="317" relation="include">
+        </childnode>
+        <childnode refid="318" relation="include">
+        </childnode>
+        <childnode refid="319" relation="include">
+        </childnode>
+        <childnode refid="320" relation="include">
+        </childnode>
+        <childnode refid="321" relation="include">
+        </childnode>
+        <childnode refid="322" relation="include">
+        </childnode>
+        <childnode refid="323" relation="include">
+        </childnode>
+        <childnode refid="324" relation="include">
+        </childnode>
+        <childnode refid="325" relation="include">
+        </childnode>
+        <childnode refid="326" relation="include">
+        </childnode>
+        <childnode refid="327" relation="include">
+        </childnode>
+        <childnode refid="328" relation="include">
+        </childnode>
+        <childnode refid="329" relation="include">
+        </childnode>
+        <childnode refid="330" relation="include">
+        </childnode>
+        <childnode refid="331" relation="include">
+        </childnode>
+        <childnode refid="332" relation="include">
+        </childnode>
+        <childnode refid="333" relation="include">
+        </childnode>
+        <childnode refid="334" relation="include">
+        </childnode>
+        <childnode refid="335" relation="include">
+        </childnode>
+        <childnode refid="336" relation="include">
+        </childnode>
+        <childnode refid="337" relation="include">
+        </childnode>
+        <childnode refid="338" relation="include">
+        </childnode>
+        <childnode refid="339" relation="include">
+        </childnode>
+        <childnode refid="340" relation="include">
+        </childnode>
+        <childnode refid="341" relation="include">
+        </childnode>
+        <childnode refid="342" relation="include">
+        </childnode>
+        <childnode refid="343" relation="include">
+        </childnode>
+        <childnode refid="344" relation="include">
+        </childnode>
+        <childnode refid="345" relation="include">
+        </childnode>
+      </node>
+      <node id="256">
+        <label>/Users/chengtai/Documents/2014/MOTR/modules/Alpha/Eigen/src/Core/Visitor.h</label>
+      </node>
+      <node id="214">
+        <label>/Users/chengtai/Documents/2014/MOTR/modules/Alpha/Eigen/src/Core/GenericPacketMath.h</label>
+      </node>
+      <node id="236">
+        <label>/Users/chengtai/Documents/2014/MOTR/modules/Alpha/Eigen/src/Core/CwiseBinaryOp.h</label>
+      </node>
+      <node id="336">
+        <label>/Users/chengtai/Documents/2014/MOTR/modules/Alpha/Eigen/src/Eigenvalues/RealSchur.h</label>
+      </node>
+      <node id="278">
+        <label>/Users/chengtai/Documents/2014/MOTR/modules/Alpha/Eigen/src/Core/products/TriangularMatrixMatrix.h</label>
+      </node>
+      <node id="250">
+        <label>/Users/chengtai/Documents/2014/MOTR/modules/Alpha/Eigen/src/Core/DiagonalMatrix.h</label>
+      </node>
+      <node id="216">
+        <label>/Users/chengtai/Documents/2014/MOTR/modules/Alpha/Eigen/src/Core/Functors.h</label>
+      </node>
+      <node id="217">
+        <label>/Users/chengtai/Documents/2014/MOTR/modules/Alpha/Eigen/src/Core/DenseCoeffsBase.h</label>
+      </node>
+      <node id="318">
+        <label>/Users/chengtai/Documents/2014/MOTR/modules/Alpha/Eigen/src/SVD/UpperBidiagonalization.h</label>
+      </node>
+      <node id="254">
+        <label>/Users/chengtai/Documents/2014/MOTR/modules/Alpha/Eigen/src/Core/Transpositions.h</label>
+      </node>
+      <node id="300">
+        <label>/Users/chengtai/Documents/2014/MOTR/modules/Alpha/Eigen/src/LU/PartialPivLU.h</label>
+      </node>
+      <node id="308">
+        <label>/Users/chengtai/Documents/2014/MOTR/modules/Alpha/Eigen/src/Jacobi/Jacobi.h</label>
+      </node>
+      <node id="266">
+        <label>/Users/chengtai/Documents/2014/MOTR/modules/Alpha/Eigen/src/Core/products/GeneralBlockPanelKernel.h</label>
+      </node>
+      <node id="274">
+        <label>/Users/chengtai/Documents/2014/MOTR/modules/Alpha/Eigen/src/Core/products/SelfadjointMatrixMatrix.h</label>
+      </node>
+      <node id="242">
+        <label>/Users/chengtai/Documents/2014/MOTR/modules/Alpha/Eigen/src/Core/StableNorm.h</label>
+      </node>
+      <node id="227">
+        <label>/Users/chengtai/Documents/2014/MOTR/modules/Alpha/Eigen/src/Core/util/BlasUtil.h</label>
+      </node>
+      <node id="237">
+        <label>/Users/chengtai/Documents/2014/MOTR/modules/Alpha/Eigen/src/Core/CwiseUnaryOp.h</label>
+      </node>
+      <node id="252">
+        <label>/Users/chengtai/Documents/2014/MOTR/modules/Alpha/Eigen/src/Core/DiagonalProduct.h</label>
+      </node>
+      <node id="280">
+        <label>/Users/chengtai/Documents/2014/MOTR/modules/Alpha/Eigen/src/Core/products/TriangularSolverVector.h</label>
+      </node>
+      <node id="314">
+        <label>/Users/chengtai/Documents/2014/MOTR/modules/Alpha/Eigen/src/QR/FullPivHouseholderQR.h</label>
+      </node>
+      <node id="232">
+        <label>/Users/chengtai/Documents/2014/MOTR/modules/Alpha/Eigen/src/Core/NoAlias.h</label>
+      </node>
+      <node id="271">
+        <label>/Users/chengtai/Documents/2014/MOTR/modules/Alpha/Eigen/src/Core/SolveTriangular.h</label>
+      </node>
+      <node id="263">
+        <label>/Users/chengtai/Documents/2014/MOTR/modules/Alpha/Eigen/src/Core/GeneralProduct.h</label>
+      </node>
+      <node id="337">
+        <label>/Users/chengtai/Documents/2014/MOTR/modules/Alpha/Eigen/src/Eigenvalues/HessenbergDecomposition.h</label>
+      </node>
+      <node id="324">
+        <label>/Users/chengtai/Documents/2014/MOTR/modules/Alpha/Eigen/src/Geometry/Rotation2D.h</label>
+      </node>
+      <node id="286">
+        <label>/Users/chengtai/Documents/2014/MOTR/modules/Alpha/Eigen/src/Core/Random.h</label>
+      </node>
+      <node id="186">
+        <label>vector</label>
+      </node>
+      <node id="296">
+        <label>/Users/chengtai/Documents/2014/MOTR/modules/Alpha/Eigen/src/misc/Solve.h</label>
+      </node>
+      <node id="180">
+        <label>/Users/chengtai/Documents/2014/MOTR/modules/Alpha/Alpha/main.cpp</label>
+        <link refid="main.cpp"/>
+        <childnode refid="181" relation="include">
+        </childnode>
+        <childnode refid="346" relation="include">
+        </childnode>
+      </node>
+      <node id="295">
+        <label>/Users/chengtai/Documents/2014/MOTR/modules/Alpha/Eigen/LU</label>
+      </node>
+      <node id="247">
+        <label>/Users/chengtai/Documents/2014/MOTR/modules/Alpha/Eigen/src/Core/VectorBlock.h</label>
+      </node>
+      <node id="210">
+        <label>/Users/chengtai/Documents/2014/MOTR/modules/Alpha/Eigen/src/Core/util/XprHelper.h</label>
+      </node>
+      <node id="304">
+        <label>/Users/chengtai/Documents/2014/MOTR/modules/Alpha/Eigen/src/Cholesky/LLT.h</label>
+      </node>
+      <node id="332">
+        <label>/Users/chengtai/Documents/2014/MOTR/modules/Alpha/Eigen/src/Geometry/AlignedBox.h</label>
+      </node>
+      <node id="315">
+        <label>/Users/chengtai/Documents/2014/MOTR/modules/Alpha/Eigen/src/QR/ColPivHouseholderQR.h</label>
+      </node>
+      <node id="223">
+        <label>/Users/chengtai/Documents/2014/MOTR/modules/Alpha/Eigen/src/plugins/MatrixCwiseUnaryOps.h</label>
+      </node>
+      <node id="255">
+        <label>/Users/chengtai/Documents/2014/MOTR/modules/Alpha/Eigen/src/Core/Redux.h</label>
+      </node>
+      <node id="293">
+        <label>/Users/chengtai/Documents/2014/MOTR/modules/Alpha/Eigen/src/Core/GlobalFunctions.h</label>
+      </node>
+      <node id="264">
+        <label>/Users/chengtai/Documents/2014/MOTR/modules/Alpha/Eigen/src/Core/TriangularMatrix.h</label>
+      </node>
+      <node id="343">
+        <label>/Users/chengtai/Documents/2014/MOTR/modules/Alpha/Eigen/src/Eigenvalues/RealQZ.h</label>
+      </node>
+      <node id="309">
+        <label>/Users/chengtai/Documents/2014/MOTR/modules/Alpha/Eigen/Householder</label>
+      </node>
+      <node id="182">
+        <label>utils.h</label>
+        <link refid="utils_8h_source"/>
+        <childnode refid="183" relation="include">
+        </childnode>
+        <childnode refid="184" relation="include">
+        </childnode>
+        <childnode refid="185" relation="include">
+        </childnode>
+        <childnode refid="186" relation="include">
+        </childnode>
+        <childnode refid="187" relation="include">
+        </childnode>
+        <childnode refid="188" relation="include">
+        </childnode>
+        <childnode refid="189" relation="include">
+        </childnode>
+        <childnode refid="190" relation="include">
+        </childnode>
+        <childnode refid="191" relation="include">
+        </childnode>
+      </node>
+      <node id="312">
+        <label>/Users/chengtai/Documents/2014/MOTR/modules/Alpha/Eigen/src/Householder/BlockHouseholder.h</label>
+      </node>
+      <node id="212">
+        <label>/Users/chengtai/Documents/2014/MOTR/modules/Alpha/Eigen/src/Core/NumTraits.h</label>
+      </node>
+      <node id="208">
+        <label>/Users/chengtai/Documents/2014/MOTR/modules/Alpha/Eigen/src/Core/util/Meta.h</label>
+      </node>
+      <node id="229">
+        <label>/Users/chengtai/Documents/2014/MOTR/modules/Alpha/Eigen/src/Core/NestByValue.h</label>
+      </node>
+      <node id="201">
+        <label>iosfwd</label>
+      </node>
+      <node id="197">
+        <label>cerrno</label>
+      </node>
+      <node id="260">
+        <label>/Users/chengtai/Documents/2014/MOTR/modules/Alpha/Eigen/src/Core/CommaInitializer.h</label>
+      </node>
+      <node id="184">
+        <label>cstdlib</label>
+      </node>
+      <node id="341">
+        <label>/Users/chengtai/Documents/2014/MOTR/modules/Alpha/Eigen/src/Eigenvalues/ComplexSchur.h</label>
+      </node>
+      <node id="183">
+        <label>iostream</label>
+      </node>
+      <node id="198">
+        <label>cstddef</label>
+      </node>
+      <node id="218">
+        <label>/Users/chengtai/Documents/2014/MOTR/modules/Alpha/Eigen/src/Core/DenseBase.h</label>
+      </node>
+      <node id="316">
+        <label>/Users/chengtai/Documents/2014/MOTR/modules/Alpha/Eigen/SVD</label>
+      </node>
+      <node id="330">
+        <label>/Users/chengtai/Documents/2014/MOTR/modules/Alpha/Eigen/src/Geometry/Hyperplane.h</label>
+      </node>
+      <node id="270">
+        <label>/Users/chengtai/Documents/2014/MOTR/modules/Alpha/Eigen/src/Core/products/GeneralMatrixMatrix.h</label>
+      </node>
+      <node id="334">
+        <label>/Users/chengtai/Documents/2014/MOTR/modules/Alpha/Eigen/Eigenvalues</label>
+      </node>
+      <node id="301">
+        <label>/Users/chengtai/Documents/2014/MOTR/modules/Alpha/Eigen/src/LU/Determinant.h</label>
+      </node>
+      <node id="194">
+        <label>/Users/chengtai/Documents/2014/MOTR/modules/Alpha/Eigen/src/Core/util/Macros.h</label>
+      </node>
+      <node id="342">
+        <label>/Users/chengtai/Documents/2014/MOTR/modules/Alpha/Eigen/src/Eigenvalues/ComplexEigenSolver.h</label>
+      </node>
+      <node id="204">
+        <label>climits</label>
+      </node>
+      <node id="289">
+        <label>/Users/chengtai/Documents/2014/MOTR/modules/Alpha/Eigen/src/Core/ArrayBase.h</label>
+      </node>
+      <node id="253">
+        <label>/Users/chengtai/Documents/2014/MOTR/modules/Alpha/Eigen/src/Core/PermutationMatrix.h</label>
+      </node>
+      <node id="290">
+        <label>/Users/chengtai/Documents/2014/MOTR/modules/Alpha/Eigen/src/plugins/ArrayCwiseUnaryOps.h</label>
+      </node>
+      <node id="257">
+        <label>/Users/chengtai/Documents/2014/MOTR/modules/Alpha/Eigen/src/Core/Fuzzy.h</label>
+      </node>
+      <node id="279">
+        <label>/Users/chengtai/Documents/2014/MOTR/modules/Alpha/Eigen/src/Core/products/TriangularSolverMatrix.h</label>
+      </node>
+      <node id="272">
+        <label>/Users/chengtai/Documents/2014/MOTR/modules/Alpha/Eigen/src/Core/products/GeneralMatrixMatrixTriangular.h</label>
+      </node>
+      <node id="243">
+        <label>/Users/chengtai/Documents/2014/MOTR/modules/Alpha/Eigen/src/Core/MapBase.h</label>
+      </node>
+      <node id="281">
+        <label>/Users/chengtai/Documents/2014/MOTR/modules/Alpha/Eigen/src/Core/BandMatrix.h</label>
+      </node>
+      <node id="249">
+        <label>/Users/chengtai/Documents/2014/MOTR/modules/Alpha/Eigen/src/Core/Transpose.h</label>
+      </node>
+      <node id="226">
+        <label>/Users/chengtai/Documents/2014/MOTR/modules/Alpha/Eigen/src/Core/Assign.h</label>
+      </node>
+      <node id="259">
+        <label>/Users/chengtai/Documents/2014/MOTR/modules/Alpha/Eigen/src/Core/Swap.h</label>
+      </node>
+      <node id="325">
+        <label>/Users/chengtai/Documents/2014/MOTR/modules/Alpha/Eigen/src/Geometry/Quaternion.h</label>
+      </node>
+      <node id="245">
+        <label>/Users/chengtai/Documents/2014/MOTR/modules/Alpha/Eigen/src/Core/Map.h</label>
+      </node>
+      <node id="188">
+        <label>set</label>
+      </node>
+      <node id="192">
+        <label>/Users/chengtai/Documents/2014/MOTR/modules/Alpha/Eigen/Core</label>
+      </node>
+      <node id="302">
+        <label>/Users/chengtai/Documents/2014/MOTR/modules/Alpha/Eigen/src/LU/Inverse.h</label>
+      </node>
+      <node id="305">
+        <label>/Users/chengtai/Documents/2014/MOTR/modules/Alpha/Eigen/src/Cholesky/LDLT.h</label>
+      </node>
+      <node id="251">
+        <label>/Users/chengtai/Documents/2014/MOTR/modules/Alpha/Eigen/src/Core/Diagonal.h</label>
+      </node>
+      <node id="326">
+        <label>/Users/chengtai/Documents/2014/MOTR/modules/Alpha/Eigen/src/Geometry/AngleAxis.h</label>
+      </node>
+      <node id="238">
+        <label>/Users/chengtai/Documents/2014/MOTR/modules/Alpha/Eigen/src/Core/CwiseNullaryOp.h</label>
+      </node>
+      <node id="195">
+        <label>complex</label>
+      </node>
+      <node id="205">
+        <label>algorithm</label>
+      </node>
+      <node id="219">
+        <label>/Users/chengtai/Documents/2014/MOTR/modules/Alpha/Eigen/src/plugins/BlockMethods.h</label>
+      </node>
+      <node id="344">
+        <label>/Users/chengtai/Documents/2014/MOTR/modules/Alpha/Eigen/src/Eigenvalues/GeneralizedEigenSolver.h</label>
+      </node>
+      <node id="329">
+        <label>/Users/chengtai/Documents/2014/MOTR/modules/Alpha/Eigen/src/Geometry/Scaling.h</label>
+      </node>
+      <node id="261">
+        <label>/Users/chengtai/Documents/2014/MOTR/modules/Alpha/Eigen/src/Core/Flagged.h</label>
+      </node>
+      <node id="311">
+        <label>/Users/chengtai/Documents/2014/MOTR/modules/Alpha/Eigen/src/Householder/HouseholderSequence.h</label>
+      </node>
+      <node id="202">
+        <label>cstring</label>
+      </node>
+      <node id="338">
+        <label>/Users/chengtai/Documents/2014/MOTR/modules/Alpha/Eigen/src/Eigenvalues/EigenSolver.h</label>
+      </node>
+      <node id="206">
+        <label>/Users/chengtai/Documents/2014/MOTR/modules/Alpha/Eigen/src/Core/util/Constants.h</label>
+      </node>
+      <node id="273">
+        <label>/Users/chengtai/Documents/2014/MOTR/modules/Alpha/Eigen/src/Core/products/SelfadjointMatrixVector.h</label>
+      </node>
+      <node id="221">
+        <label>/Users/chengtai/Documents/2014/MOTR/modules/Alpha/Eigen/src/plugins/CommonCwiseUnaryOps.h</label>
+      </node>
+      <node id="285">
+        <label>/Users/chengtai/Documents/2014/MOTR/modules/Alpha/Eigen/src/Core/VectorwiseOp.h</label>
+      </node>
+      <node id="235">
+        <label>/Users/chengtai/Documents/2014/MOTR/modules/Alpha/Eigen/src/Core/Array.h</label>
+      </node>
+      <node id="275">
+        <label>/Users/chengtai/Documents/2014/MOTR/modules/Alpha/Eigen/src/Core/products/SelfadjointProduct.h</label>
+      </node>
+      <node id="340">
+        <label>/Users/chengtai/Documents/2014/MOTR/modules/Alpha/Eigen/src/Eigenvalues/GeneralizedSelfAdjointEigenSolver.h</label>
+      </node>
+    </incdepgraph>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="main_8cpp_1ae1a3968e7947464bee7714f6d43b7002" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void test</definition>
+        <argsstring>()</argsstring>
+        <name>test</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/chengtai/Documents/2014/MOTR/modules/Alpha/Alpha/main.cpp" line="15" column="1" bodyfile="/Users/chengtai/Documents/2014/MOTR/modules/Alpha/Alpha/main.cpp" bodystart="15" bodyend="26"/>
+      </memberdef>
+      <memberdef kind="function" id="main_8cpp_1a3c04138a5bfe5d72780bb7e82a18e627" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int main</definition>
+        <argsstring>(int argc, char **argv)</argsstring>
+        <name>main</name>
+        <param>
+          <type>int</type>
+          <declname>argc</declname>
+        </param>
+        <param>
+          <type>char **</type>
+          <declname>argv</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/chengtai/Documents/2014/MOTR/modules/Alpha/Alpha/main.cpp" line="27" column="1" bodyfile="/Users/chengtai/Documents/2014/MOTR/modules/Alpha/Alpha/main.cpp" bodystart="27" bodyend="34"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/>main.cpp</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/>Alpha</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/>Created<sp/>by<sp/>ChengTai<sp/>on<sp/>5/22/14.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/>Copyright<sp/>(c)<sp/>2014<sp/>ChengTai.<sp/>All<sp/>rights<sp/>reserved.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;convlayer.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="helper_8h" kindref="compound">helper.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="keyword">using</highlight><highlight class="normal"><sp/>Eigen::MatrixXf;</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="keyword">using</highlight><highlight class="normal"><sp/>Eigen::MatrixXi;</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>test(){</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"><sp/><sp/><sp/><sp/>Eigen::MatrixXf<sp/>a(4,4);</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/>a<sp/>&lt;&lt;<sp/><sp/>1,<sp/>2,<sp/>3,<sp/>4,</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/>5,<sp/>6,<sp/>7,<sp/>8,</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/>9,10,11,12,</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/>13,14,15,16;</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal">Eigen::MatrixXf<sp/>b(3,3);</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/>b<sp/>&lt;&lt;<sp/>1,2,3,4,5,6,7,8,9;</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/>MatType<sp/>d=Conv2(a,b,Full);</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/>cout&lt;&lt;d&lt;&lt;endl;</highlight></codeline>
+<codeline lineno="26"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>main(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>argc,<sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">**<sp/>argv)</highlight></codeline>
+<codeline lineno="28"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/>vector&lt;FilterType&gt;<sp/>filter;</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//LoadFilter(filter,<sp/>&quot;/Users/chengtai/Documents/2014/topics2014/Alpha/data/filter.txt&quot;);</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/>test();</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//LoadFilter(filter,<sp/>&quot;../data/filter.txt&quot;);</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>0;</highlight></codeline>
+<codeline lineno="34"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="/Users/chengtai/Documents/2014/MOTR/modules/Alpha/Alpha/main.cpp"/>
+  </compounddef>
+</doxygen>

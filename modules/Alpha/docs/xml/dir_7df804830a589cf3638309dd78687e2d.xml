@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.7">
+  <compounddef id="dir_7df804830a589cf3638309dd78687e2d" kind="dir">
+    <compoundname>/Users/chengtai/Documents/2014/MOTR/modules/Alpha</compoundname>
+    <innerdir refid="dir_a90fce1fa885031530b146ef20b12b08">/Users/chengtai/Documents/2014/MOTR/modules/Alpha/Alpha</innerdir>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/Users/chengtai/Documents/2014/MOTR/modules/Alpha/"/>
+  </compounddef>
+</doxygen>

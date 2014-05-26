@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.7">
+  <compounddef id="dir_c0ec00a53ad098d97c521110cf047622" kind="dir">
+    <compoundname>Alpha</compoundname>
+    <innerfile refid="convlayer_8h">convlayer.h</innerfile>
+    <innerfile refid="helper_8cpp">helper.cpp</innerfile>
+    <innerfile refid="helper_8h">helper.h</innerfile>
+    <innerfile refid="main_8cpp">main.cpp</innerfile>
+    <innerfile refid="utils_8h">utils.h</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/Users/chengtai/Documents/2014/MOTR/modules/Alpha/Alpha/"/>
+  </compounddef>
+</doxygen>

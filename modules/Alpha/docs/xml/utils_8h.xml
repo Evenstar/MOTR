@@ -1,0 +1,232 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.7">
+  <compounddef id="utils_8h" kind="file">
+    <compoundname>utils.h</compoundname>
+    <includes local="no">iostream</includes>
+    <includes local="no">cstdlib</includes>
+    <includes local="no">cmath</includes>
+    <includes local="no">vector</includes>
+    <includes local="no">map</includes>
+    <includes local="no">set</includes>
+    <includes local="no">fstream</includes>
+    <includes local="no">string</includes>
+    <includes local="yes">../Eigen/Dense</includes>
+    <includedby refid="convlayer_8h" local="yes">/Users/chengtai/Documents/2014/MOTR/modules/Alpha/Alpha/convlayer.h</includedby>
+    <includedby refid="helper_8cpp" local="yes">/Users/chengtai/Documents/2014/MOTR/modules/Alpha/Alpha/helper.cpp</includedby>
+    <incdepgraph>
+      <node id="357">
+        <label>../Eigen/Dense</label>
+      </node>
+      <node id="351">
+        <label>cmath</label>
+      </node>
+      <node id="356">
+        <label>string</label>
+      </node>
+      <node id="353">
+        <label>map</label>
+      </node>
+      <node id="355">
+        <label>fstream</label>
+      </node>
+      <node id="352">
+        <label>vector</label>
+      </node>
+      <node id="348">
+        <label>/Users/chengtai/Documents/2014/MOTR/modules/Alpha/Alpha/utils.h</label>
+        <link refid="utils.h"/>
+        <childnode refid="349" relation="include">
+        </childnode>
+        <childnode refid="350" relation="include">
+        </childnode>
+        <childnode refid="351" relation="include">
+        </childnode>
+        <childnode refid="352" relation="include">
+        </childnode>
+        <childnode refid="353" relation="include">
+        </childnode>
+        <childnode refid="354" relation="include">
+        </childnode>
+        <childnode refid="355" relation="include">
+        </childnode>
+        <childnode refid="356" relation="include">
+        </childnode>
+        <childnode refid="357" relation="include">
+        </childnode>
+      </node>
+      <node id="350">
+        <label>cstdlib</label>
+      </node>
+      <node id="349">
+        <label>iostream</label>
+      </node>
+      <node id="354">
+        <label>set</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="359">
+        <label>/Users/chengtai/Documents/2014/MOTR/modules/Alpha/Alpha/convlayer.h</label>
+        <link refid="convlayer_8h_source"/>
+      </node>
+      <node id="358">
+        <label>/Users/chengtai/Documents/2014/MOTR/modules/Alpha/Alpha/utils.h</label>
+        <link refid="utils.h"/>
+        <childnode refid="359" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+      <sectiondef kind="enum">
+      <memberdef kind="enum" id="utils_8h_1a56943a0946e5f15e5e58054b8e7a04a4" prot="public" static="no">
+        <name>LayerType</name>
+        <enumvalue id="utils_8h_1a56943a0946e5f15e5e58054b8e7a04a4a21bba1733919e8ff3be38256eb1a4223" prot="public">
+          <name>Convolution</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="utils_8h_1a56943a0946e5f15e5e58054b8e7a04a4a3ce484597c9cb74f16f0428aee986f30" prot="public">
+          <name>FullyConnected</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/chengtai/Documents/2014/MOTR/modules/Alpha/Alpha/utils.h" line="23" column="1" bodyfile="/Users/chengtai/Documents/2014/MOTR/modules/Alpha/Alpha/utils.h" bodystart="23" bodyend="23"/>
+      </memberdef>
+      <memberdef kind="enum" id="utils_8h_1af75d5dd7322fa39ed0af4e7839e600f8" prot="public" static="no">
+        <name>BoundaryType</name>
+        <enumvalue id="utils_8h_1af75d5dd7322fa39ed0af4e7839e600f8ac9ceaeea41ae06d1a39c3322c762ec71" prot="public">
+          <name>Valid</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="utils_8h_1af75d5dd7322fa39ed0af4e7839e600f8a8b7c5cd8bd8eb51ee6d3fd0eac584679" prot="public">
+          <name>Full</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/chengtai/Documents/2014/MOTR/modules/Alpha/Alpha/utils.h" line="24" column="1" bodyfile="/Users/chengtai/Documents/2014/MOTR/modules/Alpha/Alpha/utils.h" bodystart="24" bodyend="24"/>
+      </memberdef>
+      <memberdef kind="enum" id="utils_8h_1a0eda43bc4bc72ca9a80c07fc604b2187" prot="public" static="no">
+        <name>NonlinearityType</name>
+        <enumvalue id="utils_8h_1a0eda43bc4bc72ca9a80c07fc604b2187af6cb65af0b17a453fb168e0d60db604b" prot="public">
+          <name>Sigmoid</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="utils_8h_1a0eda43bc4bc72ca9a80c07fc604b2187ac2141c33518a5aa5233f0db6a9e163c8" prot="public">
+          <name>ReLU</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/chengtai/Documents/2014/MOTR/modules/Alpha/Alpha/utils.h" line="25" column="1" bodyfile="/Users/chengtai/Documents/2014/MOTR/modules/Alpha/Alpha/utils.h" bodystart="25" bodyend="25"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="utils_8h_1a3b3705cad4e05c49adc293c96d0db7d1" prot="public" static="no">
+        <type>Eigen::MatrixXf</type>
+        <definition>typedef Eigen::MatrixXf FilterType</definition>
+        <argsstring></argsstring>
+        <name>FilterType</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/chengtai/Documents/2014/MOTR/modules/Alpha/Alpha/utils.h" line="27" column="1" bodyfile="/Users/chengtai/Documents/2014/MOTR/modules/Alpha/Alpha/utils.h" bodystart="27" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="utils_8h_1a87f2f26b431d56aa72b3d4d6cd5c6f62" prot="public" static="no">
+        <type>Eigen::MatrixXf</type>
+        <definition>typedef Eigen::MatrixXf MatType</definition>
+        <argsstring></argsstring>
+        <name>MatType</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/chengtai/Documents/2014/MOTR/modules/Alpha/Alpha/utils.h" line="28" column="1" bodyfile="/Users/chengtai/Documents/2014/MOTR/modules/Alpha/Alpha/utils.h" bodystart="28" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="utils_8h_1ad5c19ca4f47d3f8ec21232a5af2624e5" prot="public" static="no">
+        <type>float</type>
+        <definition>typedef float ScalarType</definition>
+        <argsstring></argsstring>
+        <name>ScalarType</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/chengtai/Documents/2014/MOTR/modules/Alpha/Alpha/utils.h" line="29" column="1" bodyfile="/Users/chengtai/Documents/2014/MOTR/modules/Alpha/Alpha/utils.h" bodystart="29" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/>utils.h</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/>Alpha</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/>Created<sp/>by<sp/>ChengTai<sp/>on<sp/>5/22/14.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/>Copyright<sp/>(c)<sp/>2014<sp/>ChengTai.<sp/>All<sp/>rights<sp/>reserved.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>UTILS_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>UTILS_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;iostream&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;cstdlib&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;cmath&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;vector&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;map&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;set&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;fstream&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;string&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;../Eigen/Dense&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/>LayerType<sp/>{Convolution,<sp/>FullyConnected};</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/>BoundaryType<sp/>{Valid,<sp/>Full};</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/>NonlinearityType<sp/>{Sigmoid,<sp/>ReLU};</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>Eigen::MatrixXf<sp/>FilterType;</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>Eigen::MatrixXf<sp/>MatType;</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>ScalarType;</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+    </programlisting>
+    <location file="/Users/chengtai/Documents/2014/MOTR/modules/Alpha/Alpha/utils.h"/>
+  </compounddef>
+</doxygen>

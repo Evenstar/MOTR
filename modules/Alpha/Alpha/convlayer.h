@@ -19,10 +19,13 @@ using namespace std;
 
 class ConvLayer{
 public:
-    ConvLayer();
-    ~ConvLayer();
+    ConvLayer(){};
+    
+    ~ConvLayer(){};
     
     void SetFilter( const vector<FilterType> &) ;
+    
+    void SetIndata( vector<MatType>* );
     
     void SetReceiveset(const vector<set<int> >);
     
@@ -32,7 +35,7 @@ public:
     
     const vector<MatType>* output() const;
     
-private:
+public:
     
     vector<FilterType> filter;
     vector<MatType>* indata;

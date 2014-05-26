@@ -1,0 +1,62 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygenindex xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="index.xsd" version="1.8.7">
+  <compound refid="class_conv_layer" kind="class"><name>ConvLayer</name>
+    <member refid="class_conv_layer_1a5c9ac97672cb4025adaea24830cf1409" kind="variable"><name>filter</name></member>
+    <member refid="class_conv_layer_1ae90ccdaf98509ac518dc8158abb53540" kind="variable"><name>indata</name></member>
+    <member refid="class_conv_layer_1afee4ff21cc91013563dd16a4a617f934" kind="variable"><name>outdata</name></member>
+    <member refid="class_conv_layer_1abb72df40265f9b3c7667318a8e3014c0" kind="variable"><name>layertype</name></member>
+    <member refid="class_conv_layer_1a611e9895011c49713221b074abfc521f" kind="variable"><name>receiveset</name></member>
+    <member refid="class_conv_layer_1a16a5c6cfb93d0676b8c8d2264c487e54" kind="variable"><name>boundarytype</name></member>
+    <member refid="class_conv_layer_1a7fbd91b7f63e49fb43fa931de225c280" kind="variable"><name>stride</name></member>
+    <member refid="class_conv_layer_1a941ec7552673506cbb7580e41e982494" kind="variable"><name>side</name></member>
+    <member refid="class_conv_layer_1a1b3fb2e086eee6768b79a260f2035ee8" kind="variable"><name>pooldim</name></member>
+    <member refid="class_conv_layer_1a791713b4ac5619f2cc20a20cb64ea885" kind="function"><name>ConvLayer</name></member>
+    <member refid="class_conv_layer_1a277fbb31369014bcb607c51f52c61032" kind="function"><name>~ConvLayer</name></member>
+    <member refid="class_conv_layer_1a16a423c0e8ce590ab4757819159b015c" kind="function"><name>SetFilter</name></member>
+    <member refid="class_conv_layer_1aa2c01fc18b295fc3ddf2d48497653206" kind="function"><name>SetReceiveset</name></member>
+    <member refid="class_conv_layer_1a70111098046a07416fcbdffdbe8f0cfd" kind="function"><name>ApplyFilter</name></member>
+    <member refid="class_conv_layer_1aa7d700a3f6622d2df0d3f0a33519e8ec" kind="function"><name>input</name></member>
+    <member refid="class_conv_layer_1ae89c7d8838a35cf1d1b1d47a4deddd48" kind="function"><name>output</name></member>
+    <member refid="class_conv_layer_1aaf06dbe432bc185fbb2de71702f05f8f" kind="function"><name>ApplyNonlinearity</name></member>
+  </compound>
+  <compound refid="namespacestd" kind="namespace"><name>std</name>
+  </compound>
+  <compound refid="convlayer_8h" kind="file"><name>convlayer.h</name>
+  </compound>
+  <compound refid="helper_8cpp" kind="file"><name>helper.cpp</name>
+    <member refid="helper_8cpp_1a06737a71a82b746a220d3c6a6bade850" kind="function"><name>LoadFilter</name></member>
+    <member refid="helper_8cpp_1a66288b9b809be113d49ee7a03fa40e5c" kind="function"><name>Conv2_Valid</name></member>
+    <member refid="helper_8cpp_1a478da42f4930ff868d028cb0e5b6bebf" kind="function"><name>Conv2</name></member>
+  </compound>
+  <compound refid="helper_8h" kind="file"><name>helper.h</name>
+    <member refid="helper_8h_1a06737a71a82b746a220d3c6a6bade850" kind="function"><name>LoadFilter</name></member>
+    <member refid="helper_8h_1a66288b9b809be113d49ee7a03fa40e5c" kind="function"><name>Conv2_Valid</name></member>
+    <member refid="helper_8h_1a478da42f4930ff868d028cb0e5b6bebf" kind="function"><name>Conv2</name></member>
+  </compound>
+  <compound refid="main_8cpp" kind="file"><name>main.cpp</name>
+    <member refid="main_8cpp_1ae1a3968e7947464bee7714f6d43b7002" kind="function"><name>test</name></member>
+    <member refid="main_8cpp_1a3c04138a5bfe5d72780bb7e82a18e627" kind="function"><name>main</name></member>
+  </compound>
+  <compound refid="utils_8h" kind="file"><name>utils.h</name>
+    <member refid="utils_8h_1a56943a0946e5f15e5e58054b8e7a04a4" kind="enum"><name>LayerType</name></member>
+    <member refid="utils_8h_1a56943a0946e5f15e5e58054b8e7a04a4a21bba1733919e8ff3be38256eb1a4223" kind="enumvalue"><name>Convolution</name></member>
+    <member refid="utils_8h_1a56943a0946e5f15e5e58054b8e7a04a4a3ce484597c9cb74f16f0428aee986f30" kind="enumvalue"><name>FullyConnected</name></member>
+    <member refid="utils_8h_1af75d5dd7322fa39ed0af4e7839e600f8" kind="enum"><name>BoundaryType</name></member>
+    <member refid="utils_8h_1af75d5dd7322fa39ed0af4e7839e600f8ac9ceaeea41ae06d1a39c3322c762ec71" kind="enumvalue"><name>Valid</name></member>
+    <member refid="utils_8h_1af75d5dd7322fa39ed0af4e7839e600f8a8b7c5cd8bd8eb51ee6d3fd0eac584679" kind="enumvalue"><name>Full</name></member>
+    <member refid="utils_8h_1a0eda43bc4bc72ca9a80c07fc604b2187" kind="enum"><name>NonlinearityType</name></member>
+    <member refid="utils_8h_1a0eda43bc4bc72ca9a80c07fc604b2187af6cb65af0b17a453fb168e0d60db604b" kind="enumvalue"><name>Sigmoid</name></member>
+    <member refid="utils_8h_1a0eda43bc4bc72ca9a80c07fc604b2187ac2141c33518a5aa5233f0db6a9e163c8" kind="enumvalue"><name>ReLU</name></member>
+    <member refid="utils_8h_1a3b3705cad4e05c49adc293c96d0db7d1" kind="typedef"><name>FilterType</name></member>
+    <member refid="utils_8h_1a87f2f26b431d56aa72b3d4d6cd5c6f62" kind="typedef"><name>MatType</name></member>
+    <member refid="utils_8h_1ad5c19ca4f47d3f8ec21232a5af2624e5" kind="typedef"><name>ScalarType</name></member>
+  </compound>
+  <compound refid="dir_a90fce1fa885031530b146ef20b12b08" kind="dir"><name>/Users/chengtai/Documents/2014/MOTR/modules/Alpha/Alpha</name>
+  </compound>
+  <compound refid="dir_7df804830a589cf3638309dd78687e2d" kind="dir"><name>/Users/chengtai/Documents/2014/MOTR/modules/Alpha</name>
+  </compound>
+  <compound refid="dir_3d82d62b17c29d7234397ed49d514272" kind="dir"><name>/Users/chengtai/Documents/2014/MOTR/modules</name>
+  </compound>
+  <compound refid="dir_c8dec442f473caa947379cab23c0bb77" kind="dir"><name>/Users/chengtai/Documents/2014/MOTR</name>
+  </compound>
+</doxygenindex>

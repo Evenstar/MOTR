@@ -24,7 +24,6 @@ void LoadFilter(vector<FilterType>& filter, string fname)
         for(int j=0; j<r*r; j++){
             fin>>a(j-r*(j/r),j/r);
         }
-        cout<<a<<endl;
         filter.push_back(a);
     }
     fin.close();
@@ -72,6 +71,35 @@ MatType Conv2(const MatType& a, const MatType& b, BoundaryType boundarytype){
         return Conv2_Valid(aext, b);
     }
 }
+
+
+MatType Img2Mat(cv::Mat& img)
+{
+    int rows=img.rows;
+    int cols=img.cols;
+    cout<<rows<<cols<<endl;
+    MatType mat(rows,cols);
+    float* p;
+    for (int i=0; i<rows; i++){
+        p=img.ptr<float>(i);
+        for(int j=0; j<cols; j++){
+            mat(i,j)=p[j];
+        }
+    }
+    return mat;
+}
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

@@ -3,8 +3,9 @@ CXXFLAGS=-Wall
 TARGETS=EXE
 LIBS=-lopencv_core -lopencv_imgproc -lopencv_highgui
 INCLUDEDIR=-I../
-$(TARGETS): main.cpp helper.cpp
+$(TARGETS): main.cpp helper.cpp visual.cpp convlayer.cpp
 	$(CXX) $(CXXFLAGS) $(LIBS) -o $@ $^ $(INCLUDEDIR)
+
 
 clean:
 	rm -f *.o $(TARGETS)
