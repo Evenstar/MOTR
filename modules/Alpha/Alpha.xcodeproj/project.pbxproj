@@ -14,6 +14,7 @@
 		722F42F219302555004C5A4B /* libopencv_gpu.2.4.8.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 722F42ED19302555004C5A4B /* libopencv_gpu.2.4.8.dylib */; };
 		722F42F319302555004C5A4B /* libopencv_highgui.2.4.8.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 722F42EE19302555004C5A4B /* libopencv_highgui.2.4.8.dylib */; };
 		722F42F419302555004C5A4B /* libopencv_imgproc.2.4.8.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 722F42EF19302555004C5A4B /* libopencv_imgproc.2.4.8.dylib */; };
+		7257CB911934E3D00008DBAA /* test.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7257CB8F1934E3D00008DBAA /* test.cpp */; };
 		728DFD2D192E958900D93082 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 728DFD2C192E958900D93082 /* main.cpp */; };
 		728DFD2F192E958900D93082 /* Alpha.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = 728DFD2E192E958900D93082 /* Alpha.1 */; };
 		728DFD3D192E9D2900D93082 /* helper.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 728DFD3C192E9D2900D93082 /* helper.cpp */; };
@@ -43,6 +44,8 @@
 		722F42ED19302555004C5A4B /* libopencv_gpu.2.4.8.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libopencv_gpu.2.4.8.dylib; path = ../../../../../../../usr/local/Cellar/opencv/2.4.8.2/lib/libopencv_gpu.2.4.8.dylib; sourceTree = "<group>"; };
 		722F42EE19302555004C5A4B /* libopencv_highgui.2.4.8.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libopencv_highgui.2.4.8.dylib; path = ../../../../../../../usr/local/Cellar/opencv/2.4.8.2/lib/libopencv_highgui.2.4.8.dylib; sourceTree = "<group>"; };
 		722F42EF19302555004C5A4B /* libopencv_imgproc.2.4.8.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libopencv_imgproc.2.4.8.dylib; path = ../../../../../../../usr/local/Cellar/opencv/2.4.8.2/lib/libopencv_imgproc.2.4.8.dylib; sourceTree = "<group>"; };
+		7257CB8F1934E3D00008DBAA /* test.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = test.cpp; sourceTree = "<group>"; };
+		7257CB901934E3D00008DBAA /* test.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = test.h; sourceTree = "<group>"; };
 		728DFD29192E958900D93082 /* Alpha */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Alpha; sourceTree = BUILT_PRODUCTS_DIR; };
 		728DFD2C192E958900D93082 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		728DFD2E192E958900D93082 /* Alpha.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = Alpha.1; sourceTree = "<group>"; };
@@ -116,6 +119,8 @@
 		728DFD38192E9C6900D93082 /* Helper */ = {
 			isa = PBXGroup;
 			children = (
+				7257CB8F1934E3D00008DBAA /* test.cpp */,
+				7257CB901934E3D00008DBAA /* test.h */,
 				728DFD3C192E9D2900D93082 /* helper.cpp */,
 			);
 			name = Helper;
@@ -208,6 +213,7 @@
 				728DFD3D192E9D2900D93082 /* helper.cpp in Sources */,
 				722F42EA192FFEEF004C5A4B /* visual.cpp in Sources */,
 				721FA5DE19342F490005D58C /* convnet.cpp in Sources */,
+				7257CB911934E3D00008DBAA /* test.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -219,7 +225,7 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
-				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_CXX_LIBRARY = "libstdc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
@@ -260,7 +266,7 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
-				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_CXX_LIBRARY = "libstdc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;

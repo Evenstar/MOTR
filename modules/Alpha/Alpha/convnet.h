@@ -22,7 +22,8 @@ struct Config{
     vector<int> kernelsize;
     vector<int> stride;
     vector<int> side;
-    vector<set<int> > receiveset;
+    vector<vector<set<int> > >receiveset;
+
 };
 
 class ConvNet{
@@ -33,7 +34,7 @@ public:
     
     void Setup(const Config&);
     
-    void Initialize();
+    void SetTrainingData(vector<MatType>*, vector<MatType>*);
     
     void FeedForward();
     

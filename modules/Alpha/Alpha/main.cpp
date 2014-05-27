@@ -11,55 +11,16 @@
 #include "helper.h"
 #include "visual.h"
 #include "convnet.h"
-using Eigen::MatrixXf;
-using Eigen::MatrixXi;
+#include "test.h"
+
 using namespace cv;
-ImgType test(int argc, char** argv)
-{
-    ImgType img;
-    ReadImage(img,argc,argv);
-    img.convertTo(img,CV_32F);
-    normalize(img,img,0,1,cv::NORM_MINMAX, CV_32F);
-    //namedWindow("gray",CV_WINDOW_AUTOSIZE);
-    //imshow("gray", img);
-    //waitKey(0);
-    return img;
-}
+using namespace Eigen;
+
 
 
 int main(int argc, char** argv)
 {
-    ConvNet convnet;
-    
-   /*
-    vector<FilterType> filter;
-    LoadFilter(filter, "/Users/chengtai/Documents/2014/MOTR/modules/Alpha/data/filter.txt");
-    //test(argc,argv);
-    ConvLayer convlayer;
-    convlayer.SetFilter(filter);
-
-    
-    vector<FilterType> it=convlayer.filter;
-    for (int i=0; i<1;i++)
-    {
-        cout<<it[i]<<endl;
-    }
-    Mat img=test(argc,argv);
-    MatType mat=Img2Mat(img);
-    //LoadFilter(filter, "../data/filter.txt");
-    vector<MatType> vmat;
-    vmat.push_back(mat);
-    convlayer.SetInput(&vmat);
-    
-    MatType mat2;
-    cout<<filter[1]<<endl;
-    mat2=Conv2(mat,filter[1],Valid);
-    ImgType img2;
-    img2=Mat2Img(mat2);
-    normalize(img2,img2,0,1,NORM_MINMAX,CV_32F);
-    namedWindow("gray",CV_WINDOW_AUTOSIZE);
-    imshow("gray", img2);
-    waitKey(0);
-    */
+    ConvLayer convlayer(2,2,5);
+    test_Synthesize();
     return 0;
 }

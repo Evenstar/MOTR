@@ -26,12 +26,46 @@ void ConvLayer::SetInput( vector<MatType>* in)
     indata=in;
 }
 
+void ConvLayer::SetReceiveset(const vector<set<int> >& rec)
+{
+    receiveset=rec;
+}
+
 void ConvLayer::Setup(int _stride, int _side, int _kernelsize)
 {
     stride=_stride;
     side=_side;
     kernelsize=_kernelsize;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 FullyConnectedLayer::FullyConnectedLayer( int _stride, int _side )
 {

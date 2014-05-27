@@ -77,7 +77,6 @@ MatType Img2Mat(ImgType& img)
 {
     int rows=img.rows;
     int cols=img.cols;
-    cout<<"Channels"<<img.channels()<<endl;
     MatType mat(rows,cols);
     float* p;
     for (int i=0; i<rows; i++){
@@ -105,6 +104,26 @@ ImgType Mat2Img(MatType& mat)
     }
     return img;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

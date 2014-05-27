@@ -9,7 +9,7 @@
 #ifndef HELPER_H
 #define HELPER_H
 
-
+using namespace std;
 void LoadFilter(vector<FilterType>& filter, string fname);
 
 MatType Conv2_Valid(const MatType& a, const MatType& b);
@@ -26,5 +26,6 @@ MatType Conv2(const MatType& a, const MatType& b, BoundaryType boundarytype);
 MatType Img2Mat(ImgType& img);
 
 ImgType Mat2Img(MatType& mat);
+
 
 #endif

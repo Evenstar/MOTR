@@ -14,6 +14,10 @@ convnet.h
 layer.h
 /Users/chengtai/Documents/2014/MOTR/modules/Alpha/Alpha/layer.h
 
+/Users/chengtai/Documents/2014/MOTR/modules/Alpha/Alpha/helper.cpp
+utils.h
+/Users/chengtai/Documents/2014/MOTR/modules/Alpha/Alpha/utils.h
+
 /Users/chengtai/Documents/2014/MOTR/modules/Alpha/Alpha/helper.h
 
 /Users/chengtai/Documents/2014/MOTR/modules/Alpha/Alpha/layer.cpp

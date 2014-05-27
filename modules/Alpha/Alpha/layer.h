@@ -29,7 +29,7 @@ public:
 
 class ConvLayer : public Layer{
 public:
-    ConvLayer(int _stride, int _side, int _kernelsize);
+    ConvLayer(int _stride=0, int _side=0, int _kernelsize=0);
     ~ConvLayer(){};
 public:
     
@@ -39,7 +39,7 @@ public:
     
     void SetInput( vector<MatType>* );
     
-    void SetReceiveset(const vector<set<int> >);
+    void SetReceiveset(const vector<set<int> > &);
     
     void ApplyFilter(){};
     
