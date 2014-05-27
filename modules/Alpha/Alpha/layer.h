@@ -93,11 +93,13 @@ public:
     
     MatType* indata;     /// The input data.
     
-    MatType* outdata;
+    MatType outdata;
     
     int stride;
     int side;
     
+    int fanin;
+    int fanout;
     
     string name;
 };

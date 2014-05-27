@@ -30,6 +30,8 @@ ImgType Mat2Img(MatType& mat);
 vector<FilterType> GenerateRandomFilter(int _ninmaps, int _noutmaps,
                                         int _kernelsize);
 
+MatType GenerateRandomWeights(int _fanin, int _fanout);
+
 MatType MaxPooling( const MatType &, int stride, int side);
 
 MatType ApplyReLU( const MatType &);

@@ -118,6 +118,10 @@ vector<FilterType> GenerateRandomFilter(int _ninmaps, int _noutmaps,
     return filter;
 }
 
+MatType GenerateRandomWeights(int _fanin, int _fanout)
+{
+    return FilterType::Random(_fanin,_fanout);
+}
 
 
 

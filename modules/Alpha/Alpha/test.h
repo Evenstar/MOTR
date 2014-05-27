@@ -36,4 +36,8 @@ void test_MaxPooling();
 
 void test_ApplyReLU();
 
+void test_FullyConnectedLayer();
+
+
+
 #endif /* defined(__Alpha__test__) */

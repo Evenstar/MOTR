@@ -101,7 +101,10 @@ void test_ApplyReLU()
 }
 
 
-
+void test_FullyConnectedLayer()
+{
+    FullyConnectedLayer fclayer;
+}
 
 
 
