@@ -69,23 +69,23 @@ public:
 
 class FullyConnectedLayer : public Layer {
 public:
-    FullyConnectedLayer(int _stride, int _side);
+    FullyConnectedLayer(int _stride=0, int _side=0,
+                        int _fanin=0, int _fanout=0);
     ~FullyConnectedLayer(){};
     
 public:
-    void Setup(int _stride, int _side);
+    void Setup(int _stride, int _side,
+               int _fanin, int _fanout);
 
     void SetWeight( const MatType &);
     
-    void SetInput(const MatType &);
+    void SetInput( MatType *);
     
     void ApplyFilter(){};
     
     void ApplyNonlinearity(){};
     
     void DownSample(){};
-    
-    void SetInput(MatType*);
     
 public:
     

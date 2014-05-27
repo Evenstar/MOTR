@@ -106,14 +106,49 @@ void ConvLayer::ApplyNonlinearity(){
 
 
 
-FullyConnectedLayer::FullyConnectedLayer( int _stride, int _side )
+FullyConnectedLayer::FullyConnectedLayer( int _stride, int _side,
+                                        int _fanin, int _fanout)
 {
     stride=_stride;
     side=_side;
+    fanin=_fanin;
+    fanout=_fanout;
 }
 
-void FullyConnectedLayer::Setup(int _stride, int _side)
+void FullyConnectedLayer::Setup(int _stride, int _side
+                                ,int _fanin, int _fanout)
 {
     stride=_stride;
     side=_side;
+    fanin=_fanin;
+    fanout=_fanout;
 }
+
+void FullyConnectedLayer::SetInput(MatType* mat)
+{
+    indata=mat;
+}
+
+void FullyConnectedLayer::SetWeight(const MatType & mat)
+{
+    Weight=mat;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

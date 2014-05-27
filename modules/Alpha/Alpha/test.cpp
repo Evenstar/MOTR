@@ -104,6 +104,14 @@ void test_ApplyReLU()
 void test_FullyConnectedLayer()
 {
     FullyConnectedLayer fclayer;
+    fclayer.Setup(2,2,100,10);
+    fclayer.SetWeight(GenerateRandomWeights(fclayer.fanin,fclayer.fanout));
+    ImgType img=LoadHepburn();
+    MatType mat=Img2Mat(img);
+    fclayer.SetInput(&mat);
+    cout<<fclayer.stride<<" "<<fclayer.side<<" "<<fclayer.fanin<<" "
+    <<fclayer.fanout<<endl;
+    cout<<*(fclayer.indata)<<endl;
 }
 
 
