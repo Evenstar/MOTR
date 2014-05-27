@@ -146,7 +146,18 @@ MatType MaxPooling(const MatType & mat, int stride, int side)
 
 
 
-
+MatType ApplyReLU(const MatType& mat)
+{
+    MatType result(mat.rows(),mat.cols());
+    for (int i=0; i< mat.rows(); i++)
+    {
+        for (int j=0; j<mat.cols(); j++)
+        {
+            result(i,j)= mat(i,j)>0? mat(i,j) : 0;
+        }
+    }
+    return result;
+}
 
 
 

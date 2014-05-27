@@ -72,8 +72,10 @@ void test_Convlayer(){
     convlayer.ApplyFilter();
     
     convlayer.DownSample();
+
+    convlayer.ApplyNonlinearity();
     
-    MatType mat=(*convlayer.outdata)[0];
+    MatType mat=convlayer.outdata[4];
     namedWindow("Filter",CV_WINDOW_AUTOSIZE);
     imshow("Filter",Mat2Img(mat));
     waitKey(0);
@@ -89,6 +91,14 @@ void test_MaxPooling()
     waitKey(0);
 }
 
+void test_ApplyReLU()
+{
+    ImgType img=LoadHepburn();
+    MatType mat=ApplyReLU(Img2Mat(img));
+    namedWindow("Filter",CV_WINDOW_AUTOSIZE);
+    imshow("Filter",Mat2Img(mat));
+    waitKey(0);
+}
 
 
 

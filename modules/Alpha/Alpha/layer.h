@@ -48,14 +48,12 @@ public:
     
     void DownSample();
     
-    void ApplyNonlinearity(){};
-    
-    vector<MatType>* output();
+    void ApplyNonlinearity();
     
 public:
     vector<FilterType> filter;
     vector<MatType>* indata;
-    vector<MatType>* outdata;
+    vector<MatType> outdata;
     vector<set<int> > receiveset;
     BoundaryType boundarytype;
     

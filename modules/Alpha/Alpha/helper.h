@@ -32,4 +32,6 @@ vector<FilterType> GenerateRandomFilter(int _ninmaps, int _noutmaps,
 
 MatType MaxPooling( const MatType &, int stride, int side);
 
+MatType ApplyReLU( const MatType &);
+
 #endif

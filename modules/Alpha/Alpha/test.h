@@ -33,4 +33,7 @@ void test_GenerateRandomFilter();
 
 
 void test_MaxPooling();
+
+void test_ApplyReLU();
+
 #endif /* defined(__Alpha__test__) */
