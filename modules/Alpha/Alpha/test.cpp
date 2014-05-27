@@ -40,6 +40,16 @@ void test_Synthesize(){
 }
 
 
+
+
+void test_GenerateRandomFilter()
+{
+    vector<FilterType> filter=GenerateRandomFilter(3,5,5);
+    cout<<filter.size()<<endl;
+    cout<<filter[0]<<endl;
+}
+
+
 void test_Convlayer(){
     ConvLayer convlayer;
     convlayer.Setup(2,2,5,3,5);
@@ -51,17 +61,14 @@ void test_Convlayer(){
     
     cout<<convlayer.stride<<" "<<convlayer.side<<" "<<convlayer.kernelsize<<endl;
     cout<<(*convlayer.indata)[0](0,0)<<endl;       ///A little odd.
+    
+    vector<FilterType> _filter=GenerateRandomFilter(3,5,5);
+    _filter[0]=1.0/25.0*FilterType::Ones(5,5);
+    convlayer.SetFilter(_filter);
+
+    cout<<convlayer.filter.size()<<endl;
+    cout<<convlayer.filter[0]<<endl;
 }
-
-void test_GenerateRandomFilter()
-{
-    vector<FilterType> filter=GenerateRandomFilter(3,5,5);
-    cout<<filter.size()<<endl;
-    cout<<filter[0]<<endl;
-}
-
-
-
 
 
 

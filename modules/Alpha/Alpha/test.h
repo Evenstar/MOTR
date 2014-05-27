@@ -28,6 +28,7 @@ void test_Synthesize();
 
 void test_Convlayer();
 
+
 void test_GenerateRandomFilter();
 
 #endif /* defined(__Alpha__test__) */
