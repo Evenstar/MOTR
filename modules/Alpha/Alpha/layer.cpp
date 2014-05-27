@@ -9,11 +9,14 @@
 #include "layer.h"
 
 
-ConvLayer::ConvLayer(int _stride, int _side, int _kernelsize)
+ConvLayer::ConvLayer(int _stride, int _side, int _kernelsize,
+                     int _ninmaps, int _noutmaps)
 {
     stride=_stride;
     side=_side;
     kernelsize=_kernelsize;
+    ninmaps=_ninmaps;
+    noutmaps=_noutmaps;
 }
 void ConvLayer::SetFilter(const vector<FilterType>& f)
 {
@@ -31,11 +34,14 @@ void ConvLayer::SetReceiveset(const vector<set<int> >& rec)
     receiveset=rec;
 }
 
-void ConvLayer::Setup(int _stride, int _side, int _kernelsize)
+void ConvLayer::Setup(int _stride, int _side, int _kernelsize,
+                      int _ninmaps, int _noutmaps)
 {
     stride=_stride;
     side=_side;
     kernelsize=_kernelsize;
+    ninmaps=_ninmaps;
+    noutmaps=_noutmaps;
 }
 
 

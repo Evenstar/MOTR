@@ -42,10 +42,10 @@ void test_Synthesize(){
 
 void test_Convlayer(){
     ConvLayer convlayer;
-    convlayer.Setup(2,2,5);
+    convlayer.Setup(2,2,5,3,5);
     
     ImgType img=LoadHepburn();
-    vector<MatType> vec=Synthesize(img,5);
+    vector<MatType> vec=Synthesize(img,3);
     
     convlayer.SetInput(&vec);
     

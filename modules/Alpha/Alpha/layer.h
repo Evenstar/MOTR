@@ -29,11 +29,13 @@ public:
 
 class ConvLayer : public Layer{
 public:
-    ConvLayer(int _stride=0, int _side=0, int _kernelsize=0);
+    ConvLayer(int _stride=0, int _side=0, int _kernelsize=0,
+              int _ninmaps=0, int _noutmaps=0);
     ~ConvLayer(){};
 public:
     
-    void Setup(int _stride, int _side, int _kernelsize);
+    void Setup(int _stride, int _side, int _kernelsize,
+               int _ninmaps, int _noutmaps);
     
     void SetFilter( const vector<FilterType> &) ;
     
@@ -60,6 +62,8 @@ public:
     int side;
     int kernelsize;
     
+    int ninmaps;
+    int noutmaps;
     string name;
 
 };
@@ -94,6 +98,7 @@ public:
     
     int stride;
     int side;
+    
     
     string name;
 };
