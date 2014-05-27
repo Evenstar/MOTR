@@ -6,7 +6,7 @@
 //  Copyright (c) 2014 ChengTai. All rights reserved.
 //
 
-#include "convlayer.h"
+#include "layer.h"
 
 
 void ConvLayer::SetFilter(const vector<FilterType>& f)
@@ -15,7 +15,7 @@ void ConvLayer::SetFilter(const vector<FilterType>& f)
 }
 
 
-void ConvLayer::SetIndata( vector<MatType>* in)
+void ConvLayer::SetInput( vector<MatType>* in)
 {
     indata=in;
 }

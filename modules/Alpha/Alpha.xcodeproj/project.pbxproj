@@ -7,13 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		721FA5DA1933B7A30005D58C /* convlayer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 721FA5D91933B7A30005D58C /* convlayer.cpp */; };
+		721FA5DA1933B7A30005D58C /* layer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 721FA5D91933B7A30005D58C /* layer.cpp */; };
 		722F42EA192FFEEF004C5A4B /* visual.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 722F42E9192FFEEF004C5A4B /* visual.cpp */; };
 		722F42F119302555004C5A4B /* libopencv_core.2.4.8.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 722F42EC19302555004C5A4B /* libopencv_core.2.4.8.dylib */; };
 		722F42F219302555004C5A4B /* libopencv_gpu.2.4.8.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 722F42ED19302555004C5A4B /* libopencv_gpu.2.4.8.dylib */; };
 		722F42F319302555004C5A4B /* libopencv_highgui.2.4.8.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 722F42EE19302555004C5A4B /* libopencv_highgui.2.4.8.dylib */; };
 		722F42F419302555004C5A4B /* libopencv_imgproc.2.4.8.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 722F42EF19302555004C5A4B /* libopencv_imgproc.2.4.8.dylib */; };
-		722F42F519302555004C5A4B /* libopencv_ml.2.4.8.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 722F42F019302555004C5A4B /* libopencv_ml.2.4.8.dylib */; };
 		728DFD2D192E958900D93082 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 728DFD2C192E958900D93082 /* main.cpp */; };
 		728DFD2F192E958900D93082 /* Alpha.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = 728DFD2E192E958900D93082 /* Alpha.1 */; };
 		728DFD3D192E9D2900D93082 /* helper.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 728DFD3C192E9D2900D93082 /* helper.cpp */; };
@@ -33,18 +32,18 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		721FA5D91933B7A30005D58C /* convlayer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = convlayer.cpp; sourceTree = "<group>"; };
+		721FA5D91933B7A30005D58C /* layer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = layer.cpp; sourceTree = "<group>"; };
+		721FA5DB193411F70005D58C /* layer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = layer.h; sourceTree = "<group>"; };
+		721FA5DC1934183D0005D58C /* convnet.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = convnet.h; sourceTree = "<group>"; };
 		722F42E8192FFE8D004C5A4B /* visual.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = visual.h; sourceTree = "<group>"; };
 		722F42E9192FFEEF004C5A4B /* visual.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = visual.cpp; sourceTree = "<group>"; };
 		722F42EC19302555004C5A4B /* libopencv_core.2.4.8.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libopencv_core.2.4.8.dylib; path = ../../../../../../../usr/local/Cellar/opencv/2.4.8.2/lib/libopencv_core.2.4.8.dylib; sourceTree = "<group>"; };
 		722F42ED19302555004C5A4B /* libopencv_gpu.2.4.8.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libopencv_gpu.2.4.8.dylib; path = ../../../../../../../usr/local/Cellar/opencv/2.4.8.2/lib/libopencv_gpu.2.4.8.dylib; sourceTree = "<group>"; };
 		722F42EE19302555004C5A4B /* libopencv_highgui.2.4.8.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libopencv_highgui.2.4.8.dylib; path = ../../../../../../../usr/local/Cellar/opencv/2.4.8.2/lib/libopencv_highgui.2.4.8.dylib; sourceTree = "<group>"; };
 		722F42EF19302555004C5A4B /* libopencv_imgproc.2.4.8.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libopencv_imgproc.2.4.8.dylib; path = ../../../../../../../usr/local/Cellar/opencv/2.4.8.2/lib/libopencv_imgproc.2.4.8.dylib; sourceTree = "<group>"; };
-		722F42F019302555004C5A4B /* libopencv_ml.2.4.8.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libopencv_ml.2.4.8.dylib; path = ../../../../../../../usr/local/Cellar/opencv/2.4.8.2/lib/libopencv_ml.2.4.8.dylib; sourceTree = "<group>"; };
 		728DFD29192E958900D93082 /* Alpha */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Alpha; sourceTree = BUILT_PRODUCTS_DIR; };
 		728DFD2C192E958900D93082 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		728DFD2E192E958900D93082 /* Alpha.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = Alpha.1; sourceTree = "<group>"; };
-		728DFD36192E960300D93082 /* convlayer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = convlayer.h; sourceTree = "<group>"; };
 		728DFD37192E965900D93082 /* utils.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = utils.h; sourceTree = "<group>"; };
 		728DFD3C192E9D2900D93082 /* helper.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = helper.cpp; sourceTree = "<group>"; };
 		728DFD3E192EA38B00D93082 /* helper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = helper.h; sourceTree = "<group>"; };
@@ -56,7 +55,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				722F42F219302555004C5A4B /* libopencv_gpu.2.4.8.dylib in Frameworks */,
-				722F42F519302555004C5A4B /* libopencv_ml.2.4.8.dylib in Frameworks */,
 				722F42F419302555004C5A4B /* libopencv_imgproc.2.4.8.dylib in Frameworks */,
 				722F42F119302555004C5A4B /* libopencv_core.2.4.8.dylib in Frameworks */,
 				722F42F319302555004C5A4B /* libopencv_highgui.2.4.8.dylib in Frameworks */,
@@ -73,7 +71,6 @@
 				722F42ED19302555004C5A4B /* libopencv_gpu.2.4.8.dylib */,
 				722F42EE19302555004C5A4B /* libopencv_highgui.2.4.8.dylib */,
 				722F42EF19302555004C5A4B /* libopencv_imgproc.2.4.8.dylib */,
-				722F42F019302555004C5A4B /* libopencv_ml.2.4.8.dylib */,
 			);
 			name = OpenCV;
 			sourceTree = "<group>";
@@ -127,7 +124,7 @@
 			children = (
 				728DFD2C192E958900D93082 /* main.cpp */,
 				722F42E9192FFEEF004C5A4B /* visual.cpp */,
-				721FA5D91933B7A30005D58C /* convlayer.cpp */,
+				721FA5D91933B7A30005D58C /* layer.cpp */,
 			);
 			name = Src;
 			sourceTree = "<group>";
@@ -135,10 +132,11 @@
 		728DFD3A192E9C7C00D93082 /* Header */ = {
 			isa = PBXGroup;
 			children = (
-				728DFD36192E960300D93082 /* convlayer.h */,
 				728DFD37192E965900D93082 /* utils.h */,
 				728DFD3E192EA38B00D93082 /* helper.h */,
 				722F42E8192FFE8D004C5A4B /* visual.h */,
+				721FA5DB193411F70005D58C /* layer.h */,
+				721FA5DC1934183D0005D58C /* convnet.h */,
 			);
 			name = Header;
 			sourceTree = "<group>";
@@ -203,7 +201,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				728DFD2D192E958900D93082 /* main.cpp in Sources */,
-				721FA5DA1933B7A30005D58C /* convlayer.cpp in Sources */,
+				721FA5DA1933B7A30005D58C /* layer.cpp in Sources */,
 				728DFD3D192E9D2900D93082 /* helper.cpp in Sources */,
 				722F42EA192FFEEF004C5A4B /* visual.cpp in Sources */,
 			);

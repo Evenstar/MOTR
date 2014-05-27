@@ -3,7 +3,7 @@ CXXFLAGS=-Wall
 TARGETS=EXE
 LIBS=-lopencv_core -lopencv_imgproc -lopencv_highgui
 INCLUDEDIR=-I../
-$(TARGETS): main.cpp helper.cpp visual.cpp convlayer.cpp
+$(TARGETS): main.cpp helper.cpp visual.cpp layer.cpp convnet.h
 	$(CXX) $(CXXFLAGS) $(LIBS) -o $@ $^ $(INCLUDEDIR)
 
 

@@ -1,0 +1,87 @@
+\hypertarget{helper_8h}{\section{helper.\+h File Reference}
+\label{helper_8h}\index{helper.\+h@{helper.\+h}}
+}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{helper_8h_a06737a71a82b746a220d3c6a6bade850}{Load\+Filter} (vector$<$ \hyperlink{utils_8h_a3b3705cad4e05c49adc293c96d0db7d1}{Filter\+Type} $>$ \&filter, string fname)
+\item 
+\hyperlink{utils_8h_a87f2f26b431d56aa72b3d4d6cd5c6f62}{Mat\+Type} \hyperlink{helper_8h_a66288b9b809be113d49ee7a03fa40e5c}{Conv2\+\_\+\+Valid} (const \hyperlink{utils_8h_a87f2f26b431d56aa72b3d4d6cd5c6f62}{Mat\+Type} \&a, const \hyperlink{utils_8h_a87f2f26b431d56aa72b3d4d6cd5c6f62}{Mat\+Type} \&b)
+\item 
+\hyperlink{utils_8h_a87f2f26b431d56aa72b3d4d6cd5c6f62}{Mat\+Type} \hyperlink{helper_8h_a478da42f4930ff868d028cb0e5b6bebf}{Conv2} (const \hyperlink{utils_8h_a87f2f26b431d56aa72b3d4d6cd5c6f62}{Mat\+Type} \&a, const \hyperlink{utils_8h_a87f2f26b431d56aa72b3d4d6cd5c6f62}{Mat\+Type} \&b, \hyperlink{utils_8h_af75d5dd7322fa39ed0af4e7839e600f8}{Boundary\+Type} boundarytype)
+\item 
+\hyperlink{utils_8h_a87f2f26b431d56aa72b3d4d6cd5c6f62}{Mat\+Type} \hyperlink{helper_8h_a7f23d7f5f2c67ec6a18ca9d449e45747}{Img2\+Mat} (\hyperlink{utils_8h_a302114c983ff8dbd199ebc0f93f56833}{Img\+Type} \&img)
+\item 
+\hyperlink{utils_8h_a302114c983ff8dbd199ebc0f93f56833}{Img\+Type} \hyperlink{helper_8h_a0a8c4effff02e9959f39a4cc4fa7d619}{Mat2\+Img} (\hyperlink{utils_8h_a87f2f26b431d56aa72b3d4d6cd5c6f62}{Mat\+Type} \&mat)
+\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\hypertarget{helper_8h_a478da42f4930ff868d028cb0e5b6bebf}{\index{helper.\+h@{helper.\+h}!Conv2@{Conv2}}
+\index{Conv2@{Conv2}!helper.\+h@{helper.\+h}}
+\subsubsection[{Conv2}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Mat\+Type} Conv2 (
+\begin{DoxyParamCaption}
+\item[{const {\bf Mat\+Type} \&}]{a, }
+\item[{const {\bf Mat\+Type} \&}]{b, }
+\item[{{\bf Boundary\+Type}}]{boundarytype}
+\end{DoxyParamCaption}
+)}}\label{helper_8h_a478da42f4930ff868d028cb0e5b6bebf}
+
+\begin{DoxyParams}{Parameters}
+{\em a} & The first parameter. \\
+\hline
+{\em b} & The second parameter. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 55 of file helper.\+cpp.
+
+\hypertarget{helper_8h_a66288b9b809be113d49ee7a03fa40e5c}{\index{helper.\+h@{helper.\+h}!Conv2\+\_\+\+Valid@{Conv2\+\_\+\+Valid}}
+\index{Conv2\+\_\+\+Valid@{Conv2\+\_\+\+Valid}!helper.\+h@{helper.\+h}}
+\subsubsection[{Conv2\+\_\+\+Valid}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Mat\+Type} Conv2\+\_\+\+Valid (
+\begin{DoxyParamCaption}
+\item[{const {\bf Mat\+Type} \&}]{a, }
+\item[{const {\bf Mat\+Type} \&}]{b}
+\end{DoxyParamCaption}
+)}}\label{helper_8h_a66288b9b809be113d49ee7a03fa40e5c}
+
+
+Definition at line 33 of file helper.\+cpp.
+
+\hypertarget{helper_8h_a7f23d7f5f2c67ec6a18ca9d449e45747}{\index{helper.\+h@{helper.\+h}!Img2\+Mat@{Img2\+Mat}}
+\index{Img2\+Mat@{Img2\+Mat}!helper.\+h@{helper.\+h}}
+\subsubsection[{Img2\+Mat}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Mat\+Type} Img2\+Mat (
+\begin{DoxyParamCaption}
+\item[{{\bf Img\+Type} \&}]{img}
+\end{DoxyParamCaption}
+)}}\label{helper_8h_a7f23d7f5f2c67ec6a18ca9d449e45747}
+convert an opencv format image to a Eigen format matrix.
+
+The input is requierd to have one channel. 
+
+Definition at line 76 of file helper.\+cpp.
+
+\hypertarget{helper_8h_a06737a71a82b746a220d3c6a6bade850}{\index{helper.\+h@{helper.\+h}!Load\+Filter@{Load\+Filter}}
+\index{Load\+Filter@{Load\+Filter}!helper.\+h@{helper.\+h}}
+\subsubsection[{Load\+Filter}]{\setlength{\rightskip}{0pt plus 5cm}void Load\+Filter (
+\begin{DoxyParamCaption}
+\item[{vector$<$ {\bf Filter\+Type} $>$ \&}]{filter, }
+\item[{string}]{fname}
+\end{DoxyParamCaption}
+)}}\label{helper_8h_a06737a71a82b746a220d3c6a6bade850}
+
+
+Definition at line 13 of file helper.\+cpp.
+
+\hypertarget{helper_8h_a0a8c4effff02e9959f39a4cc4fa7d619}{\index{helper.\+h@{helper.\+h}!Mat2\+Img@{Mat2\+Img}}
+\index{Mat2\+Img@{Mat2\+Img}!helper.\+h@{helper.\+h}}
+\subsubsection[{Mat2\+Img}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Img\+Type} Mat2\+Img (
+\begin{DoxyParamCaption}
+\item[{{\bf Mat\+Type} \&}]{mat}
+\end{DoxyParamCaption}
+)}}\label{helper_8h_a0a8c4effff02e9959f39a4cc4fa7d619}
+
+
+Definition at line 93 of file helper.\+cpp.
+

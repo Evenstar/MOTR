@@ -7,7 +7,7 @@
 //
 
 
-#include "convlayer.h"
+#include "layer.h"
 #include "helper.h"
 #include "visual.h"
 using Eigen::MatrixXf;
@@ -28,6 +28,7 @@ ImgType test(int argc, char** argv)
 
 int main(int argc, char** argv)
 {
+   /*
     vector<FilterType> filter;
     LoadFilter(filter, "/Users/chengtai/Documents/2014/MOTR/modules/Alpha/data/filter.txt");
     //test(argc,argv);
@@ -45,7 +46,7 @@ int main(int argc, char** argv)
     //LoadFilter(filter, "../data/filter.txt");
     vector<MatType> vmat;
     vmat.push_back(mat);
-    convlayer.SetIndata(&vmat);
+    convlayer.SetInput(&vmat);
     
     MatType mat2;
     cout<<filter[1]<<endl;
@@ -56,5 +57,6 @@ int main(int argc, char** argv)
     namedWindow("gray",CV_WINDOW_AUTOSIZE);
     imshow("gray", img2);
     waitKey(0);
+    */
     return 0;
 }

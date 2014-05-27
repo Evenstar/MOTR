@@ -1,0 +1,124 @@
+\hypertarget{utils_8h}{\section{utils.\+h File Reference}
+\label{utils_8h}\index{utils.\+h@{utils.\+h}}
+}
+{\ttfamily \#include $<$iostream$>$}\\*
+{\ttfamily \#include $<$cstdlib$>$}\\*
+{\ttfamily \#include $<$cmath$>$}\\*
+{\ttfamily \#include $<$vector$>$}\\*
+{\ttfamily \#include $<$map$>$}\\*
+{\ttfamily \#include $<$set$>$}\\*
+{\ttfamily \#include $<$fstream$>$}\\*
+{\ttfamily \#include $<$string$>$}\\*
+{\ttfamily \#include $<$opencv2/core/core.\+hpp$>$}\\*
+{\ttfamily \#include $<$opencv2/highgui/highgui.\+hpp$>$}\\*
+{\ttfamily \#include $<$opencv2/opencv.\+hpp$>$}\\*
+{\ttfamily \#include $<$opencv/cvaux.\+h$>$}\\*
+{\ttfamily \#include \char`\"{}../\+Eigen/\+Dense\char`\"{}}\\*
+\subsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef Eigen\+::\+Matrix\+Xf \hyperlink{utils_8h_a3b3705cad4e05c49adc293c96d0db7d1}{Filter\+Type}
+\item 
+typedef Eigen\+::\+Matrix\+Xf \hyperlink{utils_8h_a87f2f26b431d56aa72b3d4d6cd5c6f62}{Mat\+Type}
+\item 
+typedef cv\+::\+Mat \hyperlink{utils_8h_a302114c983ff8dbd199ebc0f93f56833}{Img\+Type}
+\item 
+typedef float \hyperlink{utils_8h_ad5c19ca4f47d3f8ec21232a5af2624e5}{Scalar\+Type}
+\end{DoxyCompactItemize}
+\subsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+enum \hyperlink{utils_8h_a56943a0946e5f15e5e58054b8e7a04a4}{Layer\+Type} \{ \hyperlink{utils_8h_a56943a0946e5f15e5e58054b8e7a04a4a21bba1733919e8ff3be38256eb1a4223}{Convolution}, 
+\hyperlink{utils_8h_a56943a0946e5f15e5e58054b8e7a04a4a3ce484597c9cb74f16f0428aee986f30}{Fully\+Connected}
+ \}
+\item 
+enum \hyperlink{utils_8h_af75d5dd7322fa39ed0af4e7839e600f8}{Boundary\+Type} \{ \hyperlink{utils_8h_af75d5dd7322fa39ed0af4e7839e600f8ac9ceaeea41ae06d1a39c3322c762ec71}{Valid}, 
+\hyperlink{utils_8h_af75d5dd7322fa39ed0af4e7839e600f8a8b7c5cd8bd8eb51ee6d3fd0eac584679}{Full}
+ \}
+\item 
+enum \hyperlink{utils_8h_a0eda43bc4bc72ca9a80c07fc604b2187}{Nonlinearity\+Type} \{ \hyperlink{utils_8h_a0eda43bc4bc72ca9a80c07fc604b2187af6cb65af0b17a453fb168e0d60db604b}{Sigmoid}, 
+\hyperlink{utils_8h_a0eda43bc4bc72ca9a80c07fc604b2187ac2141c33518a5aa5233f0db6a9e163c8}{Re\+L\+U}
+ \}
+\end{DoxyCompactItemize}
+
+
+\subsection{Typedef Documentation}
+\hypertarget{utils_8h_a3b3705cad4e05c49adc293c96d0db7d1}{\index{utils.\+h@{utils.\+h}!Filter\+Type@{Filter\+Type}}
+\index{Filter\+Type@{Filter\+Type}!utils.\+h@{utils.\+h}}
+\subsubsection[{Filter\+Type}]{\setlength{\rightskip}{0pt plus 5cm}typedef Eigen\+::\+Matrix\+Xf {\bf Filter\+Type}}}\label{utils_8h_a3b3705cad4e05c49adc293c96d0db7d1}
+
+
+Definition at line 30 of file utils.\+h.
+
+\hypertarget{utils_8h_a302114c983ff8dbd199ebc0f93f56833}{\index{utils.\+h@{utils.\+h}!Img\+Type@{Img\+Type}}
+\index{Img\+Type@{Img\+Type}!utils.\+h@{utils.\+h}}
+\subsubsection[{Img\+Type}]{\setlength{\rightskip}{0pt plus 5cm}typedef cv\+::\+Mat {\bf Img\+Type}}}\label{utils_8h_a302114c983ff8dbd199ebc0f93f56833}
+
+
+Definition at line 32 of file utils.\+h.
+
+\hypertarget{utils_8h_a87f2f26b431d56aa72b3d4d6cd5c6f62}{\index{utils.\+h@{utils.\+h}!Mat\+Type@{Mat\+Type}}
+\index{Mat\+Type@{Mat\+Type}!utils.\+h@{utils.\+h}}
+\subsubsection[{Mat\+Type}]{\setlength{\rightskip}{0pt plus 5cm}typedef Eigen\+::\+Matrix\+Xf {\bf Mat\+Type}}}\label{utils_8h_a87f2f26b431d56aa72b3d4d6cd5c6f62}
+
+
+Definition at line 31 of file utils.\+h.
+
+\hypertarget{utils_8h_ad5c19ca4f47d3f8ec21232a5af2624e5}{\index{utils.\+h@{utils.\+h}!Scalar\+Type@{Scalar\+Type}}
+\index{Scalar\+Type@{Scalar\+Type}!utils.\+h@{utils.\+h}}
+\subsubsection[{Scalar\+Type}]{\setlength{\rightskip}{0pt plus 5cm}typedef float {\bf Scalar\+Type}}}\label{utils_8h_ad5c19ca4f47d3f8ec21232a5af2624e5}
+
+
+Definition at line 33 of file utils.\+h.
+
+
+
+\subsection{Enumeration Type Documentation}
+\hypertarget{utils_8h_af75d5dd7322fa39ed0af4e7839e600f8}{\index{utils.\+h@{utils.\+h}!Boundary\+Type@{Boundary\+Type}}
+\index{Boundary\+Type@{Boundary\+Type}!utils.\+h@{utils.\+h}}
+\subsubsection[{Boundary\+Type}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf Boundary\+Type}}}\label{utils_8h_af75d5dd7322fa39ed0af4e7839e600f8}
+\begin{Desc}
+\item[Enumerator]\par
+\begin{description}
+\index{Valid@{Valid}!utils.\+h@{utils.\+h}}\index{utils.\+h@{utils.\+h}!Valid@{Valid}}\item[{\em 
+\hypertarget{utils_8h_af75d5dd7322fa39ed0af4e7839e600f8ac9ceaeea41ae06d1a39c3322c762ec71}{Valid}\label{utils_8h_af75d5dd7322fa39ed0af4e7839e600f8ac9ceaeea41ae06d1a39c3322c762ec71}
+}]\index{Full@{Full}!utils.\+h@{utils.\+h}}\index{utils.\+h@{utils.\+h}!Full@{Full}}\item[{\em 
+\hypertarget{utils_8h_af75d5dd7322fa39ed0af4e7839e600f8a8b7c5cd8bd8eb51ee6d3fd0eac584679}{Full}\label{utils_8h_af75d5dd7322fa39ed0af4e7839e600f8a8b7c5cd8bd8eb51ee6d3fd0eac584679}
+}]\end{description}
+\end{Desc}
+
+
+Definition at line 27 of file utils.\+h.
+
+\hypertarget{utils_8h_a56943a0946e5f15e5e58054b8e7a04a4}{\index{utils.\+h@{utils.\+h}!Layer\+Type@{Layer\+Type}}
+\index{Layer\+Type@{Layer\+Type}!utils.\+h@{utils.\+h}}
+\subsubsection[{Layer\+Type}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf Layer\+Type}}}\label{utils_8h_a56943a0946e5f15e5e58054b8e7a04a4}
+\begin{Desc}
+\item[Enumerator]\par
+\begin{description}
+\index{Convolution@{Convolution}!utils.\+h@{utils.\+h}}\index{utils.\+h@{utils.\+h}!Convolution@{Convolution}}\item[{\em 
+\hypertarget{utils_8h_a56943a0946e5f15e5e58054b8e7a04a4a21bba1733919e8ff3be38256eb1a4223}{Convolution}\label{utils_8h_a56943a0946e5f15e5e58054b8e7a04a4a21bba1733919e8ff3be38256eb1a4223}
+}]\index{Fully\+Connected@{Fully\+Connected}!utils.\+h@{utils.\+h}}\index{utils.\+h@{utils.\+h}!Fully\+Connected@{Fully\+Connected}}\item[{\em 
+\hypertarget{utils_8h_a56943a0946e5f15e5e58054b8e7a04a4a3ce484597c9cb74f16f0428aee986f30}{Fully\+Connected}\label{utils_8h_a56943a0946e5f15e5e58054b8e7a04a4a3ce484597c9cb74f16f0428aee986f30}
+}]\end{description}
+\end{Desc}
+
+
+Definition at line 26 of file utils.\+h.
+
+\hypertarget{utils_8h_a0eda43bc4bc72ca9a80c07fc604b2187}{\index{utils.\+h@{utils.\+h}!Nonlinearity\+Type@{Nonlinearity\+Type}}
+\index{Nonlinearity\+Type@{Nonlinearity\+Type}!utils.\+h@{utils.\+h}}
+\subsubsection[{Nonlinearity\+Type}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf Nonlinearity\+Type}}}\label{utils_8h_a0eda43bc4bc72ca9a80c07fc604b2187}
+\begin{Desc}
+\item[Enumerator]\par
+\begin{description}
+\index{Sigmoid@{Sigmoid}!utils.\+h@{utils.\+h}}\index{utils.\+h@{utils.\+h}!Sigmoid@{Sigmoid}}\item[{\em 
+\hypertarget{utils_8h_a0eda43bc4bc72ca9a80c07fc604b2187af6cb65af0b17a453fb168e0d60db604b}{Sigmoid}\label{utils_8h_a0eda43bc4bc72ca9a80c07fc604b2187af6cb65af0b17a453fb168e0d60db604b}
+}]\index{Re\+L\+U@{Re\+L\+U}!utils.\+h@{utils.\+h}}\index{utils.\+h@{utils.\+h}!Re\+L\+U@{Re\+L\+U}}\item[{\em 
+\hypertarget{utils_8h_a0eda43bc4bc72ca9a80c07fc604b2187ac2141c33518a5aa5233f0db6a9e163c8}{Re\+L\+U}\label{utils_8h_a0eda43bc4bc72ca9a80c07fc604b2187ac2141c33518a5aa5233f0db6a9e163c8}
+}]\end{description}
+\end{Desc}
+
+
+Definition at line 28 of file utils.\+h.
+

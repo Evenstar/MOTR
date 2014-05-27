@@ -1,0 +1,227 @@
+\hypertarget{class_conv_layer}{\section{Conv\+Layer Class Reference}
+\label{class_conv_layer}\index{Conv\+Layer@{Conv\+Layer}}
+}
+
+
+{\ttfamily \#include $<$layer.\+h$>$}
+
+Inheritance diagram for Conv\+Layer\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_conv_layer}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_conv_layer_a791713b4ac5619f2cc20a20cb64ea885}{Conv\+Layer} ()
+\item 
+\hyperlink{class_conv_layer_a277fbb31369014bcb607c51f52c61032}{$\sim$\+Conv\+Layer} ()
+\item 
+void \hyperlink{class_conv_layer_a16a423c0e8ce590ab4757819159b015c}{Set\+Filter} (const vector$<$ \hyperlink{utils_8h_a3b3705cad4e05c49adc293c96d0db7d1}{Filter\+Type} $>$ \&)
+\item 
+void \hyperlink{class_conv_layer_a585102c25508332b6ab2799409393204}{Set\+Input} (vector$<$ \hyperlink{utils_8h_a87f2f26b431d56aa72b3d4d6cd5c6f62}{Mat\+Type} $>$ $\ast$)
+\item 
+void \hyperlink{class_conv_layer_aa2c01fc18b295fc3ddf2d48497653206}{Set\+Receiveset} (const vector$<$ set$<$ int $>$ $>$)
+\item 
+void \hyperlink{class_conv_layer_a70111098046a07416fcbdffdbe8f0cfd}{Apply\+Filter} ()
+\item 
+void \hyperlink{class_conv_layer_a8970249425ba935d91bc0f0a530ea13c}{Down\+Sample} ()
+\item 
+void \hyperlink{class_conv_layer_a5e5a5da58cb21ca2894ecf55088a2636}{Apply\+Nonlinearity} ()
+\item 
+vector$<$ \hyperlink{utils_8h_a87f2f26b431d56aa72b3d4d6cd5c6f62}{Mat\+Type} $>$ $\ast$ \hyperlink{class_conv_layer_aaaa781f9699133fe8b7d1d1e5f090a6e}{output} ()
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+vector$<$ \hyperlink{utils_8h_a3b3705cad4e05c49adc293c96d0db7d1}{Filter\+Type} $>$ \hyperlink{class_conv_layer_a5c9ac97672cb4025adaea24830cf1409}{filter}
+\item 
+vector$<$ \hyperlink{utils_8h_a87f2f26b431d56aa72b3d4d6cd5c6f62}{Mat\+Type} $>$ $\ast$ \hyperlink{class_conv_layer_ae90ccdaf98509ac518dc8158abb53540}{indata}
+\item 
+vector$<$ \hyperlink{utils_8h_a87f2f26b431d56aa72b3d4d6cd5c6f62}{Mat\+Type} $>$ $\ast$ \hyperlink{class_conv_layer_afee4ff21cc91013563dd16a4a617f934}{outdata}
+\item 
+\hyperlink{utils_8h_a56943a0946e5f15e5e58054b8e7a04a4}{Layer\+Type} \hyperlink{class_conv_layer_abb72df40265f9b3c7667318a8e3014c0}{layertype}
+\item 
+vector$<$ set$<$ int $>$ $>$ \hyperlink{class_conv_layer_a611e9895011c49713221b074abfc521f}{receiveset}
+\item 
+\hyperlink{utils_8h_af75d5dd7322fa39ed0af4e7839e600f8}{Boundary\+Type} \hyperlink{class_conv_layer_a16a5c6cfb93d0676b8c8d2264c487e54}{boundarytype}
+\item 
+int \hyperlink{class_conv_layer_a7fbd91b7f63e49fb43fa931de225c280}{stride}
+\item 
+int \hyperlink{class_conv_layer_a941ec7552673506cbb7580e41e982494}{side}
+\item 
+int \hyperlink{class_conv_layer_a1b3fb2e086eee6768b79a260f2035ee8}{pooldim}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 36 of file layer.\+h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_conv_layer_a791713b4ac5619f2cc20a20cb64ea885}{\index{Conv\+Layer@{Conv\+Layer}!Conv\+Layer@{Conv\+Layer}}
+\index{Conv\+Layer@{Conv\+Layer}!Conv\+Layer@{Conv\+Layer}}
+\subsubsection[{Conv\+Layer}]{\setlength{\rightskip}{0pt plus 5cm}Conv\+Layer\+::\+Conv\+Layer (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_conv_layer_a791713b4ac5619f2cc20a20cb64ea885}
+
+
+Definition at line 38 of file layer.\+h.
+
+\hypertarget{class_conv_layer_a277fbb31369014bcb607c51f52c61032}{\index{Conv\+Layer@{Conv\+Layer}!````~Conv\+Layer@{$\sim$\+Conv\+Layer}}
+\index{````~Conv\+Layer@{$\sim$\+Conv\+Layer}!Conv\+Layer@{Conv\+Layer}}
+\subsubsection[{$\sim$\+Conv\+Layer}]{\setlength{\rightskip}{0pt plus 5cm}Conv\+Layer\+::$\sim$\+Conv\+Layer (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_conv_layer_a277fbb31369014bcb607c51f52c61032}
+
+
+Definition at line 39 of file layer.\+h.
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_conv_layer_a70111098046a07416fcbdffdbe8f0cfd}{\index{Conv\+Layer@{Conv\+Layer}!Apply\+Filter@{Apply\+Filter}}
+\index{Apply\+Filter@{Apply\+Filter}!Conv\+Layer@{Conv\+Layer}}
+\subsubsection[{Apply\+Filter}]{\setlength{\rightskip}{0pt plus 5cm}void Conv\+Layer\+::\+Apply\+Filter (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_conv_layer_a70111098046a07416fcbdffdbe8f0cfd}
+
+
+Reimplemented from \hyperlink{class_layer_acb52658f0eb1ec6f693dae392667d699}{Layer}.
+
+\hypertarget{class_conv_layer_a5e5a5da58cb21ca2894ecf55088a2636}{\index{Conv\+Layer@{Conv\+Layer}!Apply\+Nonlinearity@{Apply\+Nonlinearity}}
+\index{Apply\+Nonlinearity@{Apply\+Nonlinearity}!Conv\+Layer@{Conv\+Layer}}
+\subsubsection[{Apply\+Nonlinearity}]{\setlength{\rightskip}{0pt plus 5cm}void Conv\+Layer\+::\+Apply\+Nonlinearity (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_conv_layer_a5e5a5da58cb21ca2894ecf55088a2636}
+
+
+Reimplemented from \hyperlink{class_layer_aab2270f2a6793112a8fa5aefe33eed1e}{Layer}.
+
+\hypertarget{class_conv_layer_a8970249425ba935d91bc0f0a530ea13c}{\index{Conv\+Layer@{Conv\+Layer}!Down\+Sample@{Down\+Sample}}
+\index{Down\+Sample@{Down\+Sample}!Conv\+Layer@{Conv\+Layer}}
+\subsubsection[{Down\+Sample}]{\setlength{\rightskip}{0pt plus 5cm}void Conv\+Layer\+::\+Down\+Sample (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_conv_layer_a8970249425ba935d91bc0f0a530ea13c}
+\hypertarget{class_conv_layer_aaaa781f9699133fe8b7d1d1e5f090a6e}{\index{Conv\+Layer@{Conv\+Layer}!output@{output}}
+\index{output@{output}!Conv\+Layer@{Conv\+Layer}}
+\subsubsection[{output}]{\setlength{\rightskip}{0pt plus 5cm}vector$<${\bf Mat\+Type}$>$$\ast$ Conv\+Layer\+::output (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_conv_layer_aaaa781f9699133fe8b7d1d1e5f090a6e}
+\hypertarget{class_conv_layer_a16a423c0e8ce590ab4757819159b015c}{\index{Conv\+Layer@{Conv\+Layer}!Set\+Filter@{Set\+Filter}}
+\index{Set\+Filter@{Set\+Filter}!Conv\+Layer@{Conv\+Layer}}
+\subsubsection[{Set\+Filter}]{\setlength{\rightskip}{0pt plus 5cm}void Conv\+Layer\+::\+Set\+Filter (
+\begin{DoxyParamCaption}
+\item[{const vector$<$ {\bf Filter\+Type} $>$ \&}]{f}
+\end{DoxyParamCaption}
+)}}\label{class_conv_layer_a16a423c0e8ce590ab4757819159b015c}
+
+
+Definition at line 12 of file layer.\+cpp.
+
+\hypertarget{class_conv_layer_a585102c25508332b6ab2799409393204}{\index{Conv\+Layer@{Conv\+Layer}!Set\+Input@{Set\+Input}}
+\index{Set\+Input@{Set\+Input}!Conv\+Layer@{Conv\+Layer}}
+\subsubsection[{Set\+Input}]{\setlength{\rightskip}{0pt plus 5cm}void Conv\+Layer\+::\+Set\+Input (
+\begin{DoxyParamCaption}
+\item[{vector$<$ {\bf Mat\+Type} $>$ $\ast$}]{in}
+\end{DoxyParamCaption}
+)}}\label{class_conv_layer_a585102c25508332b6ab2799409393204}
+
+
+Definition at line 18 of file layer.\+cpp.
+
+\hypertarget{class_conv_layer_aa2c01fc18b295fc3ddf2d48497653206}{\index{Conv\+Layer@{Conv\+Layer}!Set\+Receiveset@{Set\+Receiveset}}
+\index{Set\+Receiveset@{Set\+Receiveset}!Conv\+Layer@{Conv\+Layer}}
+\subsubsection[{Set\+Receiveset}]{\setlength{\rightskip}{0pt plus 5cm}void Conv\+Layer\+::\+Set\+Receiveset (
+\begin{DoxyParamCaption}
+\item[{const vector$<$ set$<$ int $>$ $>$}]{}
+\end{DoxyParamCaption}
+)}}\label{class_conv_layer_aa2c01fc18b295fc3ddf2d48497653206}
+
+
+\subsection{Member Data Documentation}
+\hypertarget{class_conv_layer_a16a5c6cfb93d0676b8c8d2264c487e54}{\index{Conv\+Layer@{Conv\+Layer}!boundarytype@{boundarytype}}
+\index{boundarytype@{boundarytype}!Conv\+Layer@{Conv\+Layer}}
+\subsubsection[{boundarytype}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Boundary\+Type} Conv\+Layer\+::boundarytype}}\label{class_conv_layer_a16a5c6cfb93d0676b8c8d2264c487e54}
+
+
+Definition at line 61 of file layer.\+h.
+
+\hypertarget{class_conv_layer_a5c9ac97672cb4025adaea24830cf1409}{\index{Conv\+Layer@{Conv\+Layer}!filter@{filter}}
+\index{filter@{filter}!Conv\+Layer@{Conv\+Layer}}
+\subsubsection[{filter}]{\setlength{\rightskip}{0pt plus 5cm}vector$<${\bf Filter\+Type}$>$ Conv\+Layer\+::filter}}\label{class_conv_layer_a5c9ac97672cb4025adaea24830cf1409}
+
+
+Definition at line 56 of file layer.\+h.
+
+\hypertarget{class_conv_layer_ae90ccdaf98509ac518dc8158abb53540}{\index{Conv\+Layer@{Conv\+Layer}!indata@{indata}}
+\index{indata@{indata}!Conv\+Layer@{Conv\+Layer}}
+\subsubsection[{indata}]{\setlength{\rightskip}{0pt plus 5cm}vector$<${\bf Mat\+Type}$>$$\ast$ Conv\+Layer\+::indata}}\label{class_conv_layer_ae90ccdaf98509ac518dc8158abb53540}
+
+
+Definition at line 57 of file layer.\+h.
+
+\hypertarget{class_conv_layer_abb72df40265f9b3c7667318a8e3014c0}{\index{Conv\+Layer@{Conv\+Layer}!layertype@{layertype}}
+\index{layertype@{layertype}!Conv\+Layer@{Conv\+Layer}}
+\subsubsection[{layertype}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Layer\+Type} Conv\+Layer\+::layertype}}\label{class_conv_layer_abb72df40265f9b3c7667318a8e3014c0}
+
+
+Definition at line 59 of file layer.\+h.
+
+\hypertarget{class_conv_layer_afee4ff21cc91013563dd16a4a617f934}{\index{Conv\+Layer@{Conv\+Layer}!outdata@{outdata}}
+\index{outdata@{outdata}!Conv\+Layer@{Conv\+Layer}}
+\subsubsection[{outdata}]{\setlength{\rightskip}{0pt plus 5cm}vector$<${\bf Mat\+Type}$>$$\ast$ Conv\+Layer\+::outdata}}\label{class_conv_layer_afee4ff21cc91013563dd16a4a617f934}
+
+
+Definition at line 58 of file layer.\+h.
+
+\hypertarget{class_conv_layer_a1b3fb2e086eee6768b79a260f2035ee8}{\index{Conv\+Layer@{Conv\+Layer}!pooldim@{pooldim}}
+\index{pooldim@{pooldim}!Conv\+Layer@{Conv\+Layer}}
+\subsubsection[{pooldim}]{\setlength{\rightskip}{0pt plus 5cm}int Conv\+Layer\+::pooldim}}\label{class_conv_layer_a1b3fb2e086eee6768b79a260f2035ee8}
+
+
+Definition at line 65 of file layer.\+h.
+
+\hypertarget{class_conv_layer_a611e9895011c49713221b074abfc521f}{\index{Conv\+Layer@{Conv\+Layer}!receiveset@{receiveset}}
+\index{receiveset@{receiveset}!Conv\+Layer@{Conv\+Layer}}
+\subsubsection[{receiveset}]{\setlength{\rightskip}{0pt plus 5cm}vector$<$set$<$int$>$ $>$ Conv\+Layer\+::receiveset}}\label{class_conv_layer_a611e9895011c49713221b074abfc521f}
+
+
+Definition at line 60 of file layer.\+h.
+
+\hypertarget{class_conv_layer_a941ec7552673506cbb7580e41e982494}{\index{Conv\+Layer@{Conv\+Layer}!side@{side}}
+\index{side@{side}!Conv\+Layer@{Conv\+Layer}}
+\subsubsection[{side}]{\setlength{\rightskip}{0pt plus 5cm}int Conv\+Layer\+::side}}\label{class_conv_layer_a941ec7552673506cbb7580e41e982494}
+
+
+Definition at line 64 of file layer.\+h.
+
+\hypertarget{class_conv_layer_a7fbd91b7f63e49fb43fa931de225c280}{\index{Conv\+Layer@{Conv\+Layer}!stride@{stride}}
+\index{stride@{stride}!Conv\+Layer@{Conv\+Layer}}
+\subsubsection[{stride}]{\setlength{\rightskip}{0pt plus 5cm}int Conv\+Layer\+::stride}}\label{class_conv_layer_a7fbd91b7f63e49fb43fa931de225c280}
+
+
+Definition at line 63 of file layer.\+h.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{layer_8h}{layer.\+h}\item 
+\hyperlink{layer_8cpp}{layer.\+cpp}\end{DoxyCompactItemize}
