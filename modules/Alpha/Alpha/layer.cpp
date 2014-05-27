@@ -134,11 +134,20 @@ void FullyConnectedLayer::SetWeight(const MatType & mat)
     Weight=mat;
 }
 
+void FullyConnectedLayer::ApplyFilter()
+{
+    outdata=Weight*(*indata);
+}
 
+void FullyConnectedLayer::ApplyNonlinearity()
+{
+    outdata=ApplyReLU(outdata);
+}
 
-
-
-
+void FullyConnectedLayer::DownSample()
+{
+    outdata=MaxPooling(outdata, stride,side);
+}
 
 
 

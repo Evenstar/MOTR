@@ -81,11 +81,11 @@ public:
     
     void SetInput( MatType *);
     
-    void ApplyFilter(){};
+    void ApplyFilter();
     
-    void ApplyNonlinearity(){};
+    void ApplyNonlinearity();
     
-    void DownSample(){};
+    void DownSample();
     
 public:
     
