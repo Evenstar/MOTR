@@ -2,10 +2,10 @@ TAlpha
 v6
 r1
 cCheck dependencies
-cCompileC DerivedData/Alpha/Build/Intermediates/Alpha.build/Debug/Alpha.build/Objects-normal/x86_64/visual.o /Users/chengtai/Documents/2014/MOTR/modules/Alpha/Alpha/visual.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler
 cCompileC DerivedData/Alpha/Build/Intermediates/Alpha.build/Debug/Alpha.build/Objects-normal/x86_64/main.o /Users/chengtai/Documents/2014/MOTR/modules/Alpha/Alpha/main.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC DerivedData/Alpha/Build/Intermediates/Alpha.build/Debug/Alpha.build/Objects-normal/x86_64/layer.o /Users/chengtai/Documents/2014/MOTR/modules/Alpha/Alpha/layer.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler
 cCompileC DerivedData/Alpha/Build/Intermediates/Alpha.build/Debug/Alpha.build/Objects-normal/x86_64/helper.o /Users/chengtai/Documents/2014/MOTR/modules/Alpha/Alpha/helper.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler
-cCompileC DerivedData/Alpha/Build/Intermediates/Alpha.build/Debug/Alpha.build/Objects-normal/x86_64/convlayer.o /Users/chengtai/Documents/2014/MOTR/modules/Alpha/Alpha/convlayer.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC DerivedData/Alpha/Build/Intermediates/Alpha.build/Debug/Alpha.build/Objects-normal/x86_64/visual.o /Users/chengtai/Documents/2014/MOTR/modules/Alpha/Alpha/visual.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler
 cLd /Users/chengtai/Documents/2014/MOTR/modules/Alpha/DerivedData/Alpha/Build/Products/Debug/Alpha normal x86_64
 
 N/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk
@@ -199,29 +199,44 @@ t1401127853
 s227
 
 N/Users/chengtai/Documents/2014/MOTR/modules/Alpha/Alpha/convlayer.h
-c000000005383828C000000000000038A
-t1401127564
-s906
+c00000000000000000000000000000000
+t2
+s0
+
+N/Users/chengtai/Documents/2014/MOTR/modules/Alpha/Alpha/convnet.h
+c000000005383F13E00000000000003B4
+t1401155902
+s948
 
 N/Users/chengtai/Documents/2014/MOTR/modules/Alpha/Alpha/helper.cpp
-c00000000538384920000000000000655
-t1401128082
-s1621
+c00000000538398D800000000000008E3
+t1401133272
+s2275
 
 N/Users/chengtai/Documents/2014/MOTR/modules/Alpha/Alpha/helper.h
-c00000000537FC6FA000000000000016B
-t1400882938
-s363
+c000000005383D9C70000000000000264
+t1401149895
+s612
+
+N/Users/chengtai/Documents/2014/MOTR/modules/Alpha/Alpha/layer.cpp
+c000000005383DDB90000000000000121
+t1401150905
+s289
+
+N/Users/chengtai/Documents/2014/MOTR/modules/Alpha/Alpha/layer.h
+c000000005383F6240000000000000674
+t1401157156
+s1652
 
 N/Users/chengtai/Documents/2014/MOTR/modules/Alpha/Alpha/main.cpp
-c00000000538384AF00000000000003AB
-t1401128111
-s939
+c000000005383F5570000000000000584
+t1401156951
+s1412
 
 N/Users/chengtai/Documents/2014/MOTR/modules/Alpha/Alpha/utils.h
-c0000000053837C6300000000000002A0
-t1401125987
-s672
+c0000000053838D9A00000000000002B9
+t1401130394
+s697
 
 N/Users/chengtai/Documents/2014/MOTR/modules/Alpha/Alpha/visual.cpp
 c00000000538381840000000000000180
@@ -229,29 +244,34 @@ t1401127300
 s384
 
 N/Users/chengtai/Documents/2014/MOTR/modules/Alpha/Alpha/visual.h
-c00000000537FC86E00000000000000ED
-t1400883310
+c000000005383897600000000000000ED
+t1401129334
 s237
 
 N/Users/chengtai/Documents/2014/MOTR/modules/Alpha/DerivedData/Alpha/Build/Intermediates/Alpha.build/Debug/Alpha.build/Objects-normal/x86_64/Alpha.LinkFileList
-c00000000538384DA0000000000000255
-t1401128154
-s597
+c000000005383F6AE0000000000000251
+t1401157294
+s593
 
 N/Users/chengtai/Documents/2014/MOTR/modules/Alpha/DerivedData/Alpha/Build/Intermediates/Alpha.build/Debug/Alpha.build/Objects-normal/x86_64/convlayer.o
+c00000000538384DB00000000000341C0
 t1401128155
 s213440
 
 N/Users/chengtai/Documents/2014/MOTR/modules/Alpha/DerivedData/Alpha/Build/Intermediates/Alpha.build/Debug/Alpha.build/Objects-normal/x86_64/helper.o
-t1401128155
-s466804
+t1401157297
+s517636
+
+N/Users/chengtai/Documents/2014/MOTR/modules/Alpha/DerivedData/Alpha/Build/Intermediates/Alpha.build/Debug/Alpha.build/Objects-normal/x86_64/layer.o
+t1401157296
+s214284
 
 N/Users/chengtai/Documents/2014/MOTR/modules/Alpha/DerivedData/Alpha/Build/Intermediates/Alpha.build/Debug/Alpha.build/Objects-normal/x86_64/main.o
-t1401128155
-s394872
+t1401157296
+s271156
 
 N/Users/chengtai/Documents/2014/MOTR/modules/Alpha/DerivedData/Alpha/Build/Intermediates/Alpha.build/Debug/Alpha.build/Objects-normal/x86_64/visual.o
-t1401128155
+t1401157296
 s81968
 
 N/Users/chengtai/Documents/2014/MOTR/modules/Alpha/DerivedData/Alpha/Build/Products/Debug/Alpha
@@ -2001,6 +2021,9 @@ r0
 CBuild AST from /Users/chengtai/Documents/2014/MOTR/modules/Alpha/Alpha/helper.cpp
 r0
 
+CBuild AST from /Users/chengtai/Documents/2014/MOTR/modules/Alpha/Alpha/layer.cpp
+r0
+
 CBuild AST from /Users/chengtai/Documents/2014/MOTR/modules/Alpha/Alpha/main.cpp
 r0
 
@@ -2015,7 +2038,7 @@ r0
 
 CCheck dependencies
 r0
-lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection18"Check dependencies18"Check dependenciesa1a3355abc33b941^7ec83b5abc33b941^---0#1#1#--18"Check dependencies36"750F0BE6-29E1-4D81-ACF4-B9719007E199-
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection18"Check dependencies18"Check dependenciesa88d426e2e34b941^878a496e2e34b941^---0#1#1#--18"Check dependencies36"B6E5EE8F-063E-4B93-9098-10304D19F993-
 
 CCompileC DerivedData/Alpha/Build/Intermediates/Alpha.build/Debug/Alpha.build/Objects-normal/x86_64/convlayer.o /Users/chengtai/Documents/2014/MOTR/modules/Alpha/Alpha/convlayer.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler
 s422820954.238305
@@ -2216,8 +2239,8 @@ lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection77"Compile
 b9C60672B-1B69-4DB4-80B4-325041099729
 
 CCompileC DerivedData/Alpha/Build/Intermediates/Alpha.build/Debug/Alpha.build/Objects-normal/x86_64/helper.o /Users/chengtai/Documents/2014/MOTR/modules/Alpha/Alpha/helper.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler
-s422820954.238262
-e422820955.997774
+s422850094.880884
+e422850097.029315
 r1
 xCompileC
 xDerivedData/Alpha/Build/Intermediates/Alpha.build/Debug/Alpha.build/Objects-normal/x86_64/helper.o
@@ -2409,8 +2432,15 @@ d/Users/chengtai/Documents/2014/MOTR/modules/Alpha/Eigen/src/Eigenvalues/Complex
 d/Users/chengtai/Documents/2014/MOTR/modules/Alpha/Eigen/src/Eigenvalues/RealQZ.h
 d/Users/chengtai/Documents/2014/MOTR/modules/Alpha/Eigen/src/Eigenvalues/GeneralizedEigenSolver.h
 d/Users/chengtai/Documents/2014/MOTR/modules/Alpha/Eigen/src/Eigenvalues/MatrixBaseEigenvalues.h
-lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection74"Compile /Users/chengtai/Documents/2014/MOTR/modules/Alpha/Alpha/helper.cpp186"CompileC DerivedData/Alpha/Build/Intermediates/Alpha.build/Debug/Alpha.build/Objects-normal/x86_64/helper.o Alpha/helper.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler651a3d5abc33b941^1a6fff5bbc33b941^---0#0#1#-19%DVTDocumentLocation2@82"file://localhost/Users/chengtai/Documents/2014/MOTR/modules/Alpha/Alpha/helper.cpp0000000000000000^3179"CompileC DerivedData/Alpha/Build/Intermediates/Alpha.build/Debug/Alpha.build/Objects-normal/x86_64/helper.o Alpha/helper.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/chengtai/Documents/2014/MOTR/modules/Alpha    export LANG=en_US.US-ASCII    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x c++ -arch x86_64 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -std=gnu++11 -stdlib=libc++ -fmodules -fmodules-cache-path=/Users/chengtai/Documents/2014/MOTR/modules/Alpha/DerivedData/ModuleCache -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Werror=return-type -Werror=deprecated-objc-isa-usage -Werror=objc-root-class -Wno-non-virtual-dtor -Wno-overloaded-virtual -Wno-exit-time-destructors -Wno-missing-braces -Wparentheses -Wswitch -Wunused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wconditional-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wbool-conversion -Wenum-conversion -Wshorten-64-to-32 -Wno-newline-eof -Wno-c++11-extensions -DDEBUG=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk -fasm-blocks -fstrict-aliasing -Wdeprecated-declarations -Winvalid-offsetof -mmacosx-version-min=10.8 -g -fvisibility-inlines-hidden -Wno-sign-conversion -iquote /Users/chengtai/Documents/2014/MOTR/modules/Alpha/DerivedData/Alpha/Build/Intermediates/Alpha.build/Debug/Alpha.build/Alpha-generated-files.hmap -I/Users/chengtai/Documents/2014/MOTR/modules/Alpha/DerivedData/Alpha/Build/Intermediates/Alpha.build/Debug/Alpha.build/Alpha-own-target-headers.hmap -I/Users/chengtai/Documents/2014/MOTR/modules/Alpha/DerivedData/Alpha/Build/Intermediates/Alpha.build/Debug/Alpha.build/Alpha-all-target-headers.hmap -iquote /Users/chengtai/Documents/2014/MOTR/modules/Alpha/DerivedData/Alpha/Build/Intermediates/Alpha.build/Debug/Alpha.build/Alpha-project-headers.hmap -I/Users/chengtai/Documents/2014/MOTR/modules/Alpha/DerivedData/Alpha/Build/Products/Debug/include -I../, -I/usr/local/include -I/Users/chengtai/Documents/2014/MOTR/modules/Alpha/DerivedData/Alpha/Build/Intermediates/Alpha.build/Debug/Alpha.build/DerivedSources/x86_64 -I/Users/chengtai/Documents/2014/MOTR/modules/Alpha/DerivedData/Alpha/Build/Intermediates/Alpha.build/Debug/Alpha.build/DerivedSources -F/Users/chengtai/Documents/2014/MOTR/modules/Alpha/DerivedData/Alpha/Build/Products/Debug -MMD -MT dependencies -MF /Users/chengtai/Documents/2014/MOTR/modules/Alpha/DerivedData/Alpha/Build/Intermediates/Alpha.build/Debug/Alpha.build/Objects-normal/x86_64/helper.d --serialize-diagnostics /Users/chengtai/Documents/2014/MOTR/modules/Alpha/DerivedData/Alpha/Build/Intermediates/Alpha.build/Debug/Alpha.build/Objects-normal/x86_64/helper.dia -c /Users/chengtai/Documents/2014/MOTR/modules/Alpha/Alpha/helper.cpp -o /Users/chengtai/Documents/2014/MOTR/modules/Alpha/DerivedData/Alpha/Build/Intermediates/Alpha.build/Debug/Alpha.build/Objects-normal/x86_64/helper.o36"04C32050-65A9-46B0-8308-CB96C0D6A5AC-
-b9C60672B-1B69-4DB4-80B4-325041099729
+o/Users/chengtai/Documents/2014/MOTR/modules/Alpha/Alpha/helper.cpp:97:17: warning: implicit conversion loses integer precision: 'long' to 'int' [-Wshorten-64-to-32]
+o    ImgType img(rows,cols,CV_32FC1);
+o            ~~~ ^~~~
+o/Users/chengtai/Documents/2014/MOTR/modules/Alpha/Alpha/helper.cpp:97:22: warning: implicit conversion loses integer precision: 'long' to 'int' [-Wshorten-64-to-32]
+o    ImgType img(rows,cols,CV_32FC1);
+o            ~~~      ^~~~
+o2 warnings generated.
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection74"Compile /Users/chengtai/Documents/2014/MOTR/modules/Alpha/Alpha/helper.cpp186"CompileC DerivedData/Alpha/Build/Intermediates/Alpha.build/Debug/Alpha.build/Objects-normal/x86_64/helper.o Alpha/helper.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compilere1b7e12e2e34b941^dc8007312e34b941^-473"/Users/chengtai/Documents/2014/MOTR/modules/Alpha/Alpha/helper.cpp:97:17: warning: implicit conversion loses integer precision: 'long' to 'int' [-Wshorten-64-to-32]    ImgType img(rows,cols,CV_32FC1);            ~~~ ^~~~/Users/chengtai/Documents/2014/MOTR/modules/Alpha/Alpha/helper.cpp:97:22: warning: implicit conversion loses integer precision: 'long' to 'int' [-Wshorten-64-to-32]    ImgType img(rows,cols,CV_32FC1);            ~~~      ^~~~2 warnings generated.2(36%IDEClangDiagnosticActivityLogMessage2@60"Implicit conversion loses integer precision: 'long' to 'int'-422850097#18446744073709551615#0#-1#27"com.apple.dt.IDE.diagnostic23%DVTTextDocumentLocation3@82"file://localhost/Users/chengtai/Documents/2014/MOTR/modules/Alpha/Alpha/helper.cpp0000000000000000^96#16#96#16#2042#0#22"Value Conversion Issue2(3@82"file://localhost/Users/chengtai/Documents/2014/MOTR/modules/Alpha/Alpha/helper.cpp0000000000000000^96#16#96#20#2042#0#3@82"file://localhost/Users/chengtai/Documents/2014/MOTR/modules/Alpha/Alpha/helper.cpp0000000000000000^96#12#96#15#2038#0#-2@60"Implicit conversion loses integer precision: 'long' to 'int'-422850097#18446744073709551615#0#-1#27"com.apple.dt.IDE.diagnostic3@82"file://localhost/Users/chengtai/Documents/2014/MOTR/modules/Alpha/Alpha/helper.cpp0000000000000000^96#21#96#21#2047#0#22"Value Conversion Issue2(3@82"file://localhost/Users/chengtai/Documents/2014/MOTR/modules/Alpha/Alpha/helper.cpp0000000000000000^96#21#96#25#2047#0#3@82"file://localhost/Users/chengtai/Documents/2014/MOTR/modules/Alpha/Alpha/helper.cpp0000000000000000^96#12#96#15#2038#0#-0#0#1#-19%DVTDocumentLocation4@82"file://localhost/Users/chengtai/Documents/2014/MOTR/modules/Alpha/Alpha/helper.cpp0000000000000000^3179"CompileC DerivedData/Alpha/Build/Intermediates/Alpha.build/Debug/Alpha.build/Objects-normal/x86_64/helper.o Alpha/helper.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/chengtai/Documents/2014/MOTR/modules/Alpha    export LANG=en_US.US-ASCII    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x c++ -arch x86_64 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -std=gnu++11 -stdlib=libc++ -fmodules -fmodules-cache-path=/Users/chengtai/Documents/2014/MOTR/modules/Alpha/DerivedData/ModuleCache -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Werror=return-type -Werror=deprecated-objc-isa-usage -Werror=objc-root-class -Wno-non-virtual-dtor -Wno-overloaded-virtual -Wno-exit-time-destructors -Wno-missing-braces -Wparentheses -Wswitch -Wunused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wconditional-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wbool-conversion -Wenum-conversion -Wshorten-64-to-32 -Wno-newline-eof -Wno-c++11-extensions -DDEBUG=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk -fasm-blocks -fstrict-aliasing -Wdeprecated-declarations -Winvalid-offsetof -mmacosx-version-min=10.8 -g -fvisibility-inlines-hidden -Wno-sign-conversion -iquote /Users/chengtai/Documents/2014/MOTR/modules/Alpha/DerivedData/Alpha/Build/Intermediates/Alpha.build/Debug/Alpha.build/Alpha-generated-files.hmap -I/Users/chengtai/Documents/2014/MOTR/modules/Alpha/DerivedData/Alpha/Build/Intermediates/Alpha.build/Debug/Alpha.build/Alpha-own-target-headers.hmap -I/Users/chengtai/Documents/2014/MOTR/modules/Alpha/DerivedData/Alpha/Build/Intermediates/Alpha.build/Debug/Alpha.build/Alpha-all-target-headers.hmap -iquote /Users/chengtai/Documents/2014/MOTR/modules/Alpha/DerivedData/Alpha/Build/Intermediates/Alpha.build/Debug/Alpha.build/Alpha-project-headers.hmap -I/Users/chengtai/Documents/2014/MOTR/modules/Alpha/DerivedData/Alpha/Build/Products/Debug/include -I../, -I/usr/local/include -I/Users/chengtai/Documents/2014/MOTR/modules/Alpha/DerivedData/Alpha/Build/Intermediates/Alpha.build/Debug/Alpha.build/DerivedSources/x86_64 -I/Users/chengtai/Documents/2014/MOTR/modules/Alpha/DerivedData/Alpha/Build/Intermediates/Alpha.build/Debug/Alpha.build/DerivedSources -F/Users/chengtai/Documents/2014/MOTR/modules/Alpha/DerivedData/Alpha/Build/Products/Debug -MMD -MT dependencies -MF /Users/chengtai/Documents/2014/MOTR/modules/Alpha/DerivedData/Alpha/Build/Intermediates/Alpha.build/Debug/Alpha.build/Objects-normal/x86_64/helper.d --serialize-diagnostics /Users/chengtai/Documents/2014/MOTR/modules/Alpha/DerivedData/Alpha/Build/Intermediates/Alpha.build/Debug/Alpha.build/Objects-normal/x86_64/helper.dia -c /Users/chengtai/Documents/2014/MOTR/modules/Alpha/Alpha/helper.cpp -o /Users/chengtai/Documents/2014/MOTR/modules/Alpha/DerivedData/Alpha/Build/Intermediates/Alpha.build/Debug/Alpha.build/Objects-normal/x86_64/helper.o36"D4F40C4C-CA39-4DF8-A79A-60B99A3533C6-
+bBF43EC77-E95A-4C18-B2B8-22828EE23114
 
 CCompileC DerivedData/Alpha/Build/Intermediates/Alpha.build/Debug/Alpha.build/Objects-normal/x86_64/helper.o /Users/chengtai/Documents/2014/topics2014/Alpha/Alpha/helper.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler
 s422487648.448758
@@ -2578,9 +2608,207 @@ d/Users/chengtai/Documents/2014/topics2014/Alpha/Eigen/src/Eigenvalues/MatrixBas
 lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection72"Compile /Users/chengtai/Documents/2014/topics2014/Alpha/Alpha/helper.cpp186"CompileC DerivedData/Alpha/Build/Intermediates/Alpha.build/Debug/Alpha.build/Objects-normal/x86_64/helper.o Alpha/helper.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compilerbb277360a62eb941^ffcca861a62eb941^---0#0#1#-19%DVTDocumentLocation2@80"file://localhost/Users/chengtai/Documents/2014/topics2014/Alpha/Alpha/helper.cpp0000000000000000^3216"CompileC DerivedData/Alpha/Build/Intermediates/Alpha.build/Debug/Alpha.build/Objects-normal/x86_64/helper.o Alpha/helper.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/chengtai/Documents/2014/topics2014/Alpha    export LANG=en_US.US-ASCII    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x c++ -arch x86_64 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -std=gnu++11 -stdlib=libc++ -fmodules -fmodules-cache-path=/Users/chengtai/Documents/2014/topics2014/Alpha/DerivedData/ModuleCache -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Werror=return-type -Werror=deprecated-objc-isa-usage -Werror=objc-root-class -Wno-non-virtual-dtor -Wno-overloaded-virtual -Wno-exit-time-destructors -Wno-missing-braces -Wparentheses -Wswitch -Wunused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wconditional-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wbool-conversion -Wenum-conversion -Wshorten-64-to-32 -Wno-newline-eof -Wno-c++11-extensions -DDEBUG=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk -fasm-blocks -fstrict-aliasing -Wdeprecated-declarations -Winvalid-offsetof -mmacosx-version-min=10.8 -g -fvisibility-inlines-hidden -Wno-sign-conversion -iquote /Users/chengtai/Documents/2014/topics2014/Alpha/DerivedData/Alpha/Build/Intermediates/Alpha.build/Debug/Alpha.build/Alpha-generated-files.hmap -I/Users/chengtai/Documents/2014/topics2014/Alpha/DerivedData/Alpha/Build/Intermediates/Alpha.build/Debug/Alpha.build/Alpha-own-target-headers.hmap -I/Users/chengtai/Documents/2014/topics2014/Alpha/DerivedData/Alpha/Build/Intermediates/Alpha.build/Debug/Alpha.build/Alpha-all-target-headers.hmap -iquote /Users/chengtai/Documents/2014/topics2014/Alpha/DerivedData/Alpha/Build/Intermediates/Alpha.build/Debug/Alpha.build/Alpha-project-headers.hmap -I/Users/chengtai/Documents/2014/topics2014/Alpha/DerivedData/Alpha/Build/Products/Debug/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Users/chengtai/Documents/2014/topics2014/Alpha/DerivedData/Alpha/Build/Intermediates/Alpha.build/Debug/Alpha.build/DerivedSources/x86_64 -I/Users/chengtai/Documents/2014/topics2014/Alpha/DerivedData/Alpha/Build/Intermediates/Alpha.build/Debug/Alpha.build/DerivedSources -F/Users/chengtai/Documents/2014/topics2014/Alpha/DerivedData/Alpha/Build/Products/Debug -MMD -MT dependencies -MF /Users/chengtai/Documents/2014/topics2014/Alpha/DerivedData/Alpha/Build/Intermediates/Alpha.build/Debug/Alpha.build/Objects-normal/x86_64/helper.d --serialize-diagnostics /Users/chengtai/Documents/2014/topics2014/Alpha/DerivedData/Alpha/Build/Intermediates/Alpha.build/Debug/Alpha.build/Objects-normal/x86_64/helper.dia -c /Users/chengtai/Documents/2014/topics2014/Alpha/Alpha/helper.cpp -o /Users/chengtai/Documents/2014/topics2014/Alpha/DerivedData/Alpha/Build/Intermediates/Alpha.build/Debug/Alpha.build/Objects-normal/x86_64/helper.o36"0110E73D-D11D-40E1-97C4-73643E52F70D-
 bF1C533B4-5414-499E-9D56-F3437A0BE584
 
+CCompileC DerivedData/Alpha/Build/Intermediates/Alpha.build/Debug/Alpha.build/Objects-normal/x86_64/layer.o /Users/chengtai/Documents/2014/MOTR/modules/Alpha/Alpha/layer.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler
+s422850094.880877
+e422850096.942386
+r1
+xCompileC
+xDerivedData/Alpha/Build/Intermediates/Alpha.build/Debug/Alpha.build/Objects-normal/x86_64/layer.o
+x/Users/chengtai/Documents/2014/MOTR/modules/Alpha/Alpha/layer.cpp
+xnormal
+xx86_64
+xc++
+xcom.apple.compilers.llvm.clang.1_0.compiler
+d/Users/chengtai/Documents/2014/MOTR/modules/Alpha/Alpha/layer.cpp
+d/Users/chengtai/Documents/2014/MOTR/modules/Alpha/Alpha/layer.h
+d/Users/chengtai/Documents/2014/MOTR/modules/Alpha/Alpha/utils.h
+d/usr/local/include/opencv2/core/core.hpp
+d/usr/local/include/opencv2/core/types_c.h
+d/usr/local/include/opencv2/core/version.hpp
+d/usr/local/include/opencv2/core/operations.hpp
+d/usr/local/include/opencv2/core/mat.hpp
+d/usr/local/include/opencv2/highgui/highgui.hpp
+d/usr/local/include/opencv2/highgui/highgui_c.h
+d/usr/local/include/opencv2/core/core_c.h
+d/usr/local/include/opencv2/opencv.hpp
+d/usr/local/include/opencv2/flann/miniflann.hpp
+d/usr/local/include/opencv2/flann/defines.h
+d/usr/local/include/opencv2/flann/config.h
+d/usr/local/include/opencv2/imgproc/imgproc_c.h
+d/usr/local/include/opencv2/imgproc/types_c.h
+d/usr/local/include/opencv2/imgproc/imgproc.hpp
+d/usr/local/include/opencv2/photo/photo.hpp
+d/usr/local/include/opencv2/photo/photo_c.h
+d/usr/local/include/opencv2/video/video.hpp
+d/usr/local/include/opencv2/video/tracking.hpp
+d/usr/local/include/opencv2/video/background_segm.hpp
+d/usr/local/include/opencv2/features2d/features2d.hpp
+d/usr/local/include/opencv2/objdetect/objdetect.hpp
+d/usr/local/include/opencv2/calib3d/calib3d.hpp
+d/usr/local/include/opencv2/ml/ml.hpp
+d/usr/local/include/opencv2/contrib/contrib.hpp
+d/usr/local/include/opencv2/contrib/retina.hpp
+d/usr/local/include/opencv2/contrib/openfabmap.hpp
+d/usr/local/include/opencv/cvaux.h
+d/usr/local/include/opencv2/legacy/legacy.hpp
+d/usr/local/include/opencv2/legacy/compat.hpp
+d/usr/local/include/opencv2/legacy/blobtrack.hpp
+d/Users/chengtai/Documents/2014/MOTR/modules/Alpha/Eigen/Dense
+d/Users/chengtai/Documents/2014/MOTR/modules/Alpha/Eigen/Core
+d/Users/chengtai/Documents/2014/MOTR/modules/Alpha/Eigen/src/Core/util/DisableStupidWarnings.h
+d/Users/chengtai/Documents/2014/MOTR/modules/Alpha/Eigen/src/Core/util/Macros.h
+d/Users/chengtai/Documents/2014/MOTR/modules/Alpha/Eigen/src/Core/util/MKL_support.h
+d/Users/chengtai/Documents/2014/MOTR/modules/Alpha/Eigen/src/Core/util/Constants.h
+d/Users/chengtai/Documents/2014/MOTR/modules/Alpha/Eigen/src/Core/util/ForwardDeclarations.h
+d/Users/chengtai/Documents/2014/MOTR/modules/Alpha/Eigen/src/Core/util/Meta.h
+d/Users/chengtai/Documents/2014/MOTR/modules/Alpha/Eigen/src/Core/util/StaticAssert.h
+d/Users/chengtai/Documents/2014/MOTR/modules/Alpha/Eigen/src/Core/util/XprHelper.h
+d/Users/chengtai/Documents/2014/MOTR/modules/Alpha/Eigen/src/Core/util/Memory.h
+d/Users/chengtai/Documents/2014/MOTR/modules/Alpha/Eigen/src/Core/NumTraits.h
+d/Users/chengtai/Documents/2014/MOTR/modules/Alpha/Eigen/src/Core/MathFunctions.h
+d/Users/chengtai/Documents/2014/MOTR/modules/Alpha/Eigen/src/Core/GenericPacketMath.h
+d/Users/chengtai/Documents/2014/MOTR/modules/Alpha/Eigen/src/Core/arch/SSE/PacketMath.h
+d/Users/chengtai/Documents/2014/MOTR/modules/Alpha/Eigen/src/Core/arch/SSE/MathFunctions.h
+d/Users/chengtai/Documents/2014/MOTR/modules/Alpha/Eigen/src/Core/arch/SSE/Complex.h
+d/Users/chengtai/Documents/2014/MOTR/modules/Alpha/Eigen/src/Core/arch/Default/Settings.h
+d/Users/chengtai/Documents/2014/MOTR/modules/Alpha/Eigen/src/Core/Functors.h
+d/Users/chengtai/Documents/2014/MOTR/modules/Alpha/Eigen/src/Core/DenseCoeffsBase.h
+d/Users/chengtai/Documents/2014/MOTR/modules/Alpha/Eigen/src/Core/DenseBase.h
+d/Users/chengtai/Documents/2014/MOTR/modules/Alpha/Eigen/src/plugins/BlockMethods.h
+d/Users/chengtai/Documents/2014/MOTR/modules/Alpha/Eigen/src/Core/MatrixBase.h
+d/Users/chengtai/Documents/2014/MOTR/modules/Alpha/Eigen/src/plugins/CommonCwiseUnaryOps.h
+d/Users/chengtai/Documents/2014/MOTR/modules/Alpha/Eigen/src/plugins/CommonCwiseBinaryOps.h
+d/Users/chengtai/Documents/2014/MOTR/modules/Alpha/Eigen/src/plugins/MatrixCwiseUnaryOps.h
+d/Users/chengtai/Documents/2014/MOTR/modules/Alpha/Eigen/src/plugins/MatrixCwiseBinaryOps.h
+d/Users/chengtai/Documents/2014/MOTR/modules/Alpha/Eigen/src/Core/EigenBase.h
+d/Users/chengtai/Documents/2014/MOTR/modules/Alpha/Eigen/src/Core/Assign.h
+d/Users/chengtai/Documents/2014/MOTR/modules/Alpha/Eigen/src/Core/util/BlasUtil.h
+d/Users/chengtai/Documents/2014/MOTR/modules/Alpha/Eigen/src/Core/DenseStorage.h
+d/Users/chengtai/Documents/2014/MOTR/modules/Alpha/Eigen/src/Core/NestByValue.h
+d/Users/chengtai/Documents/2014/MOTR/modules/Alpha/Eigen/src/Core/ForceAlignedAccess.h
+d/Users/chengtai/Documents/2014/MOTR/modules/Alpha/Eigen/src/Core/ReturnByValue.h
+d/Users/chengtai/Documents/2014/MOTR/modules/Alpha/Eigen/src/Core/NoAlias.h
+d/Users/chengtai/Documents/2014/MOTR/modules/Alpha/Eigen/src/Core/PlainObjectBase.h
+d/Users/chengtai/Documents/2014/MOTR/modules/Alpha/Eigen/src/Core/Matrix.h
+d/Users/chengtai/Documents/2014/MOTR/modules/Alpha/Eigen/src/Core/Array.h
+d/Users/chengtai/Documents/2014/MOTR/modules/Alpha/Eigen/src/Core/CwiseBinaryOp.h
+d/Users/chengtai/Documents/2014/MOTR/modules/Alpha/Eigen/src/Core/CwiseUnaryOp.h
+d/Users/chengtai/Documents/2014/MOTR/modules/Alpha/Eigen/src/Core/CwiseNullaryOp.h
+d/Users/chengtai/Documents/2014/MOTR/modules/Alpha/Eigen/src/Core/CwiseUnaryView.h
+d/Users/chengtai/Documents/2014/MOTR/modules/Alpha/Eigen/src/Core/SelfCwiseBinaryOp.h
+d/Users/chengtai/Documents/2014/MOTR/modules/Alpha/Eigen/src/Core/Dot.h
+d/Users/chengtai/Documents/2014/MOTR/modules/Alpha/Eigen/src/Core/StableNorm.h
+d/Users/chengtai/Documents/2014/MOTR/modules/Alpha/Eigen/src/Core/MapBase.h
+d/Users/chengtai/Documents/2014/MOTR/modules/Alpha/Eigen/src/Core/Stride.h
+d/Users/chengtai/Documents/2014/MOTR/modules/Alpha/Eigen/src/Core/Map.h
+d/Users/chengtai/Documents/2014/MOTR/modules/Alpha/Eigen/src/Core/Block.h
+d/Users/chengtai/Documents/2014/MOTR/modules/Alpha/Eigen/src/Core/VectorBlock.h
+d/Users/chengtai/Documents/2014/MOTR/modules/Alpha/Eigen/src/Core/Ref.h
+d/Users/chengtai/Documents/2014/MOTR/modules/Alpha/Eigen/src/Core/Transpose.h
+d/Users/chengtai/Documents/2014/MOTR/modules/Alpha/Eigen/src/Core/DiagonalMatrix.h
+d/Users/chengtai/Documents/2014/MOTR/modules/Alpha/Eigen/src/Core/Diagonal.h
+d/Users/chengtai/Documents/2014/MOTR/modules/Alpha/Eigen/src/Core/DiagonalProduct.h
+d/Users/chengtai/Documents/2014/MOTR/modules/Alpha/Eigen/src/Core/PermutationMatrix.h
+d/Users/chengtai/Documents/2014/MOTR/modules/Alpha/Eigen/src/Core/Transpositions.h
+d/Users/chengtai/Documents/2014/MOTR/modules/Alpha/Eigen/src/Core/Redux.h
+d/Users/chengtai/Documents/2014/MOTR/modules/Alpha/Eigen/src/Core/Visitor.h
+d/Users/chengtai/Documents/2014/MOTR/modules/Alpha/Eigen/src/Core/Fuzzy.h
+d/Users/chengtai/Documents/2014/MOTR/modules/Alpha/Eigen/src/Core/IO.h
+d/Users/chengtai/Documents/2014/MOTR/modules/Alpha/Eigen/src/Core/Swap.h
+d/Users/chengtai/Documents/2014/MOTR/modules/Alpha/Eigen/src/Core/CommaInitializer.h
+d/Users/chengtai/Documents/2014/MOTR/modules/Alpha/Eigen/src/Core/Flagged.h
+d/Users/chengtai/Documents/2014/MOTR/modules/Alpha/Eigen/src/Core/ProductBase.h
+d/Users/chengtai/Documents/2014/MOTR/modules/Alpha/Eigen/src/Core/GeneralProduct.h
+d/Users/chengtai/Documents/2014/MOTR/modules/Alpha/Eigen/src/Core/TriangularMatrix.h
+d/Users/chengtai/Documents/2014/MOTR/modules/Alpha/Eigen/src/Core/SelfAdjointView.h
+d/Users/chengtai/Documents/2014/MOTR/modules/Alpha/Eigen/src/Core/products/GeneralBlockPanelKernel.h
+d/Users/chengtai/Documents/2014/MOTR/modules/Alpha/Eigen/src/Core/products/Parallelizer.h
+d/Users/chengtai/Documents/2014/MOTR/modules/Alpha/Eigen/src/Core/products/CoeffBasedProduct.h
+d/Users/chengtai/Documents/2014/MOTR/modules/Alpha/Eigen/src/Core/products/GeneralMatrixVector.h
+d/Users/chengtai/Documents/2014/MOTR/modules/Alpha/Eigen/src/Core/products/GeneralMatrixMatrix.h
+d/Users/chengtai/Documents/2014/MOTR/modules/Alpha/Eigen/src/Core/SolveTriangular.h
+d/Users/chengtai/Documents/2014/MOTR/modules/Alpha/Eigen/src/Core/products/GeneralMatrixMatrixTriangular.h
+d/Users/chengtai/Documents/2014/MOTR/modules/Alpha/Eigen/src/Core/products/SelfadjointMatrixVector.h
+d/Users/chengtai/Documents/2014/MOTR/modules/Alpha/Eigen/src/Core/products/SelfadjointMatrixMatrix.h
+d/Users/chengtai/Documents/2014/MOTR/modules/Alpha/Eigen/src/Core/products/SelfadjointProduct.h
+d/Users/chengtai/Documents/2014/MOTR/modules/Alpha/Eigen/src/Core/products/SelfadjointRank2Update.h
+d/Users/chengtai/Documents/2014/MOTR/modules/Alpha/Eigen/src/Core/products/TriangularMatrixVector.h
+d/Users/chengtai/Documents/2014/MOTR/modules/Alpha/Eigen/src/Core/products/TriangularMatrixMatrix.h
+d/Users/chengtai/Documents/2014/MOTR/modules/Alpha/Eigen/src/Core/products/TriangularSolverMatrix.h
+d/Users/chengtai/Documents/2014/MOTR/modules/Alpha/Eigen/src/Core/products/TriangularSolverVector.h
+d/Users/chengtai/Documents/2014/MOTR/modules/Alpha/Eigen/src/Core/BandMatrix.h
+d/Users/chengtai/Documents/2014/MOTR/modules/Alpha/Eigen/src/Core/CoreIterators.h
+d/Users/chengtai/Documents/2014/MOTR/modules/Alpha/Eigen/src/Core/BooleanRedux.h
+d/Users/chengtai/Documents/2014/MOTR/modules/Alpha/Eigen/src/Core/Select.h
+d/Users/chengtai/Documents/2014/MOTR/modules/Alpha/Eigen/src/Core/VectorwiseOp.h
+d/Users/chengtai/Documents/2014/MOTR/modules/Alpha/Eigen/src/Core/Random.h
+d/Users/chengtai/Documents/2014/MOTR/modules/Alpha/Eigen/src/Core/Replicate.h
+d/Users/chengtai/Documents/2014/MOTR/modules/Alpha/Eigen/src/Core/Reverse.h
+d/Users/chengtai/Documents/2014/MOTR/modules/Alpha/Eigen/src/Core/ArrayBase.h
+d/Users/chengtai/Documents/2014/MOTR/modules/Alpha/Eigen/src/plugins/ArrayCwiseUnaryOps.h
+d/Users/chengtai/Documents/2014/MOTR/modules/Alpha/Eigen/src/plugins/ArrayCwiseBinaryOps.h
+d/Users/chengtai/Documents/2014/MOTR/modules/Alpha/Eigen/src/Core/ArrayWrapper.h
+d/Users/chengtai/Documents/2014/MOTR/modules/Alpha/Eigen/src/Core/GlobalFunctions.h
+d/Users/chengtai/Documents/2014/MOTR/modules/Alpha/Eigen/src/Core/util/ReenableStupidWarnings.h
+d/Users/chengtai/Documents/2014/MOTR/modules/Alpha/Eigen/LU
+d/Users/chengtai/Documents/2014/MOTR/modules/Alpha/Eigen/src/misc/Solve.h
+d/Users/chengtai/Documents/2014/MOTR/modules/Alpha/Eigen/src/misc/Kernel.h
+d/Users/chengtai/Documents/2014/MOTR/modules/Alpha/Eigen/src/misc/Image.h
+d/Users/chengtai/Documents/2014/MOTR/modules/Alpha/Eigen/src/LU/FullPivLU.h
+d/Users/chengtai/Documents/2014/MOTR/modules/Alpha/Eigen/src/LU/PartialPivLU.h
+d/Users/chengtai/Documents/2014/MOTR/modules/Alpha/Eigen/src/LU/Determinant.h
+d/Users/chengtai/Documents/2014/MOTR/modules/Alpha/Eigen/src/LU/Inverse.h
+d/Users/chengtai/Documents/2014/MOTR/modules/Alpha/Eigen/src/LU/arch/Inverse_SSE.h
+d/Users/chengtai/Documents/2014/MOTR/modules/Alpha/Eigen/Cholesky
+d/Users/chengtai/Documents/2014/MOTR/modules/Alpha/Eigen/src/Cholesky/LLT.h
+d/Users/chengtai/Documents/2014/MOTR/modules/Alpha/Eigen/src/Cholesky/LDLT.h
+d/Users/chengtai/Documents/2014/MOTR/modules/Alpha/Eigen/QR
+d/Users/chengtai/Documents/2014/MOTR/modules/Alpha/Eigen/Jacobi
+d/Users/chengtai/Documents/2014/MOTR/modules/Alpha/Eigen/src/Jacobi/Jacobi.h
+d/Users/chengtai/Documents/2014/MOTR/modules/Alpha/Eigen/Householder
+d/Users/chengtai/Documents/2014/MOTR/modules/Alpha/Eigen/src/Householder/Householder.h
+d/Users/chengtai/Documents/2014/MOTR/modules/Alpha/Eigen/src/Householder/HouseholderSequence.h
+d/Users/chengtai/Documents/2014/MOTR/modules/Alpha/Eigen/src/Householder/BlockHouseholder.h
+d/Users/chengtai/Documents/2014/MOTR/modules/Alpha/Eigen/src/QR/HouseholderQR.h
+d/Users/chengtai/Documents/2014/MOTR/modules/Alpha/Eigen/src/QR/FullPivHouseholderQR.h
+d/Users/chengtai/Documents/2014/MOTR/modules/Alpha/Eigen/src/QR/ColPivHouseholderQR.h
+d/Users/chengtai/Documents/2014/MOTR/modules/Alpha/Eigen/SVD
+d/Users/chengtai/Documents/2014/MOTR/modules/Alpha/Eigen/src/SVD/JacobiSVD.h
+d/Users/chengtai/Documents/2014/MOTR/modules/Alpha/Eigen/src/SVD/UpperBidiagonalization.h
+d/Users/chengtai/Documents/2014/MOTR/modules/Alpha/Eigen/Geometry
+d/Users/chengtai/Documents/2014/MOTR/modules/Alpha/Eigen/src/Geometry/OrthoMethods.h
+d/Users/chengtai/Documents/2014/MOTR/modules/Alpha/Eigen/src/Geometry/EulerAngles.h
+d/Users/chengtai/Documents/2014/MOTR/modules/Alpha/Eigen/src/Geometry/Homogeneous.h
+d/Users/chengtai/Documents/2014/MOTR/modules/Alpha/Eigen/src/Geometry/RotationBase.h
+d/Users/chengtai/Documents/2014/MOTR/modules/Alpha/Eigen/src/Geometry/Rotation2D.h
+d/Users/chengtai/Documents/2014/MOTR/modules/Alpha/Eigen/src/Geometry/Quaternion.h
+d/Users/chengtai/Documents/2014/MOTR/modules/Alpha/Eigen/src/Geometry/AngleAxis.h
+d/Users/chengtai/Documents/2014/MOTR/modules/Alpha/Eigen/src/Geometry/Transform.h
+d/Users/chengtai/Documents/2014/MOTR/modules/Alpha/Eigen/src/Geometry/Translation.h
+d/Users/chengtai/Documents/2014/MOTR/modules/Alpha/Eigen/src/Geometry/Scaling.h
+d/Users/chengtai/Documents/2014/MOTR/modules/Alpha/Eigen/src/Geometry/Hyperplane.h
+d/Users/chengtai/Documents/2014/MOTR/modules/Alpha/Eigen/src/Geometry/ParametrizedLine.h
+d/Users/chengtai/Documents/2014/MOTR/modules/Alpha/Eigen/src/Geometry/AlignedBox.h
+d/Users/chengtai/Documents/2014/MOTR/modules/Alpha/Eigen/src/Geometry/Umeyama.h
+d/Users/chengtai/Documents/2014/MOTR/modules/Alpha/Eigen/src/Geometry/arch/Geometry_SSE.h
+d/Users/chengtai/Documents/2014/MOTR/modules/Alpha/Eigen/Eigenvalues
+d/Users/chengtai/Documents/2014/MOTR/modules/Alpha/Eigen/src/Eigenvalues/Tridiagonalization.h
+d/Users/chengtai/Documents/2014/MOTR/modules/Alpha/Eigen/src/Eigenvalues/RealSchur.h
+d/Users/chengtai/Documents/2014/MOTR/modules/Alpha/Eigen/src/Eigenvalues/HessenbergDecomposition.h
+d/Users/chengtai/Documents/2014/MOTR/modules/Alpha/Eigen/src/Eigenvalues/EigenSolver.h
+d/Users/chengtai/Documents/2014/MOTR/modules/Alpha/Eigen/src/Eigenvalues/SelfAdjointEigenSolver.h
+d/Users/chengtai/Documents/2014/MOTR/modules/Alpha/Eigen/src/Eigenvalues/GeneralizedSelfAdjointEigenSolver.h
+d/Users/chengtai/Documents/2014/MOTR/modules/Alpha/Eigen/src/Eigenvalues/ComplexSchur.h
+d/Users/chengtai/Documents/2014/MOTR/modules/Alpha/Eigen/src/Eigenvalues/ComplexEigenSolver.h
+d/Users/chengtai/Documents/2014/MOTR/modules/Alpha/Eigen/src/Eigenvalues/RealQZ.h
+d/Users/chengtai/Documents/2014/MOTR/modules/Alpha/Eigen/src/Eigenvalues/GeneralizedEigenSolver.h
+d/Users/chengtai/Documents/2014/MOTR/modules/Alpha/Eigen/src/Eigenvalues/MatrixBaseEigenvalues.h
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection73"Compile /Users/chengtai/Documents/2014/MOTR/modules/Alpha/Alpha/layer.cpp184"CompileC DerivedData/Alpha/Build/Intermediates/Alpha.build/Debug/Alpha.build/Objects-normal/x86_64/layer.o Alpha/layer.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compilere5b6e12e2e34b941^ab40f1302e34b941^---0#0#1#-19%DVTDocumentLocation2@81"file://localhost/Users/chengtai/Documents/2014/MOTR/modules/Alpha/Alpha/layer.cpp0000000000000000^3173"CompileC DerivedData/Alpha/Build/Intermediates/Alpha.build/Debug/Alpha.build/Objects-normal/x86_64/layer.o Alpha/layer.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/chengtai/Documents/2014/MOTR/modules/Alpha    export LANG=en_US.US-ASCII    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x c++ -arch x86_64 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -std=gnu++11 -stdlib=libc++ -fmodules -fmodules-cache-path=/Users/chengtai/Documents/2014/MOTR/modules/Alpha/DerivedData/ModuleCache -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Werror=return-type -Werror=deprecated-objc-isa-usage -Werror=objc-root-class -Wno-non-virtual-dtor -Wno-overloaded-virtual -Wno-exit-time-destructors -Wno-missing-braces -Wparentheses -Wswitch -Wunused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wconditional-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wbool-conversion -Wenum-conversion -Wshorten-64-to-32 -Wno-newline-eof -Wno-c++11-extensions -DDEBUG=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk -fasm-blocks -fstrict-aliasing -Wdeprecated-declarations -Winvalid-offsetof -mmacosx-version-min=10.8 -g -fvisibility-inlines-hidden -Wno-sign-conversion -iquote /Users/chengtai/Documents/2014/MOTR/modules/Alpha/DerivedData/Alpha/Build/Intermediates/Alpha.build/Debug/Alpha.build/Alpha-generated-files.hmap -I/Users/chengtai/Documents/2014/MOTR/modules/Alpha/DerivedData/Alpha/Build/Intermediates/Alpha.build/Debug/Alpha.build/Alpha-own-target-headers.hmap -I/Users/chengtai/Documents/2014/MOTR/modules/Alpha/DerivedData/Alpha/Build/Intermediates/Alpha.build/Debug/Alpha.build/Alpha-all-target-headers.hmap -iquote /Users/chengtai/Documents/2014/MOTR/modules/Alpha/DerivedData/Alpha/Build/Intermediates/Alpha.build/Debug/Alpha.build/Alpha-project-headers.hmap -I/Users/chengtai/Documents/2014/MOTR/modules/Alpha/DerivedData/Alpha/Build/Products/Debug/include -I../, -I/usr/local/include -I/Users/chengtai/Documents/2014/MOTR/modules/Alpha/DerivedData/Alpha/Build/Intermediates/Alpha.build/Debug/Alpha.build/DerivedSources/x86_64 -I/Users/chengtai/Documents/2014/MOTR/modules/Alpha/DerivedData/Alpha/Build/Intermediates/Alpha.build/Debug/Alpha.build/DerivedSources -F/Users/chengtai/Documents/2014/MOTR/modules/Alpha/DerivedData/Alpha/Build/Products/Debug -MMD -MT dependencies -MF /Users/chengtai/Documents/2014/MOTR/modules/Alpha/DerivedData/Alpha/Build/Intermediates/Alpha.build/Debug/Alpha.build/Objects-normal/x86_64/layer.d --serialize-diagnostics /Users/chengtai/Documents/2014/MOTR/modules/Alpha/DerivedData/Alpha/Build/Intermediates/Alpha.build/Debug/Alpha.build/Objects-normal/x86_64/layer.dia -c /Users/chengtai/Documents/2014/MOTR/modules/Alpha/Alpha/layer.cpp -o /Users/chengtai/Documents/2014/MOTR/modules/Alpha/DerivedData/Alpha/Build/Intermediates/Alpha.build/Debug/Alpha.build/Objects-normal/x86_64/layer.o36"F595CB46-AF27-4CC3-96F2-7DE0D1927F22-
+bBF43EC77-E95A-4C18-B2B8-22828EE23114
+
 CCompileC DerivedData/Alpha/Build/Intermediates/Alpha.build/Debug/Alpha.build/Objects-normal/x86_64/main.o /Users/chengtai/Documents/2014/MOTR/modules/Alpha/Alpha/main.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler
-s422820954.238256
-e422820955.997824
+s422850094.880853
+e422850096.889418
 r1
 xCompileC
 xDerivedData/Alpha/Build/Intermediates/Alpha.build/Debug/Alpha.build/Objects-normal/x86_64/main.o
@@ -2590,7 +2818,7 @@ xx86_64
 xc++
 xcom.apple.compilers.llvm.clang.1_0.compiler
 d/Users/chengtai/Documents/2014/MOTR/modules/Alpha/Alpha/main.cpp
-d/Users/chengtai/Documents/2014/MOTR/modules/Alpha/Alpha/convlayer.h
+d/Users/chengtai/Documents/2014/MOTR/modules/Alpha/Alpha/layer.h
 d/Users/chengtai/Documents/2014/MOTR/modules/Alpha/Alpha/utils.h
 d/usr/local/include/opencv2/core/core.hpp
 d/usr/local/include/opencv2/core/types_c.h
@@ -2775,8 +3003,9 @@ d/Users/chengtai/Documents/2014/MOTR/modules/Alpha/Eigen/src/Eigenvalues/General
 d/Users/chengtai/Documents/2014/MOTR/modules/Alpha/Eigen/src/Eigenvalues/MatrixBaseEigenvalues.h
 d/Users/chengtai/Documents/2014/MOTR/modules/Alpha/Alpha/helper.h
 d/Users/chengtai/Documents/2014/MOTR/modules/Alpha/Alpha/visual.h
-lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection72"Compile /Users/chengtai/Documents/2014/MOTR/modules/Alpha/Alpha/main.cpp182"CompileC DerivedData/Alpha/Build/Intermediates/Alpha.build/Debug/Alpha.build/Objects-normal/x86_64/main.o Alpha/main.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compilerbd193d5abc33b941^c077ff5bbc33b941^---0#0#1#-19%DVTDocumentLocation2@80"file://localhost/Users/chengtai/Documents/2014/MOTR/modules/Alpha/Alpha/main.cpp0000000000000000^3167"CompileC DerivedData/Alpha/Build/Intermediates/Alpha.build/Debug/Alpha.build/Objects-normal/x86_64/main.o Alpha/main.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/chengtai/Documents/2014/MOTR/modules/Alpha    export LANG=en_US.US-ASCII    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x c++ -arch x86_64 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -std=gnu++11 -stdlib=libc++ -fmodules -fmodules-cache-path=/Users/chengtai/Documents/2014/MOTR/modules/Alpha/DerivedData/ModuleCache -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Werror=return-type -Werror=deprecated-objc-isa-usage -Werror=objc-root-class -Wno-non-virtual-dtor -Wno-overloaded-virtual -Wno-exit-time-destructors -Wno-missing-braces -Wparentheses -Wswitch -Wunused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wconditional-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wbool-conversion -Wenum-conversion -Wshorten-64-to-32 -Wno-newline-eof -Wno-c++11-extensions -DDEBUG=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk -fasm-blocks -fstrict-aliasing -Wdeprecated-declarations -Winvalid-offsetof -mmacosx-version-min=10.8 -g -fvisibility-inlines-hidden -Wno-sign-conversion -iquote /Users/chengtai/Documents/2014/MOTR/modules/Alpha/DerivedData/Alpha/Build/Intermediates/Alpha.build/Debug/Alpha.build/Alpha-generated-files.hmap -I/Users/chengtai/Documents/2014/MOTR/modules/Alpha/DerivedData/Alpha/Build/Intermediates/Alpha.build/Debug/Alpha.build/Alpha-own-target-headers.hmap -I/Users/chengtai/Documents/2014/MOTR/modules/Alpha/DerivedData/Alpha/Build/Intermediates/Alpha.build/Debug/Alpha.build/Alpha-all-target-headers.hmap -iquote /Users/chengtai/Documents/2014/MOTR/modules/Alpha/DerivedData/Alpha/Build/Intermediates/Alpha.build/Debug/Alpha.build/Alpha-project-headers.hmap -I/Users/chengtai/Documents/2014/MOTR/modules/Alpha/DerivedData/Alpha/Build/Products/Debug/include -I../, -I/usr/local/include -I/Users/chengtai/Documents/2014/MOTR/modules/Alpha/DerivedData/Alpha/Build/Intermediates/Alpha.build/Debug/Alpha.build/DerivedSources/x86_64 -I/Users/chengtai/Documents/2014/MOTR/modules/Alpha/DerivedData/Alpha/Build/Intermediates/Alpha.build/Debug/Alpha.build/DerivedSources -F/Users/chengtai/Documents/2014/MOTR/modules/Alpha/DerivedData/Alpha/Build/Products/Debug -MMD -MT dependencies -MF /Users/chengtai/Documents/2014/MOTR/modules/Alpha/DerivedData/Alpha/Build/Intermediates/Alpha.build/Debug/Alpha.build/Objects-normal/x86_64/main.d --serialize-diagnostics /Users/chengtai/Documents/2014/MOTR/modules/Alpha/DerivedData/Alpha/Build/Intermediates/Alpha.build/Debug/Alpha.build/Objects-normal/x86_64/main.dia -c /Users/chengtai/Documents/2014/MOTR/modules/Alpha/Alpha/main.cpp -o /Users/chengtai/Documents/2014/MOTR/modules/Alpha/DerivedData/Alpha/Build/Intermediates/Alpha.build/Debug/Alpha.build/Objects-normal/x86_64/main.o36"5A555DC3-5E98-43B9-9390-B0E7EE54B4B8-
-b9C60672B-1B69-4DB4-80B4-325041099729
+d/Users/chengtai/Documents/2014/MOTR/modules/Alpha/Alpha/convnet.h
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection72"Compile /Users/chengtai/Documents/2014/MOTR/modules/Alpha/Alpha/main.cpp182"CompileC DerivedData/Alpha/Build/Intermediates/Alpha.build/Debug/Alpha.build/Objects-normal/x86_64/main.o Alpha/main.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler45b8e12e2e34b941^d1b1e3302e34b941^---0#0#1#-19%DVTDocumentLocation2@80"file://localhost/Users/chengtai/Documents/2014/MOTR/modules/Alpha/Alpha/main.cpp0000000000000000^3167"CompileC DerivedData/Alpha/Build/Intermediates/Alpha.build/Debug/Alpha.build/Objects-normal/x86_64/main.o Alpha/main.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/chengtai/Documents/2014/MOTR/modules/Alpha    export LANG=en_US.US-ASCII    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x c++ -arch x86_64 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -std=gnu++11 -stdlib=libc++ -fmodules -fmodules-cache-path=/Users/chengtai/Documents/2014/MOTR/modules/Alpha/DerivedData/ModuleCache -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Werror=return-type -Werror=deprecated-objc-isa-usage -Werror=objc-root-class -Wno-non-virtual-dtor -Wno-overloaded-virtual -Wno-exit-time-destructors -Wno-missing-braces -Wparentheses -Wswitch -Wunused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wconditional-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wbool-conversion -Wenum-conversion -Wshorten-64-to-32 -Wno-newline-eof -Wno-c++11-extensions -DDEBUG=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk -fasm-blocks -fstrict-aliasing -Wdeprecated-declarations -Winvalid-offsetof -mmacosx-version-min=10.8 -g -fvisibility-inlines-hidden -Wno-sign-conversion -iquote /Users/chengtai/Documents/2014/MOTR/modules/Alpha/DerivedData/Alpha/Build/Intermediates/Alpha.build/Debug/Alpha.build/Alpha-generated-files.hmap -I/Users/chengtai/Documents/2014/MOTR/modules/Alpha/DerivedData/Alpha/Build/Intermediates/Alpha.build/Debug/Alpha.build/Alpha-own-target-headers.hmap -I/Users/chengtai/Documents/2014/MOTR/modules/Alpha/DerivedData/Alpha/Build/Intermediates/Alpha.build/Debug/Alpha.build/Alpha-all-target-headers.hmap -iquote /Users/chengtai/Documents/2014/MOTR/modules/Alpha/DerivedData/Alpha/Build/Intermediates/Alpha.build/Debug/Alpha.build/Alpha-project-headers.hmap -I/Users/chengtai/Documents/2014/MOTR/modules/Alpha/DerivedData/Alpha/Build/Products/Debug/include -I../, -I/usr/local/include -I/Users/chengtai/Documents/2014/MOTR/modules/Alpha/DerivedData/Alpha/Build/Intermediates/Alpha.build/Debug/Alpha.build/DerivedSources/x86_64 -I/Users/chengtai/Documents/2014/MOTR/modules/Alpha/DerivedData/Alpha/Build/Intermediates/Alpha.build/Debug/Alpha.build/DerivedSources -F/Users/chengtai/Documents/2014/MOTR/modules/Alpha/DerivedData/Alpha/Build/Products/Debug -MMD -MT dependencies -MF /Users/chengtai/Documents/2014/MOTR/modules/Alpha/DerivedData/Alpha/Build/Intermediates/Alpha.build/Debug/Alpha.build/Objects-normal/x86_64/main.d --serialize-diagnostics /Users/chengtai/Documents/2014/MOTR/modules/Alpha/DerivedData/Alpha/Build/Intermediates/Alpha.build/Debug/Alpha.build/Objects-normal/x86_64/main.dia -c /Users/chengtai/Documents/2014/MOTR/modules/Alpha/Alpha/main.cpp -o /Users/chengtai/Documents/2014/MOTR/modules/Alpha/DerivedData/Alpha/Build/Intermediates/Alpha.build/Debug/Alpha.build/Objects-normal/x86_64/main.o36"04C3F161-241F-471F-8FB4-81E435CE1E52-
+bBF43EC77-E95A-4C18-B2B8-22828EE23114
 
 CCompileC DerivedData/Alpha/Build/Intermediates/Alpha.build/Debug/Alpha.build/Objects-normal/x86_64/main.o /Users/chengtai/Documents/2014/topics2014/Alpha/Alpha/main.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler
 s422487670.622018
@@ -2947,8 +3176,8 @@ lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection70"Compile
 b346F9064-9F05-41A9-BFBD-6AB37BF4B62D
 
 CCompileC DerivedData/Alpha/Build/Intermediates/Alpha.build/Debug/Alpha.build/Objects-normal/x86_64/visual.o /Users/chengtai/Documents/2014/MOTR/modules/Alpha/Alpha/visual.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler
-s422820954.238206
-e422820955.834934
+s422850094.880896
+e422850096.875556
 r1
 xCompileC
 xDerivedData/Alpha/Build/Intermediates/Alpha.build/Debug/Alpha.build/Objects-normal/x86_64/visual.o
@@ -3141,12 +3370,12 @@ d/Users/chengtai/Documents/2014/MOTR/modules/Alpha/Eigen/src/Eigenvalues/Complex
 d/Users/chengtai/Documents/2014/MOTR/modules/Alpha/Eigen/src/Eigenvalues/RealQZ.h
 d/Users/chengtai/Documents/2014/MOTR/modules/Alpha/Eigen/src/Eigenvalues/GeneralizedEigenSolver.h
 d/Users/chengtai/Documents/2014/MOTR/modules/Alpha/Eigen/src/Eigenvalues/MatrixBaseEigenvalues.h
-lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection74"Compile /Users/chengtai/Documents/2014/MOTR/modules/Alpha/Alpha/visual.cpp186"CompileC DerivedData/Alpha/Build/Intermediates/Alpha.build/Debug/Alpha.build/Objects-normal/x86_64/visual.o Alpha/visual.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compilerac193d5abc33b941^ecc0d55bbc33b941^---0#0#1#-19%DVTDocumentLocation2@82"file://localhost/Users/chengtai/Documents/2014/MOTR/modules/Alpha/Alpha/visual.cpp0000000000000000^3179"CompileC DerivedData/Alpha/Build/Intermediates/Alpha.build/Debug/Alpha.build/Objects-normal/x86_64/visual.o Alpha/visual.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/chengtai/Documents/2014/MOTR/modules/Alpha    export LANG=en_US.US-ASCII    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x c++ -arch x86_64 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -std=gnu++11 -stdlib=libc++ -fmodules -fmodules-cache-path=/Users/chengtai/Documents/2014/MOTR/modules/Alpha/DerivedData/ModuleCache -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Werror=return-type -Werror=deprecated-objc-isa-usage -Werror=objc-root-class -Wno-non-virtual-dtor -Wno-overloaded-virtual -Wno-exit-time-destructors -Wno-missing-braces -Wparentheses -Wswitch -Wunused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wconditional-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wbool-conversion -Wenum-conversion -Wshorten-64-to-32 -Wno-newline-eof -Wno-c++11-extensions -DDEBUG=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk -fasm-blocks -fstrict-aliasing -Wdeprecated-declarations -Winvalid-offsetof -mmacosx-version-min=10.8 -g -fvisibility-inlines-hidden -Wno-sign-conversion -iquote /Users/chengtai/Documents/2014/MOTR/modules/Alpha/DerivedData/Alpha/Build/Intermediates/Alpha.build/Debug/Alpha.build/Alpha-generated-files.hmap -I/Users/chengtai/Documents/2014/MOTR/modules/Alpha/DerivedData/Alpha/Build/Intermediates/Alpha.build/Debug/Alpha.build/Alpha-own-target-headers.hmap -I/Users/chengtai/Documents/2014/MOTR/modules/Alpha/DerivedData/Alpha/Build/Intermediates/Alpha.build/Debug/Alpha.build/Alpha-all-target-headers.hmap -iquote /Users/chengtai/Documents/2014/MOTR/modules/Alpha/DerivedData/Alpha/Build/Intermediates/Alpha.build/Debug/Alpha.build/Alpha-project-headers.hmap -I/Users/chengtai/Documents/2014/MOTR/modules/Alpha/DerivedData/Alpha/Build/Products/Debug/include -I../, -I/usr/local/include -I/Users/chengtai/Documents/2014/MOTR/modules/Alpha/DerivedData/Alpha/Build/Intermediates/Alpha.build/Debug/Alpha.build/DerivedSources/x86_64 -I/Users/chengtai/Documents/2014/MOTR/modules/Alpha/DerivedData/Alpha/Build/Intermediates/Alpha.build/Debug/Alpha.build/DerivedSources -F/Users/chengtai/Documents/2014/MOTR/modules/Alpha/DerivedData/Alpha/Build/Products/Debug -MMD -MT dependencies -MF /Users/chengtai/Documents/2014/MOTR/modules/Alpha/DerivedData/Alpha/Build/Intermediates/Alpha.build/Debug/Alpha.build/Objects-normal/x86_64/visual.d --serialize-diagnostics /Users/chengtai/Documents/2014/MOTR/modules/Alpha/DerivedData/Alpha/Build/Intermediates/Alpha.build/Debug/Alpha.build/Objects-normal/x86_64/visual.dia -c /Users/chengtai/Documents/2014/MOTR/modules/Alpha/Alpha/visual.cpp -o /Users/chengtai/Documents/2014/MOTR/modules/Alpha/DerivedData/Alpha/Build/Intermediates/Alpha.build/Debug/Alpha.build/Objects-normal/x86_64/visual.o36"0ABD1E4B-4AEA-4F64-9BE2-C8E68DBA4592-
-b9C60672B-1B69-4DB4-80B4-325041099729
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection74"Compile /Users/chengtai/Documents/2014/MOTR/modules/Alpha/Alpha/visual.cpp186"CompileC DerivedData/Alpha/Build/Intermediates/Alpha.build/Debug/Alpha.build/Objects-normal/x86_64/visual.o Alpha/visual.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler02b8e12e2e34b941^1825e0302e34b941^---0#0#1#-19%DVTDocumentLocation2@82"file://localhost/Users/chengtai/Documents/2014/MOTR/modules/Alpha/Alpha/visual.cpp0000000000000000^3179"CompileC DerivedData/Alpha/Build/Intermediates/Alpha.build/Debug/Alpha.build/Objects-normal/x86_64/visual.o Alpha/visual.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/chengtai/Documents/2014/MOTR/modules/Alpha    export LANG=en_US.US-ASCII    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x c++ -arch x86_64 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -std=gnu++11 -stdlib=libc++ -fmodules -fmodules-cache-path=/Users/chengtai/Documents/2014/MOTR/modules/Alpha/DerivedData/ModuleCache -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Werror=return-type -Werror=deprecated-objc-isa-usage -Werror=objc-root-class -Wno-non-virtual-dtor -Wno-overloaded-virtual -Wno-exit-time-destructors -Wno-missing-braces -Wparentheses -Wswitch -Wunused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wconditional-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wbool-conversion -Wenum-conversion -Wshorten-64-to-32 -Wno-newline-eof -Wno-c++11-extensions -DDEBUG=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk -fasm-blocks -fstrict-aliasing -Wdeprecated-declarations -Winvalid-offsetof -mmacosx-version-min=10.8 -g -fvisibility-inlines-hidden -Wno-sign-conversion -iquote /Users/chengtai/Documents/2014/MOTR/modules/Alpha/DerivedData/Alpha/Build/Intermediates/Alpha.build/Debug/Alpha.build/Alpha-generated-files.hmap -I/Users/chengtai/Documents/2014/MOTR/modules/Alpha/DerivedData/Alpha/Build/Intermediates/Alpha.build/Debug/Alpha.build/Alpha-own-target-headers.hmap -I/Users/chengtai/Documents/2014/MOTR/modules/Alpha/DerivedData/Alpha/Build/Intermediates/Alpha.build/Debug/Alpha.build/Alpha-all-target-headers.hmap -iquote /Users/chengtai/Documents/2014/MOTR/modules/Alpha/DerivedData/Alpha/Build/Intermediates/Alpha.build/Debug/Alpha.build/Alpha-project-headers.hmap -I/Users/chengtai/Documents/2014/MOTR/modules/Alpha/DerivedData/Alpha/Build/Products/Debug/include -I../, -I/usr/local/include -I/Users/chengtai/Documents/2014/MOTR/modules/Alpha/DerivedData/Alpha/Build/Intermediates/Alpha.build/Debug/Alpha.build/DerivedSources/x86_64 -I/Users/chengtai/Documents/2014/MOTR/modules/Alpha/DerivedData/Alpha/Build/Intermediates/Alpha.build/Debug/Alpha.build/DerivedSources -F/Users/chengtai/Documents/2014/MOTR/modules/Alpha/DerivedData/Alpha/Build/Products/Debug -MMD -MT dependencies -MF /Users/chengtai/Documents/2014/MOTR/modules/Alpha/DerivedData/Alpha/Build/Intermediates/Alpha.build/Debug/Alpha.build/Objects-normal/x86_64/visual.d --serialize-diagnostics /Users/chengtai/Documents/2014/MOTR/modules/Alpha/DerivedData/Alpha/Build/Intermediates/Alpha.build/Debug/Alpha.build/Objects-normal/x86_64/visual.dia -c /Users/chengtai/Documents/2014/MOTR/modules/Alpha/Alpha/visual.cpp -o /Users/chengtai/Documents/2014/MOTR/modules/Alpha/DerivedData/Alpha/Build/Intermediates/Alpha.build/Debug/Alpha.build/Objects-normal/x86_64/visual.o36"4C04A93D-DE1C-4954-9953-7D8DB210F855-
+bBF43EC77-E95A-4C18-B2B8-22828EE23114
 
 CLd /Users/chengtai/Documents/2014/MOTR/modules/Alpha/DerivedData/Alpha/Build/Products/Debug/Alpha normal x86_64
-s422820956.008186
-e422820956.033855
+s422850158.295084
+e422850158.315590
 r0
 xLd
 x/Users/chengtai/Documents/2014/MOTR/modules/Alpha/DerivedData/Alpha/Build/Products/Debug/Alpha
@@ -3154,14 +3383,10 @@ xnormal
 xx86_64
 d/Users/chengtai/Documents/2014/MOTR/modules/Alpha/DerivedData/Alpha/Build/Intermediates/Alpha.build/Debug/Alpha.build/Objects-normal/x86_64/Alpha.LinkFileList
 d/Users/chengtai/Documents/2014/MOTR/modules/Alpha/DerivedData/Alpha/Build/Intermediates/Alpha.build/Debug/Alpha.build/Objects-normal/x86_64/main.o
-d/Users/chengtai/Documents/2014/MOTR/modules/Alpha/DerivedData/Alpha/Build/Intermediates/Alpha.build/Debug/Alpha.build/Objects-normal/x86_64/convlayer.o
+d/Users/chengtai/Documents/2014/MOTR/modules/Alpha/DerivedData/Alpha/Build/Intermediates/Alpha.build/Debug/Alpha.build/Objects-normal/x86_64/layer.o
 d/Users/chengtai/Documents/2014/MOTR/modules/Alpha/DerivedData/Alpha/Build/Intermediates/Alpha.build/Debug/Alpha.build/Objects-normal/x86_64/helper.o
 d/Users/chengtai/Documents/2014/MOTR/modules/Alpha/DerivedData/Alpha/Build/Intermediates/Alpha.build/Debug/Alpha.build/Objects-normal/x86_64/visual.o
-d/usr/local/Cellar/opencv/2.4.8.2/lib/libopencv_core.dylib
-d/usr/local/Cellar/opencv/2.4.8.2/lib/libopencv_highgui.dylib
-d/usr/local/Cellar/opencv/2.4.8.2/lib/libopencv_imgproc.dylib
 d/usr/local/Cellar/opencv/2.4.8.2/lib/libopencv_gpu.2.4.8.dylib
-d/usr/local/Cellar/opencv/2.4.8.2/lib/libopencv_ml.2.4.8.dylib
 d/usr/local/Cellar/opencv/2.4.8.2/lib/libopencv_imgproc.2.4.8.dylib
 d/usr/local/Cellar/opencv/2.4.8.2/lib/libopencv_core.2.4.8.dylib
 d/usr/local/Cellar/opencv/2.4.8.2/lib/libopencv_highgui.2.4.8.dylib
@@ -3199,16 +3424,12 @@ d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/
 d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libunwind.dylib
 d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libxpc.dylib
 oUndefined symbols for architecture x86_64:
-o  "cv::namedWindow(std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > const&, int)", referenced from:
-o      test(int, char**) in main.o
 o  "cv::imread(std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > const&, int)", referenced from:
 o      ReadImage(cv::Mat&, int, char**) in visual.o
-o  "cv::imshow(std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > const&, cv::_InputArray const&)", referenced from:
-o      test(int, char**) in main.o
 old: symbol(s) not found for architecture x86_64
 oclang: error: linker command failed with exit code 1 (use -v to see invocation)
-lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection99"Link /Users/chengtai/Documents/2014/MOTR/modules/Alpha/DerivedData/Alpha/Build/Products/Debug/Alpha61"Ld DerivedData/Alpha/Build/Products/Debug/Alpha normal x86_64d42a025cbc33b941^00aa085cbc33b941^-710"Undefined symbols for architecture x86_64:  "cv::namedWindow(std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > const&, int)", referenced from:      test(int, char**) in main.o  "cv::imread(std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > const&, int)", referenced from:      ReadImage(cv::Mat&, int, char**) in visual.o  "cv::imshow(std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > const&, cv::_InputArray const&)", referenced from:      test(int, char**) in main.old: symbol(s) not found for architecture x86_64clang: error: linker command failed with exit code 1 (use -v to see invocation)8(21%IDEActivityLogMessage2@134""cv::namedWindow(std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > const&, int)", referenced from:-422820956#43#137#-2#-23%DVTTextDocumentLocation3@-0000000000000000^18446744073709551615#18446744073709551615#18446744073709551615#18446744073709551615#18446744073709551615#0#30"Apple Mach-O Linker (ld) Error--2@27"Test(int, char**) in main.o-422820956#180#34#-0#-3@-0000000000000000^18446744073709551615#18446744073709551615#18446744073709551615#18446744073709551615#18446744073709551615#0#31"Apple Mach-O Linker (ld) Notice--2@129""cv::imread(std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > const&, int)", referenced from:-422820956#214#132#-2#-3@-0000000000000000^18446744073709551615#18446744073709551615#18446744073709551615#18446744073709551615#18446744073709551615#0#30"Apple Mach-O Linker (ld) Error--2@44"ReadImage(cv::Mat&, int, char**) in visual.o-422820956#346#51#-0#-3@-0000000000000000^18446744073709551615#18446744073709551615#18446744073709551615#18446744073709551615#18446744073709551615#0#31"Apple Mach-O Linker (ld) Notice--2@148""cv::imshow(std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > const&, cv::_InputArray const&)", referenced from:-422820956#397#151#-2#-3@-0000000000000000^18446744073709551615#18446744073709551615#18446744073709551615#18446744073709551615#18446744073709551615#0#30"Apple Mach-O Linker (ld) Error--2@27"Test(int, char**) in main.o-422820956#548#34#-0#-3@-0000000000000000^18446744073709551615#18446744073709551615#18446744073709551615#18446744073709551615#18446744073709551615#0#31"Apple Mach-O Linker (ld) Notice--2@43"Symbol(s) not found for architecture x86_64-422820956#582#48#-0#-3@-0000000000000000^18446744073709551615#18446744073709551615#18446744073709551615#18446744073709551615#18446744073709551615#0#31"Apple Mach-O Linker (ld) Notice--2@65"Linker command failed with exit code 1 (use -v to see invocation)-422820956#630#80#-2#-3@-0000000000000000^18446744073709551615#18446744073709551615#18446744073709551615#18446744073709551615#18446744073709551615#0#30"Apple Mach-O Linker (ld) Error--0#0#1#--1262"Ld DerivedData/Alpha/Build/Products/Debug/Alpha normal x86_64    cd /Users/chengtai/Documents/2014/MOTR/modules/Alpha    export MACOSX_DEPLOYMENT_TARGET=10.8    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++ -arch x86_64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk -L/Users/chengtai/Documents/2014/MOTR/modules/Alpha/DerivedData/Alpha/Build/Products/Debug -L/usr/local/Cellar/opencv/2.4.8.2/lib -F/Users/chengtai/Documents/2014/MOTR/modules/Alpha/DerivedData/Alpha/Build/Products/Debug -filelist /Users/chengtai/Documents/2014/MOTR/modules/Alpha/DerivedData/Alpha/Build/Intermediates/Alpha.build/Debug/Alpha.build/Objects-normal/x86_64/Alpha.LinkFileList -mmacosx-version-min=10.8 -lopencv_core -lopencv_highgui -lopencv_imgproc -stdlib=libc++ -lopencv_gpu.2.4.8 -lopencv_ml.2.4.8 -lopencv_imgproc.2.4.8 -lopencv_core.2.4.8 -lopencv_highgui.2.4.8 -Xlinker -dependency_info -Xlinker /Users/chengtai/Documents/2014/MOTR/modules/Alpha/DerivedData/Alpha/Build/Intermediates/Alpha.build/Debug/Alpha.build/Objects-normal/x86_64/Alpha_dependency_info.dat -o /Users/chengtai/Documents/2014/MOTR/modules/Alpha/DerivedData/Alpha/Build/Products/Debug/Alpha36"D06CD07B-030C-463B-BFC4-C606044FC2F4-
-b9C60672B-1B69-4DB4-80B4-325041099729
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection99"Link /Users/chengtai/Documents/2014/MOTR/modules/Alpha/DerivedData/Alpha/Build/Products/Debug/Alpha61"Ld DerivedData/Alpha/Build/Products/Debug/Alpha normal x86_641c994b6e2e34b941^3eca506e2e34b941^-354"Undefined symbols for architecture x86_64:  "cv::imread(std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > const&, int)", referenced from:      ReadImage(cv::Mat&, int, char**) in visual.old: symbol(s) not found for architecture x86_64clang: error: linker command failed with exit code 1 (use -v to see invocation)4(21%IDEActivityLogMessage2@129""cv::imread(std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > const&, int)", referenced from:-422850158#43#132#-2#-23%DVTTextDocumentLocation3@-0000000000000000^18446744073709551615#18446744073709551615#18446744073709551615#18446744073709551615#18446744073709551615#0#30"Apple Mach-O Linker (ld) Error--2@44"ReadImage(cv::Mat&, int, char**) in visual.o-422850158#175#51#-0#-3@-0000000000000000^18446744073709551615#18446744073709551615#18446744073709551615#18446744073709551615#18446744073709551615#0#31"Apple Mach-O Linker (ld) Notice--2@43"Symbol(s) not found for architecture x86_64-422850158#226#48#-0#-3@-0000000000000000^18446744073709551615#18446744073709551615#18446744073709551615#18446744073709551615#18446744073709551615#0#31"Apple Mach-O Linker (ld) Notice--2@65"Linker command failed with exit code 1 (use -v to see invocation)-422850158#274#80#-2#-3@-0000000000000000^18446744073709551615#18446744073709551615#18446744073709551615#18446744073709551615#18446744073709551615#0#30"Apple Mach-O Linker (ld) Error--0#0#1#--1196"Ld DerivedData/Alpha/Build/Products/Debug/Alpha normal x86_64    cd /Users/chengtai/Documents/2014/MOTR/modules/Alpha    export MACOSX_DEPLOYMENT_TARGET=10.8    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++ -arch x86_64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk -L/Users/chengtai/Documents/2014/MOTR/modules/Alpha/DerivedData/Alpha/Build/Products/Debug -L/usr/local/Cellar/opencv/2.4.8.2/lib -F/Users/chengtai/Documents/2014/MOTR/modules/Alpha/DerivedData/Alpha/Build/Products/Debug -filelist /Users/chengtai/Documents/2014/MOTR/modules/Alpha/DerivedData/Alpha/Build/Intermediates/Alpha.build/Debug/Alpha.build/Objects-normal/x86_64/Alpha.LinkFileList -mmacosx-version-min=10.8 -stdlib=libc++ -lopencv_gpu.2.4.8 -lopencv_imgproc.2.4.8 -lopencv_core.2.4.8 -lopencv_highgui.2.4.8 -Xlinker -dependency_info -Xlinker /Users/chengtai/Documents/2014/MOTR/modules/Alpha/DerivedData/Alpha/Build/Intermediates/Alpha.build/Debug/Alpha.build/Objects-normal/x86_64/Alpha_dependency_info.dat -o /Users/chengtai/Documents/2014/MOTR/modules/Alpha/DerivedData/Alpha/Build/Products/Debug/Alpha36"91CBEC32-7738-4FFB-BFD7-BDE4CF754311-
+bC4B4A291-8B86-4A76-883A-AB418E7829B3
 
 CLd /Users/chengtai/Documents/2014/topics2014/Alpha/DerivedData/Alpha/Build/Products/Debug/Alpha normal x86_64
 s422487671.625894

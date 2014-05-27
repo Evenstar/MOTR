@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		721FA5DA1933B7A30005D58C /* layer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 721FA5D91933B7A30005D58C /* layer.cpp */; };
+		721FA5DE19342F490005D58C /* convnet.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 721FA5DD19342F490005D58C /* convnet.cpp */; };
 		722F42EA192FFEEF004C5A4B /* visual.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 722F42E9192FFEEF004C5A4B /* visual.cpp */; };
 		722F42F119302555004C5A4B /* libopencv_core.2.4.8.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 722F42EC19302555004C5A4B /* libopencv_core.2.4.8.dylib */; };
 		722F42F219302555004C5A4B /* libopencv_gpu.2.4.8.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 722F42ED19302555004C5A4B /* libopencv_gpu.2.4.8.dylib */; };
@@ -35,6 +36,7 @@
 		721FA5D91933B7A30005D58C /* layer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = layer.cpp; sourceTree = "<group>"; };
 		721FA5DB193411F70005D58C /* layer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = layer.h; sourceTree = "<group>"; };
 		721FA5DC1934183D0005D58C /* convnet.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = convnet.h; sourceTree = "<group>"; };
+		721FA5DD19342F490005D58C /* convnet.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = convnet.cpp; sourceTree = "<group>"; };
 		722F42E8192FFE8D004C5A4B /* visual.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = visual.h; sourceTree = "<group>"; };
 		722F42E9192FFEEF004C5A4B /* visual.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = visual.cpp; sourceTree = "<group>"; };
 		722F42EC19302555004C5A4B /* libopencv_core.2.4.8.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libopencv_core.2.4.8.dylib; path = ../../../../../../../usr/local/Cellar/opencv/2.4.8.2/lib/libopencv_core.2.4.8.dylib; sourceTree = "<group>"; };
@@ -125,6 +127,7 @@
 				728DFD2C192E958900D93082 /* main.cpp */,
 				722F42E9192FFEEF004C5A4B /* visual.cpp */,
 				721FA5D91933B7A30005D58C /* layer.cpp */,
+				721FA5DD19342F490005D58C /* convnet.cpp */,
 			);
 			name = Src;
 			sourceTree = "<group>";
@@ -204,6 +207,7 @@
 				721FA5DA1933B7A30005D58C /* layer.cpp in Sources */,
 				728DFD3D192E9D2900D93082 /* helper.cpp in Sources */,
 				722F42EA192FFEEF004C5A4B /* visual.cpp in Sources */,
+				721FA5DE19342F490005D58C /* convnet.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -296,11 +300,6 @@
 					"$(inherited)",
 					/usr/local/Cellar/opencv/2.4.8.2/lib,
 				);
-				OTHER_LDFLAGS = (
-					"-lopencv_core",
-					"-lopencv_highgui",
-					"-lopencv_imgproc",
-				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -312,11 +311,6 @@
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					/usr/local/Cellar/opencv/2.4.8.2/lib,
-				);
-				OTHER_LDFLAGS = (
-					"-lopencv_core",
-					"-lopencv_highgui",
-					"-lopencv_imgproc",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};

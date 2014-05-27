@@ -1,6 +1,6 @@
 dependencies: \
   /Users/chengtai/Documents/2014/MOTR/modules/Alpha/Alpha/main.cpp \
-  /Users/chengtai/Documents/2014/MOTR/modules/Alpha/Alpha/convlayer.h \
+  /Users/chengtai/Documents/2014/MOTR/modules/Alpha/Alpha/layer.h \
   /Users/chengtai/Documents/2014/MOTR/modules/Alpha/Alpha/utils.h \
   /usr/local/include/opencv2/core/core.hpp \
   /usr/local/include/opencv2/core/types_c.h \
@@ -184,4 +184,5 @@ dependencies: \
   /Users/chengtai/Documents/2014/MOTR/modules/Alpha/Alpha/../Eigen/src/Eigenvalues/GeneralizedEigenSolver.h \
   /Users/chengtai/Documents/2014/MOTR/modules/Alpha/Alpha/../Eigen/src/Eigenvalues/MatrixBaseEigenvalues.h \
   /Users/chengtai/Documents/2014/MOTR/modules/Alpha/Alpha/helper.h \
-  /Users/chengtai/Documents/2014/MOTR/modules/Alpha/Alpha/visual.h
+  /Users/chengtai/Documents/2014/MOTR/modules/Alpha/Alpha/visual.h \
+  /Users/chengtai/Documents/2014/MOTR/modules/Alpha/Alpha/convnet.h

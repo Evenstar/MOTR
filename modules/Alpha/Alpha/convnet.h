@@ -27,7 +27,7 @@ struct Config{
 
 class ConvNet{
 public:
-    ConvNet(){};
+    ConvNet();
 
     ~ConvNet(){};
     

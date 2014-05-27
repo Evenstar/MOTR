@@ -18,37 +18,34 @@ using namespace std;
 class Layer{
 public:
     Layer(){};
-    virtual ~Layer();
+    virtual ~Layer(){};
     
 public:
-    
-    string name;
-    
-public:
-    virtual void ApplyFilter();
-    virtual void Downsample();
-    virtual void ApplyNonlinearity();
-    
-    
+    virtual void ApplyFilter(){};
+    virtual void Downsample(){};
+    virtual void ApplyNonlinearity(){};
 };
 
 
 class ConvLayer : public Layer{
 public:
-    ConvLayer(){};
+    ConvLayer(int _stride, int _side, int _kernelsize);
     ~ConvLayer(){};
 public:
+    
+    void Setup(int _stride, int _side, int _kernelsize);
+    
     void SetFilter( const vector<FilterType> &) ;
     
     void SetInput( vector<MatType>* );
     
     void SetReceiveset(const vector<set<int> >);
     
-    void ApplyFilter();
+    void ApplyFilter(){};
     
-    void DownSample();
+    void DownSample(){};
     
-    void ApplyNonlinearity();
+    void ApplyNonlinearity(){};
     
     vector<MatType>* output();
     
@@ -61,26 +58,29 @@ public:
     
     int stride;
     int side;
-    int pooldim;
+    int kernelsize;
+    
+    string name;
 
 };
 
 class FullyConnectedLayer : public Layer {
 public:
-    FullyConnectedLayer(){};
+    FullyConnectedLayer(int _stride, int _side);
     ~FullyConnectedLayer(){};
     
 public:
+    void Setup(int _stride, int _side);
 
     void SetWeight( const MatType &);
     
     void SetInput(const MatType &);
     
-    void ApplyFilter();
+    void ApplyFilter(){};
     
-    void ApplyNonlinearity();
+    void ApplyNonlinearity(){};
     
-    void DownSample();
+    void DownSample(){};
     
     void SetInput(MatType*);
     
@@ -94,9 +94,8 @@ public:
     
     int stride;
     int side;
-    int pooldim;
     
-    
+    string name;
 };
 
 

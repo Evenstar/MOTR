@@ -10,6 +10,7 @@
 #include "layer.h"
 #include "helper.h"
 #include "visual.h"
+#include "convnet.h"
 using Eigen::MatrixXf;
 using Eigen::MatrixXi;
 using namespace cv;
@@ -28,6 +29,8 @@ ImgType test(int argc, char** argv)
 
 int main(int argc, char** argv)
 {
+    ConvNet convnet;
+    
    /*
     vector<FilterType> filter;
     LoadFilter(filter, "/Users/chengtai/Documents/2014/MOTR/modules/Alpha/data/filter.txt");
