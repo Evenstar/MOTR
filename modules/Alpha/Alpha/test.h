@@ -31,4 +31,6 @@ void test_Convlayer();
 
 void test_GenerateRandomFilter();
 
+
+void test_MaxPooling();
 #endif /* defined(__Alpha__test__) */

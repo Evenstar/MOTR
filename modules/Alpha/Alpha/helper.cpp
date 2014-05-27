@@ -121,9 +121,28 @@ vector<FilterType> GenerateRandomFilter(int _ninmaps, int _noutmaps,
 
 
 
-
-
-
+MatType MaxPooling(const MatType & mat, int stride, int side)
+{
+    long m=mat.rows();
+    long n=mat.cols();
+    long rows=floor((m-side)/stride)+1;
+    long cols=floor((n-side)/stride)+1;
+    MatType result(rows,cols);
+    for (int i=0; i<m; i+=stride){
+        for(int j=0; j<n; j+=stride){
+            float s=0;
+            for (int k=0; k<side; k++){
+                for(int l=0; l<side; l++){
+                    if (abs(mat(i+k,j+l))>s){
+                        s=abs(mat(i+k,j+l));
+                    }
+                }
+            }
+            result(i/stride,j/stride)=s;
+        }
+    }
+    return result;
+}
 
 
 

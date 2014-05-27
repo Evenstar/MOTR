@@ -71,14 +71,23 @@ void test_Convlayer(){
     
     convlayer.ApplyFilter();
     
-    img=Mat2Img((*convlayer.outdata)[2]);
+    convlayer.DownSample();
     
+    MatType mat=(*convlayer.outdata)[0];
     namedWindow("Filter",CV_WINDOW_AUTOSIZE);
-    imshow("Filter",img);
+    imshow("Filter",Mat2Img(mat));
     waitKey(0);
 }
 
 
+void test_MaxPooling()
+{
+    ImgType img=LoadHepburn();
+    MatType mat=MaxPooling(Img2Mat(img),2,2);
+    namedWindow("Filter",CV_WINDOW_AUTOSIZE);
+    imshow("Filter",Mat2Img(mat));
+    waitKey(0);
+}
 
 
 

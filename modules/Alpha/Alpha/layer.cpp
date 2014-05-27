@@ -63,7 +63,17 @@ void ConvLayer::ApplyFilter()
     }
 }
 
+void ConvLayer::DownSample()
+{
+    vector<MatType> newvec;
+    for (int i=0; i<outdata->size(); i++){
+        MatType mat=(*outdata)[i];
+        newvec.push_back(MaxPooling(mat,stride,side));
+    }
+    outdata->clear();
+    outdata=&newvec;
 
+}
 
 
 

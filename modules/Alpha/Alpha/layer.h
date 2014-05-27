@@ -46,7 +46,7 @@ public:
     
     void ApplyFilter();
     
-    void DownSample(){};
+    void DownSample();
     
     void ApplyNonlinearity(){};
     
