@@ -9,6 +9,7 @@
 #ifndef LAYER_H
 #define LAYER_H
 #include "utils.h"
+#include "helper.h"
 using namespace std;
 
 /**
@@ -43,7 +44,7 @@ public:
     
     void SetReceiveset(const vector<set<int> > &);
     
-    void ApplyFilter(){};
+    void ApplyFilter();
     
     void DownSample(){};
     

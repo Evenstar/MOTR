@@ -94,7 +94,6 @@ ImgType Mat2Img(MatType& mat)
     long rows=mat.rows();
     long cols=mat.cols();
     ImgType img(rows,cols,CV_32FC1);
-    cout<<rows<<cols<<endl;
     float* p;
     for (int i=0; i<rows; i++){
         p=img.ptr<float>(i);

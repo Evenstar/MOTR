@@ -68,6 +68,14 @@ void test_Convlayer(){
 
     cout<<convlayer.filter.size()<<endl;
     cout<<convlayer.filter[0]<<endl;
+    
+    convlayer.ApplyFilter();
+    
+    img=Mat2Img((*convlayer.outdata)[2]);
+    
+    namedWindow("Filter",CV_WINDOW_AUTOSIZE);
+    imshow("Filter",img);
+    waitKey(0);
 }
 
 

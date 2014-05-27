@@ -17,6 +17,9 @@ ConvLayer::ConvLayer(int _stride, int _side, int _kernelsize,
     kernelsize=_kernelsize;
     ninmaps=_ninmaps;
     noutmaps=_noutmaps;
+    
+    indata=new vector<MatType>;
+    outdata=new vector<MatType>;
 }
 void ConvLayer::SetFilter(const vector<FilterType>& f)
 {
@@ -46,7 +49,19 @@ void ConvLayer::Setup(int _stride, int _side, int _kernelsize,
 
 
 
-
+void ConvLayer::ApplyFilter()
+{
+    outdata->clear();
+    for(int j=0; j<noutmaps; j++){
+        MatType z=Conv2((*indata)[0],filter[0],Valid);
+        z=MatType::Zero(z.rows(),z.cols());
+        for (int i=0;i<ninmaps;i++){
+            MatType temp=Conv2((*indata)[i],filter[i*noutmaps+j],Valid);
+            z=z+temp;
+        }
+        (*outdata).push_back(z);
+    }
+}
 
 
 

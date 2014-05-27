@@ -182,4 +182,5 @@ dependencies: \
   /Users/chengtai/Documents/2014/MOTR/modules/Alpha/Alpha/../Eigen/src/Eigenvalues/ComplexEigenSolver.h \
   /Users/chengtai/Documents/2014/MOTR/modules/Alpha/Alpha/../Eigen/src/Eigenvalues/RealQZ.h \
   /Users/chengtai/Documents/2014/MOTR/modules/Alpha/Alpha/../Eigen/src/Eigenvalues/GeneralizedEigenSolver.h \
-  /Users/chengtai/Documents/2014/MOTR/modules/Alpha/Alpha/../Eigen/src/Eigenvalues/MatrixBaseEigenvalues.h
+  /Users/chengtai/Documents/2014/MOTR/modules/Alpha/Alpha/../Eigen/src/Eigenvalues/MatrixBaseEigenvalues.h \
+  /Users/chengtai/Documents/2014/MOTR/modules/Alpha/Alpha/helper.h
