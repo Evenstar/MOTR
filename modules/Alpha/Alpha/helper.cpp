@@ -106,7 +106,18 @@ ImgType Mat2Img(MatType& mat)
 }
 
 
-
+vector<FilterType> GenerateRandomFilter(int _ninmaps, int _noutmaps,
+                                        int _kernelsize)
+{
+    vector<FilterType> filter;
+    for (int i=0; i< _ninmaps; i++){
+        for(int j=0;j< _noutmaps; j++){
+            FilterType m=FilterType::Random(_kernelsize, _kernelsize);
+            filter.push_back(m);
+        }
+    }
+    return filter;
+}
 
 
 

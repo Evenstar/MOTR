@@ -20,6 +20,6 @@ using namespace Eigen;
 
 int main(int argc, char** argv)
 {
-    test_Convlayer();
+    test_GenerateRandomFilter();
     return 0;
 }

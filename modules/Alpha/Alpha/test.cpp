@@ -53,6 +53,29 @@ void test_Convlayer(){
     cout<<(*convlayer.indata)[0](0,0)<<endl;       ///A little odd.
 }
 
+void test_GenerateRandomFilter()
+{
+    vector<FilterType> filter=GenerateRandomFilter(3,5,5);
+    cout<<filter.size()<<endl;
+    cout<<filter[0]<<endl;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

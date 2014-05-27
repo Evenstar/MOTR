@@ -27,5 +27,7 @@ MatType Img2Mat(ImgType& img);
 
 ImgType Mat2Img(MatType& mat);
 
+vector<FilterType> GenerateRandomFilter(int _ninmaps, int _noutmaps, int _kernelsize);
+
 
 #endif
