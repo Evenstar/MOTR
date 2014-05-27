@@ -20,7 +20,6 @@ using namespace Eigen;
 
 int main(int argc, char** argv)
 {
-    ConvLayer convlayer(2,2,5);
-    test_Synthesize();
+    test_Convlayer();
     return 0;
 }

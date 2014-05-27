@@ -26,4 +26,8 @@ vector<MatType> Synthesize( ImgType img, int ncopies);
 void test_Synthesize();
 
 
+void test_Convlayer();
+
+
+
 #endif /* defined(__Alpha__test__) */

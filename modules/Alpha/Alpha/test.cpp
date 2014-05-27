@@ -38,3 +38,40 @@ void test_Synthesize(){
         cout<<vec[i](0,0)<<endl;
     }
 }
+
+
+void test_Convlayer(){
+    ConvLayer convlayer;
+    convlayer.Setup(2,2,5);
+    
+    ImgType img=LoadHepburn();
+    vector<MatType> vec=Synthesize(img,5);
+    
+    convlayer.SetInput(&vec);
+    
+    cout<<convlayer.stride<<" "<<convlayer.side<<" "<<convlayer.kernelsize<<endl;
+    cout<<(*convlayer.indata)[0](0,0)<<endl;       ///A little odd.
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
