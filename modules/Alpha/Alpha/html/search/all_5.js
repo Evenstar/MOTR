@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['helper_2ecpp',['helper.cpp',['../helper_8cpp.html',1,'']]],
-  ['helper_2eh',['helper.h',['../helper_8h.html',1,'']]]
+  ['outdata',['outdata',['../class_fully_connected_layer.html#a9dc1c3ddd28ba88594438e9029493cee',1,'FullyConnectedLayer']]]
 ];

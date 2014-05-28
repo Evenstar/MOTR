@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['filter',['filter',['../class_conv_layer.html#a5c9ac97672cb4025adaea24830cf1409',1,'ConvLayer']]]
+  ['outdata',['outdata',['../class_fully_connected_layer.html#a9dc1c3ddd28ba88594438e9029493cee',1,'FullyConnectedLayer']]]
 ];

@@ -21,4 +21,6 @@ void Configuration::ComputeSize()
         rows=floor((rows-side[i])/stride[i])+1;
         cols=floor((cols-side[i])/stride[i])+1;
     }
+    nconvrows.push_back(rows);
+    nconvcols.push_back(cols);
 }

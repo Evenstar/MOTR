@@ -9,54 +9,43 @@
 #include "layer.h"
 
 
-ConvLayer::ConvLayer(int _stride, int _side, int _kernelsize,
-                     int _ninmaps, int _noutmaps)
-{
-    stride=_stride;
-    side=_side;
-    kernelsize=_kernelsize;
-    ninmaps=_ninmaps;
-    noutmaps=_noutmaps;
-    indata=NULL;
-}
-
-void ConvLayer::SetFilter(const vector<FilterType>& f)
-{
-    filter=f;
-}
 
 
-void ConvLayer::SetInput( vector<MatType>* in)
+void ConvLayer::SetInput( vector<MatType>* _indata)
 {
-    indata=in;
-}
-
-void ConvLayer::SetReceiveset(const vector<set<int> >& rec)
-{
-    receiveset=rec;
-}
-
-void ConvLayer::Setup(int _stride, int _side, int _kernelsize,
-                      int _ninmaps, int _noutmaps)
-{
-    stride=_stride;
-    side=_side;
-    kernelsize=_kernelsize;
-    ninmaps=_ninmaps;
-    noutmaps=_noutmaps;
+    if (_indata->size()==0){
+        cerr<<"Input data must not be empty."<<endl;
+    }
+    long _rows=(*_indata)[0].rows();
+    long _cols=(*_indata)[0].cols();
+    if ( (_rows!=inputrows) || (_cols!=inputcols)){
+        cerr<<"Wrong input size during initialization of Convlayer"<<endl;
+    } else{
+    indata=_indata;
+    }
 }
 
 
+void ConvLayer::SetFilter(const vector<vector<FilterType> >& _filter)
+{
+    filter=_filter;
+}
 
+
+void ConvLayer::SetInmaps(const vector<set<int> >& _inmaps)
+{
+    inmaps=_inmaps;
+}
+
+///TODO: the index order is filter[j][i], inmaps[j][i], not the other way around.
 void ConvLayer::ApplyFilter()
 {
     outdata.clear();
-    for(int j=0; j<noutmaps; j++){
-        MatType z=Conv2((*indata)[0],filter[0],Valid);
-        z=MatType::Zero(z.rows(),z.cols());
-        for (int i=0;i<ninmaps;i++){
-            MatType temp=Conv2((*indata)[i],filter[i*noutmaps+j],Valid);
-            z=z+temp;
+    for (int j=0; j<noutmaps; j++){
+        MatType z=MatType::Zero(inputrows-kernelsize+1, inputcols-kernelsize+1);
+        for (int i=0; i<inmaps[j].size();i++){
+            MatType temp=Conv2((*indata)[i],filter[j][i],"valid");
+            z+=temp;
         }
         outdata.push_back(z);
     }
@@ -71,7 +60,7 @@ void ConvLayer::DownSample()
     }
     outdata.clear();
     outdata=newvec;
-
+    
 }
 
 void ConvLayer::ApplyNonlinearity(){
@@ -107,7 +96,7 @@ void ConvLayer::ApplyNonlinearity(){
 
 
 FullyConnectedLayer::FullyConnectedLayer( int _stride, int _side,
-                                        int _fanin, int _fanout)
+                                         int _fanin, int _fanout)
 {
     stride=_stride;
     side=_side;

@@ -20,6 +20,6 @@ using namespace Eigen;
 
 int main(int argc, char** argv)
 {
-    test_Configuration();
+    test_Convlayer();
     return 0;
 }

@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.7"/>
-<title>Mini Conv: ConvLayer Class Reference</title>
+<title>My Project: ConvLayer Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -22,7 +22,7 @@
  <tbody>
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
-   <div id="projectname">Mini Conv
+   <div id="projectname">My Project
    </div>
   </td>
  </tr>
@@ -70,7 +70,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Enumerator</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -89,8 +89,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="title">ConvLayer Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
-
-<p><code>#include &lt;<a class="el" href="layer_8h_source.html">layer.h</a>&gt;</code></p>
 <div class="dynheader">
 Inheritance diagram for ConvLayer:</div>
 <div class="dyncontent">
@@ -103,61 +101,72 @@ Inheritance diagram for ConvLayer:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a791713b4ac5619f2cc20a20cb64ea885"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_conv_layer.html#a791713b4ac5619f2cc20a20cb64ea885">ConvLayer</a> ()</td></tr>
-<tr class="separator:a791713b4ac5619f2cc20a20cb64ea885"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a277fbb31369014bcb607c51f52c61032"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_conv_layer.html#a277fbb31369014bcb607c51f52c61032">~ConvLayer</a> ()</td></tr>
-<tr class="separator:a277fbb31369014bcb607c51f52c61032"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a16a423c0e8ce590ab4757819159b015c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_conv_layer.html#a16a423c0e8ce590ab4757819159b015c">SetFilter</a> (const vector&lt; <a class="el" href="utils_8h.html#a3b3705cad4e05c49adc293c96d0db7d1">FilterType</a> &gt; &amp;)</td></tr>
-<tr class="separator:a16a423c0e8ce590ab4757819159b015c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a585102c25508332b6ab2799409393204"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_conv_layer.html#a585102c25508332b6ab2799409393204">SetInput</a> (vector&lt; <a class="el" href="utils_8h.html#a87f2f26b431d56aa72b3d4d6cd5c6f62">MatType</a> &gt; *)</td></tr>
+<tr class="memitem:a7516441d146b575d8ba191278fe8ba9d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_conv_layer.html#a7516441d146b575d8ba191278fe8ba9d">ConvLayer</a> (int _ninmaps, int _inputrows, int _inputcols, int _noutmaps, int _stride, int _side, int _kernelsize, vector&lt; MatType &gt; *_indata=NULL)</td></tr>
+<tr class="separator:a7516441d146b575d8ba191278fe8ba9d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad7b04710a903116d88fcc017b2ca4f2f"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ad7b04710a903116d88fcc017b2ca4f2f"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>SetFilter</b> (const vector&lt; vector&lt; FilterType &gt; &gt; &amp;)</td></tr>
+<tr class="separator:ad7b04710a903116d88fcc017b2ca4f2f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a585102c25508332b6ab2799409393204"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a585102c25508332b6ab2799409393204"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>SetInput</b> (vector&lt; MatType &gt; *)</td></tr>
 <tr class="separator:a585102c25508332b6ab2799409393204"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa2c01fc18b295fc3ddf2d48497653206"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_conv_layer.html#aa2c01fc18b295fc3ddf2d48497653206">SetReceiveset</a> (const vector&lt; set&lt; int &gt; &gt;)</td></tr>
-<tr class="separator:aa2c01fc18b295fc3ddf2d48497653206"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a70111098046a07416fcbdffdbe8f0cfd"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_conv_layer.html#a70111098046a07416fcbdffdbe8f0cfd">ApplyFilter</a> ()</td></tr>
+<tr class="memitem:a8bb67f36834497242e12d0eea4ece95a"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a8bb67f36834497242e12d0eea4ece95a"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>SetInmaps</b> (const vector&lt; set&lt; int &gt; &gt; &amp;)</td></tr>
+<tr class="separator:a8bb67f36834497242e12d0eea4ece95a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a70111098046a07416fcbdffdbe8f0cfd"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a70111098046a07416fcbdffdbe8f0cfd"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_conv_layer.html#a70111098046a07416fcbdffdbe8f0cfd">ApplyFilter</a> ()</td></tr>
+<tr class="memdesc:a70111098046a07416fcbdffdbe8f0cfd"><td class="mdescLeft">&#160;</td><td class="mdescRight">TODO: the index order is filter[j][i], inmaps[j][i], not the other way around. <br /></td></tr>
 <tr class="separator:a70111098046a07416fcbdffdbe8f0cfd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8970249425ba935d91bc0f0a530ea13c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_conv_layer.html#a8970249425ba935d91bc0f0a530ea13c">DownSample</a> ()</td></tr>
+<tr class="memitem:a8970249425ba935d91bc0f0a530ea13c"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a8970249425ba935d91bc0f0a530ea13c"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>DownSample</b> ()</td></tr>
 <tr class="separator:a8970249425ba935d91bc0f0a530ea13c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5e5a5da58cb21ca2894ecf55088a2636"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_conv_layer.html#a5e5a5da58cb21ca2894ecf55088a2636">ApplyNonlinearity</a> ()</td></tr>
+<tr class="memitem:a5e5a5da58cb21ca2894ecf55088a2636"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a5e5a5da58cb21ca2894ecf55088a2636"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>ApplyNonlinearity</b> ()</td></tr>
 <tr class="separator:a5e5a5da58cb21ca2894ecf55088a2636"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aaaa781f9699133fe8b7d1d1e5f090a6e"><td class="memItemLeft" align="right" valign="top">vector&lt; <a class="el" href="utils_8h.html#a87f2f26b431d56aa72b3d4d6cd5c6f62">MatType</a> &gt; *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_conv_layer.html#aaaa781f9699133fe8b7d1d1e5f090a6e">output</a> ()</td></tr>
-<tr class="separator:aaaa781f9699133fe8b7d1d1e5f090a6e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="inherit_header pub_methods_class_layer"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_class_layer')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="class_layer.html">Layer</a></td></tr>
-<tr class="memitem:a8f623c7c4737dc29ecc86978d243ac6f inherit pub_methods_class_layer"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_layer.html#a8f623c7c4737dc29ecc86978d243ac6f">Layer</a> ()</td></tr>
-<tr class="separator:a8f623c7c4737dc29ecc86978d243ac6f inherit pub_methods_class_layer"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2bac093f2a650095a5551fc455d10dc5 inherit pub_methods_class_layer"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_layer.html#a2bac093f2a650095a5551fc455d10dc5">~Layer</a> ()</td></tr>
-<tr class="separator:a2bac093f2a650095a5551fc455d10dc5 inherit pub_methods_class_layer"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa351b47cff9c43788aabfd32bfc54176 inherit pub_methods_class_layer"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_layer.html#aa351b47cff9c43788aabfd32bfc54176">Downsample</a> ()</td></tr>
-<tr class="separator:aa351b47cff9c43788aabfd32bfc54176 inherit pub_methods_class_layer"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aea08727ba47d3c813e309cc278860bbd"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aea08727ba47d3c813e309cc278860bbd"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>SelfCheck</b> ()</td></tr>
+<tr class="separator:aea08727ba47d3c813e309cc278860bbd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
-<tr class="memitem:a5c9ac97672cb4025adaea24830cf1409"><td class="memItemLeft" align="right" valign="top">vector&lt; <a class="el" href="utils_8h.html#a3b3705cad4e05c49adc293c96d0db7d1">FilterType</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_conv_layer.html#a5c9ac97672cb4025adaea24830cf1409">filter</a></td></tr>
-<tr class="separator:a5c9ac97672cb4025adaea24830cf1409"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae90ccdaf98509ac518dc8158abb53540"><td class="memItemLeft" align="right" valign="top">vector&lt; <a class="el" href="utils_8h.html#a87f2f26b431d56aa72b3d4d6cd5c6f62">MatType</a> &gt; *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_conv_layer.html#ae90ccdaf98509ac518dc8158abb53540">indata</a></td></tr>
+<tr class="memitem:a3fbf8929ebf39d70281c548653159fe1"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a3fbf8929ebf39d70281c548653159fe1"></a>
+vector&lt; vector&lt; FilterType &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>filter</b></td></tr>
+<tr class="separator:a3fbf8929ebf39d70281c548653159fe1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae90ccdaf98509ac518dc8158abb53540"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae90ccdaf98509ac518dc8158abb53540"></a>
+vector&lt; MatType &gt; *&#160;</td><td class="memItemRight" valign="bottom"><b>indata</b></td></tr>
 <tr class="separator:ae90ccdaf98509ac518dc8158abb53540"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afee4ff21cc91013563dd16a4a617f934"><td class="memItemLeft" align="right" valign="top">vector&lt; <a class="el" href="utils_8h.html#a87f2f26b431d56aa72b3d4d6cd5c6f62">MatType</a> &gt; *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_conv_layer.html#afee4ff21cc91013563dd16a4a617f934">outdata</a></td></tr>
-<tr class="separator:afee4ff21cc91013563dd16a4a617f934"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abb72df40265f9b3c7667318a8e3014c0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="utils_8h.html#a56943a0946e5f15e5e58054b8e7a04a4">LayerType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_conv_layer.html#abb72df40265f9b3c7667318a8e3014c0">layertype</a></td></tr>
-<tr class="separator:abb72df40265f9b3c7667318a8e3014c0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a611e9895011c49713221b074abfc521f"><td class="memItemLeft" align="right" valign="top">vector&lt; set&lt; int &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_conv_layer.html#a611e9895011c49713221b074abfc521f">receiveset</a></td></tr>
-<tr class="separator:a611e9895011c49713221b074abfc521f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a16a5c6cfb93d0676b8c8d2264c487e54"><td class="memItemLeft" align="right" valign="top"><a class="el" href="utils_8h.html#af75d5dd7322fa39ed0af4e7839e600f8">BoundaryType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_conv_layer.html#a16a5c6cfb93d0676b8c8d2264c487e54">boundarytype</a></td></tr>
-<tr class="separator:a16a5c6cfb93d0676b8c8d2264c487e54"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7fbd91b7f63e49fb43fa931de225c280"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_conv_layer.html#a7fbd91b7f63e49fb43fa931de225c280">stride</a></td></tr>
-<tr class="separator:a7fbd91b7f63e49fb43fa931de225c280"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a941ec7552673506cbb7580e41e982494"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_conv_layer.html#a941ec7552673506cbb7580e41e982494">side</a></td></tr>
-<tr class="separator:a941ec7552673506cbb7580e41e982494"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1b3fb2e086eee6768b79a260f2035ee8"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_conv_layer.html#a1b3fb2e086eee6768b79a260f2035ee8">pooldim</a></td></tr>
-<tr class="separator:a1b3fb2e086eee6768b79a260f2035ee8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="inherit_header pub_attribs_class_layer"><td colspan="2" onclick="javascript:toggleInherit('pub_attribs_class_layer')"><img src="closed.png" alt="-"/>&#160;Public Attributes inherited from <a class="el" href="class_layer.html">Layer</a></td></tr>
-<tr class="memitem:ad7b365801548fd195fb0e1d48627f2f6 inherit pub_attribs_class_layer"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_layer.html#ad7b365801548fd195fb0e1d48627f2f6">name</a></td></tr>
-<tr class="separator:ad7b365801548fd195fb0e1d48627f2f6 inherit pub_attribs_class_layer"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a41e52948623d345d93ddf7e3e6d4098c"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a41e52948623d345d93ddf7e3e6d4098c"></a>
+vector&lt; MatType &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>outdata</b></td></tr>
+<tr class="separator:a41e52948623d345d93ddf7e3e6d4098c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2a829e399b291ef09856b71484ddcade"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a2a829e399b291ef09856b71484ddcade"></a>
+vector&lt; set&lt; int &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>inmaps</b></td></tr>
+<tr class="separator:a2a829e399b291ef09856b71484ddcade"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9c41797df74c1eef60fb4fdbf2713379"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a9c41797df74c1eef60fb4fdbf2713379"></a>
+string&#160;</td><td class="memItemRight" valign="bottom"><b>name</b></td></tr>
+<tr class="separator:a9c41797df74c1eef60fb4fdbf2713379"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a62ef7802fa2cb90f2a6c3f09f52d1485"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a62ef7802fa2cb90f2a6c3f09f52d1485"></a>
+const int&#160;</td><td class="memItemRight" valign="bottom"><b>ninmaps</b></td></tr>
+<tr class="separator:a62ef7802fa2cb90f2a6c3f09f52d1485"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a24e3feabcb086d6a9985c263b954f32e"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a24e3feabcb086d6a9985c263b954f32e"></a>
+const int&#160;</td><td class="memItemRight" valign="bottom"><b>inputrows</b></td></tr>
+<tr class="separator:a24e3feabcb086d6a9985c263b954f32e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a51c24316490e75baea4950781a65d7f9"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a51c24316490e75baea4950781a65d7f9"></a>
+const int&#160;</td><td class="memItemRight" valign="bottom"><b>inputcols</b></td></tr>
+<tr class="separator:a51c24316490e75baea4950781a65d7f9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5b16865e198761926c2f4820062b0766"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a5b16865e198761926c2f4820062b0766"></a>
+const int&#160;</td><td class="memItemRight" valign="bottom"><b>noutmaps</b></td></tr>
+<tr class="separator:a5b16865e198761926c2f4820062b0766"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a503460202a6877759475b94e8bda8aa6"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a503460202a6877759475b94e8bda8aa6"></a>
+const int&#160;</td><td class="memItemRight" valign="bottom"><b>stride</b></td></tr>
+<tr class="separator:a503460202a6877759475b94e8bda8aa6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa393a1694d13a8d62f3eddc1709e5b74"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aa393a1694d13a8d62f3eddc1709e5b74"></a>
+const int&#160;</td><td class="memItemRight" valign="bottom"><b>side</b></td></tr>
+<tr class="separator:aa393a1694d13a8d62f3eddc1709e5b74"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad0f8a1eab56d2db1309913de2b299fc9"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ad0f8a1eab56d2db1309913de2b299fc9"></a>
+const int&#160;</td><td class="memItemRight" valign="bottom"><b>kernelsize</b></td></tr>
+<tr class="separator:ad0f8a1eab56d2db1309913de2b299fc9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock">
-<p>Definition at line <a class="el" href="layer_8h_source.html#l00036">36</a> of file <a class="el" href="layer_8h_source.html">layer.h</a>.</p>
-</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a class="anchor" id="a791713b4ac5619f2cc20a20cb64ea885"></a>
+<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a class="anchor" id="a7516441d146b575d8ba191278fe8ba9d"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -167,8 +176,55 @@ Public Attributes</h2></td></tr>
         <tr>
           <td class="memname">ConvLayer::ConvLayer </td>
           <td>(</td>
-          <td class="paramname"></td><td>)</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>_ninmaps</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>_inputrows</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>_inputcols</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>_noutmaps</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>_stride</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>_side</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>_kernelsize</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">vector&lt; MatType &gt; *&#160;</td>
+          <td class="paramname"><em>_indata</em> = <code>NULL</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
   </td>
@@ -177,304 +233,30 @@ Public Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="layer_8h_source.html#l00038">38</a> of file <a class="el" href="layer_8h_source.html">layer.h</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="a277fbb31369014bcb607c51f52c61032"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">ConvLayer::~ConvLayer </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="layer_8h_source.html#l00039">39</a> of file <a class="el" href="layer_8h_source.html">layer.h</a>.</p>
-
-</div>
-</div>
-<h2 class="groupheader">Member Function Documentation</h2>
-<a class="anchor" id="a70111098046a07416fcbdffdbe8f0cfd"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void ConvLayer::ApplyFilter </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Reimplemented from <a class="el" href="class_layer.html#acb52658f0eb1ec6f693dae392667d699">Layer</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="a5e5a5da58cb21ca2894ecf55088a2636"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void ConvLayer::ApplyNonlinearity </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Reimplemented from <a class="el" href="class_layer.html#aab2270f2a6793112a8fa5aefe33eed1e">Layer</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="a8970249425ba935d91bc0f0a530ea13c"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void ConvLayer::DownSample </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="aaaa781f9699133fe8b7d1d1e5f090a6e"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">vector&lt;<a class="el" href="utils_8h.html#a87f2f26b431d56aa72b3d4d6cd5c6f62">MatType</a>&gt;* ConvLayer::output </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="a16a423c0e8ce590ab4757819159b015c"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void ConvLayer::SetFilter </td>
-          <td>(</td>
-          <td class="paramtype">const vector&lt; <a class="el" href="utils_8h.html#a3b3705cad4e05c49adc293c96d0db7d1">FilterType</a> &gt; &amp;&#160;</td>
-          <td class="paramname"><em>f</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="layer_8cpp_source.html#l00012">12</a> of file <a class="el" href="layer_8cpp_source.html">layer.cpp</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="a585102c25508332b6ab2799409393204"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void ConvLayer::SetInput </td>
-          <td>(</td>
-          <td class="paramtype">vector&lt; <a class="el" href="utils_8h.html#a87f2f26b431d56aa72b3d4d6cd5c6f62">MatType</a> &gt; *&#160;</td>
-          <td class="paramname"><em>in</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="layer_8cpp_source.html#l00018">18</a> of file <a class="el" href="layer_8cpp_source.html">layer.cpp</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="aa2c01fc18b295fc3ddf2d48497653206"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void ConvLayer::SetReceiveset </td>
-          <td>(</td>
-          <td class="paramtype">const vector&lt; set&lt; int &gt; &gt;&#160;</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<h2 class="groupheader">Member Data Documentation</h2>
-<a class="anchor" id="a16a5c6cfb93d0676b8c8d2264c487e54"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="utils_8h.html#af75d5dd7322fa39ed0af4e7839e600f8">BoundaryType</a> ConvLayer::boundarytype</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="layer_8h_source.html#l00061">61</a> of file <a class="el" href="layer_8h_source.html">layer.h</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="a5c9ac97672cb4025adaea24830cf1409"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">vector&lt;<a class="el" href="utils_8h.html#a3b3705cad4e05c49adc293c96d0db7d1">FilterType</a>&gt; ConvLayer::filter</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="layer_8h_source.html#l00056">56</a> of file <a class="el" href="layer_8h_source.html">layer.h</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="ae90ccdaf98509ac518dc8158abb53540"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">vector&lt;<a class="el" href="utils_8h.html#a87f2f26b431d56aa72b3d4d6cd5c6f62">MatType</a>&gt;* ConvLayer::indata</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="layer_8h_source.html#l00057">57</a> of file <a class="el" href="layer_8h_source.html">layer.h</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="abb72df40265f9b3c7667318a8e3014c0"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="utils_8h.html#a56943a0946e5f15e5e58054b8e7a04a4">LayerType</a> ConvLayer::layertype</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="layer_8h_source.html#l00059">59</a> of file <a class="el" href="layer_8h_source.html">layer.h</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="afee4ff21cc91013563dd16a4a617f934"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">vector&lt;<a class="el" href="utils_8h.html#a87f2f26b431d56aa72b3d4d6cd5c6f62">MatType</a>&gt;* ConvLayer::outdata</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="layer_8h_source.html#l00058">58</a> of file <a class="el" href="layer_8h_source.html">layer.h</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="a1b3fb2e086eee6768b79a260f2035ee8"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">int ConvLayer::pooldim</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="layer_8h_source.html#l00065">65</a> of file <a class="el" href="layer_8h_source.html">layer.h</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="a611e9895011c49713221b074abfc521f"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">vector&lt;set&lt;int&gt; &gt; ConvLayer::receiveset</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="layer_8h_source.html#l00060">60</a> of file <a class="el" href="layer_8h_source.html">layer.h</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="a941ec7552673506cbb7580e41e982494"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">int ConvLayer::side</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="layer_8h_source.html#l00064">64</a> of file <a class="el" href="layer_8h_source.html">layer.h</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="a7fbd91b7f63e49fb43fa931de225c280"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">int ConvLayer::stride</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="layer_8h_source.html#l00063">63</a> of file <a class="el" href="layer_8h_source.html">layer.h</a>.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">_ninmaps</td><td>Number of input maps. </td></tr>
+    <tr><td class="paramname">_inputrows</td><td>Number of rows of input matrix. </td></tr>
+    <tr><td class="paramname">_inputcols</td><td>Number of columns of input matrix. </td></tr>
+    <tr><td class="paramname">_noutmaps</td><td>Number of maps of this layer. </td></tr>
+    <tr><td class="paramname">_stride</td><td>stride. </td></tr>
+    <tr><td class="paramname">_side</td><td>side. </td></tr>
+    <tr><td class="paramname">_kernelsize</td><td>kernelsize, must be square. </td></tr>
+    <tr><td class="paramname">_indata.</td><td>Input data, optional. </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following files:<ul>
-<li><a class="el" href="layer_8h_source.html">layer.h</a></li>
-<li><a class="el" href="layer_8cpp_source.html">layer.cpp</a></li>
+<li>/Users/chengtai/Documents/2014/MOTR/modules/Alpha/Alpha/<a class="el" href="layer_8h_source.html">layer.h</a></li>
+<li>/Users/chengtai/Documents/2014/MOTR/modules/Alpha/Alpha/layer.cpp</li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon May 26 2014 20:42:10 for Mini Conv by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed May 28 2014 15:35:19 for My Project by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.7
 </small></address>

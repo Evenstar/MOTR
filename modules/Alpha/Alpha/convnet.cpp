@@ -14,7 +14,7 @@ ConvNet::ConvNet()
     ytraindata=NULL;
     
 }
-
+/*
 void ConvNet::Setup( const Config& _config)
 {
     config=_config;
@@ -34,3 +34,4 @@ void ConvNet::Setup( const Config& _config)
     cout<<layer.size()<<endl;
 }
 
+*/

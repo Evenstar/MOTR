@@ -1,10 +1,6 @@
 \hypertarget{class_fully_connected_layer}{\section{Fully\+Connected\+Layer Class Reference}
 \label{class_fully_connected_layer}\index{Fully\+Connected\+Layer@{Fully\+Connected\+Layer}}
 }
-
-
-{\ttfamily \#include $<$layer.\+h$>$}
-
 Inheritance diagram for Fully\+Connected\+Layer\+:\begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -14,173 +10,57 @@ Inheritance diagram for Fully\+Connected\+Layer\+:\begin{figure}[H]
 \subsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\hyperlink{class_fully_connected_layer_a399b0549166854ec171cabea3874c4af}{Fully\+Connected\+Layer} ()
+\hypertarget{class_fully_connected_layer_a1c0e43c6af01641bf2c3be456d1c9eca}{{\bfseries Fully\+Connected\+Layer} (int \+\_\+stride=0, int \+\_\+side=0, int \+\_\+fanin=0, int \+\_\+fanout=0)}\label{class_fully_connected_layer_a1c0e43c6af01641bf2c3be456d1c9eca}
+
 \item 
-\hyperlink{class_fully_connected_layer_a60bfc88cd585a78f5a3757b044cfecf7}{$\sim$\+Fully\+Connected\+Layer} ()
+\hypertarget{class_fully_connected_layer_adba270546f0865b3adfb2739fcd7818e}{void {\bfseries Setup} (int \+\_\+stride, int \+\_\+side, int \+\_\+fanin, int \+\_\+fanout)}\label{class_fully_connected_layer_adba270546f0865b3adfb2739fcd7818e}
+
 \item 
-void \hyperlink{class_fully_connected_layer_a13326e661fb3459d05653972d8ed0e5c}{Set\+Weight} (const \hyperlink{utils_8h_a87f2f26b431d56aa72b3d4d6cd5c6f62}{Mat\+Type} \&)
+\hypertarget{class_fully_connected_layer_a13326e661fb3459d05653972d8ed0e5c}{void {\bfseries Set\+Weight} (const Mat\+Type \&)}\label{class_fully_connected_layer_a13326e661fb3459d05653972d8ed0e5c}
+
 \item 
-void \hyperlink{class_fully_connected_layer_ac96e17c6a1ac93a36d2228e300ac6103}{Set\+Input} (const \hyperlink{utils_8h_a87f2f26b431d56aa72b3d4d6cd5c6f62}{Mat\+Type} \&)
+\hypertarget{class_fully_connected_layer_abc76d6caa38d466a2b58d824e50a9eb2}{void {\bfseries Set\+Input} (Mat\+Type $\ast$)}\label{class_fully_connected_layer_abc76d6caa38d466a2b58d824e50a9eb2}
+
 \item 
-void \hyperlink{class_fully_connected_layer_a71b13c03aed1aa3b97920279e3534f7b}{Apply\+Filter} ()
+\hypertarget{class_fully_connected_layer_a71b13c03aed1aa3b97920279e3534f7b}{void {\bfseries Apply\+Filter} ()}\label{class_fully_connected_layer_a71b13c03aed1aa3b97920279e3534f7b}
+
 \item 
-void \hyperlink{class_fully_connected_layer_aeaa164864cf41ae5fe116cf8533a1817}{Apply\+Nonlinearity} ()
+\hypertarget{class_fully_connected_layer_aeaa164864cf41ae5fe116cf8533a1817}{void {\bfseries Apply\+Nonlinearity} ()}\label{class_fully_connected_layer_aeaa164864cf41ae5fe116cf8533a1817}
+
 \item 
-void \hyperlink{class_fully_connected_layer_ae769cfe87e16198f8b0959f87bfb3100}{Down\+Sample} ()
-\item 
-void \hyperlink{class_fully_connected_layer_abc76d6caa38d466a2b58d824e50a9eb2}{Set\+Input} (\hyperlink{utils_8h_a87f2f26b431d56aa72b3d4d6cd5c6f62}{Mat\+Type} $\ast$)
+\hypertarget{class_fully_connected_layer_ae769cfe87e16198f8b0959f87bfb3100}{void {\bfseries Down\+Sample} ()}\label{class_fully_connected_layer_ae769cfe87e16198f8b0959f87bfb3100}
+
 \end{DoxyCompactItemize}
 \subsection*{Public Attributes}
 \begin{DoxyCompactItemize}
 \item 
-\hyperlink{utils_8h_a87f2f26b431d56aa72b3d4d6cd5c6f62}{Mat\+Type} \hyperlink{class_fully_connected_layer_a3cf0cc240abfd47b8ce17c0f9886612b}{Weight}
+\hypertarget{class_fully_connected_layer_a3cf0cc240abfd47b8ce17c0f9886612b}{Mat\+Type {\bfseries Weight}}\label{class_fully_connected_layer_a3cf0cc240abfd47b8ce17c0f9886612b}
+
 \item 
-\hyperlink{utils_8h_a87f2f26b431d56aa72b3d4d6cd5c6f62}{Mat\+Type} $\ast$ \hyperlink{class_fully_connected_layer_aa06f43fdb5f8d9bd9ae2f4501d5eea72}{indata}
+\hypertarget{class_fully_connected_layer_aa06f43fdb5f8d9bd9ae2f4501d5eea72}{Mat\+Type $\ast$ {\bfseries indata}}\label{class_fully_connected_layer_aa06f43fdb5f8d9bd9ae2f4501d5eea72}
+
 \item 
-\hyperlink{utils_8h_a87f2f26b431d56aa72b3d4d6cd5c6f62}{Mat\+Type} $\ast$ \hyperlink{class_fully_connected_layer_ab0c96334144a37e63b4c09744fa0e1dc}{outdata}
+\hypertarget{class_fully_connected_layer_a9dc1c3ddd28ba88594438e9029493cee}{Mat\+Type \hyperlink{class_fully_connected_layer_a9dc1c3ddd28ba88594438e9029493cee}{outdata}}\label{class_fully_connected_layer_a9dc1c3ddd28ba88594438e9029493cee}
+
 \begin{DoxyCompactList}\small\item\em The input data. \end{DoxyCompactList}\item 
-int \hyperlink{class_fully_connected_layer_a35d64d38efc0d0be3f79b8f82835579c}{stride}
+\hypertarget{class_fully_connected_layer_a35d64d38efc0d0be3f79b8f82835579c}{int {\bfseries stride}}\label{class_fully_connected_layer_a35d64d38efc0d0be3f79b8f82835579c}
+
 \item 
-int \hyperlink{class_fully_connected_layer_adff134355829fd3e2944b7b304c6bd0f}{side}
+\hypertarget{class_fully_connected_layer_adff134355829fd3e2944b7b304c6bd0f}{int {\bfseries side}}\label{class_fully_connected_layer_adff134355829fd3e2944b7b304c6bd0f}
+
 \item 
-int \hyperlink{class_fully_connected_layer_ac681095a1af7645162fedd5e20123e35}{pooldim}
+\hypertarget{class_fully_connected_layer_aed6f8602d64c19b1086e99e00edf09d1}{int {\bfseries fanin}}\label{class_fully_connected_layer_aed6f8602d64c19b1086e99e00edf09d1}
+
+\item 
+\hypertarget{class_fully_connected_layer_a6f06e1152dedcc402cb69161293a818e}{int {\bfseries fanout}}\label{class_fully_connected_layer_a6f06e1152dedcc402cb69161293a818e}
+
+\item 
+\hypertarget{class_fully_connected_layer_a0f1df8475560dd0fd422f1da735f6993}{string {\bfseries name}}\label{class_fully_connected_layer_a0f1df8475560dd0fd422f1da735f6993}
+
 \end{DoxyCompactItemize}
 
 
-\subsection{Detailed Description}
-
-
-Definition at line 69 of file layer.\+h.
-
-
-
-\subsection{Constructor \& Destructor Documentation}
-\hypertarget{class_fully_connected_layer_a399b0549166854ec171cabea3874c4af}{\index{Fully\+Connected\+Layer@{Fully\+Connected\+Layer}!Fully\+Connected\+Layer@{Fully\+Connected\+Layer}}
-\index{Fully\+Connected\+Layer@{Fully\+Connected\+Layer}!Fully\+Connected\+Layer@{Fully\+Connected\+Layer}}
-\subsubsection[{Fully\+Connected\+Layer}]{\setlength{\rightskip}{0pt plus 5cm}Fully\+Connected\+Layer\+::\+Fully\+Connected\+Layer (
-\begin{DoxyParamCaption}
-{}
-\end{DoxyParamCaption}
-)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_fully_connected_layer_a399b0549166854ec171cabea3874c4af}
-
-
-Definition at line 71 of file layer.\+h.
-
-\hypertarget{class_fully_connected_layer_a60bfc88cd585a78f5a3757b044cfecf7}{\index{Fully\+Connected\+Layer@{Fully\+Connected\+Layer}!````~Fully\+Connected\+Layer@{$\sim$\+Fully\+Connected\+Layer}}
-\index{````~Fully\+Connected\+Layer@{$\sim$\+Fully\+Connected\+Layer}!Fully\+Connected\+Layer@{Fully\+Connected\+Layer}}
-\subsubsection[{$\sim$\+Fully\+Connected\+Layer}]{\setlength{\rightskip}{0pt plus 5cm}Fully\+Connected\+Layer\+::$\sim$\+Fully\+Connected\+Layer (
-\begin{DoxyParamCaption}
-{}
-\end{DoxyParamCaption}
-)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_fully_connected_layer_a60bfc88cd585a78f5a3757b044cfecf7}
-
-
-Definition at line 72 of file layer.\+h.
-
-
-
-\subsection{Member Function Documentation}
-\hypertarget{class_fully_connected_layer_a71b13c03aed1aa3b97920279e3534f7b}{\index{Fully\+Connected\+Layer@{Fully\+Connected\+Layer}!Apply\+Filter@{Apply\+Filter}}
-\index{Apply\+Filter@{Apply\+Filter}!Fully\+Connected\+Layer@{Fully\+Connected\+Layer}}
-\subsubsection[{Apply\+Filter}]{\setlength{\rightskip}{0pt plus 5cm}void Fully\+Connected\+Layer\+::\+Apply\+Filter (
-\begin{DoxyParamCaption}
-{}
-\end{DoxyParamCaption}
-)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_fully_connected_layer_a71b13c03aed1aa3b97920279e3534f7b}
-
-
-Reimplemented from \hyperlink{class_layer_acb52658f0eb1ec6f693dae392667d699}{Layer}.
-
-\hypertarget{class_fully_connected_layer_aeaa164864cf41ae5fe116cf8533a1817}{\index{Fully\+Connected\+Layer@{Fully\+Connected\+Layer}!Apply\+Nonlinearity@{Apply\+Nonlinearity}}
-\index{Apply\+Nonlinearity@{Apply\+Nonlinearity}!Fully\+Connected\+Layer@{Fully\+Connected\+Layer}}
-\subsubsection[{Apply\+Nonlinearity}]{\setlength{\rightskip}{0pt plus 5cm}void Fully\+Connected\+Layer\+::\+Apply\+Nonlinearity (
-\begin{DoxyParamCaption}
-{}
-\end{DoxyParamCaption}
-)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_fully_connected_layer_aeaa164864cf41ae5fe116cf8533a1817}
-
-
-Reimplemented from \hyperlink{class_layer_aab2270f2a6793112a8fa5aefe33eed1e}{Layer}.
-
-\hypertarget{class_fully_connected_layer_ae769cfe87e16198f8b0959f87bfb3100}{\index{Fully\+Connected\+Layer@{Fully\+Connected\+Layer}!Down\+Sample@{Down\+Sample}}
-\index{Down\+Sample@{Down\+Sample}!Fully\+Connected\+Layer@{Fully\+Connected\+Layer}}
-\subsubsection[{Down\+Sample}]{\setlength{\rightskip}{0pt plus 5cm}void Fully\+Connected\+Layer\+::\+Down\+Sample (
-\begin{DoxyParamCaption}
-{}
-\end{DoxyParamCaption}
-)}}\label{class_fully_connected_layer_ae769cfe87e16198f8b0959f87bfb3100}
-\hypertarget{class_fully_connected_layer_ac96e17c6a1ac93a36d2228e300ac6103}{\index{Fully\+Connected\+Layer@{Fully\+Connected\+Layer}!Set\+Input@{Set\+Input}}
-\index{Set\+Input@{Set\+Input}!Fully\+Connected\+Layer@{Fully\+Connected\+Layer}}
-\subsubsection[{Set\+Input}]{\setlength{\rightskip}{0pt plus 5cm}void Fully\+Connected\+Layer\+::\+Set\+Input (
-\begin{DoxyParamCaption}
-\item[{const {\bf Mat\+Type} \&}]{}
-\end{DoxyParamCaption}
-)}}\label{class_fully_connected_layer_ac96e17c6a1ac93a36d2228e300ac6103}
-\hypertarget{class_fully_connected_layer_abc76d6caa38d466a2b58d824e50a9eb2}{\index{Fully\+Connected\+Layer@{Fully\+Connected\+Layer}!Set\+Input@{Set\+Input}}
-\index{Set\+Input@{Set\+Input}!Fully\+Connected\+Layer@{Fully\+Connected\+Layer}}
-\subsubsection[{Set\+Input}]{\setlength{\rightskip}{0pt plus 5cm}void Fully\+Connected\+Layer\+::\+Set\+Input (
-\begin{DoxyParamCaption}
-\item[{{\bf Mat\+Type} $\ast$}]{}
-\end{DoxyParamCaption}
-)}}\label{class_fully_connected_layer_abc76d6caa38d466a2b58d824e50a9eb2}
-\hypertarget{class_fully_connected_layer_a13326e661fb3459d05653972d8ed0e5c}{\index{Fully\+Connected\+Layer@{Fully\+Connected\+Layer}!Set\+Weight@{Set\+Weight}}
-\index{Set\+Weight@{Set\+Weight}!Fully\+Connected\+Layer@{Fully\+Connected\+Layer}}
-\subsubsection[{Set\+Weight}]{\setlength{\rightskip}{0pt plus 5cm}void Fully\+Connected\+Layer\+::\+Set\+Weight (
-\begin{DoxyParamCaption}
-\item[{const {\bf Mat\+Type} \&}]{}
-\end{DoxyParamCaption}
-)}}\label{class_fully_connected_layer_a13326e661fb3459d05653972d8ed0e5c}
-
-
-\subsection{Member Data Documentation}
-\hypertarget{class_fully_connected_layer_aa06f43fdb5f8d9bd9ae2f4501d5eea72}{\index{Fully\+Connected\+Layer@{Fully\+Connected\+Layer}!indata@{indata}}
-\index{indata@{indata}!Fully\+Connected\+Layer@{Fully\+Connected\+Layer}}
-\subsubsection[{indata}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Mat\+Type}$\ast$ Fully\+Connected\+Layer\+::indata}}\label{class_fully_connected_layer_aa06f43fdb5f8d9bd9ae2f4501d5eea72}
-
-
-Definition at line 92 of file layer.\+h.
-
-\hypertarget{class_fully_connected_layer_ab0c96334144a37e63b4c09744fa0e1dc}{\index{Fully\+Connected\+Layer@{Fully\+Connected\+Layer}!outdata@{outdata}}
-\index{outdata@{outdata}!Fully\+Connected\+Layer@{Fully\+Connected\+Layer}}
-\subsubsection[{outdata}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Mat\+Type}$\ast$ Fully\+Connected\+Layer\+::outdata}}\label{class_fully_connected_layer_ab0c96334144a37e63b4c09744fa0e1dc}
-
-
-The input data. 
-
-
-
-Definition at line 94 of file layer.\+h.
-
-\hypertarget{class_fully_connected_layer_ac681095a1af7645162fedd5e20123e35}{\index{Fully\+Connected\+Layer@{Fully\+Connected\+Layer}!pooldim@{pooldim}}
-\index{pooldim@{pooldim}!Fully\+Connected\+Layer@{Fully\+Connected\+Layer}}
-\subsubsection[{pooldim}]{\setlength{\rightskip}{0pt plus 5cm}int Fully\+Connected\+Layer\+::pooldim}}\label{class_fully_connected_layer_ac681095a1af7645162fedd5e20123e35}
-
-
-Definition at line 98 of file layer.\+h.
-
-\hypertarget{class_fully_connected_layer_adff134355829fd3e2944b7b304c6bd0f}{\index{Fully\+Connected\+Layer@{Fully\+Connected\+Layer}!side@{side}}
-\index{side@{side}!Fully\+Connected\+Layer@{Fully\+Connected\+Layer}}
-\subsubsection[{side}]{\setlength{\rightskip}{0pt plus 5cm}int Fully\+Connected\+Layer\+::side}}\label{class_fully_connected_layer_adff134355829fd3e2944b7b304c6bd0f}
-
-
-Definition at line 97 of file layer.\+h.
-
-\hypertarget{class_fully_connected_layer_a35d64d38efc0d0be3f79b8f82835579c}{\index{Fully\+Connected\+Layer@{Fully\+Connected\+Layer}!stride@{stride}}
-\index{stride@{stride}!Fully\+Connected\+Layer@{Fully\+Connected\+Layer}}
-\subsubsection[{stride}]{\setlength{\rightskip}{0pt plus 5cm}int Fully\+Connected\+Layer\+::stride}}\label{class_fully_connected_layer_a35d64d38efc0d0be3f79b8f82835579c}
-
-
-Definition at line 96 of file layer.\+h.
-
-\hypertarget{class_fully_connected_layer_a3cf0cc240abfd47b8ce17c0f9886612b}{\index{Fully\+Connected\+Layer@{Fully\+Connected\+Layer}!Weight@{Weight}}
-\index{Weight@{Weight}!Fully\+Connected\+Layer@{Fully\+Connected\+Layer}}
-\subsubsection[{Weight}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Mat\+Type} Fully\+Connected\+Layer\+::\+Weight}}\label{class_fully_connected_layer_a3cf0cc240abfd47b8ce17c0f9886612b}
-
-
-Definition at line 90 of file layer.\+h.
-
-
-
-The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
 \item 
-\hyperlink{layer_8h}{layer.\+h}\end{DoxyCompactItemize}
+/\+Users/chengtai/\+Documents/2014/\+M\+O\+T\+R/modules/\+Alpha/\+Alpha/\hyperlink{layer_8h}{layer.\+h}\item 
+/\+Users/chengtai/\+Documents/2014/\+M\+O\+T\+R/modules/\+Alpha/\+Alpha/layer.\+cpp\end{DoxyCompactItemize}

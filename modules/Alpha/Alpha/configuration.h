@@ -24,6 +24,8 @@ public:
     int ninputrows;
     int ninputcols;
     vector<bool> isdownsample;
+    
+    ///last term is the size of the input of the fully connected layer.
     vector<int> nconvrows;
     vector<int> nconvcols;
     

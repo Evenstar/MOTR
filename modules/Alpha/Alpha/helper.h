@@ -18,7 +18,7 @@ MatType Conv2_Valid(const MatType& a, const MatType& b);
  * @param a The first parameter.
  * @param b The second parameter.
  */
-MatType Conv2(const MatType& a, const MatType& b, BoundaryType boundarytype);
+MatType Conv2(const MatType& a, const MatType& b, string boundarytype);
 
 ///convert an opencv format image to a Eigen format matrix.
 ///

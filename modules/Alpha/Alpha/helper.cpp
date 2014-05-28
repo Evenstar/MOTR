@@ -52,13 +52,13 @@ MatType Conv2_Valid(const MatType& a, const MatType& b)
     return g;
 }
 
-MatType Conv2(const MatType& a, const MatType& b, BoundaryType boundarytype){
-    if (boundarytype!=Valid && boundarytype!=Full)
+MatType Conv2(const MatType& a, const MatType& b, string boundarytype){
+    if (boundarytype!="valid" && boundarytype!="full")
     {
         cerr<<"Invalid boundary type.\n";
         exit(-1);
     }
-    if (boundarytype==Valid)
+    if (boundarytype=="valid")
     {
         return Conv2_Valid(a,b);
     }
