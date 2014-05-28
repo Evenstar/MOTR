@@ -126,6 +126,7 @@ void test_Convlayer()
     namedWindow("Test", CV_WINDOW_AUTOSIZE);
     imshow("Test",img);
     waitKey(0);
+    convlayer.SelfCheck();
 }
 void test_MaxPooling()
 {
