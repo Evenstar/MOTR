@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 2.8)
 project( Alpha )
 find_package( OpenCV REQUIRED )
-add_executable( EXE main.cpp visual.cpp layer.cpp helper.cpp convnet.cpp)
+add_executable( EXE main.cpp visual.cpp layer.cpp helper.cpp convnet.cpp test.cpp)
 target_link_libraries( EXE ${OpenCV_LIBS} )

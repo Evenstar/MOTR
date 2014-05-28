@@ -20,6 +20,6 @@ using namespace Eigen;
 
 int main(int argc, char** argv)
 {
-    test_FullyConnectedLayer();
+    test_Configuration();
     return 0;
 }

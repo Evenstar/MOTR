@@ -167,13 +167,37 @@ CMakeFiles/EXE.dir/convnet.cpp.o.provides: CMakeFiles/EXE.dir/convnet.cpp.o.requ
 
 CMakeFiles/EXE.dir/convnet.cpp.o.provides.build: CMakeFiles/EXE.dir/convnet.cpp.o
 
+CMakeFiles/EXE.dir/test.cpp.o: CMakeFiles/EXE.dir/flags.make
+CMakeFiles/EXE.dir/test.cpp.o: test.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/chengtai/Documents/2014/MOTR/modules/Alpha/Alpha/CMakeFiles $(CMAKE_PROGRESS_6)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/EXE.dir/test.cpp.o"
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/EXE.dir/test.cpp.o -c /Users/chengtai/Documents/2014/MOTR/modules/Alpha/Alpha/test.cpp
+
+CMakeFiles/EXE.dir/test.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/EXE.dir/test.cpp.i"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/chengtai/Documents/2014/MOTR/modules/Alpha/Alpha/test.cpp > CMakeFiles/EXE.dir/test.cpp.i
+
+CMakeFiles/EXE.dir/test.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/EXE.dir/test.cpp.s"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/chengtai/Documents/2014/MOTR/modules/Alpha/Alpha/test.cpp -o CMakeFiles/EXE.dir/test.cpp.s
+
+CMakeFiles/EXE.dir/test.cpp.o.requires:
+.PHONY : CMakeFiles/EXE.dir/test.cpp.o.requires
+
+CMakeFiles/EXE.dir/test.cpp.o.provides: CMakeFiles/EXE.dir/test.cpp.o.requires
+	$(MAKE) -f CMakeFiles/EXE.dir/build.make CMakeFiles/EXE.dir/test.cpp.o.provides.build
+.PHONY : CMakeFiles/EXE.dir/test.cpp.o.provides
+
+CMakeFiles/EXE.dir/test.cpp.o.provides.build: CMakeFiles/EXE.dir/test.cpp.o
+
 # Object files for target EXE
 EXE_OBJECTS = \
 "CMakeFiles/EXE.dir/main.cpp.o" \
 "CMakeFiles/EXE.dir/visual.cpp.o" \
 "CMakeFiles/EXE.dir/layer.cpp.o" \
 "CMakeFiles/EXE.dir/helper.cpp.o" \
-"CMakeFiles/EXE.dir/convnet.cpp.o"
+"CMakeFiles/EXE.dir/convnet.cpp.o" \
+"CMakeFiles/EXE.dir/test.cpp.o"
 
 # External object files for target EXE
 EXE_EXTERNAL_OBJECTS =
@@ -183,6 +207,7 @@ EXE: CMakeFiles/EXE.dir/visual.cpp.o
 EXE: CMakeFiles/EXE.dir/layer.cpp.o
 EXE: CMakeFiles/EXE.dir/helper.cpp.o
 EXE: CMakeFiles/EXE.dir/convnet.cpp.o
+EXE: CMakeFiles/EXE.dir/test.cpp.o
 EXE: CMakeFiles/EXE.dir/build.make
 EXE: /usr/local/lib/libopencv_videostab.2.4.8.dylib
 EXE: /usr/local/lib/libopencv_video.2.4.8.dylib
@@ -230,6 +255,7 @@ CMakeFiles/EXE.dir/requires: CMakeFiles/EXE.dir/visual.cpp.o.requires
 CMakeFiles/EXE.dir/requires: CMakeFiles/EXE.dir/layer.cpp.o.requires
 CMakeFiles/EXE.dir/requires: CMakeFiles/EXE.dir/helper.cpp.o.requires
 CMakeFiles/EXE.dir/requires: CMakeFiles/EXE.dir/convnet.cpp.o.requires
+CMakeFiles/EXE.dir/requires: CMakeFiles/EXE.dir/test.cpp.o.requires
 .PHONY : CMakeFiles/EXE.dir/requires
 
 CMakeFiles/EXE.dir/clean:

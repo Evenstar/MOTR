@@ -115,10 +115,72 @@ void test_FullyConnectedLayer()
 
 
 
+void test_ConvNet()
+{
+    Config simple;
+    simple.nconvlayers=2;
+    simple.nfclayers=1;
+    simple.batchsize=1;
+    simple.nepoches=1;
+    simple.learningrate=0.1;
+    for (int i=0; i< simple.nconvlayers;i++)
+    {
+        simple.kernelsize.push_back(5);
+        simple.stride.push_back(2);
+        simple.side.push_back(2);
+    }
+    simple.ninmaps[0]=1;
+    
+    //ConvNet convnet;
+}
 
 
-
-
+void test_Configuration()
+{
+    /// Parameters of LeNet
+    
+    Configuration config;
+    config.nconvlayers=2;
+    config.ninputrows=28;
+    config.ninputcols=28;
+    config.kernelsize.push_back(5);
+    config.kernelsize.push_back(5);
+    config.stride.push_back(2);
+    config.stride.push_back(2);
+    config.side.push_back(2);
+    config.side.push_back(2);
+    config.nonlinearity.push_back("ReLU");
+    config.nonlinearity.push_back("ReLU");
+    config.isdownsample.push_back(true);
+    config.isdownsample.push_back(true);
+    config.nmaps.push_back(12);
+    config.nmaps.push_back(12);
+    config.objtype="L2";
+    
+    ///Set inmaps
+    vector<set<int> > vec;
+    for(int i=0; i<config.nmaps[0]; i++){
+        set<int> temp;
+        temp.insert(0);
+        vec.push_back(temp);
+    }
+    config.inmaps.push_back(vec);
+    vec.clear();
+    for(int i=0; i<config.nmaps[1]; i++){
+        set<int> temp;
+        for(int j=0; j< config.nmaps[0];j++){
+            temp.insert(j);
+        }
+        vec.push_back(temp);
+    }
+    config.inmaps.push_back(vec);
+    config.ComputeSize();
+    
+    ///Set fully connected layers.
+    config.nfclayers=2;
+    config.nfcnodes.push_back(30);
+    config.nfcnodes.push_back(10);
+}
 
 
 

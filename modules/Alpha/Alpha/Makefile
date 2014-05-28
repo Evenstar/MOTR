@@ -210,6 +210,30 @@ main.cpp.s:
 	$(MAKE) -f CMakeFiles/EXE.dir/build.make CMakeFiles/EXE.dir/main.cpp.s
 .PHONY : main.cpp.s
 
+test.o: test.cpp.o
+.PHONY : test.o
+
+# target to build an object file
+test.cpp.o:
+	$(MAKE) -f CMakeFiles/EXE.dir/build.make CMakeFiles/EXE.dir/test.cpp.o
+.PHONY : test.cpp.o
+
+test.i: test.cpp.i
+.PHONY : test.i
+
+# target to preprocess a source file
+test.cpp.i:
+	$(MAKE) -f CMakeFiles/EXE.dir/build.make CMakeFiles/EXE.dir/test.cpp.i
+.PHONY : test.cpp.i
+
+test.s: test.cpp.s
+.PHONY : test.s
+
+# target to generate assembly for a file
+test.cpp.s:
+	$(MAKE) -f CMakeFiles/EXE.dir/build.make CMakeFiles/EXE.dir/test.cpp.s
+.PHONY : test.cpp.s
+
 visual.o: visual.cpp.o
 .PHONY : visual.o
 
@@ -255,6 +279,9 @@ help:
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
+	@echo "... test.o"
+	@echo "... test.i"
+	@echo "... test.s"
 	@echo "... visual.o"
 	@echo "... visual.i"
 	@echo "... visual.s"

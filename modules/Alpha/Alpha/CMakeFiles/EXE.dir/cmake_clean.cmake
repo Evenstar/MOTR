@@ -4,6 +4,7 @@ FILE(REMOVE_RECURSE
   "CMakeFiles/EXE.dir/layer.cpp.o"
   "CMakeFiles/EXE.dir/helper.cpp.o"
   "CMakeFiles/EXE.dir/convnet.cpp.o"
+  "CMakeFiles/EXE.dir/test.cpp.o"
   "EXE.pdb"
   "EXE"
 )

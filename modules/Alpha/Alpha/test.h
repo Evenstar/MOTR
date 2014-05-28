@@ -13,6 +13,7 @@
 #include "visual.h"
 #include "layer.h"
 #include "convnet.h"
+#include "configuration.h"
 using namespace std;
 using namespace cv;
 using namespace Eigen;
@@ -37,6 +38,35 @@ void test_MaxPooling();
 void test_ApplyReLU();
 
 void test_FullyConnectedLayer();
+
+void test_ConvNet();
+
+
+void test_Configuration();
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

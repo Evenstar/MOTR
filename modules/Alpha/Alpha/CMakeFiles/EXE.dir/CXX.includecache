@@ -27,6 +27,8 @@ layer.h
 /Users/chengtai/Documents/2014/MOTR/modules/Alpha/Alpha/layer.h
 utils.h
 /Users/chengtai/Documents/2014/MOTR/modules/Alpha/Alpha/utils.h
+helper.h
+/Users/chengtai/Documents/2014/MOTR/modules/Alpha/Alpha/helper.h
 
 /Users/chengtai/Documents/2014/MOTR/modules/Alpha/Alpha/main.cpp
 layer.h
@@ -35,6 +37,24 @@ helper.h
 /Users/chengtai/Documents/2014/MOTR/modules/Alpha/Alpha/helper.h
 visual.h
 /Users/chengtai/Documents/2014/MOTR/modules/Alpha/Alpha/visual.h
+convnet.h
+/Users/chengtai/Documents/2014/MOTR/modules/Alpha/Alpha/convnet.h
+test.h
+/Users/chengtai/Documents/2014/MOTR/modules/Alpha/Alpha/test.h
+
+/Users/chengtai/Documents/2014/MOTR/modules/Alpha/Alpha/test.cpp
+test.h
+/Users/chengtai/Documents/2014/MOTR/modules/Alpha/Alpha/test.h
+
+/Users/chengtai/Documents/2014/MOTR/modules/Alpha/Alpha/test.h
+utils.h
+/Users/chengtai/Documents/2014/MOTR/modules/Alpha/Alpha/utils.h
+helper.h
+/Users/chengtai/Documents/2014/MOTR/modules/Alpha/Alpha/helper.h
+visual.h
+/Users/chengtai/Documents/2014/MOTR/modules/Alpha/Alpha/visual.h
+layer.h
+/Users/chengtai/Documents/2014/MOTR/modules/Alpha/Alpha/layer.h
 convnet.h
 /Users/chengtai/Documents/2014/MOTR/modules/Alpha/Alpha/convnet.h
 

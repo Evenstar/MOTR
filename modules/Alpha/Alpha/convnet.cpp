@@ -19,16 +19,18 @@ void ConvNet::Setup( const Config& _config)
 {
     config=_config;
     for (int i=0; i<config.nconvlayers;i++){
-        ConvLayer temp(config.stride[i], config.side[i], config.kernelsize[i]);
-        //temp.SetReceiveset(config.receiveset[i]);
+        ConvLayer temp(config.stride[i], config.side[i], config.kernelsize[i],
+                       config.ninmaps[i], config.noutmaps[i]);
         temp.name="c";
         layer.push_back(temp);
     }
     
     for(int i=0; i<config.nfclayers; i++) {
-        FullyConnectedLayer temp(config.stride[i], config.side[i]);
+        FullyConnectedLayer temp(config.stride[i], config.side[i],
+                                config.fanin[i],config.fanout[i]);
         temp.name="f";
         layer.push_back(temp);
     }
-    
+    cout<<layer.size()<<endl;
 }
+

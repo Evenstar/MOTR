@@ -8,6 +8,7 @@ SET(CMAKE_DEPENDS_CHECK_CXX
   "/Users/chengtai/Documents/2014/MOTR/modules/Alpha/Alpha/helper.cpp" "/Users/chengtai/Documents/2014/MOTR/modules/Alpha/Alpha/CMakeFiles/EXE.dir/helper.cpp.o"
   "/Users/chengtai/Documents/2014/MOTR/modules/Alpha/Alpha/layer.cpp" "/Users/chengtai/Documents/2014/MOTR/modules/Alpha/Alpha/CMakeFiles/EXE.dir/layer.cpp.o"
   "/Users/chengtai/Documents/2014/MOTR/modules/Alpha/Alpha/main.cpp" "/Users/chengtai/Documents/2014/MOTR/modules/Alpha/Alpha/CMakeFiles/EXE.dir/main.cpp.o"
+  "/Users/chengtai/Documents/2014/MOTR/modules/Alpha/Alpha/test.cpp" "/Users/chengtai/Documents/2014/MOTR/modules/Alpha/Alpha/CMakeFiles/EXE.dir/test.cpp.o"
   "/Users/chengtai/Documents/2014/MOTR/modules/Alpha/Alpha/visual.cpp" "/Users/chengtai/Documents/2014/MOTR/modules/Alpha/Alpha/CMakeFiles/EXE.dir/visual.cpp.o"
   )
 SET(CMAKE_CXX_COMPILER_ID "Clang")

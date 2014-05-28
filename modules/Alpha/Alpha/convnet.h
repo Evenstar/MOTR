@@ -22,6 +22,12 @@ struct Config{
     vector<int> kernelsize;
     vector<int> stride;
     vector<int> side;
+    
+    vector<int> ninmaps;
+    vector<int> noutmaps;
+    vector<int> fanin;
+    vector<int> fanout;
+    
     vector<vector<set<int> > >receiveset;
 
 };
