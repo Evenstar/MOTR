@@ -56,15 +56,15 @@ CMakeFiles/EXE.dir/main.cpp.o: CMakeFiles/EXE.dir/flags.make
 CMakeFiles/EXE.dir/main.cpp.o: main.cpp
 	$(CMAKE_COMMAND) -E cmake_progress_report /Users/chengtai/Documents/2014/MOTR/modules/Alpha/Alpha/CMakeFiles $(CMAKE_PROGRESS_1)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/EXE.dir/main.cpp.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/EXE.dir/main.cpp.o -c /Users/chengtai/Documents/2014/MOTR/modules/Alpha/Alpha/main.cpp
+	/usr/local/bin/g++-4.8   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/EXE.dir/main.cpp.o -c /Users/chengtai/Documents/2014/MOTR/modules/Alpha/Alpha/main.cpp
 
 CMakeFiles/EXE.dir/main.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/EXE.dir/main.cpp.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/chengtai/Documents/2014/MOTR/modules/Alpha/Alpha/main.cpp > CMakeFiles/EXE.dir/main.cpp.i
+	/usr/local/bin/g++-4.8  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/chengtai/Documents/2014/MOTR/modules/Alpha/Alpha/main.cpp > CMakeFiles/EXE.dir/main.cpp.i
 
 CMakeFiles/EXE.dir/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/EXE.dir/main.cpp.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/chengtai/Documents/2014/MOTR/modules/Alpha/Alpha/main.cpp -o CMakeFiles/EXE.dir/main.cpp.s
+	/usr/local/bin/g++-4.8  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/chengtai/Documents/2014/MOTR/modules/Alpha/Alpha/main.cpp -o CMakeFiles/EXE.dir/main.cpp.s
 
 CMakeFiles/EXE.dir/main.cpp.o.requires:
 .PHONY : CMakeFiles/EXE.dir/main.cpp.o.requires
@@ -79,15 +79,15 @@ CMakeFiles/EXE.dir/visual.cpp.o: CMakeFiles/EXE.dir/flags.make
 CMakeFiles/EXE.dir/visual.cpp.o: visual.cpp
 	$(CMAKE_COMMAND) -E cmake_progress_report /Users/chengtai/Documents/2014/MOTR/modules/Alpha/Alpha/CMakeFiles $(CMAKE_PROGRESS_2)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/EXE.dir/visual.cpp.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/EXE.dir/visual.cpp.o -c /Users/chengtai/Documents/2014/MOTR/modules/Alpha/Alpha/visual.cpp
+	/usr/local/bin/g++-4.8   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/EXE.dir/visual.cpp.o -c /Users/chengtai/Documents/2014/MOTR/modules/Alpha/Alpha/visual.cpp
 
 CMakeFiles/EXE.dir/visual.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/EXE.dir/visual.cpp.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/chengtai/Documents/2014/MOTR/modules/Alpha/Alpha/visual.cpp > CMakeFiles/EXE.dir/visual.cpp.i
+	/usr/local/bin/g++-4.8  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/chengtai/Documents/2014/MOTR/modules/Alpha/Alpha/visual.cpp > CMakeFiles/EXE.dir/visual.cpp.i
 
 CMakeFiles/EXE.dir/visual.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/EXE.dir/visual.cpp.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/chengtai/Documents/2014/MOTR/modules/Alpha/Alpha/visual.cpp -o CMakeFiles/EXE.dir/visual.cpp.s
+	/usr/local/bin/g++-4.8  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/chengtai/Documents/2014/MOTR/modules/Alpha/Alpha/visual.cpp -o CMakeFiles/EXE.dir/visual.cpp.s
 
 CMakeFiles/EXE.dir/visual.cpp.o.requires:
 .PHONY : CMakeFiles/EXE.dir/visual.cpp.o.requires
@@ -102,15 +102,15 @@ CMakeFiles/EXE.dir/layer.cpp.o: CMakeFiles/EXE.dir/flags.make
 CMakeFiles/EXE.dir/layer.cpp.o: layer.cpp
 	$(CMAKE_COMMAND) -E cmake_progress_report /Users/chengtai/Documents/2014/MOTR/modules/Alpha/Alpha/CMakeFiles $(CMAKE_PROGRESS_3)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/EXE.dir/layer.cpp.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/EXE.dir/layer.cpp.o -c /Users/chengtai/Documents/2014/MOTR/modules/Alpha/Alpha/layer.cpp
+	/usr/local/bin/g++-4.8   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/EXE.dir/layer.cpp.o -c /Users/chengtai/Documents/2014/MOTR/modules/Alpha/Alpha/layer.cpp
 
 CMakeFiles/EXE.dir/layer.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/EXE.dir/layer.cpp.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/chengtai/Documents/2014/MOTR/modules/Alpha/Alpha/layer.cpp > CMakeFiles/EXE.dir/layer.cpp.i
+	/usr/local/bin/g++-4.8  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/chengtai/Documents/2014/MOTR/modules/Alpha/Alpha/layer.cpp > CMakeFiles/EXE.dir/layer.cpp.i
 
 CMakeFiles/EXE.dir/layer.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/EXE.dir/layer.cpp.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/chengtai/Documents/2014/MOTR/modules/Alpha/Alpha/layer.cpp -o CMakeFiles/EXE.dir/layer.cpp.s
+	/usr/local/bin/g++-4.8  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/chengtai/Documents/2014/MOTR/modules/Alpha/Alpha/layer.cpp -o CMakeFiles/EXE.dir/layer.cpp.s
 
 CMakeFiles/EXE.dir/layer.cpp.o.requires:
 .PHONY : CMakeFiles/EXE.dir/layer.cpp.o.requires
@@ -125,15 +125,15 @@ CMakeFiles/EXE.dir/helper.cpp.o: CMakeFiles/EXE.dir/flags.make
 CMakeFiles/EXE.dir/helper.cpp.o: helper.cpp
 	$(CMAKE_COMMAND) -E cmake_progress_report /Users/chengtai/Documents/2014/MOTR/modules/Alpha/Alpha/CMakeFiles $(CMAKE_PROGRESS_4)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/EXE.dir/helper.cpp.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/EXE.dir/helper.cpp.o -c /Users/chengtai/Documents/2014/MOTR/modules/Alpha/Alpha/helper.cpp
+	/usr/local/bin/g++-4.8   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/EXE.dir/helper.cpp.o -c /Users/chengtai/Documents/2014/MOTR/modules/Alpha/Alpha/helper.cpp
 
 CMakeFiles/EXE.dir/helper.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/EXE.dir/helper.cpp.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/chengtai/Documents/2014/MOTR/modules/Alpha/Alpha/helper.cpp > CMakeFiles/EXE.dir/helper.cpp.i
+	/usr/local/bin/g++-4.8  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/chengtai/Documents/2014/MOTR/modules/Alpha/Alpha/helper.cpp > CMakeFiles/EXE.dir/helper.cpp.i
 
 CMakeFiles/EXE.dir/helper.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/EXE.dir/helper.cpp.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/chengtai/Documents/2014/MOTR/modules/Alpha/Alpha/helper.cpp -o CMakeFiles/EXE.dir/helper.cpp.s
+	/usr/local/bin/g++-4.8  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/chengtai/Documents/2014/MOTR/modules/Alpha/Alpha/helper.cpp -o CMakeFiles/EXE.dir/helper.cpp.s
 
 CMakeFiles/EXE.dir/helper.cpp.o.requires:
 .PHONY : CMakeFiles/EXE.dir/helper.cpp.o.requires
@@ -148,15 +148,15 @@ CMakeFiles/EXE.dir/convnet.cpp.o: CMakeFiles/EXE.dir/flags.make
 CMakeFiles/EXE.dir/convnet.cpp.o: convnet.cpp
 	$(CMAKE_COMMAND) -E cmake_progress_report /Users/chengtai/Documents/2014/MOTR/modules/Alpha/Alpha/CMakeFiles $(CMAKE_PROGRESS_5)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/EXE.dir/convnet.cpp.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/EXE.dir/convnet.cpp.o -c /Users/chengtai/Documents/2014/MOTR/modules/Alpha/Alpha/convnet.cpp
+	/usr/local/bin/g++-4.8   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/EXE.dir/convnet.cpp.o -c /Users/chengtai/Documents/2014/MOTR/modules/Alpha/Alpha/convnet.cpp
 
 CMakeFiles/EXE.dir/convnet.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/EXE.dir/convnet.cpp.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/chengtai/Documents/2014/MOTR/modules/Alpha/Alpha/convnet.cpp > CMakeFiles/EXE.dir/convnet.cpp.i
+	/usr/local/bin/g++-4.8  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/chengtai/Documents/2014/MOTR/modules/Alpha/Alpha/convnet.cpp > CMakeFiles/EXE.dir/convnet.cpp.i
 
 CMakeFiles/EXE.dir/convnet.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/EXE.dir/convnet.cpp.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/chengtai/Documents/2014/MOTR/modules/Alpha/Alpha/convnet.cpp -o CMakeFiles/EXE.dir/convnet.cpp.s
+	/usr/local/bin/g++-4.8  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/chengtai/Documents/2014/MOTR/modules/Alpha/Alpha/convnet.cpp -o CMakeFiles/EXE.dir/convnet.cpp.s
 
 CMakeFiles/EXE.dir/convnet.cpp.o.requires:
 .PHONY : CMakeFiles/EXE.dir/convnet.cpp.o.requires
@@ -171,15 +171,15 @@ CMakeFiles/EXE.dir/test.cpp.o: CMakeFiles/EXE.dir/flags.make
 CMakeFiles/EXE.dir/test.cpp.o: test.cpp
 	$(CMAKE_COMMAND) -E cmake_progress_report /Users/chengtai/Documents/2014/MOTR/modules/Alpha/Alpha/CMakeFiles $(CMAKE_PROGRESS_6)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/EXE.dir/test.cpp.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/EXE.dir/test.cpp.o -c /Users/chengtai/Documents/2014/MOTR/modules/Alpha/Alpha/test.cpp
+	/usr/local/bin/g++-4.8   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/EXE.dir/test.cpp.o -c /Users/chengtai/Documents/2014/MOTR/modules/Alpha/Alpha/test.cpp
 
 CMakeFiles/EXE.dir/test.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/EXE.dir/test.cpp.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/chengtai/Documents/2014/MOTR/modules/Alpha/Alpha/test.cpp > CMakeFiles/EXE.dir/test.cpp.i
+	/usr/local/bin/g++-4.8  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/chengtai/Documents/2014/MOTR/modules/Alpha/Alpha/test.cpp > CMakeFiles/EXE.dir/test.cpp.i
 
 CMakeFiles/EXE.dir/test.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/EXE.dir/test.cpp.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/chengtai/Documents/2014/MOTR/modules/Alpha/Alpha/test.cpp -o CMakeFiles/EXE.dir/test.cpp.s
+	/usr/local/bin/g++-4.8  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/chengtai/Documents/2014/MOTR/modules/Alpha/Alpha/test.cpp -o CMakeFiles/EXE.dir/test.cpp.s
 
 CMakeFiles/EXE.dir/test.cpp.o.requires:
 .PHONY : CMakeFiles/EXE.dir/test.cpp.o.requires

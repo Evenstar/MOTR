@@ -22,7 +22,7 @@
 #include <opencv2/opencv.hpp>
 #include <opencv/cvaux.h>
 #include "../Eigen/Dense"
-
+#include <boost/shared_ptr.hpp>
 enum LayerType {Convolution, FullyConnected};
 enum BoundaryType {Valid, Full};
 enum NonlinearityType {Sigmoid, ReLU};
@@ -31,4 +31,5 @@ typedef Eigen::MatrixXf FilterType;
 typedef Eigen::MatrixXf MatType;
 typedef cv::Mat ImgType;
 typedef float ScalarType;
+
 #endif

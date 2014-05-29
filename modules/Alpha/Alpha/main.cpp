@@ -15,11 +15,18 @@
 
 using namespace cv;
 using namespace Eigen;
-
-
-
+using namespace std;
+using namespace boost;
+#include <memory>
 int main(int argc, char** argv)
 {
+    shared_ptr<string> p(new string("123"));
+    shared_ptr<string> p2(new string("456"));
+    p.swap(p2);
+    cout<<p.use_count()<<endl;
+    cout<<*p<<endl;
+    cout<<p<<endl;
+
     test_ConvNet();
     return 0;
 }
