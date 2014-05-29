@@ -23,7 +23,6 @@ ImgType LoadHepburn();
 vector<MatType> Synthesize( ImgType img, int ncopies);
 
 
-
 void test_Synthesize();
 
 

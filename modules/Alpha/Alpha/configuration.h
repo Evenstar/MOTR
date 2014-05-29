@@ -10,35 +10,29 @@
 #define CONFIGURATION_H
 #include "utils.h"
 using namespace std;
-class Configuration{
+
+struct Config{
+    ///for convlayers.
+    int ninmaps;
+    int inputrows;
+    int inputcols;
+    int stride;
+    int side;
+    int kernelsize;
+    int noutmaps;
+    bool isdownsample;
+    vector<set<int> > inmaps;
+
+    ///for fully connected layers.
+    int fanin;
+    int fanout;
+};
+
+struct Configuration{
 public:
-    
-    ///Parameters for convlayer block
     int nconvlayers;
-    vector<int> stride;
-    vector<int> side;
-    vector<vector<set<int> > > inmaps;
-    vector<string> nonlinearity;
-    vector<int> kernelsize;
-    vector<int> nmaps;
-    int ninputrows;
-    int ninputcols;
-    vector<bool> isdownsample;
-    
-    ///last term is the size of the input of the fully connected layer.
-    vector<int> nconvrows;
-    vector<int> nconvcols;
-    
-    ///Parameters for fully connected block
-    
     int nfclayers;
-    vector<int> nfcnodes;
-    string objtype;
-    
-    ///TODO: add learning module.
-    
-public:
-    void ComputeSize();
+    vector<Config> vconfig;
 };
 
 

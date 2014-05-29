@@ -10,7 +10,6 @@
 
 
 
-
 void ConvLayer::SetInput( vector<MatType>* _indata)
 {
     if (_indata->size()==0){
@@ -76,6 +75,7 @@ void ConvLayer::ApplyNonlinearity(){
 
 bool ConvLayer::SelfCheck()
 {
+    cout<<"Running Selfcheck of ConvLayer"<<endl;
     if( inputrows<=0 || inputcols<=0){
         cerr<<"Input matrix is 0"<<endl;
         return false;
@@ -139,41 +139,6 @@ bool ConvLayer::SelfCheck()
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-FullyConnectedLayer::FullyConnectedLayer( int _stride, int _side,
-                                         int _fanin, int _fanout)
-{
-    stride=_stride;
-    side=_side;
-    fanin=_fanin;
-    fanout=_fanout;
-}
-
-void FullyConnectedLayer::Setup(int _stride, int _side
-                                ,int _fanin, int _fanout)
-{
-    stride=_stride;
-    side=_side;
-    fanin=_fanin;
-    fanout=_fanout;
-}
-
 void FullyConnectedLayer::SetInput(MatType* mat)
 {
     indata=mat;
@@ -193,15 +158,6 @@ void FullyConnectedLayer::ApplyNonlinearity()
 {
     outdata=ApplyReLU(outdata);
 }
-
-void FullyConnectedLayer::DownSample()
-{
-    outdata=MaxPooling(outdata, stride,side);
-}
-
-
-
-
 
 
 

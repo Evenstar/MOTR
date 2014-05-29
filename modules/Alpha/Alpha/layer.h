@@ -10,6 +10,7 @@
 #define LAYER_H
 #include "utils.h"
 #include "helper.h"
+#include "configuration.h"
 using namespace std;
 
 /**
@@ -31,6 +32,7 @@ class ConvLayer : public Layer{
 public:
     
     /**
+     * @file
      * @param _ninmaps Number of input maps.
      * @param _inputrows Number of rows of input matrix.
      * @param _inputcols Number of columns of input matrix.
@@ -50,8 +52,18 @@ public:
         if (!(_indata==NULL)){
             SetInput(_indata);
         }
+        name="c";
     }
     
+    ConvLayer(const Config& cfg,vector<MatType>* _indata=NULL):
+    ninmaps(cfg.ninmaps),inputrows(cfg.inputrows),inputcols(cfg.inputcols),
+    noutmaps(cfg.noutmaps),stride(cfg.stride),side(cfg.side),kernelsize(cfg.kernelsize)
+    {
+        if (!(_indata==NULL)){
+            SetInput(_indata);
+        }
+        name="c";
+    }
     
     ~ConvLayer(){};
 public:
@@ -78,21 +90,29 @@ public:
     vector<set<int> > inmaps;
     
     string name;
-    const int ninmaps;
-    const int inputrows;
-    const int inputcols;
+    int ninmaps;
+    int inputrows;
+    int inputcols;
     
-    const int noutmaps;
-    const int stride;
-    const int side;
-    const int kernelsize;
+    int noutmaps;
+    int stride;
+    int side;
+    int kernelsize;
     
 };
 
 class FullyConnectedLayer : public Layer {
 public:
-    FullyConnectedLayer(int _stride=0, int _side=0,
-                        int _fanin=0, int _fanout=0);
+    FullyConnectedLayer(int _fanin, int _fanout):
+    fanin(_fanin),fanout(_fanout){
+        name="f";
+    };
+    
+    FullyConnectedLayer(const Config& cfg):
+    fanin(cfg.fanin),fanout(cfg.fanout){
+        name="f";
+    };
+    
     ~FullyConnectedLayer(){};
     
 public:
@@ -116,9 +136,6 @@ public:
     MatType* indata;     /// The input data.
     
     MatType outdata;
-    
-    int stride;
-    int side;
     
     int fanin;
     int fanout;

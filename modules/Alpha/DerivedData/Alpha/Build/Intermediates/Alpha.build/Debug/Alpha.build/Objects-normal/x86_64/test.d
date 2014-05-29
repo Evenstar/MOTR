@@ -186,5 +186,5 @@ dependencies: \
   /Users/chengtai/Documents/2014/MOTR/modules/Alpha/Alpha/helper.h \
   /Users/chengtai/Documents/2014/MOTR/modules/Alpha/Alpha/visual.h \
   /Users/chengtai/Documents/2014/MOTR/modules/Alpha/Alpha/layer.h \
-  /Users/chengtai/Documents/2014/MOTR/modules/Alpha/Alpha/convnet.h \
-  /Users/chengtai/Documents/2014/MOTR/modules/Alpha/Alpha/configuration.h
+  /Users/chengtai/Documents/2014/MOTR/modules/Alpha/Alpha/configuration.h \
+  /Users/chengtai/Documents/2014/MOTR/modules/Alpha/Alpha/convnet.h

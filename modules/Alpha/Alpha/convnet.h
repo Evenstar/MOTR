@@ -10,35 +10,18 @@
 #define CONVNET_H
 
 #include "layer.h"
+#include "configuration.h"
 using namespace std;
 
-struct Config{
-    int nconvlayers;
-    int nfclayers;
-    int batchsize;
-    int nepoches;
-    float learningrate;
 
-    vector<int> kernelsize;
-    vector<int> stride;
-    vector<int> side;
-    
-    vector<int> ninmaps;
-    vector<int> noutmaps;
-    vector<int> fanin;
-    vector<int> fanout;
-    
-    vector<vector<set<int> > >receiveset;
-
-};
 
 class ConvNet{
 public:
-    ConvNet();
+    ConvNet(const Configuration& _config):config(_config){};
 
     ~ConvNet(){};
     
-    void Setup(const Config&);
+    void Initialize();
     
     void SetTrainingData(vector<MatType>*, vector<MatType>*);
     
@@ -54,17 +37,10 @@ public:
     
 public:
     
-    vector<MatType>* xtraindata;
-    vector<MatType>* ytraindata;
-    
-    vector<Layer> layer;
-    vector<MatType> xdata;
-    MatType ydata;
-    
-    vector<MatType> xdelta;
-    MatType ydelta;
-    
-    Config config;
+    vector<MatType>* xtrain;
+    vector<MatType>* ytrain;
+    vector<Layer*> layer;
+    Configuration config;
 };
 
 

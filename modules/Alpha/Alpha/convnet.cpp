@@ -8,30 +8,69 @@
 
 #include "convnet.h"
 
-ConvNet::ConvNet()
-{
-    xtraindata=NULL;
-    ytraindata=NULL;
-    
-}
-/*
-void ConvNet::Setup( const Config& _config)
-{
-    config=_config;
-    for (int i=0; i<config.nconvlayers;i++){
-        ConvLayer temp(config.stride[i], config.side[i], config.kernelsize[i],
-                       config.ninmaps[i], config.noutmaps[i]);
-        temp.name="c";
-        layer.push_back(temp);
+void ConvNet::Initialize(){
+    layer.clear();
+    xtrain=NULL;
+    ytrain=NULL;
+    int i=0;
+    for(; i< config.nconvlayers;i++){
+        ConvLayer* convlayer=new ConvLayer(config.vconfig[i]);
+        layer.push_back(convlayer);
     }
-    
-    for(int i=0; i<config.nfclayers; i++) {
-        FullyConnectedLayer temp(config.stride[i], config.side[i],
-                                config.fanin[i],config.fanout[i]);
-        temp.name="f";
-        layer.push_back(temp);
+    for (; i<config.nconvlayers+config.nfclayers;i++){
+        FullyConnectedLayer* fclayer=new FullyConnectedLayer(config.vconfig[i]);
+        layer.push_back(fclayer);
     }
-    cout<<layer.size()<<endl;
 }
 
-*/
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    

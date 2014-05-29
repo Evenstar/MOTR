@@ -8,7 +8,7 @@
 
 #include "test.h"
 
-
+/*
 
 ImgType LoadHepburn()
 {
@@ -49,7 +49,7 @@ void test_GenerateRandomFilter()
     cout<<filter[0]<<endl;
 }
 
-/*
+
  void test_Convlayer(){
  ConvLayer convlayer;
  convlayer.Setup(2,2,5,3,5);
@@ -81,7 +81,7 @@ void test_GenerateRandomFilter()
  waitKey(0);
  }
  
- */
+
 
 void test_Convlayer()
 {
@@ -128,6 +128,7 @@ void test_Convlayer()
     waitKey(0);
     convlayer.SelfCheck();
 }
+
 void test_MaxPooling()
 {
     ImgType img=LoadHepburn();
@@ -147,38 +148,6 @@ void test_ApplyReLU()
 }
 
 
-void test_FullyConnectedLayer()
-{
-    FullyConnectedLayer fclayer;
-    fclayer.Setup(2,2,500,10);
-    fclayer.SetWeight(GenerateRandomWeights(fclayer.fanout,fclayer.fanin));
-    ImgType img=LoadHepburn();
-    MatType mat=Img2Mat(img);
-    fclayer.SetInput(&mat);
-    fclayer.ApplyFilter();
-    fclayer.ApplyNonlinearity();
-}
-
-
-
-void test_ConvNet()
-{
-    Config simple;
-    simple.nconvlayers=2;
-    simple.nfclayers=1;
-    simple.batchsize=1;
-    simple.nepoches=1;
-    simple.learningrate=0.1;
-    for (int i=0; i< simple.nconvlayers;i++)
-    {
-        simple.kernelsize.push_back(5);
-        simple.stride.push_back(2);
-        simple.side.push_back(2);
-    }
-    simple.ninmaps[0]=1;
-    
-    //ConvNet convnet;
-}
 
 
 void test_Configuration()
@@ -226,6 +195,40 @@ void test_Configuration()
     config.nfclayers=2;
     config.nfcnodes.push_back(30);
     config.nfcnodes.push_back(10);
+}
+*/
+
+void test_ConvNet()
+{
+    Config config1,config2,config3;
+    config1.ninmaps=1;
+    config1.inputrows=28;
+    config1.inputcols=28;
+    config1.stride=2;
+    config1.side=2;
+    config1.kernelsize=5;
+    
+    config1.ninmaps=1;
+    config1.inputrows=12;
+    config1.inputcols=12;
+    config1.stride=2;
+    config1.side=2;
+    config1.kernelsize=5;
+    
+    config3.fanin=192;
+    config3.fanout=10;
+    
+    Configuration configuration;
+    configuration.nconvlayers=2;
+    configuration.nfclayers=1;
+    configuration.vconfig.push_back(config1);
+    configuration.vconfig.push_back(config2);
+    configuration.vconfig.push_back(config3);
+    
+    ConvNet convnet(configuration);
+    convnet.Initialize();
+    ConvLayer* ptr=dynamic_cast<ConvLayer*>(convnet.layer[0]);
+    ptr->SelfCheck();
 }
 
 
