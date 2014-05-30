@@ -92,9 +92,12 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a1494deafc867bf0a25ff4adb748cb9d5"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a1494deafc867bf0a25ff4adb748cb9d5"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>Setup</b> (const <a class="el" href="struct_config.html">Config</a> &amp;)</td></tr>
-<tr class="separator:a1494deafc867bf0a25ff4adb748cb9d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8469424911e8edd4300e8dc09db977d1"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a8469424911e8edd4300e8dc09db977d1"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>ConvNet</b> (const <a class="el" href="struct_configuration.html">Configuration</a> &amp;_config)</td></tr>
+<tr class="separator:a8469424911e8edd4300e8dc09db977d1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1002e8eca863e7b21bf3d346534c91a3"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a1002e8eca863e7b21bf3d346534c91a3"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>Initialize</b> ()</td></tr>
+<tr class="separator:a1002e8eca863e7b21bf3d346534c91a3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac5a073e999f383bacdfb465bc1cdfd15"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac5a073e999f383bacdfb465bc1cdfd15"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>SetTrainingData</b> (vector&lt; MatType &gt; *, vector&lt; MatType &gt; *)</td></tr>
 <tr class="separator:ac5a073e999f383bacdfb465bc1cdfd15"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -116,30 +119,18 @@ float&#160;</td><td class="memItemRight" valign="bottom"><b>Objecteive</b> ()</t
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
-<tr class="memitem:a28295fc53765f2de2e2ed59fcd0ceca0"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a28295fc53765f2de2e2ed59fcd0ceca0"></a>
-vector&lt; MatType &gt; *&#160;</td><td class="memItemRight" valign="bottom"><b>xtraindata</b></td></tr>
-<tr class="separator:a28295fc53765f2de2e2ed59fcd0ceca0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:addf411b7159b8745b457c99f61a4d594"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="addf411b7159b8745b457c99f61a4d594"></a>
-vector&lt; MatType &gt; *&#160;</td><td class="memItemRight" valign="bottom"><b>ytraindata</b></td></tr>
-<tr class="separator:addf411b7159b8745b457c99f61a4d594"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa32431ef5efb6e45bd9d85263b70ec73"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aa32431ef5efb6e45bd9d85263b70ec73"></a>
-vector&lt; <a class="el" href="class_layer.html">Layer</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>layer</b></td></tr>
-<tr class="separator:aa32431ef5efb6e45bd9d85263b70ec73"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0216c5ea61e7042a58a542925edcd28a"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a0216c5ea61e7042a58a542925edcd28a"></a>
-vector&lt; MatType &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>xdata</b></td></tr>
-<tr class="separator:a0216c5ea61e7042a58a542925edcd28a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa69ca972e72f0dec3e8eba57bcc905b5"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aa69ca972e72f0dec3e8eba57bcc905b5"></a>
-MatType&#160;</td><td class="memItemRight" valign="bottom"><b>ydata</b></td></tr>
-<tr class="separator:aa69ca972e72f0dec3e8eba57bcc905b5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aac984f4fe5f1c36e40026c539ba7c2cc"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aac984f4fe5f1c36e40026c539ba7c2cc"></a>
-vector&lt; MatType &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>xdelta</b></td></tr>
-<tr class="separator:aac984f4fe5f1c36e40026c539ba7c2cc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3acdba1ff6f7ef239ab600e1e73b470d"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a3acdba1ff6f7ef239ab600e1e73b470d"></a>
-MatType&#160;</td><td class="memItemRight" valign="bottom"><b>ydelta</b></td></tr>
-<tr class="separator:a3acdba1ff6f7ef239ab600e1e73b470d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aee7939604e55d25def503a860a143e73"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aee7939604e55d25def503a860a143e73"></a>
-<a class="el" href="struct_config.html">Config</a>&#160;</td><td class="memItemRight" valign="bottom"><b>config</b></td></tr>
-<tr class="separator:aee7939604e55d25def503a860a143e73"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ace45755a1e3aba68320fbffdeb00a94b"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ace45755a1e3aba68320fbffdeb00a94b"></a>
+vector&lt; MatType &gt; *&#160;</td><td class="memItemRight" valign="bottom"><b>xtrain</b></td></tr>
+<tr class="separator:ace45755a1e3aba68320fbffdeb00a94b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7dce29d8568c98fbb2c2f780f19b0b6c"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a7dce29d8568c98fbb2c2f780f19b0b6c"></a>
+vector&lt; MatType &gt; *&#160;</td><td class="memItemRight" valign="bottom"><b>ytrain</b></td></tr>
+<tr class="separator:a7dce29d8568c98fbb2c2f780f19b0b6c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3c41d03f1d55e54073da6b7e5039df3b"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a3c41d03f1d55e54073da6b7e5039df3b"></a>
+vector&lt; <a class="el" href="class_layer.html">Layer</a> * &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>layer</b></td></tr>
+<tr class="separator:a3c41d03f1d55e54073da6b7e5039df3b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a763289b5c332d3920085686aa9216f81"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a763289b5c332d3920085686aa9216f81"></a>
+<a class="el" href="struct_configuration.html">Configuration</a>&#160;</td><td class="memItemRight" valign="bottom"><b>config</b></td></tr>
+<tr class="separator:a763289b5c332d3920085686aa9216f81"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <hr/>The documentation for this class was generated from the following files:<ul>
 <li>/Users/chengtai/Documents/2014/MOTR/modules/Alpha/Alpha/<a class="el" href="convnet_8h_source.html">convnet.h</a></li>
@@ -148,7 +139,7 @@ MatType&#160;</td><td class="memItemRight" valign="bottom"><b>ydelta</b></td></t
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed May 28 2014 15:35:19 for My Project by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu May 29 2014 22:58:14 for My Project by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.7
 </small></address>

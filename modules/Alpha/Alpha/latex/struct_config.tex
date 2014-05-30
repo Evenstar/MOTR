@@ -4,47 +4,41 @@
 \subsection*{Public Attributes}
 \begin{DoxyCompactItemize}
 \item 
-\hypertarget{struct_config_a5faf413f16ae3ad303c276dec55bbb43}{int {\bfseries nconvlayers}}\label{struct_config_a5faf413f16ae3ad303c276dec55bbb43}
+\hypertarget{struct_config_a8482c2a80bd7661adefb7e4af2c8e82f}{int \hyperlink{struct_config_a8482c2a80bd7661adefb7e4af2c8e82f}{ninmaps}}\label{struct_config_a8482c2a80bd7661adefb7e4af2c8e82f}
+
+\begin{DoxyCompactList}\small\item\em for convlayers. \end{DoxyCompactList}\item 
+\hypertarget{struct_config_ab7f363b2ca498b13f6e1fe9cb3772c16}{int {\bfseries inputrows}}\label{struct_config_ab7f363b2ca498b13f6e1fe9cb3772c16}
 
 \item 
-\hypertarget{struct_config_af47a71c333fe0f02e92b13da02c1ffa8}{int {\bfseries nfclayers}}\label{struct_config_af47a71c333fe0f02e92b13da02c1ffa8}
+\hypertarget{struct_config_a236752a83d954c43bd21a0731173eec0}{int {\bfseries inputcols}}\label{struct_config_a236752a83d954c43bd21a0731173eec0}
 
 \item 
-\hypertarget{struct_config_a85e7b70b6903aefe622b53492da3d032}{int {\bfseries batchsize}}\label{struct_config_a85e7b70b6903aefe622b53492da3d032}
+\hypertarget{struct_config_ad7a985e951722129907736ae5c092459}{int {\bfseries stride}}\label{struct_config_ad7a985e951722129907736ae5c092459}
 
 \item 
-\hypertarget{struct_config_aed63e107038eab8d601de27e993de899}{int {\bfseries nepoches}}\label{struct_config_aed63e107038eab8d601de27e993de899}
+\hypertarget{struct_config_aef9875c26e3c553b843359901a6083a6}{int {\bfseries side}}\label{struct_config_aef9875c26e3c553b843359901a6083a6}
 
 \item 
-\hypertarget{struct_config_a83ecc26b02c50f6681925778f269e6ed}{float {\bfseries learningrate}}\label{struct_config_a83ecc26b02c50f6681925778f269e6ed}
+\hypertarget{struct_config_a39ebc108302ce9a999b45cb6dfb3d386}{int {\bfseries kernelsize}}\label{struct_config_a39ebc108302ce9a999b45cb6dfb3d386}
 
 \item 
-\hypertarget{struct_config_a0b6003bfcc65f1a55a9cf29156caf37d}{vector$<$ int $>$ {\bfseries kernelsize}}\label{struct_config_a0b6003bfcc65f1a55a9cf29156caf37d}
+\hypertarget{struct_config_ad85769049d1ef3cdca4b31486aa2128e}{int {\bfseries noutmaps}}\label{struct_config_ad85769049d1ef3cdca4b31486aa2128e}
 
 \item 
-\hypertarget{struct_config_a71f761af3cb2a94a3d039ca5ca56b457}{vector$<$ int $>$ {\bfseries stride}}\label{struct_config_a71f761af3cb2a94a3d039ca5ca56b457}
+\hypertarget{struct_config_ae694bea0336597df1a264b6352440abb}{bool {\bfseries isdownsample}}\label{struct_config_ae694bea0336597df1a264b6352440abb}
 
 \item 
-\hypertarget{struct_config_a693cac50b07661bcc70ae0cf0e8867cb}{vector$<$ int $>$ {\bfseries side}}\label{struct_config_a693cac50b07661bcc70ae0cf0e8867cb}
+\hypertarget{struct_config_a095d32cd326378d067389be47e85ea82}{vector$<$ set$<$ int $>$ $>$ {\bfseries inmaps}}\label{struct_config_a095d32cd326378d067389be47e85ea82}
 
 \item 
-\hypertarget{struct_config_a617b8fe3924d8cfdeea2701b48fa4626}{vector$<$ int $>$ {\bfseries ninmaps}}\label{struct_config_a617b8fe3924d8cfdeea2701b48fa4626}
+\hypertarget{struct_config_afb439e83ef17afef86cc30f5caa2f433}{int \hyperlink{struct_config_afb439e83ef17afef86cc30f5caa2f433}{fanin}}\label{struct_config_afb439e83ef17afef86cc30f5caa2f433}
 
-\item 
-\hypertarget{struct_config_aaf27c312f04beab28bc22e19f6ef491c}{vector$<$ int $>$ {\bfseries noutmaps}}\label{struct_config_aaf27c312f04beab28bc22e19f6ef491c}
-
-\item 
-\hypertarget{struct_config_a19155994c41ee4d6d35cfe074eb43899}{vector$<$ int $>$ {\bfseries fanin}}\label{struct_config_a19155994c41ee4d6d35cfe074eb43899}
-
-\item 
-\hypertarget{struct_config_a7f0e97476e3abef84295d7a622c8cac4}{vector$<$ int $>$ {\bfseries fanout}}\label{struct_config_a7f0e97476e3abef84295d7a622c8cac4}
-
-\item 
-\hypertarget{struct_config_a9146013cb6b61aba1eaecb830d1ae84e}{vector$<$ vector$<$ set$<$ int $>$ $>$ $>$ {\bfseries receiveset}}\label{struct_config_a9146013cb6b61aba1eaecb830d1ae84e}
+\begin{DoxyCompactList}\small\item\em for fully connected layers. \end{DoxyCompactList}\item 
+\hypertarget{struct_config_a53c21449d6147fbd7023f158e109cb4d}{int {\bfseries fanout}}\label{struct_config_a53c21449d6147fbd7023f158e109cb4d}
 
 \end{DoxyCompactItemize}
 
 
 The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
 \item 
-/\+Users/chengtai/\+Documents/2014/\+M\+O\+T\+R/modules/\+Alpha/\+Alpha/convnet.\+h\end{DoxyCompactItemize}
+/\+Users/chengtai/\+Documents/2014/\+M\+O\+T\+R/modules/\+Alpha/\+Alpha/configuration.\+h\end{DoxyCompactItemize}

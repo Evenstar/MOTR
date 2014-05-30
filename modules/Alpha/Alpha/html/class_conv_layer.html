@@ -101,8 +101,12 @@ Inheritance diagram for ConvLayer:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a7516441d146b575d8ba191278fe8ba9d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_conv_layer.html#a7516441d146b575d8ba191278fe8ba9d">ConvLayer</a> (int _ninmaps, int _inputrows, int _inputcols, int _noutmaps, int _stride, int _side, int _kernelsize, vector&lt; MatType &gt; *_indata=NULL)</td></tr>
+<tr class="memitem:a7516441d146b575d8ba191278fe8ba9d"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a7516441d146b575d8ba191278fe8ba9d"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>ConvLayer</b> (int _ninmaps, int _inputrows, int _inputcols, int _noutmaps, int _stride, int _side, int _kernelsize, vector&lt; MatType &gt; *_indata=NULL)</td></tr>
 <tr class="separator:a7516441d146b575d8ba191278fe8ba9d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6a591fe184f7a69d38a6ec0f0e681af5"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a6a591fe184f7a69d38a6ec0f0e681af5"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>ConvLayer</b> (const <a class="el" href="struct_config.html">Config</a> &amp;cfg, vector&lt; MatType &gt; *_indata=NULL)</td></tr>
+<tr class="separator:a6a591fe184f7a69d38a6ec0f0e681af5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad7b04710a903116d88fcc017b2ca4f2f"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ad7b04710a903116d88fcc017b2ca4f2f"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>SetFilter</b> (const vector&lt; vector&lt; FilterType &gt; &gt; &amp;)</td></tr>
 <tr class="separator:ad7b04710a903116d88fcc017b2ca4f2f"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -143,112 +147,28 @@ vector&lt; set&lt; int &gt; &gt;&#160;</td><td class="memItemRight" valign="bott
 <tr class="memitem:a9c41797df74c1eef60fb4fdbf2713379"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a9c41797df74c1eef60fb4fdbf2713379"></a>
 string&#160;</td><td class="memItemRight" valign="bottom"><b>name</b></td></tr>
 <tr class="separator:a9c41797df74c1eef60fb4fdbf2713379"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a62ef7802fa2cb90f2a6c3f09f52d1485"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a62ef7802fa2cb90f2a6c3f09f52d1485"></a>
-const int&#160;</td><td class="memItemRight" valign="bottom"><b>ninmaps</b></td></tr>
-<tr class="separator:a62ef7802fa2cb90f2a6c3f09f52d1485"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a24e3feabcb086d6a9985c263b954f32e"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a24e3feabcb086d6a9985c263b954f32e"></a>
-const int&#160;</td><td class="memItemRight" valign="bottom"><b>inputrows</b></td></tr>
-<tr class="separator:a24e3feabcb086d6a9985c263b954f32e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a51c24316490e75baea4950781a65d7f9"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a51c24316490e75baea4950781a65d7f9"></a>
-const int&#160;</td><td class="memItemRight" valign="bottom"><b>inputcols</b></td></tr>
-<tr class="separator:a51c24316490e75baea4950781a65d7f9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5b16865e198761926c2f4820062b0766"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a5b16865e198761926c2f4820062b0766"></a>
-const int&#160;</td><td class="memItemRight" valign="bottom"><b>noutmaps</b></td></tr>
-<tr class="separator:a5b16865e198761926c2f4820062b0766"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a503460202a6877759475b94e8bda8aa6"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a503460202a6877759475b94e8bda8aa6"></a>
-const int&#160;</td><td class="memItemRight" valign="bottom"><b>stride</b></td></tr>
-<tr class="separator:a503460202a6877759475b94e8bda8aa6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa393a1694d13a8d62f3eddc1709e5b74"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aa393a1694d13a8d62f3eddc1709e5b74"></a>
-const int&#160;</td><td class="memItemRight" valign="bottom"><b>side</b></td></tr>
-<tr class="separator:aa393a1694d13a8d62f3eddc1709e5b74"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad0f8a1eab56d2db1309913de2b299fc9"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ad0f8a1eab56d2db1309913de2b299fc9"></a>
-const int&#160;</td><td class="memItemRight" valign="bottom"><b>kernelsize</b></td></tr>
-<tr class="separator:ad0f8a1eab56d2db1309913de2b299fc9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acb85ab98fd2db9263870fd1c165ee87f"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="acb85ab98fd2db9263870fd1c165ee87f"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>ninmaps</b></td></tr>
+<tr class="separator:acb85ab98fd2db9263870fd1c165ee87f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac7f12b6aa66204da6672c2f497cad59a"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac7f12b6aa66204da6672c2f497cad59a"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>inputrows</b></td></tr>
+<tr class="separator:ac7f12b6aa66204da6672c2f497cad59a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afa9b48e7f3f4fcb0d917356aa1684665"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="afa9b48e7f3f4fcb0d917356aa1684665"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>inputcols</b></td></tr>
+<tr class="separator:afa9b48e7f3f4fcb0d917356aa1684665"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a949f5a023803b2fe0e5edbe8d589c414"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a949f5a023803b2fe0e5edbe8d589c414"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>noutmaps</b></td></tr>
+<tr class="separator:a949f5a023803b2fe0e5edbe8d589c414"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7fbd91b7f63e49fb43fa931de225c280"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a7fbd91b7f63e49fb43fa931de225c280"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>stride</b></td></tr>
+<tr class="separator:a7fbd91b7f63e49fb43fa931de225c280"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a941ec7552673506cbb7580e41e982494"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a941ec7552673506cbb7580e41e982494"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>side</b></td></tr>
+<tr class="separator:a941ec7552673506cbb7580e41e982494"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a93289a2dd373c9bde48114146ada7117"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a93289a2dd373c9bde48114146ada7117"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>kernelsize</b></td></tr>
+<tr class="separator:a93289a2dd373c9bde48114146ada7117"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a class="anchor" id="a7516441d146b575d8ba191278fe8ba9d"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">ConvLayer::ConvLayer </td>
-          <td>(</td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>_ninmaps</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>_inputrows</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>_inputcols</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>_noutmaps</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>_stride</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>_side</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>_kernelsize</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">vector&lt; MatType &gt; *&#160;</td>
-          <td class="paramname"><em>_indata</em> = <code>NULL</code>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">_ninmaps</td><td>Number of input maps. </td></tr>
-    <tr><td class="paramname">_inputrows</td><td>Number of rows of input matrix. </td></tr>
-    <tr><td class="paramname">_inputcols</td><td>Number of columns of input matrix. </td></tr>
-    <tr><td class="paramname">_noutmaps</td><td>Number of maps of this layer. </td></tr>
-    <tr><td class="paramname">_stride</td><td>stride. </td></tr>
-    <tr><td class="paramname">_side</td><td>side. </td></tr>
-    <tr><td class="paramname">_kernelsize</td><td>kernelsize, must be square. </td></tr>
-    <tr><td class="paramname">_indata.</td><td>Input data, optional. </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
 <hr/>The documentation for this class was generated from the following files:<ul>
 <li>/Users/chengtai/Documents/2014/MOTR/modules/Alpha/Alpha/<a class="el" href="layer_8h_source.html">layer.h</a></li>
 <li>/Users/chengtai/Documents/2014/MOTR/modules/Alpha/Alpha/layer.cpp</li>
@@ -256,7 +176,7 @@ const int&#160;</td><td class="memItemRight" valign="bottom"><b>kernelsize</b></
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed May 28 2014 15:35:19 for My Project by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu May 29 2014 22:58:14 for My Project by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.7
 </small></address>

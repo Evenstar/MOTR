@@ -3,6 +3,7 @@
 }
 {\ttfamily \#include \char`\"{}utils.\+h\char`\"{}}\\*
 {\ttfamily \#include \char`\"{}helper.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}configuration.\+h\char`\"{}}\\*
 \subsection*{Classes}
 \begin{DoxyCompactItemize}
 \item 
@@ -15,4 +16,24 @@ class \hyperlink{class_fully_connected_layer}{Fully\+Connected\+Layer}
 
 
 \subsection{Detailed Description}
-This is the definition for convolutional layers and fully connected layers. 
+This is the definition for convolutional layers and fully connected layers.
+
+
+\begin{DoxyParams}{Parameters}
+{\em \+\_\+ninmaps} & Number of input maps. \\
+\hline
+{\em \+\_\+inputrows} & Number of rows of input matrix. \\
+\hline
+{\em \+\_\+inputcols} & Number of columns of input matrix. \\
+\hline
+{\em \+\_\+noutmaps} & Number of maps of this layer. \\
+\hline
+{\em \+\_\+stride} & stride. \\
+\hline
+{\em \+\_\+side} & side. \\
+\hline
+{\em \+\_\+kernelsize} & kernelsize, must be square. \\
+\hline
+{\em \+\_\+indata.} & Input data, optional. \\
+\hline
+\end{DoxyParams}

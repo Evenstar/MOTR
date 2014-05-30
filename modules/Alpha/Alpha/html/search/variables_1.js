@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['outdata',['outdata',['../class_fully_connected_layer.html#a9dc1c3ddd28ba88594438e9029493cee',1,'FullyConnectedLayer']]]
+  ['ninmaps',['ninmaps',['../struct_config.html#a8482c2a80bd7661adefb7e4af2c8e82f',1,'Config']]]
 ];

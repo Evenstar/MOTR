@@ -10,8 +10,8 @@ var indexSectionsWithContent =
   0: "acflno",
   1: "cfl",
   2: "l",
-  3: "ac",
-  4: "no"
+  3: "a",
+  4: "fno"
 };
 
 var indexSectionNames =

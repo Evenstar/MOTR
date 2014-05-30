@@ -10,7 +10,11 @@ Inheritance diagram for Conv\+Layer\+:\begin{figure}[H]
 \subsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\hyperlink{class_conv_layer_a7516441d146b575d8ba191278fe8ba9d}{Conv\+Layer} (int \+\_\+ninmaps, int \+\_\+inputrows, int \+\_\+inputcols, int \+\_\+noutmaps, int \+\_\+stride, int \+\_\+side, int \+\_\+kernelsize, vector$<$ Mat\+Type $>$ $\ast$\+\_\+indata=N\+U\+L\+L)
+\hypertarget{class_conv_layer_a7516441d146b575d8ba191278fe8ba9d}{{\bfseries Conv\+Layer} (int \+\_\+ninmaps, int \+\_\+inputrows, int \+\_\+inputcols, int \+\_\+noutmaps, int \+\_\+stride, int \+\_\+side, int \+\_\+kernelsize, vector$<$ Mat\+Type $>$ $\ast$\+\_\+indata=N\+U\+L\+L)}\label{class_conv_layer_a7516441d146b575d8ba191278fe8ba9d}
+
+\item 
+\hypertarget{class_conv_layer_a6a591fe184f7a69d38a6ec0f0e681af5}{{\bfseries Conv\+Layer} (const \hyperlink{struct_config}{Config} \&cfg, vector$<$ Mat\+Type $>$ $\ast$\+\_\+indata=N\+U\+L\+L)}\label{class_conv_layer_a6a591fe184f7a69d38a6ec0f0e681af5}
+
 \item 
 \hypertarget{class_conv_layer_ad7b04710a903116d88fcc017b2ca4f2f}{void {\bfseries Set\+Filter} (const vector$<$ vector$<$ Filter\+Type $>$ $>$ \&)}\label{class_conv_layer_ad7b04710a903116d88fcc017b2ca4f2f}
 
@@ -51,63 +55,27 @@ Inheritance diagram for Conv\+Layer\+:\begin{figure}[H]
 \hypertarget{class_conv_layer_a9c41797df74c1eef60fb4fdbf2713379}{string {\bfseries name}}\label{class_conv_layer_a9c41797df74c1eef60fb4fdbf2713379}
 
 \item 
-\hypertarget{class_conv_layer_a62ef7802fa2cb90f2a6c3f09f52d1485}{const int {\bfseries ninmaps}}\label{class_conv_layer_a62ef7802fa2cb90f2a6c3f09f52d1485}
+\hypertarget{class_conv_layer_acb85ab98fd2db9263870fd1c165ee87f}{int {\bfseries ninmaps}}\label{class_conv_layer_acb85ab98fd2db9263870fd1c165ee87f}
 
 \item 
-\hypertarget{class_conv_layer_a24e3feabcb086d6a9985c263b954f32e}{const int {\bfseries inputrows}}\label{class_conv_layer_a24e3feabcb086d6a9985c263b954f32e}
+\hypertarget{class_conv_layer_ac7f12b6aa66204da6672c2f497cad59a}{int {\bfseries inputrows}}\label{class_conv_layer_ac7f12b6aa66204da6672c2f497cad59a}
 
 \item 
-\hypertarget{class_conv_layer_a51c24316490e75baea4950781a65d7f9}{const int {\bfseries inputcols}}\label{class_conv_layer_a51c24316490e75baea4950781a65d7f9}
+\hypertarget{class_conv_layer_afa9b48e7f3f4fcb0d917356aa1684665}{int {\bfseries inputcols}}\label{class_conv_layer_afa9b48e7f3f4fcb0d917356aa1684665}
 
 \item 
-\hypertarget{class_conv_layer_a5b16865e198761926c2f4820062b0766}{const int {\bfseries noutmaps}}\label{class_conv_layer_a5b16865e198761926c2f4820062b0766}
+\hypertarget{class_conv_layer_a949f5a023803b2fe0e5edbe8d589c414}{int {\bfseries noutmaps}}\label{class_conv_layer_a949f5a023803b2fe0e5edbe8d589c414}
 
 \item 
-\hypertarget{class_conv_layer_a503460202a6877759475b94e8bda8aa6}{const int {\bfseries stride}}\label{class_conv_layer_a503460202a6877759475b94e8bda8aa6}
+\hypertarget{class_conv_layer_a7fbd91b7f63e49fb43fa931de225c280}{int {\bfseries stride}}\label{class_conv_layer_a7fbd91b7f63e49fb43fa931de225c280}
 
 \item 
-\hypertarget{class_conv_layer_aa393a1694d13a8d62f3eddc1709e5b74}{const int {\bfseries side}}\label{class_conv_layer_aa393a1694d13a8d62f3eddc1709e5b74}
+\hypertarget{class_conv_layer_a941ec7552673506cbb7580e41e982494}{int {\bfseries side}}\label{class_conv_layer_a941ec7552673506cbb7580e41e982494}
 
 \item 
-\hypertarget{class_conv_layer_ad0f8a1eab56d2db1309913de2b299fc9}{const int {\bfseries kernelsize}}\label{class_conv_layer_ad0f8a1eab56d2db1309913de2b299fc9}
+\hypertarget{class_conv_layer_a93289a2dd373c9bde48114146ada7117}{int {\bfseries kernelsize}}\label{class_conv_layer_a93289a2dd373c9bde48114146ada7117}
 
 \end{DoxyCompactItemize}
-
-
-\subsection{Constructor \& Destructor Documentation}
-\hypertarget{class_conv_layer_a7516441d146b575d8ba191278fe8ba9d}{\index{Conv\+Layer@{Conv\+Layer}!Conv\+Layer@{Conv\+Layer}}
-\index{Conv\+Layer@{Conv\+Layer}!Conv\+Layer@{Conv\+Layer}}
-\subsubsection[{Conv\+Layer}]{\setlength{\rightskip}{0pt plus 5cm}Conv\+Layer\+::\+Conv\+Layer (
-\begin{DoxyParamCaption}
-\item[{int}]{\+\_\+ninmaps, }
-\item[{int}]{\+\_\+inputrows, }
-\item[{int}]{\+\_\+inputcols, }
-\item[{int}]{\+\_\+noutmaps, }
-\item[{int}]{\+\_\+stride, }
-\item[{int}]{\+\_\+side, }
-\item[{int}]{\+\_\+kernelsize, }
-\item[{vector$<$ Mat\+Type $>$ $\ast$}]{\+\_\+indata = {\ttfamily NULL}}
-\end{DoxyParamCaption}
-)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_conv_layer_a7516441d146b575d8ba191278fe8ba9d}
-
-\begin{DoxyParams}{Parameters}
-{\em \+\_\+ninmaps} & Number of input maps. \\
-\hline
-{\em \+\_\+inputrows} & Number of rows of input matrix. \\
-\hline
-{\em \+\_\+inputcols} & Number of columns of input matrix. \\
-\hline
-{\em \+\_\+noutmaps} & Number of maps of this layer. \\
-\hline
-{\em \+\_\+stride} & stride. \\
-\hline
-{\em \+\_\+side} & side. \\
-\hline
-{\em \+\_\+kernelsize} & kernelsize, must be square. \\
-\hline
-{\em \+\_\+indata.} & Input data, optional. \\
-\hline
-\end{DoxyParams}
 
 
 The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
