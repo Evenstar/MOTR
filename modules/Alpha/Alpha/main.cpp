@@ -15,6 +15,7 @@
 
 int main(int argc, char** argv)
 {
-    test_ConvNet();
+//    test_ConvNet();
+     test_Convlayer();
     return 0;
 }

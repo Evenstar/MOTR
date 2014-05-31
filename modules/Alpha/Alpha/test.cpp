@@ -8,7 +8,7 @@
 
 #include "test.h"
 
-/*
+
 
 ImgType LoadHepburn()
 {
@@ -40,7 +40,7 @@ void test_Synthesize(){
 }
 
 
-
+/*
 
 void test_GenerateRandomFilter()
 {
@@ -80,7 +80,6 @@ void test_GenerateRandomFilter()
  imshow("Filter",Mat2Img(mat));
  waitKey(0);
  }
- 
 
 
 void test_Convlayer()
@@ -128,6 +127,7 @@ void test_Convlayer()
     waitKey(0);
     convlayer.SelfCheck();
 }
+
 
 void test_MaxPooling()
 {
@@ -229,12 +229,55 @@ void test_ConvNet()
     
     ConvNet convnet(configuration);
     convnet.Initialize();
-    //ConvLayer* ptr=dynamic_cast<ConvLayer*>(convnet.layer[0]);
-    //ptr->SelfCheck();
+
 }
 
 
-
+void test_Convlayer()
+{
+    ConvLayer convlayer(1,200,200,5,2,2,7);
+    ImgType img=LoadHepburn();
+    MatType mat=Img2Mat(img);
+    mat=mat.block(100,100,200,200);
+    vector<set<int> > _inmaps;
+    for(int i=0; i<5; i++){
+        set<int> temp;
+        temp.insert(0);
+        _inmaps.push_back(temp);
+    }
+    VecMatPtr inptr(new vector<MatType>);
+    inptr->push_back(mat);
+    
+    vector<vector<FilterType> > _filter;
+    vector<FilterType> z;
+    for (int i=0; i<5; i++){
+        z.clear();
+        FilterType temp=FilterType::Random(7,7);
+        if (i==0)
+        {
+            temp=1.0/49.0*FilterType::Ones(7,7);
+        }
+        z.push_back(temp);
+        _filter.push_back(z);
+    }
+    convlayer.SetInput(inptr);
+    convlayer.SetFilter(_filter);
+    convlayer.SetInmaps(_inmaps);
+    
+    convlayer.ApplyFilter();
+    cout<<convlayer.outdata.size()<<endl;
+    cout<<convlayer.outdata[0].rows()<<convlayer.outdata[0].cols()<<endl;
+    convlayer.DownSample();
+    cout<<convlayer.outdata[0].rows()<<convlayer.outdata[0].cols()<<endl;
+    convlayer.ApplyNonlinearity();
+    cout<<convlayer.outdata[0].rows()<<convlayer.outdata[0].cols()<<endl;
+    
+    img=Mat2Img(convlayer.outdata[0]);
+    namedWindow("Test", CV_WINDOW_AUTOSIZE);
+    imshow("Test",img);
+    waitKey(0);
+    convlayer.SelfCheck();
+}
 
 
 

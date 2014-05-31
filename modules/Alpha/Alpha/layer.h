@@ -13,10 +13,8 @@
 #include "configuration.h"
 using namespace std;
 using namespace boost;
-/**
- * @file
- * This is the definition for convolutional layers and fully connected layers.
- */
+
+
 class Layer{
 public:
     Layer(){};
@@ -31,17 +29,6 @@ public:
 class ConvLayer : public Layer{
 public:
     
-    /**
-     * @file
-     * @param _ninmaps Number of input maps.
-     * @param _inputrows Number of rows of input matrix.
-     * @param _inputcols Number of columns of input matrix.
-     * @param _noutmaps Number of maps of this layer.
-     * @param _stride stride.
-     * @param _side side.
-     * @param _kernelsize kernelsize, must be square.
-     * @param _indata. Input data, optional.
-     */
     ConvLayer(int _ninmaps, int _inputrows, int _inputcols,
               int _noutmaps, int _stride, int _side,
               int _kernelsize)
@@ -62,23 +49,15 @@ public:
     ~ConvLayer(){};
     
 public:
-    
     void SetFilter( const vector<vector<FilterType> >&) ;
-    
     void SetInput( VecMatPtr _indata );
-    
     void SetInmaps(const vector<set<int> > &);
-    
     void ApplyFilter();
-    
     void DownSample();
-    
     void ApplyNonlinearity();
-    
     bool SelfCheck();
     
 public:
-    
     vector<vector<FilterType> >filter;
     VecMatPtr indata;
     vector<MatType> outdata;
@@ -93,9 +72,7 @@ public:
     int stride;
     int side;
     int kernelsize;
-    
 };
-
 
 
 
@@ -140,40 +117,5 @@ public:
     
     string name;
 };
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 #endif
