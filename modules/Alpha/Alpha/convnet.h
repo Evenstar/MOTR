@@ -13,6 +13,7 @@
 #include "configuration.h"
 using namespace std;
 
+typedef boost::shared_ptr<Layer> LayerPtr;
 
 
 class ConvNet{
@@ -23,7 +24,7 @@ public:
     
     void Initialize();
     
-    void SetTrainingData(vector<MatType>*, vector<MatType>*);
+    void SetTrainingData(VecMatPtr, VecMatPtr);
     
     void FeedForward();
     
@@ -37,9 +38,9 @@ public:
     
 public:
     
-    vector<MatType>* xtrain;
-    vector<MatType>* ytrain;
-    vector<Layer*> layer;
+    VecMatPtr xtrain;
+    VecMatPtr ytrain;
+    vector<LayerPtr> layer;
     Configuration config;
 };
 

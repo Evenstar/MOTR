@@ -10,7 +10,7 @@
 
 
 
-void ConvLayer::SetInput( vector<MatType>* _indata)
+void ConvLayer::SetInput( VecMatPtr _indata)
 {
     if (_indata->size()==0){
         cerr<<"Input data must not be empty."<<endl;
@@ -139,7 +139,7 @@ bool ConvLayer::SelfCheck()
 }
 
 
-void FullyConnectedLayer::SetInput(MatType* mat)
+void FullyConnectedLayer::SetInput(MatPtr mat)
 {
     indata=mat;
 }

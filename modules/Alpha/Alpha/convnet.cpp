@@ -7,19 +7,16 @@
 //
 
 #include "convnet.h"
-
+using namespace boost;
 void ConvNet::Initialize(){
-    layer.clear();
-    xtrain=NULL;
-    ytrain=NULL;
     int i=0;
     for(; i< config.nconvlayers;i++){
-        ConvLayer* convlayer=new ConvLayer(config.vconfig[i]);
-        layer.push_back(convlayer);
+        shared_ptr<ConvLayer> ptr(new ConvLayer(config.vconfig[i]));
+        layer.push_back(ptr);
     }
     for (; i<config.nconvlayers+config.nfclayers;i++){
-        FullyConnectedLayer* fclayer=new FullyConnectedLayer(config.vconfig[i]);
-        layer.push_back(fclayer);
+        shared_ptr<FullyConnectedLayer> ptr(new FullyConnectedLayer(config.vconfig[i]));
+        layer.push_back(ptr);
     }
 }
 

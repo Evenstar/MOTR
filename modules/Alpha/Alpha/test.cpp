@@ -202,22 +202,24 @@ void test_ConvNet()
 {
     Config config1,config2,config3;
     config1.ninmaps=1;
+    config1.noutmaps=12;
     config1.inputrows=28;
     config1.inputcols=28;
     config1.stride=2;
     config1.side=2;
     config1.kernelsize=5;
     
-    config1.ninmaps=1;
-    config1.inputrows=12;
-    config1.inputcols=12;
-    config1.stride=2;
-    config1.side=2;
-    config1.kernelsize=5;
+    config2.ninmaps=1;
+    config2.noutmaps=12;
+    config2.inputrows=12;
+    config2.inputcols=12;
+    config2.stride=2;
+    config2.side=2;
+    config2.kernelsize=5;
     
     config3.fanin=192;
     config3.fanout=10;
-    
+
     Configuration configuration;
     configuration.nconvlayers=2;
     configuration.nfclayers=1;
@@ -227,8 +229,8 @@ void test_ConvNet()
     
     ConvNet convnet(configuration);
     convnet.Initialize();
-    ConvLayer* ptr=dynamic_cast<ConvLayer*>(convnet.layer[0]);
-    ptr->SelfCheck();
+    //ConvLayer* ptr=dynamic_cast<ConvLayer*>(convnet.layer[0]);
+    //ptr->SelfCheck();
 }
 
 

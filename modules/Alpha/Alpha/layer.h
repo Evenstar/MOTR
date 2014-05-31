@@ -12,7 +12,7 @@
 #include "helper.h"
 #include "configuration.h"
 using namespace std;
-
+using namespace boost;
 /**
  * @file
  * This is the definition for convolutional layers and fully connected layers.
@@ -44,33 +44,28 @@ public:
      */
     ConvLayer(int _ninmaps, int _inputrows, int _inputcols,
               int _noutmaps, int _stride, int _side,
-              int _kernelsize, vector<MatType>* _indata=NULL)
+              int _kernelsize)
     :ninmaps(_ninmaps), inputrows(_inputrows),
     inputcols(_inputcols),noutmaps(_noutmaps),
     stride(_stride), side(_side), kernelsize(_kernelsize)
     {
-        if (!(_indata==NULL)){
-            SetInput(_indata);
-        }
         name="c";
     }
     
-    ConvLayer(const Config& cfg,vector<MatType>* _indata=NULL):
+    ConvLayer(const Config& cfg):
     ninmaps(cfg.ninmaps),inputrows(cfg.inputrows),inputcols(cfg.inputcols),
     noutmaps(cfg.noutmaps),stride(cfg.stride),side(cfg.side),kernelsize(cfg.kernelsize)
     {
-        if (!(_indata==NULL)){
-            SetInput(_indata);
-        }
         name="c";
     }
     
     ~ConvLayer(){};
+    
 public:
     
     void SetFilter( const vector<vector<FilterType> >&) ;
     
-    void SetInput( vector<MatType>* );
+    void SetInput( VecMatPtr _indata );
     
     void SetInmaps(const vector<set<int> > &);
     
@@ -85,7 +80,7 @@ public:
 public:
     
     vector<vector<FilterType> >filter;
-    vector<MatType>* indata;
+    VecMatPtr indata;
     vector<MatType> outdata;
     vector<set<int> > inmaps;
     
@@ -100,6 +95,9 @@ public:
     int kernelsize;
     
 };
+
+
+
 
 class FullyConnectedLayer : public Layer {
 public:
@@ -121,7 +119,7 @@ public:
     
     void SetWeight( const MatType &);
     
-    void SetInput( MatType *);
+    void SetInput( MatPtr);
     
     void ApplyFilter();
     
@@ -133,7 +131,7 @@ public:
     
     MatType Weight;
     
-    MatType* indata;     /// The input data.
+    MatPtr indata;     /// The input data.
     
     MatType outdata;
     

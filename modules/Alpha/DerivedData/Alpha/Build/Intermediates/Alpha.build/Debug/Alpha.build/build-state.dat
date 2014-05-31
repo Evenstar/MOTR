@@ -209,6 +209,7 @@ N/Users/chengtai/Documents/2014/MOTR/modules/Alpha/Alpha/configuration.h
 c0000000053877F510000000000000266
 t1401388881
 s614
+i"utils.h"
 
 N/Users/chengtai/Documents/2014/MOTR/modules/Alpha/Alpha/convlayer.cpp
 c00000000538383AD00000000000000E3
@@ -221,19 +222,23 @@ t2
 s0
 
 N/Users/chengtai/Documents/2014/MOTR/modules/Alpha/Alpha/convnet.cpp
-c00000000538781C60000000000000333
-t1401389510
-s819
+c000000005389F54B00000000000003DD
+t1401550155
+s989
+i"convnet.h"
 
 N/Users/chengtai/Documents/2014/MOTR/modules/Alpha/Alpha/convnet.h
 c000000005387816D00000000000002CA
 t1401389421
 s714
+i"layer.h"
+i"configuration.h"
 
 N/Users/chengtai/Documents/2014/MOTR/modules/Alpha/Alpha/helper.cpp
 c00000000538627C60000000000000E06
 t1401300934
 s3590
+i"utils.h"
 
 N/Users/chengtai/Documents/2014/MOTR/modules/Alpha/Alpha/helper.h
 c0000000053862832000000000000038E
@@ -241,44 +246,76 @@ t1401301042
 s910
 
 N/Users/chengtai/Documents/2014/MOTR/modules/Alpha/Alpha/layer.cpp
-c000000005387788B0000000000000EDD
-t1401387147
-s3805
+c000000005389F0A00000000000000ED4
+t1401548960
+s3796
+i"layer.h"
 
 N/Users/chengtai/Documents/2014/MOTR/modules/Alpha/Alpha/layer.h
 c0000000053877DBF0000000000000C23
 t1401388479
 s3107
+i"utils.h"
+i"helper.h"
+i"configuration.h"
 
 N/Users/chengtai/Documents/2014/MOTR/modules/Alpha/Alpha/main.cpp
-c000000005387A4CA0000000000000240
-t1401398474
-s576
+c000000005387A5930000000000000125
+t1401398675
+s293
+i"layer.h"
+i"helper.h"
+i"visual.h"
+i"convnet.h"
+i"test.h"
 
 N/Users/chengtai/Documents/2014/MOTR/modules/Alpha/Alpha/test.cpp
-c0000000053878255000000000000154E
-t1401389653
-s5454
+c000000005389F5AD0000000000001580
+t1401550253
+s5504
+i"test.h"
 
 N/Users/chengtai/Documents/2014/MOTR/modules/Alpha/Alpha/test.h
 c0000000053877C2900000000000002C4
 t1401388073
 s708
+i"utils.h"
+i"helper.h"
+i"visual.h"
+i"layer.h"
+i"convnet.h"
+i"configuration.h"
 
 N/Users/chengtai/Documents/2014/MOTR/modules/Alpha/Alpha/utils.h
 c000000005387A3D900000000000002D9
 t1401398233
 s729
+i<iostream>
+i<cstdlib>
+i<cmath>
+i<vector>
+i<map>
+i<set>
+i<fstream>
+i<string>
+i<opencv2/core/core.hpp>
+i<opencv2/highgui/highgui.hpp>
+i<opencv2/opencv.hpp>
+i<opencv/cvaux.h>
+i"../Eigen/Dense"
+i<boost/shared_ptr.hpp>
 
 N/Users/chengtai/Documents/2014/MOTR/modules/Alpha/Alpha/visual.cpp
 c00000000538381840000000000000180
 t1401127300
 s384
+i"visual.h"
 
 N/Users/chengtai/Documents/2014/MOTR/modules/Alpha/Alpha/visual.h
 c000000005383897600000000000000ED
 t1401129334
 s237
+i"utils.h"
 
 N/Users/chengtai/Documents/2014/MOTR/modules/Alpha/DerivedData/Alpha/Build/Intermediates/Alpha.build/Debug/Alpha.build/Objects-normal/x86_64/Alpha.LinkFileList
 c0000000053877C93000000000000037A
@@ -296,82 +333,332 @@ t1401128155
 s213440
 
 N/Users/chengtai/Documents/2014/MOTR/modules/Alpha/DerivedData/Alpha/Build/Intermediates/Alpha.build/Debug/Alpha.build/Objects-normal/x86_64/convnet.o
-t1401398350
-s261460
+t1401550157
+s322592
 
 N/Users/chengtai/Documents/2014/MOTR/modules/Alpha/DerivedData/Alpha/Build/Intermediates/Alpha.build/Debug/Alpha.build/Objects-normal/x86_64/helper.o
 t1401398351
 s531108
 
 N/Users/chengtai/Documents/2014/MOTR/modules/Alpha/DerivedData/Alpha/Build/Intermediates/Alpha.build/Debug/Alpha.build/Objects-normal/x86_64/layer.o
-t1401398351
-s857440
+t1401550061
+s884312
 
 N/Users/chengtai/Documents/2014/MOTR/modules/Alpha/DerivedData/Alpha/Build/Intermediates/Alpha.build/Debug/Alpha.build/Objects-normal/x86_64/main.o
-t1401398478
-s60204
+t1401419571
+s15420
 
 N/Users/chengtai/Documents/2014/MOTR/modules/Alpha/DerivedData/Alpha/Build/Intermediates/Alpha.build/Debug/Alpha.build/Objects-normal/x86_64/test.o
-t1401398351
-s315180
+t1401550261
+s332624
 
 N/Users/chengtai/Documents/2014/MOTR/modules/Alpha/DerivedData/Alpha/Build/Intermediates/Alpha.build/Debug/Alpha.build/Objects-normal/x86_64/visual.o
 t1401398350
 s42588
 
 N/Users/chengtai/Documents/2014/MOTR/modules/Alpha/DerivedData/Alpha/Build/Products/Debug/Alpha
-t1401398478
-s454772
+t1401550157
+s470644
 
 N/Users/chengtai/Documents/2014/MOTR/modules/Alpha/Eigen/Cholesky
 c00000000530E09B60000000000000307
 t1393428918
 s775
+i"Core"
+i"src/Core/util/DisableStupidWarnings.h"
+i"src/misc/Solve.h"
+i"src/Cholesky/LLT.h"
+i"src/Cholesky/LDLT.h"
+i"src/Cholesky/LLT_MKL.h"
+i"src/Core/util/ReenableStupidWarnings.h"
 
 N/Users/chengtai/Documents/2014/MOTR/modules/Alpha/Eigen/Core
 c00000000530E09B600000000000031E0
 t1393428918
 s12768
+i"src/Core/util/DisableStupidWarnings.h"
+i"src/Core/util/Macros.h"
+i<complex>
+i"src/Core/util/MKL_support.h"
+i<malloc.h>
+i<immintrin.h>
+i<emmintrin.h>
+i<xmmintrin.h>
+i<pmmintrin.h>
+i<tmmintrin.h>
+i<smmintrin.h>
+i<nmmintrin.h>
+i<altivec.h>
+i<arm_neon.h>
+i<omp.h>
+i<cerrno>
+i<cstddef>
+i<cstdlib>
+i<cmath>
+i<cassert>
+i<functional>
+i<iosfwd>
+i<cstring>
+i<string>
+i<limits>
+i<climits>
+i<algorithm>
+i<iostream>
+i<intrin.h>
+i<new>
+i"src/Core/util/Constants.h"
+i"src/Core/util/ForwardDeclarations.h"
+i"src/Core/util/Meta.h"
+i"src/Core/util/StaticAssert.h"
+i"src/Core/util/XprHelper.h"
+i"src/Core/util/Memory.h"
+i"src/Core/NumTraits.h"
+i"src/Core/MathFunctions.h"
+i"src/Core/GenericPacketMath.h"
+i"src/Core/arch/SSE/PacketMath.h"
+i"src/Core/arch/SSE/MathFunctions.h"
+i"src/Core/arch/SSE/Complex.h"
+i"src/Core/arch/AltiVec/PacketMath.h"
+i"src/Core/arch/AltiVec/Complex.h"
+i"src/Core/arch/NEON/PacketMath.h"
+i"src/Core/arch/NEON/Complex.h"
+i"src/Core/arch/Default/Settings.h"
+i"src/Core/Functors.h"
+i"src/Core/DenseCoeffsBase.h"
+i"src/Core/DenseBase.h"
+i"src/Core/MatrixBase.h"
+i"src/Core/EigenBase.h"
+i"src/Core/Assign.h"
+i"src/Core/util/BlasUtil.h"
+i"src/Core/DenseStorage.h"
+i"src/Core/NestByValue.h"
+i"src/Core/ForceAlignedAccess.h"
+i"src/Core/ReturnByValue.h"
+i"src/Core/NoAlias.h"
+i"src/Core/PlainObjectBase.h"
+i"src/Core/Matrix.h"
+i"src/Core/Array.h"
+i"src/Core/CwiseBinaryOp.h"
+i"src/Core/CwiseUnaryOp.h"
+i"src/Core/CwiseNullaryOp.h"
+i"src/Core/CwiseUnaryView.h"
+i"src/Core/SelfCwiseBinaryOp.h"
+i"src/Core/Dot.h"
+i"src/Core/StableNorm.h"
+i"src/Core/MapBase.h"
+i"src/Core/Stride.h"
+i"src/Core/Map.h"
+i"src/Core/Block.h"
+i"src/Core/VectorBlock.h"
+i"src/Core/Ref.h"
+i"src/Core/Transpose.h"
+i"src/Core/DiagonalMatrix.h"
+i"src/Core/Diagonal.h"
+i"src/Core/DiagonalProduct.h"
+i"src/Core/PermutationMatrix.h"
+i"src/Core/Transpositions.h"
+i"src/Core/Redux.h"
+i"src/Core/Visitor.h"
+i"src/Core/Fuzzy.h"
+i"src/Core/IO.h"
+i"src/Core/Swap.h"
+i"src/Core/CommaInitializer.h"
+i"src/Core/Flagged.h"
+i"src/Core/ProductBase.h"
+i"src/Core/GeneralProduct.h"
+i"src/Core/TriangularMatrix.h"
+i"src/Core/SelfAdjointView.h"
+i"src/Core/products/GeneralBlockPanelKernel.h"
+i"src/Core/products/Parallelizer.h"
+i"src/Core/products/CoeffBasedProduct.h"
+i"src/Core/products/GeneralMatrixVector.h"
+i"src/Core/products/GeneralMatrixMatrix.h"
+i"src/Core/SolveTriangular.h"
+i"src/Core/products/GeneralMatrixMatrixTriangular.h"
+i"src/Core/products/SelfadjointMatrixVector.h"
+i"src/Core/products/SelfadjointMatrixMatrix.h"
+i"src/Core/products/SelfadjointProduct.h"
+i"src/Core/products/SelfadjointRank2Update.h"
+i"src/Core/products/TriangularMatrixVector.h"
+i"src/Core/products/TriangularMatrixMatrix.h"
+i"src/Core/products/TriangularSolverMatrix.h"
+i"src/Core/products/TriangularSolverVector.h"
+i"src/Core/BandMatrix.h"
+i"src/Core/CoreIterators.h"
+i"src/Core/BooleanRedux.h"
+i"src/Core/Select.h"
+i"src/Core/VectorwiseOp.h"
+i"src/Core/Random.h"
+i"src/Core/Replicate.h"
+i"src/Core/Reverse.h"
+i"src/Core/ArrayBase.h"
+i"src/Core/ArrayWrapper.h"
+i"src/Core/products/GeneralMatrixMatrix_MKL.h"
+i"src/Core/products/GeneralMatrixVector_MKL.h"
+i"src/Core/products/GeneralMatrixMatrixTriangular_MKL.h"
+i"src/Core/products/SelfadjointMatrixMatrix_MKL.h"
+i"src/Core/products/SelfadjointMatrixVector_MKL.h"
+i"src/Core/products/TriangularMatrixMatrix_MKL.h"
+i"src/Core/products/TriangularMatrixVector_MKL.h"
+i"src/Core/products/TriangularSolverMatrix_MKL.h"
+i"src/Core/Assign_MKL.h"
+i"src/Core/GlobalFunctions.h"
+i"src/Core/util/ReenableStupidWarnings.h"
+i"Eigen2Support"
 
 N/Users/chengtai/Documents/2014/MOTR/modules/Alpha/Eigen/Dense
 c00000000530E09B6000000000000007A
 t1393428918
 s122
+i"Core"
+i"LU"
+i"Cholesky"
+i"QR"
+i"SVD"
+i"Geometry"
+i"Eigenvalues"
+
+N/Users/chengtai/Documents/2014/MOTR/modules/Alpha/Eigen/Eigen2Support
+i"src/Core/util/DisableStupidWarnings.h"
+i"src/Eigen2Support/Macros.h"
+i"src/Eigen2Support/Memory.h"
+i"src/Eigen2Support/Meta.h"
+i"src/Eigen2Support/Lazy.h"
+i"src/Eigen2Support/Cwise.h"
+i"src/Eigen2Support/CwiseOperators.h"
+i"src/Eigen2Support/TriangularSolver.h"
+i"src/Eigen2Support/Block.h"
+i"src/Eigen2Support/VectorBlock.h"
+i"src/Eigen2Support/Minor.h"
+i"src/Eigen2Support/MathFunctions.h"
+i"src/Core/util/ReenableStupidWarnings.h"
+i<iostream>
 
 N/Users/chengtai/Documents/2014/MOTR/modules/Alpha/Eigen/Eigenvalues
 c00000000530E09B60000000000000572
 t1393428918
 s1394
+i"Core"
+i"src/Core/util/DisableStupidWarnings.h"
+i"Cholesky"
+i"Jacobi"
+i"Householder"
+i"LU"
+i"Geometry"
+i"src/Eigenvalues/Tridiagonalization.h"
+i"src/Eigenvalues/RealSchur.h"
+i"src/Eigenvalues/EigenSolver.h"
+i"src/Eigenvalues/SelfAdjointEigenSolver.h"
+i"src/Eigenvalues/GeneralizedSelfAdjointEigenSolver.h"
+i"src/Eigenvalues/HessenbergDecomposition.h"
+i"src/Eigenvalues/ComplexSchur.h"
+i"src/Eigenvalues/ComplexEigenSolver.h"
+i"src/Eigenvalues/RealQZ.h"
+i"src/Eigenvalues/GeneralizedEigenSolver.h"
+i"src/Eigenvalues/MatrixBaseEigenvalues.h"
+i"src/Eigenvalues/RealSchur_MKL.h"
+i"src/Eigenvalues/ComplexSchur_MKL.h"
+i"src/Eigenvalues/SelfAdjointEigenSolver_MKL.h"
+i"src/Core/util/ReenableStupidWarnings.h"
 
 N/Users/chengtai/Documents/2014/MOTR/modules/Alpha/Eigen/Geometry
 c00000000530E09B60000000000000645
 t1393428918
 s1605
+i"Core"
+i"src/Core/util/DisableStupidWarnings.h"
+i"SVD"
+i"LU"
+i<limits>
+i"src/Geometry/OrthoMethods.h"
+i"src/Geometry/EulerAngles.h"
+i"src/Geometry/Homogeneous.h"
+i"src/Geometry/RotationBase.h"
+i"src/Geometry/Rotation2D.h"
+i"src/Geometry/Quaternion.h"
+i"src/Geometry/AngleAxis.h"
+i"src/Geometry/Transform.h"
+i"src/Geometry/Translation.h"
+i"src/Geometry/Scaling.h"
+i"src/Geometry/Hyperplane.h"
+i"src/Geometry/ParametrizedLine.h"
+i"src/Geometry/AlignedBox.h"
+i"src/Geometry/Umeyama.h"
+i"src/Geometry/arch/Geometry_SSE.h"
+i"src/Eigen2Support/Geometry/All.h"
+i"src/Core/util/ReenableStupidWarnings.h"
 
 N/Users/chengtai/Documents/2014/MOTR/modules/Alpha/Eigen/Householder
 c00000000530E09B60000000000000244
 t1393428918
 s580
+i"Core"
+i"src/Core/util/DisableStupidWarnings.h"
+i"src/Householder/Householder.h"
+i"src/Householder/HouseholderSequence.h"
+i"src/Householder/BlockHouseholder.h"
+i"src/Core/util/ReenableStupidWarnings.h"
 
 N/Users/chengtai/Documents/2014/MOTR/modules/Alpha/Eigen/Jacobi
 c00000000530E09B60000000000000285
 t1393428918
 s645
+i"Core"
+i"src/Core/util/DisableStupidWarnings.h"
+i"src/Jacobi/Jacobi.h"
+i"src/Core/util/ReenableStupidWarnings.h"
 
 N/Users/chengtai/Documents/2014/MOTR/modules/Alpha/Eigen/LU
 c00000000530E09B600000000000003D7
 t1393428918
 s983
+i"Core"
+i"src/Core/util/DisableStupidWarnings.h"
+i"src/misc/Solve.h"
+i"src/misc/Kernel.h"
+i"src/misc/Image.h"
+i"src/LU/FullPivLU.h"
+i"src/LU/PartialPivLU.h"
+i"src/LU/PartialPivLU_MKL.h"
+i"src/LU/Determinant.h"
+i"src/LU/Inverse.h"
+i"src/LU/arch/Inverse_SSE.h"
+i"src/Eigen2Support/LU.h"
+i"src/Core/util/ReenableStupidWarnings.h"
 
 N/Users/chengtai/Documents/2014/MOTR/modules/Alpha/Eigen/QR
 c00000000530E09B6000000000000039E
 t1393428918
 s926
+i"Core"
+i"src/Core/util/DisableStupidWarnings.h"
+i"Cholesky"
+i"Jacobi"
+i"Householder"
+i"src/misc/Solve.h"
+i"src/QR/HouseholderQR.h"
+i"src/QR/FullPivHouseholderQR.h"
+i"src/QR/ColPivHouseholderQR.h"
+i"src/QR/HouseholderQR_MKL.h"
+i"src/QR/ColPivHouseholderQR_MKL.h"
+i"src/Eigen2Support/QR.h"
+i"src/Core/util/ReenableStupidWarnings.h"
+i"Eigenvalues"
 
 N/Users/chengtai/Documents/2014/MOTR/modules/Alpha/Eigen/SVD
 c00000000530E09B6000000000000035A
 t1393428918
 s858
+i"QR"
+i"Householder"
+i"Jacobi"
+i"src/Core/util/DisableStupidWarnings.h"
+i"src/misc/Solve.h"
+i"src/SVD/JacobiSVD.h"
+i"src/SVD/JacobiSVD_MKL.h"
+i"src/SVD/UpperBidiagonalization.h"
+i"src/Eigen2Support/SVD.h"
+i"src/Core/util/ReenableStupidWarnings.h"
 
 N/Users/chengtai/Documents/2014/MOTR/modules/Alpha/Eigen/src/Cholesky/LDLT.h
 c00000000530E09B6000000000000533F
@@ -383,6 +670,10 @@ c00000000530E09B60000000000003EC6
 t1393428918
 s16070
 
+N/Users/chengtai/Documents/2014/MOTR/modules/Alpha/Eigen/src/Cholesky/LLT_MKL.h
+i"Eigen/src/Core/util/MKL_support.h"
+i<iostream>
+
 N/Users/chengtai/Documents/2014/MOTR/modules/Alpha/Eigen/src/Core/Array.h
 c00000000530E09B60000000000002D82
 t1393428918
@@ -392,6 +683,12 @@ N/Users/chengtai/Documents/2014/MOTR/modules/Alpha/Eigen/src/Core/ArrayBase.h
 c00000000530E09B60000000000002138
 t1393428918
 s8504
+i"../plugins/CommonCwiseUnaryOps.h"
+i"../plugins/MatrixCwiseUnaryOps.h"
+i"../plugins/ArrayCwiseUnaryOps.h"
+i"../plugins/CommonCwiseBinaryOps.h"
+i"../plugins/MatrixCwiseBinaryOps.h"
+i"../plugins/ArrayCwiseBinaryOps.h"
 
 N/Users/chengtai/Documents/2014/MOTR/modules/Alpha/Eigen/src/Core/ArrayWrapper.h
 c00000000530E09B60000000000001F6F
@@ -402,6 +699,8 @@ N/Users/chengtai/Documents/2014/MOTR/modules/Alpha/Eigen/src/Core/Assign.h
 c00000000530E09B60000000000005B8D
 t1393428918
 s23437
+
+N/Users/chengtai/Documents/2014/MOTR/modules/Alpha/Eigen/src/Core/Assign_MKL.h
 
 N/Users/chengtai/Documents/2014/MOTR/modules/Alpha/Eigen/src/Core/BandMatrix.h
 c00000000530E09B600000000000032F9
@@ -452,6 +751,7 @@ N/Users/chengtai/Documents/2014/MOTR/modules/Alpha/Eigen/src/Core/DenseBase.h
 c00000000530E09B6000000000000591E
 t1393428918
 s22814
+i"../plugins/BlockMethods.h"
 
 N/Users/chengtai/Documents/2014/MOTR/modules/Alpha/Eigen/src/Core/DenseCoeffsBase.h
 c00000000530E09B60000000000006BF3
@@ -552,6 +852,10 @@ N/Users/chengtai/Documents/2014/MOTR/modules/Alpha/Eigen/src/Core/MatrixBase.h
 c00000000530E09B60000000000005ED6
 t1393428918
 s24278
+i"../plugins/CommonCwiseUnaryOps.h"
+i"../plugins/CommonCwiseBinaryOps.h"
+i"../plugins/MatrixCwiseUnaryOps.h"
+i"../plugins/MatrixCwiseBinaryOps.h"
 
 N/Users/chengtai/Documents/2014/MOTR/modules/Alpha/Eigen/src/Core/NestByValue.h
 c00000000530E09B60000000000000C8B
@@ -678,10 +982,18 @@ c00000000530E09B60000000000001BB9
 t1393428918
 s7097
 
+N/Users/chengtai/Documents/2014/MOTR/modules/Alpha/Eigen/src/Core/arch/AltiVec/Complex.h
+
+N/Users/chengtai/Documents/2014/MOTR/modules/Alpha/Eigen/src/Core/arch/AltiVec/PacketMath.h
+
 N/Users/chengtai/Documents/2014/MOTR/modules/Alpha/Eigen/src/Core/arch/Default/Settings.h
 c00000000530E09B600000000000006D2
 t1393428918
 s1746
+
+N/Users/chengtai/Documents/2014/MOTR/modules/Alpha/Eigen/src/Core/arch/NEON/Complex.h
+
+N/Users/chengtai/Documents/2014/MOTR/modules/Alpha/Eigen/src/Core/arch/NEON/PacketMath.h
 
 N/Users/chengtai/Documents/2014/MOTR/modules/Alpha/Eigen/src/Core/arch/SSE/Complex.h
 c00000000530E09B600000000000046EA
@@ -718,10 +1030,16 @@ c00000000530E09B60000000000003631
 t1393428918
 s13873
 
+N/Users/chengtai/Documents/2014/MOTR/modules/Alpha/Eigen/src/Core/products/GeneralMatrixMatrixTriangular_MKL.h
+
+N/Users/chengtai/Documents/2014/MOTR/modules/Alpha/Eigen/src/Core/products/GeneralMatrixMatrix_MKL.h
+
 N/Users/chengtai/Documents/2014/MOTR/modules/Alpha/Eigen/src/Core/products/GeneralMatrixVector.h
 c00000000530E09B60000000000005A14
 t1393428918
 s23060
+
+N/Users/chengtai/Documents/2014/MOTR/modules/Alpha/Eigen/src/Core/products/GeneralMatrixVector_MKL.h
 
 N/Users/chengtai/Documents/2014/MOTR/modules/Alpha/Eigen/src/Core/products/Parallelizer.h
 c00000000530E09B60000000000001029
@@ -733,10 +1051,14 @@ c00000000530E09B60000000000003D9C
 t1393428918
 s15772
 
+N/Users/chengtai/Documents/2014/MOTR/modules/Alpha/Eigen/src/Core/products/SelfadjointMatrixMatrix_MKL.h
+
 N/Users/chengtai/Documents/2014/MOTR/modules/Alpha/Eigen/src/Core/products/SelfadjointMatrixVector.h
 c00000000530E09B600000000000029FD
 t1393428918
 s10749
+
+N/Users/chengtai/Documents/2014/MOTR/modules/Alpha/Eigen/src/Core/products/SelfadjointMatrixVector_MKL.h
 
 N/Users/chengtai/Documents/2014/MOTR/modules/Alpha/Eigen/src/Core/products/SelfadjointProduct.h
 c00000000530E09B600000000000016C9
@@ -753,15 +1075,21 @@ c00000000530E09B600000000000047F9
 t1393428918
 s18425
 
+N/Users/chengtai/Documents/2014/MOTR/modules/Alpha/Eigen/src/Core/products/TriangularMatrixMatrix_MKL.h
+
 N/Users/chengtai/Documents/2014/MOTR/modules/Alpha/Eigen/src/Core/products/TriangularMatrixVector.h
 c00000000530E09B60000000000003A98
 t1393428918
 s15000
 
+N/Users/chengtai/Documents/2014/MOTR/modules/Alpha/Eigen/src/Core/products/TriangularMatrixVector_MKL.h
+
 N/Users/chengtai/Documents/2014/MOTR/modules/Alpha/Eigen/src/Core/products/TriangularSolverMatrix.h
 c00000000530E09B60000000000003654
 t1393428918
 s13908
+
+N/Users/chengtai/Documents/2014/MOTR/modules/Alpha/Eigen/src/Core/products/TriangularSolverMatrix_MKL.h
 
 N/Users/chengtai/Documents/2014/MOTR/modules/Alpha/Eigen/src/Core/products/TriangularSolverVector.h
 c00000000530E09B60000000000001504
@@ -792,16 +1120,21 @@ N/Users/chengtai/Documents/2014/MOTR/modules/Alpha/Eigen/src/Core/util/MKL_suppo
 c00000000530E09B60000000000000E95
 t1393428918
 s3733
+i<mkl.h>
+i<mkl_lapacke.h>
 
 N/Users/chengtai/Documents/2014/MOTR/modules/Alpha/Eigen/src/Core/util/Macros.h
 c00000000530E09B600000000000044B1
 t1393428918
 s17585
+i<cstdlib>
+i<iostream>
 
 N/Users/chengtai/Documents/2014/MOTR/modules/Alpha/Eigen/src/Core/util/Memory.h
 c00000000530E09B60000000000009461
 t1393428918
 s37985
+i<unistd.h>
 
 N/Users/chengtai/Documents/2014/MOTR/modules/Alpha/Eigen/src/Core/util/Meta.h
 c00000000530E09B60000000000002659
@@ -823,30 +1156,109 @@ c00000000530E09B60000000000004361
 t1393428918
 s17249
 
+N/Users/chengtai/Documents/2014/MOTR/modules/Alpha/Eigen/src/Eigen2Support/Block.h
+
+N/Users/chengtai/Documents/2014/MOTR/modules/Alpha/Eigen/src/Eigen2Support/Cwise.h
+
+N/Users/chengtai/Documents/2014/MOTR/modules/Alpha/Eigen/src/Eigen2Support/CwiseOperators.h
+
+N/Users/chengtai/Documents/2014/MOTR/modules/Alpha/Eigen/src/Eigen2Support/Geometry/AlignedBox.h
+
+N/Users/chengtai/Documents/2014/MOTR/modules/Alpha/Eigen/src/Eigen2Support/Geometry/All.h
+i<limits>
+i"RotationBase.h"
+i"Rotation2D.h"
+i"Quaternion.h"
+i"AngleAxis.h"
+i"Transform.h"
+i"Translation.h"
+i"Scaling.h"
+i"AlignedBox.h"
+i"Hyperplane.h"
+i"ParametrizedLine.h"
+i"RotationBase.h"
+i"Rotation2D.h"
+i"Quaternion.h"
+i"AngleAxis.h"
+i"Transform.h"
+i"Translation.h"
+i"Scaling.h"
+i"AlignedBox.h"
+i"Hyperplane.h"
+i"ParametrizedLine.h"
+
+N/Users/chengtai/Documents/2014/MOTR/modules/Alpha/Eigen/src/Eigen2Support/Geometry/AngleAxis.h
+
+N/Users/chengtai/Documents/2014/MOTR/modules/Alpha/Eigen/src/Eigen2Support/Geometry/Hyperplane.h
+
+N/Users/chengtai/Documents/2014/MOTR/modules/Alpha/Eigen/src/Eigen2Support/Geometry/ParametrizedLine.h
+
+N/Users/chengtai/Documents/2014/MOTR/modules/Alpha/Eigen/src/Eigen2Support/Geometry/Quaternion.h
+
+N/Users/chengtai/Documents/2014/MOTR/modules/Alpha/Eigen/src/Eigen2Support/Geometry/Rotation2D.h
+
+N/Users/chengtai/Documents/2014/MOTR/modules/Alpha/Eigen/src/Eigen2Support/Geometry/RotationBase.h
+
+N/Users/chengtai/Documents/2014/MOTR/modules/Alpha/Eigen/src/Eigen2Support/Geometry/Scaling.h
+
+N/Users/chengtai/Documents/2014/MOTR/modules/Alpha/Eigen/src/Eigen2Support/Geometry/Transform.h
+
+N/Users/chengtai/Documents/2014/MOTR/modules/Alpha/Eigen/src/Eigen2Support/Geometry/Translation.h
+
+N/Users/chengtai/Documents/2014/MOTR/modules/Alpha/Eigen/src/Eigen2Support/LU.h
+
+N/Users/chengtai/Documents/2014/MOTR/modules/Alpha/Eigen/src/Eigen2Support/Lazy.h
+
+N/Users/chengtai/Documents/2014/MOTR/modules/Alpha/Eigen/src/Eigen2Support/Macros.h
+
+N/Users/chengtai/Documents/2014/MOTR/modules/Alpha/Eigen/src/Eigen2Support/MathFunctions.h
+
+N/Users/chengtai/Documents/2014/MOTR/modules/Alpha/Eigen/src/Eigen2Support/Memory.h
+
+N/Users/chengtai/Documents/2014/MOTR/modules/Alpha/Eigen/src/Eigen2Support/Meta.h
+
+N/Users/chengtai/Documents/2014/MOTR/modules/Alpha/Eigen/src/Eigen2Support/Minor.h
+
+N/Users/chengtai/Documents/2014/MOTR/modules/Alpha/Eigen/src/Eigen2Support/QR.h
+
+N/Users/chengtai/Documents/2014/MOTR/modules/Alpha/Eigen/src/Eigen2Support/SVD.h
+
+N/Users/chengtai/Documents/2014/MOTR/modules/Alpha/Eigen/src/Eigen2Support/TriangularSolver.h
+
+N/Users/chengtai/Documents/2014/MOTR/modules/Alpha/Eigen/src/Eigen2Support/VectorBlock.h
+
 N/Users/chengtai/Documents/2014/MOTR/modules/Alpha/Eigen/src/Eigenvalues/ComplexEigenSolver.h
 c00000000530E09B60000000000002F77
 t1393428918
 s12151
+i"./ComplexSchur.h"
 
 N/Users/chengtai/Documents/2014/MOTR/modules/Alpha/Eigen/src/Eigenvalues/ComplexSchur.h
 c00000000530E09B600000000000041BD
 t1393428918
 s16829
+i"./HessenbergDecomposition.h"
+
+N/Users/chengtai/Documents/2014/MOTR/modules/Alpha/Eigen/src/Eigenvalues/ComplexSchur_MKL.h
+i"Eigen/src/Core/util/MKL_support.h"
 
 N/Users/chengtai/Documents/2014/MOTR/modules/Alpha/Eigen/src/Eigenvalues/EigenSolver.h
 c00000000530E09B60000000000005468
 t1393428918
 s21608
+i"./RealSchur.h"
 
 N/Users/chengtai/Documents/2014/MOTR/modules/Alpha/Eigen/src/Eigenvalues/GeneralizedEigenSolver.h
 c00000000530E09B600000000000035AF
 t1393428918
 s13743
+i"./RealQZ.h"
 
 N/Users/chengtai/Documents/2014/MOTR/modules/Alpha/Eigen/src/Eigenvalues/GeneralizedSelfAdjointEigenSolver.h
 c00000000530E09B60000000000002612
 t1393428918
 s9746
+i"./Tridiagonalization.h"
 
 N/Users/chengtai/Documents/2014/MOTR/modules/Alpha/Eigen/src/Eigenvalues/HessenbergDecomposition.h
 c00000000530E09B600000000000037AE
@@ -867,11 +1279,19 @@ N/Users/chengtai/Documents/2014/MOTR/modules/Alpha/Eigen/src/Eigenvalues/RealSch
 c00000000530E09B60000000000004D3A
 t1393428918
 s19770
+i"./HessenbergDecomposition.h"
+
+N/Users/chengtai/Documents/2014/MOTR/modules/Alpha/Eigen/src/Eigenvalues/RealSchur_MKL.h
+i"Eigen/src/Core/util/MKL_support.h"
 
 N/Users/chengtai/Documents/2014/MOTR/modules/Alpha/Eigen/src/Eigenvalues/SelfAdjointEigenSolver.h
 c00000000530E09B600000000000073FB
 t1393428918
 s29691
+i"./Tridiagonalization.h"
+
+N/Users/chengtai/Documents/2014/MOTR/modules/Alpha/Eigen/src/Eigenvalues/SelfAdjointEigenSolver_MKL.h
+i"Eigen/src/Core/util/MKL_support.h"
 
 N/Users/chengtai/Documents/2014/MOTR/modules/Alpha/Eigen/src/Eigenvalues/Tridiagonalization.h
 c00000000530E09B60000000000005791
@@ -993,6 +1413,9 @@ c00000000530E09B60000000000004686
 t1393428918
 s18054
 
+N/Users/chengtai/Documents/2014/MOTR/modules/Alpha/Eigen/src/LU/PartialPivLU_MKL.h
+i"Eigen/src/Core/util/MKL_support.h"
+
 N/Users/chengtai/Documents/2014/MOTR/modules/Alpha/Eigen/src/LU/arch/Inverse_SSE.h
 c00000000530E09B60000000000003324
 t1393428918
@@ -1002,6 +1425,9 @@ N/Users/chengtai/Documents/2014/MOTR/modules/Alpha/Eigen/src/QR/ColPivHouseholde
 c00000000530E09B600000000000056FD
 t1393428918
 s22269
+
+N/Users/chengtai/Documents/2014/MOTR/modules/Alpha/Eigen/src/QR/ColPivHouseholderQR_MKL.h
+i"Eigen/src/Core/util/MKL_support.h"
 
 N/Users/chengtai/Documents/2014/MOTR/modules/Alpha/Eigen/src/QR/FullPivHouseholderQR.h
 c00000000530E09B60000000000005B31
@@ -1013,10 +1439,16 @@ c00000000530E09B600000000000032CB
 t1393428918
 s13003
 
+N/Users/chengtai/Documents/2014/MOTR/modules/Alpha/Eigen/src/QR/HouseholderQR_MKL.h
+i"Eigen/src/Core/util/MKL_support.h"
+
 N/Users/chengtai/Documents/2014/MOTR/modules/Alpha/Eigen/src/SVD/JacobiSVD.h
 c00000000530E09B60000000000008CD8
 t1393428918
 s36056
+
+N/Users/chengtai/Documents/2014/MOTR/modules/Alpha/Eigen/src/SVD/JacobiSVD_MKL.h
+i"Eigen/src/Core/util/MKL_support.h"
 
 N/Users/chengtai/Documents/2014/MOTR/modules/Alpha/Eigen/src/SVD/UpperBidiagonalization.h
 c00000000530E09B60000000000001696
@@ -2107,7 +2539,7 @@ r0
 
 CCheck dependencies
 r0
-lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection18"Check dependencies18"Check dependencies80d3cb99dc37b941^5649cc99dc37b941^---0#1#1#--18"Check dependencies36"AD25DCF2-030C-4F65-BBB8-FCED745CD457-
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection18"Check dependencies18"Check dependencies0e86c6332d3ab941^861cc7332d3ab941^---0#1#1#--18"Check dependencies36"87AC52FC-8FB6-4D7E-BF22-C6FAAD25A1AE-
 
 CCompileC DerivedData/Alpha/Build/Intermediates/Alpha.build/Debug/Alpha.build/Objects-normal/x86_64/configuration.o /Users/chengtai/Documents/2014/MOTR/modules/Alpha/Alpha/configuration.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler
 s422997909.520075
@@ -2506,8 +2938,8 @@ lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection77"Compile
 b9C60672B-1B69-4DB4-80B4-325041099729
 
 CCompileC DerivedData/Alpha/Build/Intermediates/Alpha.build/Debug/Alpha.build/Objects-normal/x86_64/convnet.o /Users/chengtai/Documents/2014/MOTR/modules/Alpha/Alpha/convnet.cpp normal x86_64 c++ com.apple.compilers.gcc.4_8
-s423091148.986037
-e423091150.988123
+s423242956.524420
+e423242957.841469
 r1
 xCompileC
 xDerivedData/Alpha/Build/Intermediates/Alpha.build/Debug/Alpha.build/Objects-normal/x86_64/convnet.o
@@ -2516,8 +2948,8 @@ xnormal
 xx86_64
 xc++
 xcom.apple.compilers.gcc.4_8
-lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection75"Compile /Users/chengtai/Documents/2014/MOTR/modules/Alpha/Alpha/convnet.cpp172"CompileC DerivedData/Alpha/Build/Intermediates/Alpha.build/Debug/Alpha.build/Objects-normal/x86_64/convnet.o Alpha/convnet.cpp normal x86_64 c++ com.apple.compilers.gcc.4_88198fcccdb37b941^51f8fccedb37b941^---0#0#1#-19%DVTDocumentLocation2@83"file://localhost/Users/chengtai/Documents/2014/MOTR/modules/Alpha/Alpha/convnet.cpp0000000000000000^1277"CompileC DerivedData/Alpha/Build/Intermediates/Alpha.build/Debug/Alpha.build/Objects-normal/x86_64/convnet.o Alpha/convnet.cpp normal x86_64 c++ com.apple.compilers.gcc.4_8    cd /Users/chengtai/Documents/2014/MOTR/modules/Alpha    export LANG=en_US.US-ASCII    /usr/local/bin/g++-4.8 -x c++ -fmessage-length=0 -pipe -Wno-trigraphs -O0 -Wunused-function -Wunused-variable -DDEBUG=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk -fvisibility-inlines-hidden -mmacosx-version-min=10.8 -gdwarf-2 -I/Users/chengtai/Documents/2014/MOTR/modules/Alpha/DerivedData/Alpha/Build/Products/Debug/include -I../, -I/usr/local/include -I/Users/chengtai/Documents/2014/MOTR/modules/Alpha/DerivedData/Alpha/Build/Intermediates/Alpha.build/Debug/Alpha.build/DerivedSources/x86_64 -I/Users/chengtai/Documents/2014/MOTR/modules/Alpha/DerivedData/Alpha/Build/Intermediates/Alpha.build/Debug/Alpha.build/DerivedSources -F/Users/chengtai/Documents/2014/MOTR/modules/Alpha/DerivedData/Alpha/Build/Products/Debug -c /Users/chengtai/Documents/2014/MOTR/modules/Alpha/Alpha/convnet.cpp -o /Users/chengtai/Documents/2014/MOTR/modules/Alpha/DerivedData/Alpha/Build/Intermediates/Alpha.build/Debug/Alpha.build/Objects-normal/x86_64/convnet.o36"B6371C52-19FF-47CF-86B2-DB814A9B647E-
-b97421BCA-BFDF-4CCC-8A7C-BC0FAB6B7AD4
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection75"Compile /Users/chengtai/Documents/2014/MOTR/modules/Alpha/Alpha/convnet.cpp172"CompileC DerivedData/Alpha/Build/Intermediates/Alpha.build/Debug/Alpha.build/Objects-normal/x86_64/convnet.o Alpha/convnet.cpp normal x86_64 c++ com.apple.compilers.gcc.4_8f65c86cc2c3ab941^be6cd7cd2c3ab941^---0#0#1#-19%DVTDocumentLocation2@83"file://localhost/Users/chengtai/Documents/2014/MOTR/modules/Alpha/Alpha/convnet.cpp0000000000000000^1277"CompileC DerivedData/Alpha/Build/Intermediates/Alpha.build/Debug/Alpha.build/Objects-normal/x86_64/convnet.o Alpha/convnet.cpp normal x86_64 c++ com.apple.compilers.gcc.4_8    cd /Users/chengtai/Documents/2014/MOTR/modules/Alpha    export LANG=en_US.US-ASCII    /usr/local/bin/g++-4.8 -x c++ -fmessage-length=0 -pipe -Wno-trigraphs -O0 -Wunused-function -Wunused-variable -DDEBUG=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk -fvisibility-inlines-hidden -mmacosx-version-min=10.8 -gdwarf-2 -I/Users/chengtai/Documents/2014/MOTR/modules/Alpha/DerivedData/Alpha/Build/Products/Debug/include -I../, -I/usr/local/include -I/Users/chengtai/Documents/2014/MOTR/modules/Alpha/DerivedData/Alpha/Build/Intermediates/Alpha.build/Debug/Alpha.build/DerivedSources/x86_64 -I/Users/chengtai/Documents/2014/MOTR/modules/Alpha/DerivedData/Alpha/Build/Intermediates/Alpha.build/Debug/Alpha.build/DerivedSources -F/Users/chengtai/Documents/2014/MOTR/modules/Alpha/DerivedData/Alpha/Build/Products/Debug -c /Users/chengtai/Documents/2014/MOTR/modules/Alpha/Alpha/convnet.cpp -o /Users/chengtai/Documents/2014/MOTR/modules/Alpha/DerivedData/Alpha/Build/Intermediates/Alpha.build/Debug/Alpha.build/Objects-normal/x86_64/convnet.o36"FA00CB72-5FA9-449B-81A8-183F45CC5A79-
+b6BA402C0-5D95-4602-AF9C-023298FF9190
 
 CCompileC DerivedData/Alpha/Build/Intermediates/Alpha.build/Debug/Alpha.build/Objects-normal/x86_64/convnet.o /Users/chengtai/Documents/2014/MOTR/modules/Alpha/Alpha/convnet.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler
 s423091053.074083
@@ -3171,8 +3603,8 @@ lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection72"Compile
 bF1C533B4-5414-499E-9D56-F3437A0BE584
 
 CCompileC DerivedData/Alpha/Build/Intermediates/Alpha.build/Debug/Alpha.build/Objects-normal/x86_64/layer.o /Users/chengtai/Documents/2014/MOTR/modules/Alpha/Alpha/layer.cpp normal x86_64 c++ com.apple.compilers.gcc.4_8
-s423091148.986002
-e423091151.411486
+s423242859.328182
+e423242861.031009
 r1
 xCompileC
 xDerivedData/Alpha/Build/Intermediates/Alpha.build/Debug/Alpha.build/Objects-normal/x86_64/layer.o
@@ -3181,8 +3613,8 @@ xnormal
 xx86_64
 xc++
 xcom.apple.compilers.gcc.4_8
-lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection73"Compile /Users/chengtai/Documents/2014/MOTR/modules/Alpha/Alpha/layer.cpp168"CompileC DerivedData/Alpha/Build/Intermediates/Alpha.build/Debug/Alpha.build/Objects-normal/x86_64/layer.o Alpha/layer.cpp normal x86_64 c++ com.apple.compilers.gcc.4_8bd8efcccdb37b941^bc5769cfdb37b941^---0#0#1#-19%DVTDocumentLocation2@81"file://localhost/Users/chengtai/Documents/2014/MOTR/modules/Alpha/Alpha/layer.cpp0000000000000000^1269"CompileC DerivedData/Alpha/Build/Intermediates/Alpha.build/Debug/Alpha.build/Objects-normal/x86_64/layer.o Alpha/layer.cpp normal x86_64 c++ com.apple.compilers.gcc.4_8    cd /Users/chengtai/Documents/2014/MOTR/modules/Alpha    export LANG=en_US.US-ASCII    /usr/local/bin/g++-4.8 -x c++ -fmessage-length=0 -pipe -Wno-trigraphs -O0 -Wunused-function -Wunused-variable -DDEBUG=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk -fvisibility-inlines-hidden -mmacosx-version-min=10.8 -gdwarf-2 -I/Users/chengtai/Documents/2014/MOTR/modules/Alpha/DerivedData/Alpha/Build/Products/Debug/include -I../, -I/usr/local/include -I/Users/chengtai/Documents/2014/MOTR/modules/Alpha/DerivedData/Alpha/Build/Intermediates/Alpha.build/Debug/Alpha.build/DerivedSources/x86_64 -I/Users/chengtai/Documents/2014/MOTR/modules/Alpha/DerivedData/Alpha/Build/Intermediates/Alpha.build/Debug/Alpha.build/DerivedSources -F/Users/chengtai/Documents/2014/MOTR/modules/Alpha/DerivedData/Alpha/Build/Products/Debug -c /Users/chengtai/Documents/2014/MOTR/modules/Alpha/Alpha/layer.cpp -o /Users/chengtai/Documents/2014/MOTR/modules/Alpha/DerivedData/Alpha/Build/Intermediates/Alpha.build/Debug/Alpha.build/Objects-normal/x86_64/layer.o36"8F4D84BE-84ED-4218-A241-A09C26D1591A-
-b97421BCA-BFDF-4CCC-8A7C-BC0FAB6B7AD4
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection73"Compile /Users/chengtai/Documents/2014/MOTR/modules/Alpha/Alpha/layer.cpp168"CompileC DerivedData/Alpha/Build/Intermediates/Alpha.build/Debug/Alpha.build/Objects-normal/x86_64/layer.o Alpha/layer.cpp normal x86_64 c++ com.apple.compilers.gcc.4_80c20546b2c3ab941^edf0076d2c3ab941^---0#0#1#-19%DVTDocumentLocation2@81"file://localhost/Users/chengtai/Documents/2014/MOTR/modules/Alpha/Alpha/layer.cpp0000000000000000^1269"CompileC DerivedData/Alpha/Build/Intermediates/Alpha.build/Debug/Alpha.build/Objects-normal/x86_64/layer.o Alpha/layer.cpp normal x86_64 c++ com.apple.compilers.gcc.4_8    cd /Users/chengtai/Documents/2014/MOTR/modules/Alpha    export LANG=en_US.US-ASCII    /usr/local/bin/g++-4.8 -x c++ -fmessage-length=0 -pipe -Wno-trigraphs -O0 -Wunused-function -Wunused-variable -DDEBUG=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk -fvisibility-inlines-hidden -mmacosx-version-min=10.8 -gdwarf-2 -I/Users/chengtai/Documents/2014/MOTR/modules/Alpha/DerivedData/Alpha/Build/Products/Debug/include -I../, -I/usr/local/include -I/Users/chengtai/Documents/2014/MOTR/modules/Alpha/DerivedData/Alpha/Build/Intermediates/Alpha.build/Debug/Alpha.build/DerivedSources/x86_64 -I/Users/chengtai/Documents/2014/MOTR/modules/Alpha/DerivedData/Alpha/Build/Intermediates/Alpha.build/Debug/Alpha.build/DerivedSources -F/Users/chengtai/Documents/2014/MOTR/modules/Alpha/DerivedData/Alpha/Build/Products/Debug -c /Users/chengtai/Documents/2014/MOTR/modules/Alpha/Alpha/layer.cpp -o /Users/chengtai/Documents/2014/MOTR/modules/Alpha/DerivedData/Alpha/Build/Intermediates/Alpha.build/Debug/Alpha.build/Objects-normal/x86_64/layer.o36"E3629812-DF26-488B-89F8-AA77DAC827EC-
+b2C96313C-3543-4B21-806E-9ECE9D3E3770
 
 CCompileC DerivedData/Alpha/Build/Intermediates/Alpha.build/Debug/Alpha.build/Objects-normal/x86_64/layer.o /Users/chengtai/Documents/2014/MOTR/modules/Alpha/Alpha/layer.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler
 s423091053.074053
@@ -3418,8 +3850,8 @@ lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection73"Compile
 b365D94AB-89B0-4FEB-8420-2F305F676887
 
 CCompileC DerivedData/Alpha/Build/Intermediates/Alpha.build/Debug/Alpha.build/Objects-normal/x86_64/main.o /Users/chengtai/Documents/2014/MOTR/modules/Alpha/Alpha/main.cpp normal x86_64 c++ com.apple.compilers.gcc.4_8
-s423091276.748076
-e423091278.018287
+s423112369.892808
+e423112371.388222
 r1
 xCompileC
 xDerivedData/Alpha/Build/Intermediates/Alpha.build/Debug/Alpha.build/Objects-normal/x86_64/main.o
@@ -3428,8 +3860,8 @@ xnormal
 xx86_64
 xc++
 xcom.apple.compilers.gcc.4_8
-lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection72"Compile /Users/chengtai/Documents/2014/MOTR/modules/Alpha/Alpha/main.cpp166"CompileC DerivedData/Alpha/Build/Intermediates/Alpha.build/Debug/Alpha.build/Objects-normal/x86_64/main.o Alpha/main.cpp normal x86_64 c++ com.apple.compilers.gcc.4_82c9dbf4cdc37b941^c0ea084edc37b941^---0#0#1#-19%DVTDocumentLocation2@80"file://localhost/Users/chengtai/Documents/2014/MOTR/modules/Alpha/Alpha/main.cpp0000000000000000^1265"CompileC DerivedData/Alpha/Build/Intermediates/Alpha.build/Debug/Alpha.build/Objects-normal/x86_64/main.o Alpha/main.cpp normal x86_64 c++ com.apple.compilers.gcc.4_8    cd /Users/chengtai/Documents/2014/MOTR/modules/Alpha    export LANG=en_US.US-ASCII    /usr/local/bin/g++-4.8 -x c++ -fmessage-length=0 -pipe -Wno-trigraphs -O0 -Wunused-function -Wunused-variable -DDEBUG=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk -fvisibility-inlines-hidden -mmacosx-version-min=10.8 -gdwarf-2 -I/Users/chengtai/Documents/2014/MOTR/modules/Alpha/DerivedData/Alpha/Build/Products/Debug/include -I../, -I/usr/local/include -I/Users/chengtai/Documents/2014/MOTR/modules/Alpha/DerivedData/Alpha/Build/Intermediates/Alpha.build/Debug/Alpha.build/DerivedSources/x86_64 -I/Users/chengtai/Documents/2014/MOTR/modules/Alpha/DerivedData/Alpha/Build/Intermediates/Alpha.build/Debug/Alpha.build/DerivedSources -F/Users/chengtai/Documents/2014/MOTR/modules/Alpha/DerivedData/Alpha/Build/Products/Debug -c /Users/chengtai/Documents/2014/MOTR/modules/Alpha/Alpha/main.cpp -o /Users/chengtai/Documents/2014/MOTR/modules/Alpha/DerivedData/Alpha/Build/Intermediates/Alpha.build/Debug/Alpha.build/Objects-normal/x86_64/main.o36"5996D4C9-E723-456F-8D18-C695CB40376D-
-b9627044C-3B9E-41F7-8D5E-D441450EFDCB
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection72"Compile /Users/chengtai/Documents/2014/MOTR/modules/Alpha/Alpha/main.cpp166"CompileC DerivedData/Alpha/Build/Intermediates/Alpha.build/Debug/Alpha.build/Objects-normal/x86_64/main.o Alpha/main.cpp normal x86_64 c++ com.apple.compilers.gcc.4_8e162e5b12e38b941^cb6563b32e38b941^---0#0#1#-19%DVTDocumentLocation2@80"file://localhost/Users/chengtai/Documents/2014/MOTR/modules/Alpha/Alpha/main.cpp0000000000000000^1265"CompileC DerivedData/Alpha/Build/Intermediates/Alpha.build/Debug/Alpha.build/Objects-normal/x86_64/main.o Alpha/main.cpp normal x86_64 c++ com.apple.compilers.gcc.4_8    cd /Users/chengtai/Documents/2014/MOTR/modules/Alpha    export LANG=en_US.US-ASCII    /usr/local/bin/g++-4.8 -x c++ -fmessage-length=0 -pipe -Wno-trigraphs -O0 -Wunused-function -Wunused-variable -DDEBUG=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk -fvisibility-inlines-hidden -mmacosx-version-min=10.8 -gdwarf-2 -I/Users/chengtai/Documents/2014/MOTR/modules/Alpha/DerivedData/Alpha/Build/Products/Debug/include -I../, -I/usr/local/include -I/Users/chengtai/Documents/2014/MOTR/modules/Alpha/DerivedData/Alpha/Build/Intermediates/Alpha.build/Debug/Alpha.build/DerivedSources/x86_64 -I/Users/chengtai/Documents/2014/MOTR/modules/Alpha/DerivedData/Alpha/Build/Intermediates/Alpha.build/Debug/Alpha.build/DerivedSources -F/Users/chengtai/Documents/2014/MOTR/modules/Alpha/DerivedData/Alpha/Build/Products/Debug -c /Users/chengtai/Documents/2014/MOTR/modules/Alpha/Alpha/main.cpp -o /Users/chengtai/Documents/2014/MOTR/modules/Alpha/DerivedData/Alpha/Build/Intermediates/Alpha.build/Debug/Alpha.build/Objects-normal/x86_64/main.o36"DBB02479-6266-4F88-9582-6E265B700E5E-
+bB359FB7A-6895-4D0A-BD69-ECF18FDAC68A
 
 CCompileC DerivedData/Alpha/Build/Intermediates/Alpha.build/Debug/Alpha.build/Objects-normal/x86_64/main.o /Users/chengtai/Documents/2014/MOTR/modules/Alpha/Alpha/main.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler
 s423091053.074043
@@ -3836,8 +4268,8 @@ lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection70"Compile
 b346F9064-9F05-41A9-BFBD-6AB37BF4B62D
 
 CCompileC DerivedData/Alpha/Build/Intermediates/Alpha.build/Debug/Alpha.build/Objects-normal/x86_64/test.o /Users/chengtai/Documents/2014/MOTR/modules/Alpha/Alpha/test.cpp normal x86_64 c++ com.apple.compilers.gcc.4_8
-s423091148.986047
-e423091151.019363
+s423243059.779558
+e423243061.117187
 r1
 xCompileC
 xDerivedData/Alpha/Build/Intermediates/Alpha.build/Debug/Alpha.build/Objects-normal/x86_64/test.o
@@ -3846,8 +4278,8 @@ xnormal
 xx86_64
 xc++
 xcom.apple.compilers.gcc.4_8
-lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection72"Compile /Users/chengtai/Documents/2014/MOTR/modules/Alpha/Alpha/test.cpp166"CompileC DerivedData/Alpha/Build/Intermediates/Alpha.build/Debug/Alpha.build/Objects-normal/x86_64/test.o Alpha/test.cpp normal x86_64 c++ com.apple.compilers.gcc.4_85a82fcccdb37b941^a1f504cfdb37b941^---0#0#1#-19%DVTDocumentLocation2@80"file://localhost/Users/chengtai/Documents/2014/MOTR/modules/Alpha/Alpha/test.cpp0000000000000000^1265"CompileC DerivedData/Alpha/Build/Intermediates/Alpha.build/Debug/Alpha.build/Objects-normal/x86_64/test.o Alpha/test.cpp normal x86_64 c++ com.apple.compilers.gcc.4_8    cd /Users/chengtai/Documents/2014/MOTR/modules/Alpha    export LANG=en_US.US-ASCII    /usr/local/bin/g++-4.8 -x c++ -fmessage-length=0 -pipe -Wno-trigraphs -O0 -Wunused-function -Wunused-variable -DDEBUG=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk -fvisibility-inlines-hidden -mmacosx-version-min=10.8 -gdwarf-2 -I/Users/chengtai/Documents/2014/MOTR/modules/Alpha/DerivedData/Alpha/Build/Products/Debug/include -I../, -I/usr/local/include -I/Users/chengtai/Documents/2014/MOTR/modules/Alpha/DerivedData/Alpha/Build/Intermediates/Alpha.build/Debug/Alpha.build/DerivedSources/x86_64 -I/Users/chengtai/Documents/2014/MOTR/modules/Alpha/DerivedData/Alpha/Build/Intermediates/Alpha.build/Debug/Alpha.build/DerivedSources -F/Users/chengtai/Documents/2014/MOTR/modules/Alpha/DerivedData/Alpha/Build/Products/Debug -c /Users/chengtai/Documents/2014/MOTR/modules/Alpha/Alpha/test.cpp -o /Users/chengtai/Documents/2014/MOTR/modules/Alpha/DerivedData/Alpha/Build/Intermediates/Alpha.build/Debug/Alpha.build/Objects-normal/x86_64/test.o36"5D386D9A-B7EB-4763-A68F-3072E554FC3F-
-b97421BCA-BFDF-4CCC-8A7C-BC0FAB6B7AD4
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection72"Compile /Users/chengtai/Documents/2014/MOTR/modules/Alpha/Alpha/test.cpp166"CompileC DerivedData/Alpha/Build/Intermediates/Alpha.build/Debug/Alpha.build/Objects-normal/x86_64/test.o Alpha/test.cpp normal x86_64 c++ com.apple.compilers.gcc.4_8acaac7332d3ab941^9f001e352d3ab941^---0#0#1#-19%DVTDocumentLocation2@80"file://localhost/Users/chengtai/Documents/2014/MOTR/modules/Alpha/Alpha/test.cpp0000000000000000^1265"CompileC DerivedData/Alpha/Build/Intermediates/Alpha.build/Debug/Alpha.build/Objects-normal/x86_64/test.o Alpha/test.cpp normal x86_64 c++ com.apple.compilers.gcc.4_8    cd /Users/chengtai/Documents/2014/MOTR/modules/Alpha    export LANG=en_US.US-ASCII    /usr/local/bin/g++-4.8 -x c++ -fmessage-length=0 -pipe -Wno-trigraphs -O0 -Wunused-function -Wunused-variable -DDEBUG=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk -fvisibility-inlines-hidden -mmacosx-version-min=10.8 -gdwarf-2 -I/Users/chengtai/Documents/2014/MOTR/modules/Alpha/DerivedData/Alpha/Build/Products/Debug/include -I../, -I/usr/local/include -I/Users/chengtai/Documents/2014/MOTR/modules/Alpha/DerivedData/Alpha/Build/Intermediates/Alpha.build/Debug/Alpha.build/DerivedSources/x86_64 -I/Users/chengtai/Documents/2014/MOTR/modules/Alpha/DerivedData/Alpha/Build/Intermediates/Alpha.build/Debug/Alpha.build/DerivedSources -F/Users/chengtai/Documents/2014/MOTR/modules/Alpha/DerivedData/Alpha/Build/Products/Debug -c /Users/chengtai/Documents/2014/MOTR/modules/Alpha/Alpha/test.cpp -o /Users/chengtai/Documents/2014/MOTR/modules/Alpha/DerivedData/Alpha/Build/Intermediates/Alpha.build/Debug/Alpha.build/Objects-normal/x86_64/test.o36"AA2226AC-3415-47B0-8C18-1D4BF4BFE1FB-
+b4A600D98-8B53-4779-B123-22E75A55D6AC
 
 CCompileC DerivedData/Alpha/Build/Intermediates/Alpha.build/Debug/Alpha.build/Objects-normal/x86_64/test.o /Users/chengtai/Documents/2014/MOTR/modules/Alpha/Alpha/test.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler
 s423091053.075199
@@ -4331,8 +4763,8 @@ lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection74"Compile
 b365D94AB-89B0-4FEB-8420-2F305F676887
 
 CLd /Users/chengtai/Documents/2014/MOTR/modules/Alpha/DerivedData/Alpha/Build/Products/Debug/Alpha normal x86_64
-s423091278.027681
-e423091278.063684
+s423243061.126074
+e423243061.156698
 r1
 xLd
 x/Users/chengtai/Documents/2014/MOTR/modules/Alpha/DerivedData/Alpha/Build/Products/Debug/Alpha
@@ -4383,8 +4815,8 @@ d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/
 d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libunc.dylib
 d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libunwind.dylib
 d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libxpc.dylib
-lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection99"Link /Users/chengtai/Documents/2014/MOTR/modules/Alpha/DerivedData/Alpha/Build/Products/Debug/Alpha61"Ld DerivedData/Alpha/Build/Products/Debug/Alpha normal x86_64c824074edc37b941^624e104edc37b941^---0#0#1#--1109"Ld DerivedData/Alpha/Build/Products/Debug/Alpha normal x86_64    cd /Users/chengtai/Documents/2014/MOTR/modules/Alpha    export MACOSX_DEPLOYMENT_TARGET=10.8    /usr/local/bin/g++-4.8 -arch x86_64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk -L/Users/chengtai/Documents/2014/MOTR/modules/Alpha/DerivedData/Alpha/Build/Products/Debug -L/usr/local/Cellar/opencv/2.4.8.2/lib -F/Users/chengtai/Documents/2014/MOTR/modules/Alpha/DerivedData/Alpha/Build/Products/Debug -filelist /Users/chengtai/Documents/2014/MOTR/modules/Alpha/DerivedData/Alpha/Build/Intermediates/Alpha.build/Debug/Alpha.build/Objects-normal/x86_64/Alpha.LinkFileList -mmacosx-version-min=10.8 -lopencv_gpu.2.4.8 -lopencv_imgproc.2.4.8 -lopencv_core.2.4.8 -lopencv_highgui.2.4.8 -Xlinker -dependency_info -Xlinker /Users/chengtai/Documents/2014/MOTR/modules/Alpha/DerivedData/Alpha/Build/Intermediates/Alpha.build/Debug/Alpha.build/Objects-normal/x86_64/Alpha_dependency_info.dat -o /Users/chengtai/Documents/2014/MOTR/modules/Alpha/DerivedData/Alpha/Build/Products/Debug/Alpha36"ECAD0436-3342-4F1B-B3F1-E8C792FDA940-
-b9627044C-3B9E-41F7-8D5E-D441450EFDCB
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection99"Link /Users/chengtai/Documents/2014/MOTR/modules/Alpha/DerivedData/Alpha/Build/Products/Debug/Alpha61"Ld DerivedData/Alpha/Build/Products/Debug/Alpha normal x86_641d5620352d3ab941^041e28352d3ab941^---0#0#1#--1109"Ld DerivedData/Alpha/Build/Products/Debug/Alpha normal x86_64    cd /Users/chengtai/Documents/2014/MOTR/modules/Alpha    export MACOSX_DEPLOYMENT_TARGET=10.8    /usr/local/bin/g++-4.8 -arch x86_64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk -L/Users/chengtai/Documents/2014/MOTR/modules/Alpha/DerivedData/Alpha/Build/Products/Debug -L/usr/local/Cellar/opencv/2.4.8.2/lib -F/Users/chengtai/Documents/2014/MOTR/modules/Alpha/DerivedData/Alpha/Build/Products/Debug -filelist /Users/chengtai/Documents/2014/MOTR/modules/Alpha/DerivedData/Alpha/Build/Intermediates/Alpha.build/Debug/Alpha.build/Objects-normal/x86_64/Alpha.LinkFileList -mmacosx-version-min=10.8 -lopencv_gpu.2.4.8 -lopencv_imgproc.2.4.8 -lopencv_core.2.4.8 -lopencv_highgui.2.4.8 -Xlinker -dependency_info -Xlinker /Users/chengtai/Documents/2014/MOTR/modules/Alpha/DerivedData/Alpha/Build/Intermediates/Alpha.build/Debug/Alpha.build/Objects-normal/x86_64/Alpha_dependency_info.dat -o /Users/chengtai/Documents/2014/MOTR/modules/Alpha/DerivedData/Alpha/Build/Products/Debug/Alpha36"A271EE38-8F69-4AFC-B904-375C01A2A814-
+b4A600D98-8B53-4779-B123-22E75A55D6AC
 
 CLd /Users/chengtai/Documents/2014/topics2014/Alpha/DerivedData/Alpha/Build/Products/Debug/Alpha normal x86_64
 s422487671.625894
