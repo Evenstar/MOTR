@@ -58,10 +58,10 @@ public:
     bool SelfCheck();
     
 public:
-    vector<vector<FilterType> >filter;
+    VecVecFilterPtr filter;
     VecMatPtr indata;
-    vector<MatType> outdata;
-    vector<set<int> > inmaps;
+    VecMatPtr outdata;
+    VecSetPtr inmaps;
     
     string name;
     int ninmaps;
@@ -104,13 +104,14 @@ public:
     
     void DownSample();
     
+    VecPtr Concatenate( VecMatPtr);
 public:
     
-    MatType Weight;
+    MatPtr Weight;
     
     MatPtr indata;     /// The input data.
     
-    MatType outdata;
+    MatPtr outdata;
     
     int fanin;
     int fanout;

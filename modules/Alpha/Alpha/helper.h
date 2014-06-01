@@ -36,4 +36,6 @@ MatType MaxPooling( const MatType &, int stride, int side);
 
 MatType ApplyReLU( const MatType &);
 
+VecPtr Concatenate( VecMatPtr );
+
 #endif

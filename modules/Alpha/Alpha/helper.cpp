@@ -40,7 +40,7 @@ MatType Conv2_Valid(const MatType& a, const MatType& b)
     g=MatType(m-l1+1,n-l2+1);
     for (long k1=0; k1<m-l1+1;k1++){
         for (long k2=0; k2<n-l2+1; k2++){
-            ScalarType s=0;
+            float s=0;
             for (long j1=0; j1<l1; j1++){
                 for (long j2=0; j2<l2; j2++){
                     s+=a(k1+j1,k2+j2)*b(l1-1-j1,l2-1-j2);
@@ -163,17 +163,23 @@ MatType ApplyReLU(const MatType& mat)
     return result;
 }
 
-
-
-
-
-
-
-
-
-
-
-
+VecPtr Concatenate(VecMatPtr vptr){
+    int n=vptr->size();
+    int matsize=(vptr->begin()->rows())*(vptr->begin()->cols());
+    int length=n*matsize;
+    VecPtr ptr(new VecType(length));
+    int id=0;
+    for(int i=0; i<n;i++){
+        for(int j=0; j<vptr->begin()->rows();j++){
+            for(int k=0; k<vptr->begin()->cols(); k++){
+                (*ptr)(id)=(*vptr)[i](j,k);
+                id++;
+            }
+        }
+        
+    }
+    return ptr;
+}
 
 
 
