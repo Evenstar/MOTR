@@ -28,9 +28,8 @@ public:
     
 public:
     void run(){
-       // cout<<interdata->size()<<endl;
+        // cout<<interdata->size()<<endl;
         ApplyFilter();
-        print();
         DownSample();
         ApplyNonlinearity();
     }
@@ -76,7 +75,7 @@ public:
             cout<<"outdata      ";
             printVector(outdata);
         }
-        displayVector(outdata);
+        //displayVector(outdata);
     }
 private:
     void ApplyFilter();
@@ -115,48 +114,57 @@ public:
 };
 
 
-/*
- class FullyConnectedLayer{
- public:
- FullyConnectedLayer(int _fanin, int _fanout):
- fanin(_fanin),fanout(_fanout){
- name="f";
- };
- 
- FullyConnectedLayer(const Config& cfg):
- fanin(cfg.fanin),fanout(cfg.fanout){
- name="f";
- };
- 
- ~FullyConnectedLayer(){};
- 
- public:
- void Setup(int _stride, int _side,
- int _fanin, int _fanout);
- 
- void SetWeight( MatPtr);
- 
- void SetInput( MatPtr );
- 
- void ApplyFilter();
- 
- void ApplyNonlinearity();
- 
- void DownSample();
- 
- VecPtr Concatenate( VecMatPtr);
- public:
- 
- MatPtr Weight;
- 
- VecPtr indata;     /// The input data.
- 
- VecPtr outdata;
- 
- int fanin;
- int fanout;
- 
- string name;
- };
- */
+
+class FullLayer{
+public:
+    FullLayer(const FullConfig& _config)
+    {
+        fanin=_config.fanin;
+        fanout=_config.fanout;
+        weight=_config.weight;
+        name="f";
+        outdata=new MatType;
+    };
+    
+    ~FullLayer(){};
+    void run(){
+        ApplyWeight();
+    }
+    void print(){
+        cout<<"fanin        "<<fanin<<endl;
+        cout<<"fanout       "<<fanout<<endl;
+        if (!indata){
+            cout<<"indata        empty"<<endl;
+        } else {
+            cout<<"indata       "<<"("<<indata->rows()<<","<<indata->cols()<<")"<<endl;
+        }
+        if (!outdata){
+            cout<<"indata        empty"<<endl;
+        } else {
+            cout<<"outdata       "<<"("<<outdata->rows()<<","<<outdata->cols()<<")"<<endl;
+        }
+        
+        
+
+    }
+    
+    void SetInput( MatPtr );
+    void ApplyWeight(){
+        *outdata=weight*(*indata);
+    }
+    void ApplyNonlinearity(){
+        *outdata=ApplyReLU(*outdata);
+    }
+    
+public:
+    int fanin;
+    int fanout;
+    string name;
+    
+    MatPtr indata;
+    MatPtr outdata;
+    MatType weight;
+    
+};
+
 #endif

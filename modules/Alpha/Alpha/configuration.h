@@ -10,6 +10,16 @@
 #define CONFIGURATION_H
 #include "utils.h"
 using namespace std;
+struct FullConfig{
+    int fanin;
+    int fanout;
+    MatType weight;
+    void print(){
+        cout<<"fanin        "<<fanin<<endl;
+        cout<<"fanout       "<<fanout<<endl;
+        cout<<"weight       "<<"("<<weight.rows()<<","<<weight.cols()<<")"<<endl;
+    }
+};
 
 struct ConvConfig{
     int ninmaps;
@@ -21,7 +31,7 @@ struct ConvConfig{
     int noutmaps;
     vector<set<int> > inmaps;
     vector<vector<FilterType> > filter;
-    VecMatPtr indata;
+//    VecMatPtr indata;
     void print(){
         cout<<"ninmaps      "<<ninmaps<<endl;
         cout<<"inputrows    "<<inputrows<<endl;
@@ -65,6 +75,8 @@ struct NetConfig{
     VecMatPtr indata;
     int nconvlayers;
     vector<ConvConfig> convconfig;
+    int nfulllayers;
+    vector<FullConfig> fullconfig;
     
     void print(){
         cout<<"Summary of NetConfig"<<endl;
@@ -74,10 +86,16 @@ struct NetConfig{
             cout<<"Input        ";
             printVector(indata);
         }
+        
         cout<<"nconvlayers  "<<nconvlayers<<endl;
         for(int i=0; i<nconvlayers; i++){
-            cout<<"Layer "<<i<<"    "<<endl;
+            cout<<"ConvLayer "<<i<<"    "<<endl;
             convconfig[i].print();
+        }
+        cout<<"nfulllayers  "<<nfulllayers<<endl;
+        for(int i=0;i<nfulllayers; i++){
+            cout<<"FullLayer    "<<i<<" "<<endl;
+            fullconfig[i].print();
         }
     }
 };

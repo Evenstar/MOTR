@@ -82,6 +82,19 @@ NetConfig generateNetConfig(){
         config.filter.push_back(z);
     }
     netconfig.convconfig.push_back(config);
+    
+    netconfig.nfulllayers=2;
+    FullConfig fconfig;
+    fconfig.fanin=10125;
+    fconfig.fanout=30;
+    fconfig.weight=MatType::Random(fconfig.fanout,fconfig.fanin);
+    netconfig.fullconfig.push_back(fconfig);
+    
+    fconfig.fanin=30;
+    fconfig.fanout=10;
+    fconfig.weight=MatType::Random(fconfig.fanout,fconfig.fanin);
+    netconfig.fullconfig.push_back(fconfig);
+    
     return netconfig;
 }
 
@@ -109,7 +122,7 @@ void test_ConvLayer()
     temp=temp.block(100,100,200,200);
     vector<MatType> _indata;
     _indata.push_back(temp);
-    config.indata=&_indata;
+   // config.indata=&_indata;
     for(int i=0; i<5; i++){
         set<int> temp;
         temp.insert(0);
@@ -146,6 +159,7 @@ void test_ConvLayer()
 
 void test_NetConfig(){
     NetConfig netconfig=generateNetConfig();
+    //netconfig.print();
     ConvNet convnet(netconfig);
     convnet.run();
     convnet.print();
