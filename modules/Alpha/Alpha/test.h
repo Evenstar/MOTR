@@ -26,7 +26,7 @@ vector<MatType> Synthesize( ImgType img, int ncopies);
 void test_Synthesize();
 
 
-void test_Convlayer();
+void test_ConvLayer();
 
 
 void test_GenerateRandomFilter();

@@ -15,12 +15,6 @@
 
 int main(int argc, char** argv)
 {
-    VecMatPtr ptr(new vector<MatType>);
-    ptr->push_back(MatType(2,2));
-    *(ptr->begin())<<1,2,3,4;
-    ptr->push_back(MatType(2,2));
-    (*ptr)[1]<<5,6,7,8;
-    VecPtr vptr=Concatenate(ptr);
-    cout<<(*vptr)<<endl;
+    test_ConvLayer();
     return 0;
 }

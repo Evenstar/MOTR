@@ -23,6 +23,7 @@
 #include <opencv/cvaux.h>
 #include "../Eigen/Dense"
 #include <boost/shared_ptr.hpp>
+#include <boost/make_shared.hpp>
 
 typedef Eigen::MatrixXf FilterType;
 typedef Eigen::MatrixXf MatType;

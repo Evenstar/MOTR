@@ -109,6 +109,10 @@ In MATLAB implementations, we usually stack the batch of examples in the third d
 \]
 
 
+\section*{Code Design}
+Data must be created using shared\_ptr.  Then the layers can get input from this.
+
+Think about what a layer and a convnet should be
 
 
 

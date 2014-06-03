@@ -15,53 +15,64 @@ using namespace std;
 using namespace boost;
 
 
-class Layer{
+class ConvLayer{
 public:
-    Layer(){};
-    virtual ~Layer(){};
-    
-public:
-    virtual void ApplyFilter(){};
-    virtual void ApplyNonlinearity(){};
-};
-
-
-class ConvLayer : public Layer{
-public:
-    
-    ConvLayer(int _ninmaps, int _inputrows, int _inputcols,
-              int _noutmaps, int _stride, int _side,
-              int _kernelsize)
-    :ninmaps(_ninmaps), inputrows(_inputrows),
-    inputcols(_inputcols),noutmaps(_noutmaps),
-    stride(_stride), side(_side), kernelsize(_kernelsize)
-    {
-        name="c";
+    ConvLayer(const ConvConfig& config):
+    interdata(new vector<MatType>)   {
+        Initialize(config);
+        interdata->reserve(noutmaps);
+        outdata->reserve(noutmaps);
     }
-    
-    ConvLayer(const Config& cfg):
-    ninmaps(cfg.ninmaps),inputrows(cfg.inputrows),inputcols(cfg.inputcols),
-    noutmaps(cfg.noutmaps),stride(cfg.stride),side(cfg.side),kernelsize(cfg.kernelsize)
-    {
-        name="c";
-    }
-    
     ~ConvLayer(){};
     
 public:
-    void SetFilter( const vector<vector<FilterType> >&) ;
-    void SetInput( VecMatPtr _indata );
-    void SetInmaps(const vector<set<int> > &);
+    void run(){
+            cout<<outdata->size()<<interdata->size()<<endl;
+       // cout<<interdata->size()<<endl;
+        ApplyFilter();
+        DownSample();
+        ApplyNonlinearity();
+    }
+    ///Just in case we want to modify the parameters.
+    void SetFilter( const vector<vector<FilterType> >& _filter) {
+        filter=_filter;
+    }
+    void SetInput( VecMatPtr _indata ){
+        indata=_indata;
+    }
+    void SetInmaps( const vector<set<int> >& _inmaps){
+        inmaps=_inmaps;
+    }
+    
+    VecMatPtr Get(){
+        return outdata;
+    }
+    
+private:
     void ApplyFilter();
     void DownSample();
     void ApplyNonlinearity();
     bool SelfCheck();
+    void Initialize(const ConvConfig& config){
+        name        ="c";
+        ninmaps     =config.ninmaps;
+        inputrows   =config.inputrows;
+        inputcols   =config.inputcols;
+        noutmaps    =config.noutmaps;
+        stride      =config.stride;
+        side        =config.side;
+        kernelsize  =config.kernelsize;
+        indata      =config.indata;
+        filter      =config.filter;
+        inmaps      =config.inmaps;
+    }
     
 public:
-    VecVecFilterPtr filter;
+    vector<vector<FilterType> > filter;
     VecMatPtr indata;
-    VecMatPtr outdata;
-    VecSetPtr inmaps;
+    VecMatPtr interdata;                ///data after convolution
+    VecMatPtr outdata;                  ///output
+    vector<set<int> > inmaps;
     
     string name;
     int ninmaps;
@@ -75,48 +86,48 @@ public:
 };
 
 
-
-class FullyConnectedLayer : public Layer {
-public:
-    FullyConnectedLayer(int _fanin, int _fanout):
-    fanin(_fanin),fanout(_fanout){
-        name="f";
-    };
-    
-    FullyConnectedLayer(const Config& cfg):
-    fanin(cfg.fanin),fanout(cfg.fanout){
-        name="f";
-    };
-    
-    ~FullyConnectedLayer(){};
-    
-public:
-    void Setup(int _stride, int _side,
-               int _fanin, int _fanout);
-    
-    void SetWeight( const MatType &);
-    
-    void SetInput( MatPtr);
-    
-    void ApplyFilter();
-    
-    void ApplyNonlinearity();
-    
-    void DownSample();
-    
-    VecPtr Concatenate( VecMatPtr);
-public:
-    
-    MatPtr Weight;
-    
-    MatPtr indata;     /// The input data.
-    
-    MatPtr outdata;
-    
-    int fanin;
-    int fanout;
-    
-    string name;
-};
-
+/*
+ class FullyConnectedLayer{
+ public:
+ FullyConnectedLayer(int _fanin, int _fanout):
+ fanin(_fanin),fanout(_fanout){
+ name="f";
+ };
+ 
+ FullyConnectedLayer(const Config& cfg):
+ fanin(cfg.fanin),fanout(cfg.fanout){
+ name="f";
+ };
+ 
+ ~FullyConnectedLayer(){};
+ 
+ public:
+ void Setup(int _stride, int _side,
+ int _fanin, int _fanout);
+ 
+ void SetWeight( MatPtr);
+ 
+ void SetInput( MatPtr );
+ 
+ void ApplyFilter();
+ 
+ void ApplyNonlinearity();
+ 
+ void DownSample();
+ 
+ VecPtr Concatenate( VecMatPtr);
+ public:
+ 
+ MatPtr Weight;
+ 
+ VecPtr indata;     /// The input data.
+ 
+ VecPtr outdata;
+ 
+ int fanin;
+ int fanout;
+ 
+ string name;
+ };
+ */
 #endif

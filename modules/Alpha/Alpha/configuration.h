@@ -11,8 +11,7 @@
 #include "utils.h"
 using namespace std;
 
-struct Config{
-    ///for convlayers.
+struct ConvConfig{
     int ninmaps;
     int inputrows;
     int inputcols;
@@ -22,18 +21,7 @@ struct Config{
     int noutmaps;
     bool isdownsample;
     vector<set<int> > inmaps;
-
-    ///for fully connected layers.
-    int fanin;
-    int fanout;
+    vector<vector<FilterType> > filter;
+    VecMatPtr indata;
 };
-
-struct Configuration{
-public:
-    int nconvlayers;
-    int nfclayers;
-    vector<Config> vconfig;
-};
-
-
 #endif
