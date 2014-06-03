@@ -132,8 +132,8 @@ MatType MaxPooling(const MatType & mat, int stride, int side)
     long rows=floor((m-side)/stride)+1;
     long cols=floor((n-side)/stride)+1;
     MatType result(rows,cols);
-    for (int i=0; i<m; i+=stride){
-        for(int j=0; j<n; j+=stride){
+    for (int i=0; i<m-side; i+=stride){
+        for(int j=0; j<n-side; j+=stride){
             float s=0;
             for (int k=0; k<side; k++){
                 for(int l=0; l<side; l++){

@@ -30,6 +30,7 @@ public:
     void run(){
        // cout<<interdata->size()<<endl;
         ApplyFilter();
+        print();
         DownSample();
         ApplyNonlinearity();
     }

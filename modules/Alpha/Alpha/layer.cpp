@@ -32,7 +32,8 @@ void ConvLayer::DownSample()
         outdata->clear();
     }
     for (int i=0; i<interdata->size(); i++){
-        outdata->push_back(MaxPooling((*interdata)[i],stride,side));
+        MatType temp=MaxPooling((*interdata)[i],stride,side);
+        outdata->push_back(temp);
     }
 }
 
