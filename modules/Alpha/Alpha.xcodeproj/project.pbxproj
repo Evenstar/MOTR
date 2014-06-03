@@ -34,7 +34,6 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		720808F0193D62E00086B04A /* Interface.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Interface.cpp; sourceTree = "<group>"; };
 		721FA5D91933B7A30005D58C /* layer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = layer.cpp; sourceTree = "<group>"; };
 		721FA5DB193411F70005D58C /* layer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = layer.h; sourceTree = "<group>"; };
 		721FA5DC1934183D0005D58C /* convnet.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = convnet.h; sourceTree = "<group>"; };
@@ -75,7 +74,6 @@
 			isa = PBXGroup;
 			children = (
 				72F66A9D193D6F530039E846 /* OpenCV */,
-				720808F0193D62E00086B04A /* Interface.cpp */,
 				728DFD2B192E958900D93082 /* Alpha */,
 				728DFD2A192E958900D93082 /* Products */,
 			);

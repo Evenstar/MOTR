@@ -20,14 +20,14 @@ public:
     ConvLayer(const ConvConfig& config):
     interdata(new vector<MatType>)   {
         Initialize(config);
-        interdata->reserve(noutmaps);
-        outdata->reserve(noutmaps);
+        interdata=new vector<MatType>;
+        outdata=new vector<MatType>;
     }
-    ~ConvLayer(){};
+    ~ConvLayer(){
+    };
     
 public:
     void run(){
-            cout<<outdata->size()<<interdata->size()<<endl;
        // cout<<interdata->size()<<endl;
         ApplyFilter();
         DownSample();
@@ -48,6 +48,35 @@ public:
         return outdata;
     }
     
+    void print(){
+        cout<<"ninmaps      "<<ninmaps<<endl;
+        cout<<"inputrows    "<<inputrows<<endl;
+        cout<<"inputcols    "<<inputcols<<endl;
+        cout<<"noutmaps     "<<noutmaps<<endl;
+        cout<<"stride       "<<stride<<endl;
+        cout<<"side         "<<side<<endl;
+        cout<<"kernelsize   "<<kernelsize<<endl;
+        
+        if(indata->empty()){
+            cout<<"indata       empty"<<endl;
+        } else {
+            cout<<"indata       ";
+            printVector(indata);
+        }
+        if(interdata->empty()){
+            cout<<"interdata    empty"<<endl;
+        } else {
+            cout<<"interdata    ";
+            printVector(interdata);
+        }
+        if(outdata->empty()){
+            cout<<"outdata      empty"<<endl;
+        } else {
+            cout<<"outdata      ";
+            printVector(outdata);
+        }
+        displayVector(outdata);
+    }
 private:
     void ApplyFilter();
     void DownSample();
@@ -62,7 +91,6 @@ private:
         stride      =config.stride;
         side        =config.side;
         kernelsize  =config.kernelsize;
-        indata      =config.indata;
         filter      =config.filter;
         inmaps      =config.inmaps;
     }

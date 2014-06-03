@@ -12,7 +12,7 @@
 ///TODO: the index order is filter[j][i], inmaps[j][i], not the other way around.
 void ConvLayer::ApplyFilter()
 {
-    if (interdata){
+    if (!interdata->empty()){
     interdata->clear();
     }
     for (int j=0; j<noutmaps; j++){
@@ -28,8 +28,11 @@ void ConvLayer::ApplyFilter()
 
 void ConvLayer::DownSample()
 {
+    if(!outdata->empty()){
+        outdata->clear();
+    }
     for (int i=0; i<interdata->size(); i++){
-        (*outdata)[i]=(MaxPooling((*interdata)[i],stride,side));
+        outdata->push_back(MaxPooling((*interdata)[i],stride,side));
     }
 }
 

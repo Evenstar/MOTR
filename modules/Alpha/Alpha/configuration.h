@@ -19,9 +19,66 @@ struct ConvConfig{
     int side;
     int kernelsize;
     int noutmaps;
-    bool isdownsample;
     vector<set<int> > inmaps;
     vector<vector<FilterType> > filter;
     VecMatPtr indata;
+    void print(){
+        cout<<"ninmaps      "<<ninmaps<<endl;
+        cout<<"inputrows    "<<inputrows<<endl;
+        cout<<"inputcols    "<<inputcols<<endl;
+        cout<<"noutmaps     "<<noutmaps<<endl;
+        cout<<"stride       "<<stride<<endl;
+        cout<<"side         "<<side<<endl;
+        cout<<"kernelsize   "<<kernelsize<<endl;
+        
+        if (inmaps.empty()){
+            cout<<"inmaps   empty"<<endl;
+        } else {
+            cout<<"inmaps       {";
+            for(int i=0; i<inmaps.size();i++){
+                cout<<"(";
+                for(set<int>::iterator it=inmaps[i].begin(); it!=inmaps[i].end();it++){
+                    cout<<(*it)<<",";
+                }
+                cout<<"),";
+            }
+            cout<<"}"<<endl;
+        }
+        
+        if(filter.empty()){
+            cout<<"filter       empty"<<endl;
+        } else {
+            cout<<"filter       {";
+            for(int j=0; j<filter.size();j++){
+                cout<<"[";
+                for(int i=0; i<filter[j].size(); i++){
+                    cout<<"("<<filter[j][i].rows()<<","<<filter[j][i].cols()<<")";
+                }
+                cout<<"],";
+            }
+            cout<<"}"<<endl;
+        }
+    }
+};
+
+struct NetConfig{
+    VecMatPtr indata;
+    int nconvlayers;
+    vector<ConvConfig> convconfig;
+    
+    void print(){
+        cout<<"Summary of NetConfig"<<endl;
+        if (indata->empty()){
+            cout<<"Input    empty"<<endl;
+        } else {
+            cout<<"Input        ";
+            printVector(indata);
+        }
+        cout<<"nconvlayers  "<<nconvlayers<<endl;
+        for(int i=0; i<nconvlayers; i++){
+            cout<<"Layer "<<i<<"    "<<endl;
+            convconfig[i].print();
+        }
+    }
 };
 #endif

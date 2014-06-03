@@ -8,7 +8,7 @@
 
 #include "utils.h"
 using namespace std;
-
+using namespace cv;
 
 void LoadFilter(vector<FilterType>& filter, string fname)
 {
@@ -163,27 +163,55 @@ MatType ApplyReLU(const MatType& mat)
     return result;
 }
 
-VecPtr Concatenate(VecMatPtr vptr){
-    int n=vptr->size();
-    int matsize=(vptr->begin()->rows())*(vptr->begin()->cols());
-    int length=n*matsize;
-    VecPtr ptr(new VecType(length));
-    int id=0;
-    for(int i=0; i<n;i++){
-        for(int j=0; j<vptr->begin()->rows();j++){
-            for(int k=0; k<vptr->begin()->cols(); k++){
-                (*ptr)(id)=(*vptr)[i](j,k);
-                id++;
-            }
+/*
+ VecPtr Concatenate(VecMatPtr vptr){
+ int n=vptr->size();
+ int matsize=(vptr->begin()->rows())*(vptr->begin()->cols());
+ int length=n*matsize;
+ VecPtr ptr(new VecType(length));
+ int id=0;
+ for(int i=0; i<n;i++){
+ for(int j=0; j<vptr->begin()->rows();j++){
+ for(int k=0; k<vptr->begin()->cols(); k++){
+ (*ptr)(id)=(*vptr)[i](j,k);
+ id++;
+ }
+ }
+ 
+ }
+ return ptr;
+ }
+ */
+
+void printVector(VecMatPtr ptr){
+    if (ptr->empty()){
+        cout<<"empty"<<endl;
+    } else{
+        cout<<"size "<<ptr->size()<<"\t"<<"{";
+        for(int i=0; i<ptr->size();i++){
+            cout<<"("<<(*ptr)[i].rows()<<","<<(*ptr)[i].cols()<<")"<<",";
         }
-        
+        cout<<"}"<<endl;
     }
-    return ptr;
+    
 }
 
-
-
-
-
+void displayVector(VecMatPtr ptr){
+    if (ptr->empty()){
+        return ;
+    } else {
+        for(int i=0; i<ptr->size();i++){
+            ImgType img=Mat2Img((*ptr)[i]);
+            stringstream ss;
+            ss<<i;
+            ImgType _img;
+            normalize(img, _img, 0, 1, NORM_MINMAX, CV_32FC1);
+            namedWindow(ss.str(),CV_WINDOW_AUTOSIZE);
+            imshow(ss.str(),_img);
+        }
+    }
+    waitKey(0);
+    
+}
 
 

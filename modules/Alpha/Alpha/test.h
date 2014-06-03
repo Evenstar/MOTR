@@ -41,8 +41,10 @@ void test_FullyConnectedLayer();
 void test_ConvNet();
 
 
-void test_Configuration();
+void test_NetConfig();
 
+
+NetConfig generateNetConfig();
 
 
 

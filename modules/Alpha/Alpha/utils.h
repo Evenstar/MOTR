@@ -29,10 +29,7 @@ typedef Eigen::MatrixXf FilterType;
 typedef Eigen::MatrixXf MatType;
 typedef Eigen::VectorXf VecType;
 typedef cv::Mat ImgType;
-typedef boost::shared_ptr<std::vector<MatType> > VecMatPtr;
-typedef boost::shared_ptr<MatType> MatPtr;
-typedef boost::shared_ptr<VecType> VecPtr;
-typedef boost::shared_ptr<std::vector<std::vector<FilterType> > > VecVecFilterPtr;
-typedef boost::shared_ptr<std::vector<std::set<int> > > VecSetPtr;
+typedef MatType* MatPtr;
+typedef std::vector<MatType>* VecMatPtr;
 
 #endif

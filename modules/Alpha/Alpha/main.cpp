@@ -15,6 +15,6 @@
 
 int main(int argc, char** argv)
 {
-    test_ConvLayer();
+    test_NetConfig();
     return 0;
 }
