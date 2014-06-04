@@ -31,7 +31,6 @@ struct ConvConfig{
     int noutmaps;
     vector<set<int> > inmaps;
     vector<vector<FilterType> > filter;
-//    VecMatPtr indata;
     void print(){
         cout<<"ninmaps      "<<ninmaps<<endl;
         cout<<"inputrows    "<<inputrows<<endl;

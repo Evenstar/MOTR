@@ -163,25 +163,6 @@ MatType ApplyReLU(const MatType& mat)
     return result;
 }
 
-/*
- VecPtr Concatenate(VecMatPtr vptr){
- int n=vptr->size();
- int matsize=(vptr->begin()->rows())*(vptr->begin()->cols());
- int length=n*matsize;
- VecPtr ptr(new VecType(length));
- int id=0;
- for(int i=0; i<n;i++){
- for(int j=0; j<vptr->begin()->rows();j++){
- for(int k=0; k<vptr->begin()->cols(); k++){
- (*ptr)(id)=(*vptr)[i](j,k);
- id++;
- }
- }
- 
- }
- return ptr;
- }
- */
 
 void printVector(VecMatPtr ptr){
     if (ptr->empty()){

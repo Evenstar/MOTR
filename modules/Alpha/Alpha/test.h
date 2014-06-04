@@ -20,29 +20,9 @@ using namespace Eigen;
 
 ImgType LoadHepburn();
 
-vector<MatType> Synthesize( ImgType img, int ncopies);
-
-
-void test_Synthesize();
-
-
-void test_ConvLayer();
-
-
-void test_GenerateRandomFilter();
-
-
-void test_MaxPooling();
-
-void test_ApplyReLU();
-
-void test_FullyConnectedLayer();
-
 void test_ConvNet();
 
-
 void test_NetConfig();
-
 
 NetConfig generateNetConfig();
 

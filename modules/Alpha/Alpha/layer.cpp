@@ -13,7 +13,7 @@
 void ConvLayer::ApplyFilter()
 {
     if (!interdata->empty()){
-    interdata->clear();
+        interdata->clear();
     }
     for (int j=0; j<noutmaps; j++){
         MatType z=MatType::Zero(inputrows-kernelsize+1, inputcols-kernelsize+1);
@@ -45,6 +45,50 @@ void ConvLayer::ApplyNonlinearity(){
 }
 
 
+void ConvLayer::print(){
+    cout<<"ninmaps      "<<ninmaps<<endl;
+    cout<<"inputrows    "<<inputrows<<endl;
+    cout<<"inputcols    "<<inputcols<<endl;
+    cout<<"noutmaps     "<<noutmaps<<endl;
+    cout<<"stride       "<<stride<<endl;
+    cout<<"side         "<<side<<endl;
+    cout<<"kernelsize   "<<kernelsize<<endl;
+    
+    if(indata->empty()){
+        cout<<"indata       empty"<<endl;
+    } else {
+        cout<<"indata       ";
+        printVector(indata);
+    }
+    if(interdata->empty()){
+        cout<<"interdata    empty"<<endl;
+    } else {
+        cout<<"interdata    ";
+        printVector(interdata);
+    }
+    if(outdata->empty()){
+        cout<<"outdata      empty"<<endl;
+    } else {
+        cout<<"outdata      ";
+        printVector(outdata);
+    }
+    //displayVector(outdata);
+}
+
+void FullLayer::print(){
+    cout<<"fanin        "<<fanin<<endl;
+    cout<<"fanout       "<<fanout<<endl;
+    if (!indata){
+        cout<<"indata        empty"<<endl;
+    } else {
+        cout<<"indata       "<<"("<<indata->rows()<<","<<indata->cols()<<")"<<endl;
+    }
+    if (!outdata){
+        cout<<"indata        empty"<<endl;
+    } else {
+        cout<<"outdata      "<<"("<<outdata->rows()<<","<<outdata->cols()<<")"<<endl;
+    }
+}
 
 
 
