@@ -25,7 +25,7 @@ public:
             fulllayer.push_back(FullLayer(config.fullconfig[i]));
         }
         
-        convlayer.begin()->indata=config.indata;
+        convlayer.begin()->indata=new vector<MatType>;
         for(int i=1; i<config.nconvlayers; i++){
             convlayer[i].indata=convlayer[i-1].outdata;
         }
@@ -36,12 +36,17 @@ public:
     }
     
     void run(){
-        for(int i=0; i<convlayer.size(); i++){
-            convlayer[i].run();
-        }
-        (*fulllayer[0].indata)=convert(*(convlayer[config.nconvlayers-1].outdata));
-        for(int i=0; i<fulllayer.size(); i++){
-            fulllayer[i].run();
+        VecMatPtr ptr=config.indata;
+        for(int k=0; k<config.indata->size();k++){
+            convlayer[0].indata->clear();
+            convlayer[0].indata->push_back((*ptr)[k]);
+            for(int i=0; i<convlayer.size(); i++){
+                convlayer[i].run();
+            }
+            (*fulllayer[0].indata)=convert(*(convlayer[config.nconvlayers-1].outdata));
+            for(int i=0; i<fulllayer.size(); i++){
+                fulllayer[i].run();
+            }            
         }
     }
     

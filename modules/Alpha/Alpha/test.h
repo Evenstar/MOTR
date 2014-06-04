@@ -27,7 +27,7 @@ void test_NetConfig();
 NetConfig generateNetConfig();
 
 
-
+NetConfig mnistConfig();
 
 
 

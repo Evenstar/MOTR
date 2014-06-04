@@ -15,9 +15,10 @@
 
 int main(int argc, char** argv)
 {
-    vector<MatType> xtrain;
-    vector<MatType> ytrain;
-    ReadMnist(xtrain,ytrain);
-    cout<<xtrain[30]<<endl;
+    NetConfig mnistconfig=mnistConfig();
+    mnistconfig.print();
+    ConvNet convnet(mnistconfig);
+//    convnet.print();
+    convnet.run();
     return 0;
 }

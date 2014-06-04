@@ -72,7 +72,7 @@ void ConvLayer::print(){
         cout<<"outdata      ";
         printVector(outdata);
     }
-    //displayVector(outdata);
+    displayVector(outdata);
 }
 
 void FullLayer::print(){

@@ -20,7 +20,73 @@ ImgType LoadHepburn()
     return img;
 }
 
-
+NetConfig mnistConfig(){
+    NetConfig netconfig;
+    
+    vector<MatType>* xptr=new vector<MatType>;
+    vector<MatType>* yptr=new vector<MatType>;
+    ReadMnist(*xptr,*yptr);
+    netconfig.nconvlayers=2;
+    netconfig.indata=xptr;
+    
+    ConvConfig config;
+    config.ninmaps=1;
+    config.noutmaps=4;
+    config.inputrows=28;
+    config.inputcols=28;
+    config.stride=2;
+    config.side=2;
+    config.kernelsize=5;
+    for(int i=0; i<4; i++){
+        set<int> temp;
+        temp.insert(0);
+        config.inmaps.push_back(temp);
+    }
+    vector<FilterType> z;
+    for (int i=0; i<4; i++){
+        z.clear();
+        FilterType temp=FilterType::Random(5,5);
+        z.push_back(temp);
+        config.filter.push_back(z);
+    }
+    netconfig.convconfig.push_back(config);
+    
+    config.inmaps.clear();
+    config.filter.clear();
+    config.ninmaps=4;
+    config.noutmaps=4;
+    config.inputrows=12;
+    config.inputcols=12;
+    config.stride=2;
+    config.side=2;
+    config.kernelsize=5;
+    for(int i=0; i<4; i++){
+        set<int> temp;
+        for(int j=0; j<4; j++){
+            temp.insert(j);
+        }
+        config.inmaps.push_back(temp);
+    }
+    for (int i=0; i<4; i++){
+        z.clear();
+        for(int j=0;j<4;j++){
+            FilterType temp=FilterType::Random(5,5);
+            z.push_back(temp);
+        }
+        config.filter.push_back(z);
+    }
+    netconfig.convconfig.push_back(config);
+    
+    
+    netconfig.nfulllayers=1;
+    FullConfig fconfig;
+    fconfig.fanin=64;
+    fconfig.fanout=10;
+    fconfig.weight=MatType::Random(fconfig.fanout,fconfig.fanin);
+    netconfig.fullconfig.push_back(fconfig);
+    
+    return netconfig;
+}
 NetConfig generateNetConfig(){
     ImgType img=LoadHepburn();
     MatType temp=Img2Mat(img);
