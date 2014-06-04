@@ -15,6 +15,9 @@
 
 int main(int argc, char** argv)
 {
-    test_NetConfig();
+    vector<MatType> xtrain;
+    vector<MatType> ytrain;
+    ReadMnist(xtrain,ytrain);
+    cout<<xtrain[30]<<endl;
     return 0;
 }

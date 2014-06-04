@@ -41,10 +41,9 @@ void printVector(VecMatPtr ptr);
 void displayVector(VecMatPtr ptr);
 
 
+int ReverseInt (int i);
 
-
-
-
+void ReadMnist(vector<MatType>& xtrain, vector<MatType>& ytrain);
 
 
 

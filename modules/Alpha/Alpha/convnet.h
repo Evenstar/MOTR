@@ -11,6 +11,8 @@
 
 #include "layer.h"
 #include "configuration.h"
+
+///TODO: memory leak fix.
 using namespace std;
 class ConvNet{
 public:
