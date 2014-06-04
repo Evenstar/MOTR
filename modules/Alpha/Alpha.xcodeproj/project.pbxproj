@@ -34,6 +34,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		721CA83D193EBEFA0099DD4E /* trainsgd.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = trainsgd.h; sourceTree = "<group>"; };
 		721FA5D91933B7A30005D58C /* layer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = layer.cpp; sourceTree = "<group>"; };
 		721FA5DB193411F70005D58C /* layer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = layer.h; sourceTree = "<group>"; };
 		721FA5DC1934183D0005D58C /* convnet.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = convnet.h; sourceTree = "<group>"; };
@@ -128,6 +129,7 @@
 				721FA5DB193411F70005D58C /* layer.h */,
 				721FA5DC1934183D0005D58C /* convnet.h */,
 				726FE6BA19362F2E009896AC /* configuration.h */,
+				721CA83D193EBEFA0099DD4E /* trainsgd.h */,
 			);
 			name = Header;
 			sourceTree = "<group>";

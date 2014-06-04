@@ -20,6 +20,10 @@ layer.h
 configuration.h
 /Users/chengtai/Documents/2014/MOTR/modules/Alpha/Alpha/configuration.h
 
+/Users/chengtai/Documents/2014/MOTR/modules/Alpha/Alpha/helper.cpp
+utils.h
+/Users/chengtai/Documents/2014/MOTR/modules/Alpha/Alpha/utils.h
+
 /Users/chengtai/Documents/2014/MOTR/modules/Alpha/Alpha/helper.h
 
 /Users/chengtai/Documents/2014/MOTR/modules/Alpha/Alpha/layer.cpp
@@ -95,6 +99,10 @@ boost/shared_ptr.hpp
 -
 boost/make_shared.hpp
 -
+
+/Users/chengtai/Documents/2014/MOTR/modules/Alpha/Alpha/visual.cpp
+visual.h
+/Users/chengtai/Documents/2014/MOTR/modules/Alpha/Alpha/visual.h
 
 /Users/chengtai/Documents/2014/MOTR/modules/Alpha/Alpha/visual.h
 utils.h
