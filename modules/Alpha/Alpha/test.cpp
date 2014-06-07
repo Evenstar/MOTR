@@ -166,11 +166,11 @@ NetConfig generateNetConfig(){
 
 
 void test_NetConfig(){
-    NetConfig netconfig=generateNetConfig();
+    NetConfig netconfig=mnistConfig();
     //netconfig.print();
     ConvNet convnet(netconfig);
+//    convnet.print();
     convnet.run();
-    convnet.print();
 }
 
 

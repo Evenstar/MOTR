@@ -21,7 +21,7 @@ MatType Conv2_Valid(const MatType& a, const MatType& b);
 MatType Conv2(const MatType& a, const MatType& b, string boundarytype);
 
 ///convert an opencv format image to a Eigen format matrix.
-///
+
 ///The input is requierd to have one channel.
 MatType Img2Mat(ImgType& img);
 
@@ -40,17 +40,8 @@ void printVector(VecMatPtr ptr);
 
 void displayVector(VecMatPtr ptr);
 
-
 int ReverseInt (int i);
 
 void ReadMnist(vector<MatType>& xtrain, vector<MatType>& ytrain);
-
-
-
-
-
-
-
-
 
 #endif

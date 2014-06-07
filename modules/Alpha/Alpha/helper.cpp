@@ -209,7 +209,7 @@ int ReverseInt (int i)
 
 void ReadMnist(vector<MatType>& xtrain, vector<MatType>& ytrain)
 {
-    int NUMBER=100;
+    int NUMBER=1;
     string prefix("/Users/chengtai/Documents/2014/MOTR/modules/Alpha/data/mnist");
     ifstream file;
     string filename=prefix+string("/train-images-idx3-ubyte");
@@ -235,7 +235,7 @@ void ReadMnist(vector<MatType>& xtrain, vector<MatType>& ytrain)
         for(int i=0; i<28;i++){
             for(int j=0;j<28;j++){
                 file.read((char*)&temp, sizeof(temp));
-                z(i,j)=(float)temp;
+                z(i,j)=(float)temp/255.0;
             }
         }
         xtrain.push_back(z);

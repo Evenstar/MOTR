@@ -42,11 +42,14 @@ public:
             convlayer[0].indata->push_back((*ptr)[k]);
             for(int i=0; i<convlayer.size(); i++){
                 convlayer[i].run();
+                cout<<(*convlayer[i].outdata)[0]<<endl;
             }
             (*fulllayer[0].indata)=convert(*(convlayer[config.nconvlayers-1].outdata));
             for(int i=0; i<fulllayer.size(); i++){
                 fulllayer[i].run();
-            }            
+                cout<<fulllayer[i].outdata->transpose()<<endl;
+            }
+            outdata.push_back(output());
         }
     }
     
@@ -65,8 +68,12 @@ public:
     vector<ConvLayer> convlayer;
     vector<FullLayer> fulllayer;
     NetConfig config;
-    
+    vector<MatType> outdata;
 private:
     MatType convert(vector<MatType> data);
+    MatType output(){
+        int n=fulllayer.size();
+        return *(fulllayer[n-1].outdata);
+    }
 };
 #endif

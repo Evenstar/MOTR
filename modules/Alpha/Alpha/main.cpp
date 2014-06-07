@@ -15,10 +15,6 @@
 
 int main(int argc, char** argv)
 {
-    NetConfig mnistconfig=mnistConfig();
-    mnistconfig.print();
-    ConvNet convnet(mnistconfig);
-//    convnet.print();
-    convnet.run();
+    test_NetConfig();
     return 0;
 }
