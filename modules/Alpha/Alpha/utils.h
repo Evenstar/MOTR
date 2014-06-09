@@ -17,6 +17,7 @@
 #include <set>
 #include <fstream>
 #include <string>
+#include <memory>
 #include <opencv2/core/core.hpp>
 #include <opencv2/highgui/highgui.hpp>
 #include <opencv2/opencv.hpp>
@@ -24,7 +25,7 @@
 #include "../Eigen/Dense"
 #include <boost/shared_ptr.hpp>
 #include <boost/make_shared.hpp>
-
+using namespace boost;
 typedef Eigen::MatrixXf FilterType;
 typedef Eigen::MatrixXf MatType;
 typedef Eigen::VectorXf VecType;

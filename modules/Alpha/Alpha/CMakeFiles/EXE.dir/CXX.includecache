@@ -10,10 +10,6 @@
 utils.h
 /Users/chengtai/Documents/2014/MOTR/modules/Alpha/Alpha/utils.h
 
-/Users/chengtai/Documents/2014/MOTR/modules/Alpha/Alpha/convnet.cpp
-convnet.h
-/Users/chengtai/Documents/2014/MOTR/modules/Alpha/Alpha/convnet.h
-
 /Users/chengtai/Documents/2014/MOTR/modules/Alpha/Alpha/convnet.h
 layer.h
 /Users/chengtai/Documents/2014/MOTR/modules/Alpha/Alpha/layer.h
@@ -21,10 +17,6 @@ configuration.h
 /Users/chengtai/Documents/2014/MOTR/modules/Alpha/Alpha/configuration.h
 
 /Users/chengtai/Documents/2014/MOTR/modules/Alpha/Alpha/helper.h
-
-/Users/chengtai/Documents/2014/MOTR/modules/Alpha/Alpha/layer.cpp
-layer.h
-/Users/chengtai/Documents/2014/MOTR/modules/Alpha/Alpha/layer.h
 
 /Users/chengtai/Documents/2014/MOTR/modules/Alpha/Alpha/layer.h
 utils.h
@@ -33,6 +25,8 @@ helper.h
 /Users/chengtai/Documents/2014/MOTR/modules/Alpha/Alpha/helper.h
 configuration.h
 /Users/chengtai/Documents/2014/MOTR/modules/Alpha/Alpha/configuration.h
+memory
+-
 
 /Users/chengtai/Documents/2014/MOTR/modules/Alpha/Alpha/main.cpp
 layer.h
@@ -45,10 +39,10 @@ convnet.h
 /Users/chengtai/Documents/2014/MOTR/modules/Alpha/Alpha/convnet.h
 test.h
 /Users/chengtai/Documents/2014/MOTR/modules/Alpha/Alpha/test.h
-
-/Users/chengtai/Documents/2014/MOTR/modules/Alpha/Alpha/test.cpp
-test.h
-/Users/chengtai/Documents/2014/MOTR/modules/Alpha/Alpha/test.h
+ctime
+-
+memory
+-
 
 /Users/chengtai/Documents/2014/MOTR/modules/Alpha/Alpha/test.h
 utils.h
@@ -80,6 +74,8 @@ set
 fstream
 -
 string
+-
+memory
 -
 opencv2/core/core.hpp
 -

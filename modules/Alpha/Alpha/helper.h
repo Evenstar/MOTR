@@ -44,4 +44,7 @@ int ReverseInt (int i);
 
 void ReadMnist(vector<MatType>& xtrain, vector<MatType>& ytrain);
 
+void ReadMnistPtr(vector<shared_ptr<MatType> >& xtrain,
+                  vector<shared_ptr<MatType> >& ytrain,
+                  int NUMBER=1);
 #endif

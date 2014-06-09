@@ -11,17 +11,19 @@
 #include "utils.h"
 #include "helper.h"
 #include "configuration.h"
+#include <memory>
 using namespace std;
-using namespace boost;
 
 
 class ConvLayer{
 public:
-    ConvLayer(const ConvConfig& config):
-    interdata(new vector<MatType>)   {
+    ConvLayer(const ConvConfig& config)
+    {
         Initialize(config);
         interdata=new vector<MatType>;
         outdata=new vector<MatType>;
+        interdata->reserve(noutmaps);
+        outdata->reserve(noutmaps);
     }
     ~ConvLayer(){
     };
@@ -46,8 +48,8 @@ public:
     VecMatPtr Get(){
         return outdata;
     }
-    
     void print();
+    
 private:
     void ApplyFilter();
     void DownSample();
@@ -122,5 +124,35 @@ public:
     MatType weight;
     
 };
+
+
+class InputLayer {
+public:
+    shared_ptr<MatType>  indata;
+    shared_ptr<vector<shared_ptr<MatType> > > outdata;
+    vector<vector<FilterType> > filter;
+};
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 #endif

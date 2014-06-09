@@ -9,13 +9,13 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "Alpha/convnet.h"
-            timestampString = "423869625.763522"
+            filePath = "Alpha/layer.cpp"
+            timestampString = "423875139.069185"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "40"
-            endingLineNumber = "40"
-            landmarkName = "run()"
+            startingLineNumber = "20"
+            endingLineNumber = "20"
+            landmarkName = "ConvLayer::ApplyFilter()"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>

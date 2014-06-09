@@ -263,7 +263,61 @@ void ReadMnist(vector<MatType>& xtrain, vector<MatType>& ytrain)
 }
 
 
-
+void ReadMnistPtr(vector<shared_ptr<MatType> >& xtrain,
+                  vector<shared_ptr<MatType> >& ytrain,
+                  int NUMBER=1)
+{
+    string prefix("/Users/chengtai/Documents/2014/MOTR/modules/Alpha/data/mnist");
+    ifstream file;
+    string filename=prefix+string("/train-images-idx3-ubyte");
+    file.open(filename.c_str(), ios::binary);
+    int magicnumber=2051;
+    int nimages=60000;
+    int rows=28;
+    int cols=28;
+    unsigned char temp;
+    
+    file.read((char*)&magicnumber,sizeof(magicnumber));
+    magicnumber=ReverseInt(magicnumber);
+    if (magicnumber!=2051){
+        cout<<"Error while reading mnist."<<endl;
+        exit(-1);
+    }
+    file.read((char*)&nimages,sizeof(int));
+    file.read((char*)&rows,sizeof(int));
+    file.read((char*)&cols,sizeof(int));
+    
+    for(int k=0; k<NUMBER; k++){
+        shared_ptr<MatType> z(make_shared<MatType>(28,28));
+        for(int i=0; i<28;i++){
+            for(int j=0;j<28;j++){
+                file.read((char*)&temp, sizeof(temp));
+                (*z)(i,j)=(float)temp/255.0;
+            }
+        }
+        xtrain.push_back(z);
+    }
+    file.close();
+    
+    
+    filename=prefix+string("/train-labels-idx1-ubyte");
+    file.open(filename.c_str(),ios::binary);
+    file.read((char*)&magicnumber,sizeof(magicnumber));
+    magicnumber=ReverseInt(magicnumber);
+    if (magicnumber!=2049){
+        cout<<"Error while reading mnist."<<endl;
+        exit(-1);
+    }
+    file.read((char*)&nimages,sizeof(int));
+    
+    for(int i=0 ;i<NUMBER;i++){
+        shared_ptr<MatType> z(make_shared<MatType>(MatType::Zero(10,1)));
+        file.read((char*)&temp,sizeof(temp));
+        (*z)((int)temp,0)=1;
+        ytrain.push_back(z);
+    }
+    file.close();
+}
 
 
 

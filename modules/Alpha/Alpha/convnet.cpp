@@ -7,7 +7,6 @@
 //
 
 #include "convnet.h"
-using namespace boost;
 
     
 MatType ConvNet::convert(vector<MatType> data)

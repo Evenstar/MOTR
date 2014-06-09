@@ -12,9 +12,17 @@
 #include "visual.h"
 #include "convnet.h"
 #include "test.h"
+#include <ctime>
+#include <memory>
+using namespace std;
+
+
 
 int main(int argc, char** argv)
 {
-    test_NetConfig();
+    
+    vector<shared_ptr<MatType> > xtrain;
+    vector<shared_ptr<MatType> > ytrain;
+    ReadMnistPtr(xtrain,ytrain,1000);
     return 0;
 }
