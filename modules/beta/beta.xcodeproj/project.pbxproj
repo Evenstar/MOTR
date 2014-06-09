@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		72B3D3FB19456F620085D0A1 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 72B3D3FA19456F620085D0A1 /* main.cpp */; };
 		72B3D3FD19456F620085D0A1 /* beta.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = 72B3D3FC19456F620085D0A1 /* beta.1 */; };
+		72FB456E19462B810093BE9B /* layer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 72FB456D19462B810093BE9B /* layer.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -30,6 +31,7 @@
 		72B3D3FC19456F620085D0A1 /* beta.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = beta.1; sourceTree = "<group>"; };
 		72B3D4031945703C0085D0A1 /* layer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = layer.h; sourceTree = "<group>"; };
 		72B3D4041945719D0085D0A1 /* stdafx.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = stdafx.h; sourceTree = "<group>"; };
+		72FB456D19462B810093BE9B /* layer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = layer.cpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +68,7 @@
 				72B3D3FC19456F620085D0A1 /* beta.1 */,
 				72B3D4031945703C0085D0A1 /* layer.h */,
 				72B3D4041945719D0085D0A1 /* stdafx.h */,
+				72FB456D19462B810093BE9B /* layer.cpp */,
 			);
 			path = beta;
 			sourceTree = "<group>";
@@ -122,6 +125,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				72B3D3FB19456F620085D0A1 /* main.cpp in Sources */,
+				72FB456E19462B810093BE9B /* layer.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -231,6 +235,7 @@
 				72B3D40219456F620085D0A1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

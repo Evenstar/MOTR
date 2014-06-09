@@ -11,13 +11,11 @@
 using namespace std;
 int main(int argc, const char * argv[])
 {
-
-    // insert code here...
-    shared_ptr<int> a(new int);
-    *a=1;
-    cout<<*a<<endl;
-    MatType b=MatType::Random(3,3);
-    cout<<b<<endl;
+    InputConfig config(28,28,12,5,2,2);
+    InputLayer layer0(config);
+    layer0.Print();
+    cout<<layer0.outdata.empty()<<endl;
+    
     return 0;
 }
 

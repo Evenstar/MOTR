@@ -13,28 +13,33 @@ using namespace std;
 
 class InputConfig{
 public:
+    InputConfig(int _inputrows=0, int _inputcols=0,
+                int _noutmaps=0, int _kernelsize=0,
+                int _stride=0, int _side=0):
+    inputrows(_inputrows),inputcols(_inputcols),
+    noutmaps(_noutmaps), kernelsize(_kernelsize),
+    stride(_stride),side(_side){};
+public:
     int inputrows;
     int inputcols;
     int noutmaps;
     int kernelsize;
     int stride;
     int side;
-    shared_ptr<MatType> indata;
-    vector<vector<FilterType> > filter;
-    
     void Print();
-    void IsSet();
 };
 
 class InputLayer {
 public:
-    shared_ptr<MatType>  indata;
-    shared_ptr<vector<shared_ptr<MatType> > > outdata;
-    vector<vector<FilterType> > filter;
-private:
-    int inputrows;
-    int inputcols;
+    InputLayer(const InputConfig& _cfg):cfg(_cfg){};
+    ~InputLayer();
     
+    void Print();
+public:
+    MatType*  indata;
+    vector<MatType*> outdata;
+    vector<MatType*> filter;
+    InputConfig cfg;
 };
 
 #endif
