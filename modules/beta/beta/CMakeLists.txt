@@ -1,0 +1,5 @@
+cmake_minimum_required(VERSION 2.8)
+project( Alpha )
+SET(CMAKE_CXX_FLAGS "-std=c++0x -O3")
+add_executable( EXE main.cpp )
+SET(CMAKE_CXX_COMPILER /usr/local/bin/g++-4.8)

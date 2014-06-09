@@ -28,6 +28,8 @@
 		72B3D3F719456F620085D0A1 /* beta */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = beta; sourceTree = BUILT_PRODUCTS_DIR; };
 		72B3D3FA19456F620085D0A1 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		72B3D3FC19456F620085D0A1 /* beta.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = beta.1; sourceTree = "<group>"; };
+		72B3D4031945703C0085D0A1 /* layer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = layer.h; sourceTree = "<group>"; };
+		72B3D4041945719D0085D0A1 /* stdafx.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = stdafx.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +64,8 @@
 			children = (
 				72B3D3FA19456F620085D0A1 /* main.cpp */,
 				72B3D3FC19456F620085D0A1 /* beta.1 */,
+				72B3D4031945703C0085D0A1 /* layer.h */,
+				72B3D4041945719D0085D0A1 /* stdafx.h */,
 			);
 			path = beta;
 			sourceTree = "<group>";
