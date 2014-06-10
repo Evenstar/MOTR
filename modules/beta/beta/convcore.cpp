@@ -53,3 +53,72 @@ MatType Conv2(const MatType& a, const MatType& b, string boundarytype){
         return Conv2_Valid(aext, b);
     }
 }
+
+MatType maxpooling(const MatType& mat,int stride, int side)
+{
+    int m=mat.n_rows;
+    int n=mat.n_cols;
+    int rows=floor((m-side)/stride)+1;
+    int cols=floor((n-side)/stride)+1;
+    MatType  result(rows,cols);
+    for(int i=0; i<=m-side; i+=stride){
+        for(int j=0; j<=n-side;j+=stride){
+            double s=max(max(abs(mat.submat(i,j,i+side-1,j+side-1))));
+            result(i/stride,j/stride)=s;
+        }
+    }
+    return result;
+}
+
+
+MatType maxpooling2(const MatType& mat,int stride, int side)
+{
+    int m=mat.n_rows;
+    int n=mat.n_cols;
+    int rows=floor((m-side)/stride)+1;
+    int cols=floor((n-side)/stride)+1;
+    MatType  result(rows,cols);
+    for(int i=0; i<=m-side; i+=stride){
+        for(int j=0; j<=n-side;j+=stride){
+            double s=0;
+            for(int k=0; k<side; k++){
+                for(int l=0; l<side;l++){
+                    if (abs(mat(i+k,j+l))>s){
+                        s=abs(mat(i+k,j+l));
+                    }
+                }
+            }
+            result(i/stride,j/stride)=s;
+        }
+    }
+    return result;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

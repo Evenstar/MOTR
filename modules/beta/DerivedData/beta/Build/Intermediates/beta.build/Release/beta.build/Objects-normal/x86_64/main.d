@@ -412,5 +412,6 @@ dependencies: \
   /usr/local/include/armadillo_bits/spglue_minus_meat.hpp \
   /usr/local/include/armadillo_bits/spglue_times_meat.hpp \
   /usr/local/include/armadillo_bits/compiler_setup_post.hpp \
+  /Users/chengtai/Documents/2014/MOTR/modules/beta/beta/../easylogging++.h \
   /Users/chengtai/Documents/2014/MOTR/modules/beta/beta/utils.h \
   /Users/chengtai/Documents/2014/MOTR/modules/beta/beta/layer.h

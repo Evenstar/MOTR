@@ -6,6 +6,7 @@ CMakeFiles/EXE.dir/convcore.cpp.o: convcore.h
 CMakeFiles/EXE.dir/convcore.cpp.o: stdafx.h
 CMakeFiles/EXE.dir/convcore.cpp.o: /Users/chengtai/Documents/2014/MOTR/modules/beta/easylogging++.h
 
+CMakeFiles/EXE.dir/layer.cpp.o: convcore.h
 CMakeFiles/EXE.dir/layer.cpp.o: layer.cpp
 CMakeFiles/EXE.dir/layer.cpp.o: layer.h
 CMakeFiles/EXE.dir/layer.cpp.o: stdafx.h

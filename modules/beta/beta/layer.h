@@ -46,6 +46,9 @@ public:
     void SetFilter(const MatType&, int);
     
     void Print();
+    
+    void applyfilter();
+    
 public:
     MatType*  indata;
     vector<MatType*> outdata;

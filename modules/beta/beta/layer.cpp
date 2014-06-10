@@ -7,7 +7,7 @@
 //
 
 #include "layer.h"
-
+#include "convcore.h"
 InputLayer::InputLayer(const InputConfig& _cfg)
 {
     cfg=_cfg;
@@ -75,7 +75,7 @@ InputLayer::~InputLayer()
 void InputLayer::SetFilter(const vector<MatType*> & _filter)
 {
     for(int i=0; i<filter.size();i++){
-        filter[i]=_filter[i];
+        *filter[i]=*_filter[i];
     }
 }
 
@@ -89,3 +89,9 @@ void InputLayer::SetFilter(const MatType& _mat, int i)
     }
 }
 
+void InputLayer::applyfilter()
+{
+    for(int i=0; i<cfg.noutmaps; i++){
+        *outdata[i]=Conv2(*indata,*filter[i],"valid");
+    }
+}

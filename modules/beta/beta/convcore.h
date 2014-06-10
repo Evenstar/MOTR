@@ -15,5 +15,7 @@ MatType Conv2_Valid(const MatType& a, const MatType& b);
 
 MatType Conv2(const MatType& a, const MatType& b, string boundarytype);
 
+MatType maxpooling(const MatType&, int stride, int side );
 
+MatType maxpooling2(const MatType&, int stride, int side );
 #endif
