@@ -6,9 +6,11 @@
 //  Copyright (c) 2014 ChengTai. All rights reserved.
 //
 
-#ifndef beta_layer_h
-#define beta_layer_h
+#ifndef LAYER_H
+#define LAYER_H
 #include "stdafx.h"
+
+
 using namespace std;
 
 class InputConfig{

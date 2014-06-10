@@ -62,7 +62,7 @@ CMAKE_BINARY_DIR = /Users/chengtai/Documents/2014/MOTR/modules/beta/beta
 CMakeFiles/EXE.dir/all:
 	$(MAKE) -f CMakeFiles/EXE.dir/build.make CMakeFiles/EXE.dir/depend
 	$(MAKE) -f CMakeFiles/EXE.dir/build.make CMakeFiles/EXE.dir/build
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/chengtai/Documents/2014/MOTR/modules/beta/beta/CMakeFiles  1
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/chengtai/Documents/2014/MOTR/modules/beta/beta/CMakeFiles  1 2
 	@echo "Built target EXE"
 .PHONY : CMakeFiles/EXE.dir/all
 
@@ -72,7 +72,7 @@ all: CMakeFiles/EXE.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/EXE.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/chengtai/Documents/2014/MOTR/modules/beta/beta/CMakeFiles 1
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/chengtai/Documents/2014/MOTR/modules/beta/beta/CMakeFiles 2
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/EXE.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/chengtai/Documents/2014/MOTR/modules/beta/beta/CMakeFiles 0
 .PHONY : CMakeFiles/EXE.dir/rule

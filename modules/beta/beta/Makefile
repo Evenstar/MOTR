@@ -114,6 +114,30 @@ EXE/fast:
 	$(MAKE) -f CMakeFiles/EXE.dir/build.make CMakeFiles/EXE.dir/build
 .PHONY : EXE/fast
 
+convcore.o: convcore.cpp.o
+.PHONY : convcore.o
+
+# target to build an object file
+convcore.cpp.o:
+	$(MAKE) -f CMakeFiles/EXE.dir/build.make CMakeFiles/EXE.dir/convcore.cpp.o
+.PHONY : convcore.cpp.o
+
+convcore.i: convcore.cpp.i
+.PHONY : convcore.i
+
+# target to preprocess a source file
+convcore.cpp.i:
+	$(MAKE) -f CMakeFiles/EXE.dir/build.make CMakeFiles/EXE.dir/convcore.cpp.i
+.PHONY : convcore.cpp.i
+
+convcore.s: convcore.cpp.s
+.PHONY : convcore.s
+
+# target to generate assembly for a file
+convcore.cpp.s:
+	$(MAKE) -f CMakeFiles/EXE.dir/build.make CMakeFiles/EXE.dir/convcore.cpp.s
+.PHONY : convcore.cpp.s
+
 main.o: main.cpp.o
 .PHONY : main.o
 
@@ -147,6 +171,9 @@ help:
 	@echo "... EXE"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
+	@echo "... convcore.o"
+	@echo "... convcore.i"
+	@echo "... convcore.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"

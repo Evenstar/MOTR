@@ -1,21 +1,17 @@
-//
-//  main.cpp
-//  beta
-//
-//  Created by ChengTai on 6/9/14.
-//  Copyright (c) 2014 ChengTai. All rights reserved.
-//
-
-#include "layer.h"
-
+#include <iostream>
+#include <armadillo>
+#include "convcore.h"
 using namespace std;
-int main(int argc, const char * argv[])
+using namespace arma;
+
+int main(int argc, char** argv)
 {
-    InputConfig config(28,28,12,5,2,2);
-    InputLayer layer0(config);
-    layer0.Print();
-    cout<<layer0.outdata.empty()<<endl;
-    
+    MatType A = randu<MatType>(28,28);
+    mat55 B= randu<MatType>(5,5);
+    //    for(int i=0; i<1000; i++)
+    //        MatType C=Conv2_Valid(A,B);
+    for(int i=0; i<100000; i++)
+        MatType C=Conv2(A,B,"valid");
     return 0;
 }
 

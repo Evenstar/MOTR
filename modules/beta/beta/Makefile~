@@ -1,0 +1,10 @@
+CXX=g++-4.8
+CXXFLAGS= -O3 -std=c++11
+TARGETS=example
+LIBS +=-L/usr/local/lib -L/opt/intel/lib/intel64 -L/opt/intel/mkl/lib/ -L/opt/intel/composer_xe_2013_sp1.2.139/compiler/lib
+INCLUDES += -I/usr/include -I/usr/local/include -I/opt/intel/composer_xe_2013_sp1.2.139/mkl/include
+LDFLAGS += -larmadillo -lmkl_intel_lp64 -lmkl_intel_thread -lmkl_core -liomp5 -lpthread -lm
+$(TARGETS): main.cpp 
+	$(CXX) $(CXXFLAGS) $(INCLUDES) $(LIBS) -o $@ $^ $(LDFLAGS) 
+clean:
+	rm -f *.o $(TARGETS)

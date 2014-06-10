@@ -190,3 +190,69 @@ Parsed CXX implicit link information from above output:
   implicit fwks: [/Library/Frameworks;/System/Library/Frameworks]
 
 
+Determining if the function dgemm_ exists passed with the following output:
+Change Dir: /Users/chengtai/Documents/2014/MOTR/modules/beta/beta/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec2501781314/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec2501781314.dir/build.make CMakeFiles/cmTryCompileExec2501781314.dir/build
+/usr/local/Cellar/cmake/2.8.12.2/bin/cmake -E cmake_progress_report /Users/chengtai/Documents/2014/MOTR/modules/beta/beta/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec2501781314.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=dgemm_   -o CMakeFiles/cmTryCompileExec2501781314.dir/CheckFunctionExists.c.o   -c /usr/local/Cellar/cmake/2.8.12.2/share/cmake/Modules/CheckFunctionExists.c
+Linking C executable cmTryCompileExec2501781314
+/usr/local/Cellar/cmake/2.8.12.2/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec2501781314.dir/link.txt --verbose=1
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=dgemm_ -Wl,-search_paths_first -Wl,-headerpad_max_install_names   CMakeFiles/cmTryCompileExec2501781314.dir/CheckFunctionExists.c.o  -o cmTryCompileExec2501781314  -framework Accelerate 
+
+
+Determining if files pthread.h exist passed with the following output:
+Change Dir: /Users/chengtai/Documents/2014/MOTR/modules/beta/beta/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec2044717841/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec2044717841.dir/build.make CMakeFiles/cmTryCompileExec2044717841.dir/build
+/usr/local/Cellar/cmake/2.8.12.2/bin/cmake -E cmake_progress_report /Users/chengtai/Documents/2014/MOTR/modules/beta/beta/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec2044717841.dir/CheckIncludeFiles.c.o
+/usr/bin/cc    -o CMakeFiles/cmTryCompileExec2044717841.dir/CheckIncludeFiles.c.o   -c /Users/chengtai/Documents/2014/MOTR/modules/beta/beta/CMakeFiles/CMakeTmp/CheckIncludeFiles.c
+Linking C executable cmTryCompileExec2044717841
+/usr/local/Cellar/cmake/2.8.12.2/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec2044717841.dir/link.txt --verbose=1
+/usr/bin/cc    -Wl,-search_paths_first -Wl,-headerpad_max_install_names   CMakeFiles/cmTryCompileExec2044717841.dir/CheckIncludeFiles.c.o  -o cmTryCompileExec2044717841  
+
+
+Determining if the pthread_create exist passed with the following output:
+Change Dir: /Users/chengtai/Documents/2014/MOTR/modules/beta/beta/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec4029535553/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec4029535553.dir/build.make CMakeFiles/cmTryCompileExec4029535553.dir/build
+/usr/local/Cellar/cmake/2.8.12.2/bin/cmake -E cmake_progress_report /Users/chengtai/Documents/2014/MOTR/modules/beta/beta/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec4029535553.dir/CheckSymbolExists.c.o
+/usr/bin/cc    -o CMakeFiles/cmTryCompileExec4029535553.dir/CheckSymbolExists.c.o   -c /Users/chengtai/Documents/2014/MOTR/modules/beta/beta/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+Linking C executable cmTryCompileExec4029535553
+/usr/local/Cellar/cmake/2.8.12.2/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec4029535553.dir/link.txt --verbose=1
+/usr/bin/cc    -Wl,-search_paths_first -Wl,-headerpad_max_install_names   CMakeFiles/cmTryCompileExec4029535553.dir/CheckSymbolExists.c.o  -o cmTryCompileExec4029535553  
+
+File /Users/chengtai/Documents/2014/MOTR/modules/beta/beta/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <pthread.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef pthread_create
+  return ((int*)(&pthread_create))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+
+Determining if the function cheev_ exists passed with the following output:
+Change Dir: /Users/chengtai/Documents/2014/MOTR/modules/beta/beta/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec1520081061/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec1520081061.dir/build.make CMakeFiles/cmTryCompileExec1520081061.dir/build
+/usr/local/Cellar/cmake/2.8.12.2/bin/cmake -E cmake_progress_report /Users/chengtai/Documents/2014/MOTR/modules/beta/beta/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec1520081061.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=cheev_   -o CMakeFiles/cmTryCompileExec1520081061.dir/CheckFunctionExists.c.o   -c /usr/local/Cellar/cmake/2.8.12.2/share/cmake/Modules/CheckFunctionExists.c
+Linking C executable cmTryCompileExec1520081061
+/usr/local/Cellar/cmake/2.8.12.2/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec1520081061.dir/link.txt --verbose=1
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=cheev_ -Wl,-search_paths_first -Wl,-headerpad_max_install_names   CMakeFiles/cmTryCompileExec1520081061.dir/CheckFunctionExists.c.o  -o cmTryCompileExec1520081061  -framework Accelerate -framework Accelerate 
+
+

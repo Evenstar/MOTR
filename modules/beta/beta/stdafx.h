@@ -6,8 +6,8 @@
 //  Copyright (c) 2014 ChengTai. All rights reserved.
 //
 
-#ifndef beta_stdafx_h
-#define beta_stdafx_h
+#ifndef STDAFX_H
+#define STDAFX_H
 #include <vector>
 #include <set>
 #include <iostream>
@@ -15,9 +15,7 @@
 #include <fstream>
 #include <ctime>
 #include <memory>
-#include "../Eigen/Dense"
+#include <armadillo>
+typedef arma::mat MatType;
 
-typedef Eigen::MatrixXf MatType;
-typedef std::shared_ptr<MatType> MatPtr;
-typedef Eigen::MatrixXf FilterType;
 #endif

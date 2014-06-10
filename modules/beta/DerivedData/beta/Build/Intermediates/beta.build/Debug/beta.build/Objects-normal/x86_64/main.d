@@ -151,4 +151,5 @@ dependencies: \
   /Users/chengtai/Documents/2014/MOTR/modules/beta/beta/../Eigen/src/Eigenvalues/ComplexEigenSolver.h \
   /Users/chengtai/Documents/2014/MOTR/modules/beta/beta/../Eigen/src/Eigenvalues/RealQZ.h \
   /Users/chengtai/Documents/2014/MOTR/modules/beta/beta/../Eigen/src/Eigenvalues/GeneralizedEigenSolver.h \
-  /Users/chengtai/Documents/2014/MOTR/modules/beta/beta/../Eigen/src/Eigenvalues/MatrixBaseEigenvalues.h
+  /Users/chengtai/Documents/2014/MOTR/modules/beta/beta/../Eigen/src/Eigenvalues/MatrixBaseEigenvalues.h \
+  /Users/chengtai/Documents/2014/MOTR/modules/beta/beta/convcore.h

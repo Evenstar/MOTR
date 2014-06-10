@@ -75,14 +75,39 @@ CMakeFiles/EXE.dir/main.cpp.o.provides: CMakeFiles/EXE.dir/main.cpp.o.requires
 
 CMakeFiles/EXE.dir/main.cpp.o.provides.build: CMakeFiles/EXE.dir/main.cpp.o
 
+CMakeFiles/EXE.dir/convcore.cpp.o: CMakeFiles/EXE.dir/flags.make
+CMakeFiles/EXE.dir/convcore.cpp.o: convcore.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/chengtai/Documents/2014/MOTR/modules/beta/beta/CMakeFiles $(CMAKE_PROGRESS_2)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/EXE.dir/convcore.cpp.o"
+	/usr/local/bin/g++-4.8   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/EXE.dir/convcore.cpp.o -c /Users/chengtai/Documents/2014/MOTR/modules/beta/beta/convcore.cpp
+
+CMakeFiles/EXE.dir/convcore.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/EXE.dir/convcore.cpp.i"
+	/usr/local/bin/g++-4.8  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/chengtai/Documents/2014/MOTR/modules/beta/beta/convcore.cpp > CMakeFiles/EXE.dir/convcore.cpp.i
+
+CMakeFiles/EXE.dir/convcore.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/EXE.dir/convcore.cpp.s"
+	/usr/local/bin/g++-4.8  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/chengtai/Documents/2014/MOTR/modules/beta/beta/convcore.cpp -o CMakeFiles/EXE.dir/convcore.cpp.s
+
+CMakeFiles/EXE.dir/convcore.cpp.o.requires:
+.PHONY : CMakeFiles/EXE.dir/convcore.cpp.o.requires
+
+CMakeFiles/EXE.dir/convcore.cpp.o.provides: CMakeFiles/EXE.dir/convcore.cpp.o.requires
+	$(MAKE) -f CMakeFiles/EXE.dir/build.make CMakeFiles/EXE.dir/convcore.cpp.o.provides.build
+.PHONY : CMakeFiles/EXE.dir/convcore.cpp.o.provides
+
+CMakeFiles/EXE.dir/convcore.cpp.o.provides.build: CMakeFiles/EXE.dir/convcore.cpp.o
+
 # Object files for target EXE
 EXE_OBJECTS = \
-"CMakeFiles/EXE.dir/main.cpp.o"
+"CMakeFiles/EXE.dir/main.cpp.o" \
+"CMakeFiles/EXE.dir/convcore.cpp.o"
 
 # External object files for target EXE
 EXE_EXTERNAL_OBJECTS =
 
 EXE: CMakeFiles/EXE.dir/main.cpp.o
+EXE: CMakeFiles/EXE.dir/convcore.cpp.o
 EXE: CMakeFiles/EXE.dir/build.make
 EXE: CMakeFiles/EXE.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --red --bold "Linking CXX executable EXE"
@@ -93,6 +118,7 @@ CMakeFiles/EXE.dir/build: EXE
 .PHONY : CMakeFiles/EXE.dir/build
 
 CMakeFiles/EXE.dir/requires: CMakeFiles/EXE.dir/main.cpp.o.requires
+CMakeFiles/EXE.dir/requires: CMakeFiles/EXE.dir/convcore.cpp.o.requires
 .PHONY : CMakeFiles/EXE.dir/requires
 
 CMakeFiles/EXE.dir/clean:
