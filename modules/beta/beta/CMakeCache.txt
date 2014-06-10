@@ -68,6 +68,51 @@ Beta_BINARY_DIR:STATIC=/Users/chengtai/Documents/2014/MOTR/modules/beta/beta
 //Value Computed by CMake
 Beta_SOURCE_DIR:STATIC=/Users/chengtai/Documents/2014/MOTR/modules/beta/beta
 
+//Boost date_time library (debug)
+Boost_DATE_TIME_LIBRARY_DEBUG:FILEPATH=/usr/local/lib/libboost_date_time-mt.a
+
+//Boost date_time library (release)
+Boost_DATE_TIME_LIBRARY_RELEASE:FILEPATH=/usr/local/lib/libboost_date_time-mt.a
+
+//The directory containing a CMake configuration file for Boost.
+Boost_DIR:PATH=Boost_DIR-NOTFOUND
+
+//Boost filesystem library (debug)
+Boost_FILESYSTEM_LIBRARY_DEBUG:FILEPATH=/usr/local/lib/libboost_filesystem-mt.a
+
+//Boost filesystem library (release)
+Boost_FILESYSTEM_LIBRARY_RELEASE:FILEPATH=/usr/local/lib/libboost_filesystem-mt.a
+
+//Path to a file.
+Boost_INCLUDE_DIR:PATH=/usr/local/include
+
+//Boost library directory
+Boost_LIBRARY_DIR:PATH=/usr/local/lib
+
+//Boost log library (debug)
+Boost_LOG_LIBRARY_DEBUG:FILEPATH=/usr/local/lib/libboost_log-mt.a
+
+//Boost log library (release)
+Boost_LOG_LIBRARY_RELEASE:FILEPATH=/usr/local/lib/libboost_log-mt.a
+
+//Boost log_setup library (debug)
+Boost_LOG_SETUP_LIBRARY_DEBUG:FILEPATH=/usr/local/lib/libboost_log_setup-mt.a
+
+//Boost log_setup library (release)
+Boost_LOG_SETUP_LIBRARY_RELEASE:FILEPATH=/usr/local/lib/libboost_log_setup-mt.a
+
+//Boost system library (debug)
+Boost_SYSTEM_LIBRARY_DEBUG:FILEPATH=/usr/local/lib/libboost_system-mt.a
+
+//Boost system library (release)
+Boost_SYSTEM_LIBRARY_RELEASE:FILEPATH=/usr/local/lib/libboost_system-mt.a
+
+//Boost thread library (debug)
+Boost_THREAD_LIBRARY_DEBUG:FILEPATH=/usr/local/lib/libboost_thread-mt.a
+
+//Boost thread library (release)
+Boost_THREAD_LIBRARY_RELEASE:FILEPATH=/usr/local/lib/libboost_thread-mt.a
+
 //The directory containing a CMake configuration file for CBLAS.
 CBLAS_DIR:PATH=CBLAS_DIR-NOTFOUND
 
@@ -241,6 +286,12 @@ CMAKE_USE_RELATIVE_PATHS:BOOL=OFF
 // Studio IDE projects all commands are done without /nologo.
 CMAKE_VERBOSE_MAKEFILE:BOOL=FALSE
 
+//Value Computed by CMake
+EXE_BINARY_DIR:STATIC=/Users/chengtai/Documents/2014/MOTR/modules/beta/beta
+
+//Value Computed by CMake
+EXE_SOURCE_DIR:STATIC=/Users/chengtai/Documents/2014/MOTR/modules/beta/beta
+
 //Path to a library.
 LAPACK_Accelerate_LIBRARY:FILEPATH=/System/Library/Frameworks/Accelerate.framework
 
@@ -290,6 +341,36 @@ BLAS_scsl_LIBRARY-ADVANCED:INTERNAL=1
 BLAS_sgemm_LIBRARY-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: BLAS_sunperf_LIBRARY
 BLAS_sunperf_LIBRARY-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: Boost_DATE_TIME_LIBRARY_DEBUG
+Boost_DATE_TIME_LIBRARY_DEBUG-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: Boost_DATE_TIME_LIBRARY_RELEASE
+Boost_DATE_TIME_LIBRARY_RELEASE-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: Boost_DIR
+Boost_DIR-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: Boost_FILESYSTEM_LIBRARY_DEBUG
+Boost_FILESYSTEM_LIBRARY_DEBUG-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: Boost_FILESYSTEM_LIBRARY_RELEASE
+Boost_FILESYSTEM_LIBRARY_RELEASE-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: Boost_INCLUDE_DIR
+Boost_INCLUDE_DIR-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: Boost_LIBRARY_DIR
+Boost_LIBRARY_DIR-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: Boost_LOG_LIBRARY_DEBUG
+Boost_LOG_LIBRARY_DEBUG-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: Boost_LOG_LIBRARY_RELEASE
+Boost_LOG_LIBRARY_RELEASE-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: Boost_LOG_SETUP_LIBRARY_DEBUG
+Boost_LOG_SETUP_LIBRARY_DEBUG-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: Boost_LOG_SETUP_LIBRARY_RELEASE
+Boost_LOG_SETUP_LIBRARY_RELEASE-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: Boost_SYSTEM_LIBRARY_DEBUG
+Boost_SYSTEM_LIBRARY_DEBUG-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: Boost_SYSTEM_LIBRARY_RELEASE
+Boost_SYSTEM_LIBRARY_RELEASE-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: Boost_THREAD_LIBRARY_DEBUG
+Boost_THREAD_LIBRARY_DEBUG-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: Boost_THREAD_LIBRARY_RELEASE
+Boost_THREAD_LIBRARY_RELEASE-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_AR
 CMAKE_AR-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_BUILD_TOOL
@@ -435,4 +516,14 @@ LAPACK_Accelerate_WORKS-ADVANCED:INTERNAL=1
 LAPACK_Accelerate_WORKS:INTERNAL=1
 //ADVANCED property for variable: LAPACK_goto2_LIBRARY
 LAPACK_goto2_LIBRARY-ADVANCED:INTERNAL=1
+//Components requested for this build tree.
+_Boost_COMPONENTS_SEARCHED:INTERNAL=date_time;filesystem;log;log_setup;system;thread
+//Last used Boost_INCLUDE_DIR value.
+_Boost_INCLUDE_DIR_LAST:INTERNAL=/usr/local/include
+//Last used Boost_LIBRARY_DIR value.
+_Boost_LIBRARY_DIR_LAST:INTERNAL=/usr/local/lib
+//Last used Boost_USE_MULTITHREADED value.
+_Boost_USE_MULTITHREADED_LAST:INTERNAL=ON
+//Last used Boost_USE_STATIC_LIBS value.
+_Boost_USE_STATIC_LIBS_LAST:INTERNAL=ON
 

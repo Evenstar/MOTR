@@ -19,6 +19,7 @@ int ReverseInt (int i)
     return((int)ch1<<24)+((int)ch2<<16)+((int)ch3<<8)+ch4;
 }
 
+int ReverseInt (int i);
 void ReadMnistPtr(vector<MatType*>& xtrain,
                   vector<MatType*>& ytrain,
                   int NUMBER)

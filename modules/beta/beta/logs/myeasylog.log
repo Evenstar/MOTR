@@ -1,0 +1,42 @@
+10/06/2014 02:13:19,076 DEBUG [default] [chengtai@unknown-host] [int main(int, char**)] [/Users/chengtai/Documents/2014/MOTR/modules/beta/beta/main.cpp:24] Hello, world
+10/06/2014 02:14:18,026 TRACE [default] [int main(int, char**)] [/Users/chengtai/Documents/2014/MOTR/modules/beta/beta/main.cpp:24] Hello, world
+10/06/2014 03:07:40,378 ERROR [default] index out of range
+10/06/2014 03:08:43,763 DEBUG [default] [chengtai@unknown-host] [void InputLayer::SetFilter(const MatType&, int)] [/Users/chengtai/Documents/2014/MOTR/modules/beta/beta/layer.cpp:66] index out of range
+10/06/2014 03:09:33,745 FATAL [default] index out of range
+10/06/2014 03:09:33,745 WARN  [default] Aborting application. Reason: Fatal log at [/Users/chengtai/Documents/2014/MOTR/modules/beta/beta/layer.cpp:66]
+10/06/2014 03:10:26,354 TRACE [default] [void InputLayer::SetFilter(const MatType&, int)] [/Users/chengtai/Documents/2014/MOTR/modules/beta/beta/layer.cpp:66] index out of range
+10/06/2014 03:12:02,046 WARN  [default] index out of range
+10/06/2014 03:12:44,541 DEBUG [default] [chengtai@unknown-host] [void InputLayer::SetFilter(const MatType&, int)] [/Users/chengtai/Documents/2014/MOTR/modules/beta/beta/layer.cpp:66] index out of range
+10/06/2014 03:13:52,688 DEBUG [default] [chengtai@unknown-host] [void InputLayer::SetFilter(const MatType&, int)] [/Users/chengtai/Documents/2014/MOTR/modules/beta/beta/layer.cpp:66] index out of range, not assigned
+10/06/2014 03:16:01,800 DEBUG [default] [chengtai@unknown-host] [void InputLayer::SetFilter(const MatType&, int)] [/Users/chengtai/Documents/2014/MOTR/modules/beta/beta/layer.cpp:77] index out of range, filter not assigned
+10/06/2014 03:16:25,328 DEBUG [default] [chengtai@unknown-host] [void InputLayer::SetFilter(const MatType&, int)] [/Users/chengtai/Documents/2014/MOTR/modules/beta/beta/layer.cpp:77] index out of range, filter not assigned
+10/06/2014 03:16:25,329 INFO  [default] Info for InputLayer
+
+10/06/2014 03:16:40,133 DEBUG [default] [chengtai@unknown-host] [void InputLayer::SetFilter(const MatType&, int)] [/Users/chengtai/Documents/2014/MOTR/modules/beta/beta/layer.cpp:77] index out of range, filter not assigned
+10/06/2014 03:16:40,133 INFO  [default] Info for InputLayer
+10/06/2014 03:18:59,056 DEBUG [default] [chengtai@unknown-host] [void InputLayer::SetFilter(const MatType&, int)] [/Users/chengtai/Documents/2014/MOTR/modules/beta/beta/layer.cpp:77] index out of range, filter not assigned
+10/06/2014 03:18:59,057 DEBUG [default] [chengtai@unknown-host] [void InputLayer::SetFilter(const MatType&, int)] [/Users/chengtai/Documents/2014/MOTR/modules/beta/beta/layer.cpp:77] index out of range, filter not assigned
+10/06/2014 03:18:59,057 DEBUG [default] [chengtai@unknown-host] [void InputLayer::SetFilter(const MatType&, int)] [/Users/chengtai/Documents/2014/MOTR/modules/beta/beta/layer.cpp:77] index out of range, filter not assigned
+10/06/2014 03:18:59,057 DEBUG [default] [chengtai@unknown-host] [void InputLayer::SetFilter(const MatType&, int)] [/Users/chengtai/Documents/2014/MOTR/modules/beta/beta/layer.cpp:77] index out of range, filter not assigned
+10/06/2014 03:18:59,057 DEBUG [default] [chengtai@unknown-host] [void InputLayer::SetFilter(const MatType&, int)] [/Users/chengtai/Documents/2014/MOTR/modules/beta/beta/layer.cpp:77] index out of range, filter not assigned
+10/06/2014 03:18:59,057 DEBUG [default] [chengtai@unknown-host] [void InputLayer::SetFilter(const MatType&, int)] [/Users/chengtai/Documents/2014/MOTR/modules/beta/beta/layer.cpp:77] index out of range, filter not assigned
+10/06/2014 03:18:59,057 DEBUG [default] [chengtai@unknown-host] [void InputLayer::SetFilter(const MatType&, int)] [/Users/chengtai/Documents/2014/MOTR/modules/beta/beta/layer.cpp:77] index out of range, filter not assigned
+10/06/2014 03:18:59,057 DEBUG [default] [chengtai@unknown-host] [void InputLayer::SetFilter(const MatType&, int)] [/Users/chengtai/Documents/2014/MOTR/modules/beta/beta/layer.cpp:77] index out of range, filter not assigned
+10/06/2014 03:18:59,057 DEBUG [default] [chengtai@unknown-host] [void InputLayer::SetFilter(const MatType&, int)] [/Users/chengtai/Documents/2014/MOTR/modules/beta/beta/layer.cpp:77] index out of range, filter not assigned
+10/06/2014 03:18:59,057 DEBUG [default] [chengtai@unknown-host] [void InputLayer::SetFilter(const MatType&, int)] [/Users/chengtai/Documents/2014/MOTR/modules/beta/beta/layer.cpp:77] index out of range, filter not assigned
+10/06/2014 03:18:59,057 DEBUG [default] [chengtai@unknown-host] [void InputLayer::SetFilter(const MatType&, int)] [/Users/chengtai/Documents/2014/MOTR/modules/beta/beta/layer.cpp:77] index out of range, filter not assigned
+10/06/2014 03:18:59,057 DEBUG [default] [chengtai@unknown-host] [void InputLayer::SetFilter(const MatType&, int)] [/Users/chengtai/Documents/2014/MOTR/modules/beta/beta/layer.cpp:77] index out of range, filter not assigned
+10/06/2014 03:19:48,115 DEBUG [default] [chengtai@unknown-host] [void InputLayer::SetFilter(const MatType&, int)] [/Users/chengtai/Documents/2014/MOTR/modules/beta/beta/layer.cpp:78] index out of range, filter not assigned
+10/06/2014 03:19:48,116 DEBUG [default] [chengtai@unknown-host] [void InputLayer::SetFilter(const MatType&, int)] [/Users/chengtai/Documents/2014/MOTR/modules/beta/beta/layer.cpp:78] index out of range, filter not assigned
+10/06/2014 03:19:48,116 DEBUG [default] [chengtai@unknown-host] [void InputLayer::SetFilter(const MatType&, int)] [/Users/chengtai/Documents/2014/MOTR/modules/beta/beta/layer.cpp:78] index out of range, filter not assigned
+10/06/2014 03:19:48,116 DEBUG [default] [chengtai@unknown-host] [void InputLayer::SetFilter(const MatType&, int)] [/Users/chengtai/Documents/2014/MOTR/modules/beta/beta/layer.cpp:78] index out of range, filter not assigned
+10/06/2014 03:19:48,116 DEBUG [default] [chengtai@unknown-host] [void InputLayer::SetFilter(const MatType&, int)] [/Users/chengtai/Documents/2014/MOTR/modules/beta/beta/layer.cpp:78] index out of range, filter not assigned
+10/06/2014 03:19:48,116 DEBUG [default] [chengtai@unknown-host] [void InputLayer::SetFilter(const MatType&, int)] [/Users/chengtai/Documents/2014/MOTR/modules/beta/beta/layer.cpp:78] index out of range, filter not assigned
+10/06/2014 03:19:48,116 DEBUG [default] [chengtai@unknown-host] [void InputLayer::SetFilter(const MatType&, int)] [/Users/chengtai/Documents/2014/MOTR/modules/beta/beta/layer.cpp:78] index out of range, filter not assigned
+10/06/2014 03:19:48,116 DEBUG [default] [chengtai@unknown-host] [void InputLayer::SetFilter(const MatType&, int)] [/Users/chengtai/Documents/2014/MOTR/modules/beta/beta/layer.cpp:78] index out of range, filter not assigned
+10/06/2014 03:19:48,116 DEBUG [default] [chengtai@unknown-host] [void InputLayer::SetFilter(const MatType&, int)] [/Users/chengtai/Documents/2014/MOTR/modules/beta/beta/layer.cpp:78] index out of range, filter not assigned
+10/06/2014 03:19:48,116 DEBUG [default] [chengtai@unknown-host] [void InputLayer::SetFilter(const MatType&, int)] [/Users/chengtai/Documents/2014/MOTR/modules/beta/beta/layer.cpp:78] index out of range, filter not assigned
+10/06/2014 03:19:48,116 DEBUG [default] [chengtai@unknown-host] [void InputLayer::SetFilter(const MatType&, int)] [/Users/chengtai/Documents/2014/MOTR/modules/beta/beta/layer.cpp:78] index out of range, filter not assigned
+10/06/2014 03:19:48,116 DEBUG [default] [chengtai@unknown-host] [void InputLayer::SetFilter(const MatType&, int)] [/Users/chengtai/Documents/2014/MOTR/modules/beta/beta/layer.cpp:78] index out of range, filter not assigned
+10/06/2014 03:22:11,138 FATAL [default] CRASH HANDLED; Application has crashed due to [SIGSEGV] signal
+10/06/2014 03:22:11,139 WARN  [default] Aborting application. Reason: Fatal log at [/Users/chengtai/Documents/2014/MOTR/modules/beta/beta/../easylogging++.h:5237]

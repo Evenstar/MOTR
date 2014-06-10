@@ -4,18 +4,22 @@
 CMakeFiles/EXE.dir/convcore.cpp.o: convcore.cpp
 CMakeFiles/EXE.dir/convcore.cpp.o: convcore.h
 CMakeFiles/EXE.dir/convcore.cpp.o: stdafx.h
+CMakeFiles/EXE.dir/convcore.cpp.o: /Users/chengtai/Documents/2014/MOTR/modules/beta/easylogging++.h
 
 CMakeFiles/EXE.dir/layer.cpp.o: layer.cpp
 CMakeFiles/EXE.dir/layer.cpp.o: layer.h
 CMakeFiles/EXE.dir/layer.cpp.o: stdafx.h
+CMakeFiles/EXE.dir/layer.cpp.o: /Users/chengtai/Documents/2014/MOTR/modules/beta/easylogging++.h
 
 CMakeFiles/EXE.dir/main.cpp.o: convcore.h
 CMakeFiles/EXE.dir/main.cpp.o: layer.h
 CMakeFiles/EXE.dir/main.cpp.o: main.cpp
 CMakeFiles/EXE.dir/main.cpp.o: stdafx.h
 CMakeFiles/EXE.dir/main.cpp.o: utils.h
+CMakeFiles/EXE.dir/main.cpp.o: /Users/chengtai/Documents/2014/MOTR/modules/beta/easylogging++.h
 
 CMakeFiles/EXE.dir/utils.cpp.o: stdafx.h
 CMakeFiles/EXE.dir/utils.cpp.o: utils.cpp
 CMakeFiles/EXE.dir/utils.cpp.o: utils.h
+CMakeFiles/EXE.dir/utils.cpp.o: /Users/chengtai/Documents/2014/MOTR/modules/beta/easylogging++.h
 

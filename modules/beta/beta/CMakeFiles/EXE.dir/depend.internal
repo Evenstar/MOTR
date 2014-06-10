@@ -5,17 +5,21 @@ CMakeFiles/EXE.dir/convcore.cpp.o
  /Users/chengtai/Documents/2014/MOTR/modules/beta/beta/convcore.cpp
  /Users/chengtai/Documents/2014/MOTR/modules/beta/beta/convcore.h
  /Users/chengtai/Documents/2014/MOTR/modules/beta/beta/stdafx.h
+ /Users/chengtai/Documents/2014/MOTR/modules/beta/easylogging++.h
 CMakeFiles/EXE.dir/layer.cpp.o
  /Users/chengtai/Documents/2014/MOTR/modules/beta/beta/layer.cpp
  /Users/chengtai/Documents/2014/MOTR/modules/beta/beta/layer.h
  /Users/chengtai/Documents/2014/MOTR/modules/beta/beta/stdafx.h
+ /Users/chengtai/Documents/2014/MOTR/modules/beta/easylogging++.h
 CMakeFiles/EXE.dir/main.cpp.o
  /Users/chengtai/Documents/2014/MOTR/modules/beta/beta/convcore.h
  /Users/chengtai/Documents/2014/MOTR/modules/beta/beta/layer.h
  /Users/chengtai/Documents/2014/MOTR/modules/beta/beta/main.cpp
  /Users/chengtai/Documents/2014/MOTR/modules/beta/beta/stdafx.h
  /Users/chengtai/Documents/2014/MOTR/modules/beta/beta/utils.h
+ /Users/chengtai/Documents/2014/MOTR/modules/beta/easylogging++.h
 CMakeFiles/EXE.dir/utils.cpp.o
  /Users/chengtai/Documents/2014/MOTR/modules/beta/beta/stdafx.h
  /Users/chengtai/Documents/2014/MOTR/modules/beta/beta/utils.cpp
  /Users/chengtai/Documents/2014/MOTR/modules/beta/beta/utils.h
+ /Users/chengtai/Documents/2014/MOTR/modules/beta/easylogging++.h

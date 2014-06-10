@@ -34,8 +34,16 @@ public:
 
 class InputLayer {
 public:
-    InputLayer(const InputConfig& _cfg):cfg(_cfg){};
+    InputLayer(const InputConfig& _cfg);
     ~InputLayer();
+    inline void SetInput(MatType* ptr){
+        indata=ptr;
+    }
+    
+    ///to avoid memory error, data copy is involved.
+    void SetFilter(const vector<MatType*> &);
+    
+    void SetFilter(const MatType&, int);
     
     void Print();
 public:

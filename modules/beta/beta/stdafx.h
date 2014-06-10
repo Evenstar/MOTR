@@ -16,6 +16,7 @@
 #include <ctime>
 #include <memory>
 #include <armadillo>
+#include "../easylogging++.h"
 typedef arma::mat MatType;
 typedef arma::mat55 FilterType;
 
