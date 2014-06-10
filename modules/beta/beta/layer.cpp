@@ -216,6 +216,7 @@ void ConvLayer::setinput(MatType** data)
 
 void ConvLayer::applyfilter()
 {
+    
     int r=cfg.inputrows-cfg.kernelsize+1;
     int c=cfg.inputcols-cfg.kernelsize+1;
     for(int i=0; i<cfg.noutmaps; i++){

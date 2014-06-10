@@ -30,12 +30,12 @@ int main(int argc, char** argv)
     }
     inputlayer.run();
 
-    ConvlayerConfig convcfg(28,28,4,5,2,2,8,2);
+    ConvlayerConfig convcfg(12,12,8,5,2,2,4,1);
     ConvLayer convlayer(convcfg);
     convlayer.randominit();
     convlayer.setinput(inputlayer.data());
-    convlayer.applyfilter();
-//    cout<<*convlayer.outdata[0]<<endl;
+    convlayer.run();
+    cout<<*convlayer.outdata[0]<<endl;
     for(int i=0; i<xtrain.size();i++){
         delete xtrain[i];
         delete ytrain[i];
