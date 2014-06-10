@@ -12,7 +12,7 @@
 #include "stdafx.h"
 
 ///Load part of the data of the mnist dataset.
-void ReadMnistPtr(vector<MatType*>& xtrain,
+void readmnist(vector<MatType*>& xtrain,
                   vector<MatType*>& ytrain,
                   int NUMBER=1);
 

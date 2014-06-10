@@ -28,7 +28,7 @@ public:
     int kernelsize;
     int stride;
     int side;
-    void Print();
+    void print();
 };
 
 
@@ -36,24 +36,30 @@ class InputLayer {
 public:
     InputLayer(const InputConfig& _cfg);
     ~InputLayer();
-    inline void SetInput(MatType* ptr){
+    inline void setinput(MatType* ptr){
         indata=ptr;
     }
     
     ///to avoid memory error, data copy is involved.
-    void SetFilter(const vector<MatType*> &);
+    void setfilter(const vector<MatType*> &);
     
-    void SetFilter(const MatType&, int);
+    void setfilter(const MatType&, int);
     
-    void Print();
+    void print();
     
-    void applyfilter();
+    void run();
     
-public:
+    ///return the data ptr, dangerous, only used for initialization of next layer.
+    MatType** data() { return &outdata[0]; }
+private:
     MatType*  indata;
     vector<MatType*> outdata;
     vector<MatType*> filter;
     InputConfig cfg;
+    
+private:
+    void applyfilter();
+    void downsample();
 };
 
 #endif

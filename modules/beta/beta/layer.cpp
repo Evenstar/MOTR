@@ -17,7 +17,7 @@ InputLayer::InputLayer(const InputConfig& _cfg)
     }
 }
 
-void InputConfig::Print()
+void InputConfig::print()
 {
     cout<<"inputrows    "<<inputrows<<endl;
     cout<<"inputcols    "<<inputcols<<endl;
@@ -27,10 +27,10 @@ void InputConfig::Print()
     cout<<"side         "<<side<<endl;
 }
 
-void InputLayer::Print()
+void InputLayer::print()
 {
     cout<<"Info for InputLayer";
-    cfg.Print();
+    cfg.print();
     if (filter.empty()){
         cout<<"filter:      empty"<<endl;
     } else {
@@ -52,7 +52,7 @@ void InputLayer::Print()
     if (outdata.empty()){
         cout<<"outdata      empty"<<endl;
     } else {
-        cout<<"outdata:      {";
+        cout<<"outdata:     {";
         for(int i=0; i<outdata.size();i++){
             cout<<"("<<outdata[i]->n_rows<<","
             <<outdata[i]->n_cols<<"),";
@@ -72,14 +72,14 @@ InputLayer::~InputLayer()
     indata=0;
 }
 
-void InputLayer::SetFilter(const vector<MatType*> & _filter)
+void InputLayer::setfilter(const vector<MatType*> & _filter)
 {
     for(int i=0; i<filter.size();i++){
         *filter[i]=*_filter[i];
     }
 }
 
-void InputLayer::SetFilter(const MatType& _mat, int i)
+void InputLayer::setfilter(const MatType& _mat, int i)
 {
     if (i<0 || i>=filter.size()){
         LOG(DEBUG)<<"index out of range, filter not assigned";
@@ -94,4 +94,17 @@ void InputLayer::applyfilter()
     for(int i=0; i<cfg.noutmaps; i++){
         *outdata[i]=Conv2(*indata,*filter[i],"valid");
     }
+}
+
+void InputLayer::downsample()
+{
+    for(int i=0; i<outdata.size();i++){
+        *outdata[i]=maxpooling(*outdata[i], cfg.stride, cfg.side);
+    }
+}
+
+void InputLayer::run()
+{
+    applyfilter();
+    downsample();
 }

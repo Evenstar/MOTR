@@ -20,7 +20,7 @@ int ReverseInt (int i)
 }
 
 int ReverseInt (int i);
-void ReadMnistPtr(vector<MatType*>& xtrain,
+void readmnist(vector<MatType*>& xtrain,
                   vector<MatType*>& ytrain,
                   int NUMBER)
 {
