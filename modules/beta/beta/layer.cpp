@@ -141,6 +141,9 @@ void ConvlayerConfig::print()
 ConvLayer::ConvLayer(const ConvlayerConfig& _cfg)
 {
     cfg=_cfg;
+    for(int i=0; i<cfg.ninmaps; i++){
+        indata.push_back(new MatType);
+    }
     for(int i=0; i<cfg.noutmaps; i++)    {
         outdata.push_back(new MatType);
         vector<MatType*> temp;
@@ -204,8 +207,40 @@ void ConvLayer::randominit()
     }
 }
 
+void ConvLayer::setinput(MatType** data)
+{
+    for(int i=0; i<indata.size(); i++){
+        indata[i]=data[i];
+    }
+}
+
+void ConvLayer::applyfilter()
+{
+    int r=cfg.inputrows-cfg.kernelsize+1;
+    int c=cfg.inputcols-cfg.kernelsize+1;
+    for(int i=0; i<cfg.noutmaps; i++){
+        MatType temp(r,c);
+        temp.zeros();
+        for(int j=0; j<cfg.inmap[i].size();j++){
+            temp += Conv2(*indata[cfg.inmap[i][j]], *filter[i][j],"valid");
+        }
+        *outdata[i]=temp;
+    }
+}
 
 
+void ConvLayer::downsample()
+{
+    for(int i=0; i<outdata.size();i++){
+        *outdata[i]=maxpooling(*outdata[i], cfg.stride, cfg.side);
+    }
+}
+
+void ConvLayer::run()
+{
+    applyfilter();
+    downsample();
+}
 
 
 

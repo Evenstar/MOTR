@@ -95,11 +95,18 @@ public:
     
     void randominit();
     
-private:
+    void setinput(MatType**);
+    
+    void run();
+    
+public:
     vector<MatType*> indata;
     vector<MatType*> outdata;
     vector<vector<MatType*> > filter;
     ConvlayerConfig cfg;
+    
+    void applyfilter();    
+    void downsample();
 };
 
 

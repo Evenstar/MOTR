@@ -64,3 +64,9 @@
 10/06/2014 17:05:04,414 DEBUG [default] [chengtai@unknown-host] [void ConvLayer::setfilter(const MatType&, int, int)] [/Users/chengtai/Documents/2014/MOTR/modules/beta/beta/layer.cpp:187] index out of range, filter not assigned
 10/06/2014 17:05:04,414 DEBUG [default] [chengtai@unknown-host] [void ConvLayer::setfilter(const MatType&, int, int)] [/Users/chengtai/Documents/2014/MOTR/modules/beta/beta/layer.cpp:187] index out of range, filter not assigned
 10/06/2014 17:05:04,414 DEBUG [default] [chengtai@unknown-host] [void ConvLayer::setfilter(const MatType&, int, int)] [/Users/chengtai/Documents/2014/MOTR/modules/beta/beta/layer.cpp:187] index out of range, filter not assigned
+10/06/2014 18:03:16,348 FATAL [default] CRASH HANDLED; Application has crashed due to [SIGSEGV] signal
+10/06/2014 18:03:16,352 WARN  [default] Aborting application. Reason: Fatal log at [/Users/chengtai/Documents/2014/MOTR/modules/beta/beta/../easylogging++.h:5237]
+10/06/2014 18:09:04,205 FATAL [default] CRASH HANDLED; Application has crashed due to [SIGSEGV] signal
+10/06/2014 18:09:04,206 WARN  [default] Aborting application. Reason: Fatal log at [/Users/chengtai/Documents/2014/MOTR/modules/beta/beta/../easylogging++.h:5237]
+10/06/2014 18:09:20,404 FATAL [default] CRASH HANDLED; Application has crashed due to [SIGSEGV] signal
+10/06/2014 18:09:20,405 WARN  [default] Aborting application. Reason: Fatal log at [/Users/chengtai/Documents/2014/MOTR/modules/beta/beta/../easylogging++.h:5237]
