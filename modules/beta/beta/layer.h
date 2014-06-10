@@ -62,4 +62,48 @@ private:
     void downsample();
 };
 
+
+class ConvlayerConfig : public InputConfig {
+public:
+    ConvlayerConfig(int _inputrows=0, int _inputcols=0,
+                    int _noutmaps=0, int _kernelsize=0,
+                    int _stride=0, int _side=0,
+                    int _ninmaps=0, int _permaps=0):
+    InputConfig(_inputrows,_inputcols,_noutmaps,
+                _kernelsize,_stride,_side), ninmaps(_ninmaps),permaps(_permaps)
+    {
+        setdefaultinmaps();
+    }
+    
+    int ninmaps;
+    int permaps;
+    vector<vector<int> > inmap;
+    void print();
+private:
+    void setdefaultinmaps();
+};
+
+class ConvLayer {
+public:
+    ConvLayer(const ConvlayerConfig& _cfg);
+    
+    void print();
+    
+    void setfilter(const MatType&, int i, int j);
+    
+    void setfilter(const vector<vector<MatType*> >& _filter);
+    
+    void randominit();
+    
+private:
+    vector<MatType*> indata;
+    vector<MatType*> outdata;
+    vector<vector<MatType*> > filter;
+    ConvlayerConfig cfg;
+};
+
+
+
+
+
 #endif

@@ -10,6 +10,12 @@
 stdafx.h
 /Users/chengtai/Documents/2014/MOTR/modules/beta/beta/stdafx.h
 
+/Users/chengtai/Documents/2014/MOTR/modules/beta/beta/layer.cpp
+layer.h
+/Users/chengtai/Documents/2014/MOTR/modules/beta/beta/layer.h
+convcore.h
+/Users/chengtai/Documents/2014/MOTR/modules/beta/beta/convcore.h
+
 /Users/chengtai/Documents/2014/MOTR/modules/beta/beta/layer.h
 stdafx.h
 /Users/chengtai/Documents/2014/MOTR/modules/beta/beta/stdafx.h

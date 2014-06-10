@@ -29,7 +29,7 @@ void InputConfig::print()
 
 void InputLayer::print()
 {
-    cout<<"Info for InputLayer";
+    cout<<"Info for InputLayer"<<endl;
     cfg.print();
     if (filter.empty()){
         cout<<"filter:      empty"<<endl;
@@ -37,7 +37,7 @@ void InputLayer::print()
         cout<<"filter:      {";
         for(int i=0; i<filter.size();i++){
             cout<<"("<<filter[i]->n_rows<<","
-                <<filter[i]->n_cols<<"),";
+            <<filter[i]->n_cols<<"),";
         }
         cout<<"}"<<endl;
     }
@@ -108,3 +108,111 @@ void InputLayer::run()
     applyfilter();
     downsample();
 }
+
+void ConvlayerConfig::setdefaultinmaps()
+{
+    for(int i=0; i<noutmaps; i++)
+    {
+        vector<int> a(permaps);
+        inmap.push_back(a);
+    }
+}
+
+void ConvlayerConfig::print()
+{
+    InputConfig::print();
+    cout<<"permaps:     "<<permaps<<endl;
+    cout<<"ninmaps      "<<ninmaps<<endl;
+    if (inmap.empty()) {
+        cout<<"inmap:      empty"<<endl;
+    } else {
+        cout<<"inmap:      {";
+        for(int i=0; i<inmap.size(); i++){
+            cout<<"("<<i<<":";
+            for(int j=0; j<inmap[i].size(); j++){
+                cout<<inmap[i][j]<<",";
+            }
+            cout<<"),";
+        }
+        cout<<"}"<<endl;
+    }
+}
+
+ConvLayer::ConvLayer(const ConvlayerConfig& _cfg)
+{
+    cfg=_cfg;
+    for(int i=0; i<cfg.noutmaps; i++)    {
+        outdata.push_back(new MatType);
+        vector<MatType*> temp;
+        for(int j=0; j<cfg.permaps; j++) {
+            temp.push_back(new MatType);
+        }
+        filter.push_back(temp);
+    }
+}
+
+void ConvLayer::print()
+{
+    cout<<"Info for ConvLayer"<<endl;
+    cfg.print();
+    if (filter.empty()){
+        cout<<"filter:      empty"<<endl;
+    } else {
+        cout<<"filter:      {";
+        for(int i=0; i<filter.size();i++){
+            cout<<"["<<i<<":";
+            for(int j=0; j<filter[i].size();j++){
+                cout<<"("<<filter[i][j]->n_rows<<","<<filter[i][j]->n_cols<<"),";
+            }
+            cout<<"],";
+        }
+        cout<<"}"<<endl;
+    }
+    
+}
+
+void ConvLayer::setfilter(const vector<vector<MatType*> >& _filter)
+{
+    for(int i=0; i<filter.size(); i++){
+        for(int j=0; j<filter[i].size(); j++) {
+            *filter[i][j]=*_filter[i][j];
+        }
+    }
+}
+
+void ConvLayer::setfilter(const MatType& mat, int i, int j)
+{
+    if( i<0 || i>=filter.size() || j<0 || j>=filter[0].size()) {
+        LOG(DEBUG)<<"index out of range, filter not assigned";
+        return ;
+    } else {
+        *filter[i][j]=mat;
+    }
+}
+
+void ConvLayer::randominit()
+{
+    for(int i=0; i<filter.size(); i++) {
+        for(int j=0; j<cfg.permaps; j++){
+            int id=rand()%cfg.ninmaps;
+            cfg.inmap[i][j]=id;
+        }
+        for(int j=0; j<filter[i].size(); j++) {
+            MatType mat=randu<MatType>(cfg.kernelsize,cfg.kernelsize);
+            *filter[i][j]=mat;
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
