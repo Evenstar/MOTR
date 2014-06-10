@@ -1,7 +1,7 @@
 cmake_minimum_required(VERSION 2.8)
 project( Beta )
 SET(CMAKE_CXX_FLAGS "-std=c++0x -O3 -larmadillo" )
-add_executable( EXE main.cpp convcore.cpp)
+add_executable( EXE main.cpp convcore.cpp layer.cpp utils.cpp)
 find_package(armadillo REQUIRED)
 find_package(BLAS)
 if (BLAS_FOUND)

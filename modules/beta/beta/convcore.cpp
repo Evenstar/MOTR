@@ -7,6 +7,7 @@
 //
 
 #include "convcore.h"
+
 using namespace arma;
 MatType Conv2_Valid(const MatType& a, const MatType& b)
 {

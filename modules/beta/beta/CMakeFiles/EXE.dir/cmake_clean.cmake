@@ -1,6 +1,8 @@
 FILE(REMOVE_RECURSE
   "CMakeFiles/EXE.dir/main.cpp.o"
   "CMakeFiles/EXE.dir/convcore.cpp.o"
+  "CMakeFiles/EXE.dir/layer.cpp.o"
+  "CMakeFiles/EXE.dir/utils.cpp.o"
   "EXE.pdb"
   "EXE"
 )

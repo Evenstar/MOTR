@@ -17,5 +17,8 @@
 #include <memory>
 #include <armadillo>
 typedef arma::mat MatType;
+typedef arma::mat55 FilterType;
 
+using namespace std;
+using namespace arma;
 #endif

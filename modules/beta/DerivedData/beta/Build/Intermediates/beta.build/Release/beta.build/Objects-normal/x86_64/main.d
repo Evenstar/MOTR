@@ -1,5 +1,7 @@
 dependencies: \
   /Users/chengtai/Documents/2014/MOTR/modules/beta/beta/main.cpp \
+  /Users/chengtai/Documents/2014/MOTR/modules/beta/beta/convcore.h \
+  /Users/chengtai/Documents/2014/MOTR/modules/beta/beta/stdafx.h \
   /usr/local/include/armadillo \
   /usr/local/include/armadillo_bits/config.hpp \
   /usr/local/include/armadillo_bits/compiler_setup.hpp \
@@ -410,5 +412,5 @@ dependencies: \
   /usr/local/include/armadillo_bits/spglue_minus_meat.hpp \
   /usr/local/include/armadillo_bits/spglue_times_meat.hpp \
   /usr/local/include/armadillo_bits/compiler_setup_post.hpp \
-  /Users/chengtai/Documents/2014/MOTR/modules/beta/beta/convcore.h \
-  /Users/chengtai/Documents/2014/MOTR/modules/beta/beta/stdafx.h
+  /Users/chengtai/Documents/2014/MOTR/modules/beta/beta/utils.h \
+  /Users/chengtai/Documents/2014/MOTR/modules/beta/beta/layer.h

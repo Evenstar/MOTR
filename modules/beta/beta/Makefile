@@ -138,6 +138,30 @@ convcore.cpp.s:
 	$(MAKE) -f CMakeFiles/EXE.dir/build.make CMakeFiles/EXE.dir/convcore.cpp.s
 .PHONY : convcore.cpp.s
 
+layer.o: layer.cpp.o
+.PHONY : layer.o
+
+# target to build an object file
+layer.cpp.o:
+	$(MAKE) -f CMakeFiles/EXE.dir/build.make CMakeFiles/EXE.dir/layer.cpp.o
+.PHONY : layer.cpp.o
+
+layer.i: layer.cpp.i
+.PHONY : layer.i
+
+# target to preprocess a source file
+layer.cpp.i:
+	$(MAKE) -f CMakeFiles/EXE.dir/build.make CMakeFiles/EXE.dir/layer.cpp.i
+.PHONY : layer.cpp.i
+
+layer.s: layer.cpp.s
+.PHONY : layer.s
+
+# target to generate assembly for a file
+layer.cpp.s:
+	$(MAKE) -f CMakeFiles/EXE.dir/build.make CMakeFiles/EXE.dir/layer.cpp.s
+.PHONY : layer.cpp.s
+
 main.o: main.cpp.o
 .PHONY : main.o
 
@@ -162,6 +186,30 @@ main.cpp.s:
 	$(MAKE) -f CMakeFiles/EXE.dir/build.make CMakeFiles/EXE.dir/main.cpp.s
 .PHONY : main.cpp.s
 
+utils.o: utils.cpp.o
+.PHONY : utils.o
+
+# target to build an object file
+utils.cpp.o:
+	$(MAKE) -f CMakeFiles/EXE.dir/build.make CMakeFiles/EXE.dir/utils.cpp.o
+.PHONY : utils.cpp.o
+
+utils.i: utils.cpp.i
+.PHONY : utils.i
+
+# target to preprocess a source file
+utils.cpp.i:
+	$(MAKE) -f CMakeFiles/EXE.dir/build.make CMakeFiles/EXE.dir/utils.cpp.i
+.PHONY : utils.cpp.i
+
+utils.s: utils.cpp.s
+.PHONY : utils.s
+
+# target to generate assembly for a file
+utils.cpp.s:
+	$(MAKE) -f CMakeFiles/EXE.dir/build.make CMakeFiles/EXE.dir/utils.cpp.s
+.PHONY : utils.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -174,9 +222,15 @@ help:
 	@echo "... convcore.o"
 	@echo "... convcore.i"
 	@echo "... convcore.s"
+	@echo "... layer.o"
+	@echo "... layer.i"
+	@echo "... layer.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
+	@echo "... utils.o"
+	@echo "... utils.i"
+	@echo "... utils.s"
 .PHONY : help
 
 

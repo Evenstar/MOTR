@@ -2,9 +2,10 @@ Tbeta
 v6
 r1
 cCheck dependencies
-cCompileC DerivedData/beta/Build/Intermediates/beta.build/Release/beta.build/Objects-normal/x86_64/main.o /Users/chengtai/Documents/2014/MOTR/modules/beta/beta/main.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler
 cCompileC DerivedData/beta/Build/Intermediates/beta.build/Release/beta.build/Objects-normal/x86_64/convcore.o /Users/chengtai/Documents/2014/MOTR/modules/beta/beta/convcore.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler
 cCompileC DerivedData/beta/Build/Intermediates/beta.build/Release/beta.build/Objects-normal/x86_64/layer.o /Users/chengtai/Documents/2014/MOTR/modules/beta/beta/layer.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC DerivedData/beta/Build/Intermediates/beta.build/Release/beta.build/Objects-normal/x86_64/utils.o /Users/chengtai/Documents/2014/MOTR/modules/beta/beta/utils.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC DerivedData/beta/Build/Intermediates/beta.build/Release/beta.build/Objects-normal/x86_64/main.o /Users/chengtai/Documents/2014/MOTR/modules/beta/beta/main.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler
 cLd /Users/chengtai/Documents/2014/MOTR/modules/beta/DerivedData/beta/Build/Products/Release/beta normal x86_64
 cGenerateDSYMFile /Users/chengtai/Documents/2014/MOTR/modules/beta/DerivedData/beta/Build/Products/Release/beta.dSYM /Users/chengtai/Documents/2014/MOTR/modules/beta/DerivedData/beta/Build/Products/Release/beta
 
@@ -339,28 +340,32 @@ t1400787237
 s6000
 
 N/Users/chengtai/Documents/2014/MOTR/modules/beta/DerivedData/beta/Build/Intermediates/beta.build/Release/beta.build/Objects-normal/x86_64/beta.LinkFileList
-c000000005395FB0200000000000001B8
-t1402338050
-s440
+c0000000053969256000000000000024A
+t1402376790
+s586
 
 N/Users/chengtai/Documents/2014/MOTR/modules/beta/DerivedData/beta/Build/Intermediates/beta.build/Release/beta.build/Objects-normal/x86_64/convcore.o
-t1402368743
-s375196
+t1402377873
+s375212
 
 N/Users/chengtai/Documents/2014/MOTR/modules/beta/DerivedData/beta/Build/Intermediates/beta.build/Release/beta.build/Objects-normal/x86_64/layer.o
-t1402368743
-s271640
+t1402377872
+s271656
 
 N/Users/chengtai/Documents/2014/MOTR/modules/beta/DerivedData/beta/Build/Intermediates/beta.build/Release/beta.build/Objects-normal/x86_64/main.o
-t1402368743
-s278312
+t1402378506
+s250796
+
+N/Users/chengtai/Documents/2014/MOTR/modules/beta/DerivedData/beta/Build/Intermediates/beta.build/Release/beta.build/Objects-normal/x86_64/utils.o
+t1402377892
+s367936
 
 N/Users/chengtai/Documents/2014/MOTR/modules/beta/DerivedData/beta/Build/Products/Release/beta
-t1402368743
-s49620
+t1402378506
+s66776
 
 N/Users/chengtai/Documents/2014/MOTR/modules/beta/DerivedData/beta/Build/Products/Release/beta.dSYM
-t1402368697
+t1402378352
 s102
 
 N/Users/chengtai/Documents/2014/MOTR/modules/beta/Eigen/Cholesky
@@ -1119,14 +1124,14 @@ t1393428918
 s2617
 
 N/Users/chengtai/Documents/2014/MOTR/modules/beta/beta/convcore.cpp
-c000000005396608E00000000000004D0
-t1402364046
-s1232
+c000000005396749800000000000004D1
+t1402369176
+s1233
 
 N/Users/chengtai/Documents/2014/MOTR/modules/beta/beta/convcore.h
-c00000000539601EB0000000000000154
-t1402339819
-s340
+c00000000539692820000000000000156
+t1402376834
+s342
 
 N/Users/chengtai/Documents/2014/MOTR/modules/beta/beta/layer.cpp
 c000000005395F7E700000000000002BE
@@ -1134,19 +1139,29 @@ t1402337255
 s702
 
 N/Users/chengtai/Documents/2014/MOTR/modules/beta/beta/layer.h
-c00000000539663370000000000000375
-t1402364727
-s885
+c00000000539675730000000000000376
+t1402369395
+s886
 
 N/Users/chengtai/Documents/2014/MOTR/modules/beta/beta/main.cpp
-c00000000539671ED000000000000017B
-t1402368493
-s379
+c000000005396990700000000000001D3
+t1402378503
+s467
 
 N/Users/chengtai/Documents/2014/MOTR/modules/beta/beta/stdafx.h
-c00000000539670860000000000000150
-t1402368134
-s336
+c000000005396967B000000000000019B
+t1402377851
+s411
+
+N/Users/chengtai/Documents/2014/MOTR/modules/beta/beta/utils.cpp
+c000000005396969D00000000000007C9
+t1402377885
+s1993
+
+N/Users/chengtai/Documents/2014/MOTR/modules/beta/beta/utils.h
+c000000005396968D0000000000000130
+t1402377869
+s304
 
 N/usr/local/include/H5ACpublic.h
 c000000005344C065000000000000583C
@@ -3287,9 +3302,12 @@ r0
 CBuild AST from /Users/chengtai/Documents/2014/MOTR/modules/beta/beta/main.cpp
 r0
 
+CBuild AST from /Users/chengtai/Documents/2014/MOTR/modules/beta/beta/utils.cpp
+r0
+
 CCheck dependencies
 r0
-lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection18"Check dependencies18"Check dependencies55ddaf65aa46b941^2bc2b565aa46b941^---0#1#1#--18"Check dependencies36"D959F57A-0399-45E3-9B2D-7942B38EC379-
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection18"Check dependencies18"Check dependencies8a57cd88d046b941^4af1cd88d046b941^---0#1#1#--18"Check dependencies36"518281E3-485B-484A-8505-2199FC0134DB-
 
 CCompileC DerivedData/beta/Build/Intermediates/beta.build/Release/beta.build/Objects-normal/x86_64/convcore.o /Users/chengtai/Documents/2014/MOTR/modules/beta/beta/convcore.cpp normal x86_64 c++ com.apple.compilers.gcc.4_8
 s424061442.867765
@@ -3306,8 +3324,8 @@ lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection74"Compile
 b7245929D-F6C3-463D-91E9-DBA00D768148
 
 CCompileC DerivedData/beta/Build/Intermediates/beta.build/Release/beta.build/Objects-normal/x86_64/convcore.o /Users/chengtai/Documents/2014/MOTR/modules/beta/beta/convcore.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler
-s424061541.717347
-e424061543.639971
+s424070670.520777
+e424070673.162380
 r1
 xCompileC
 xDerivedData/beta/Build/Intermediates/beta.build/Release/beta.build/Objects-normal/x86_64/convcore.o
@@ -3745,8 +3763,8 @@ d/usr/local/include/armadillo_bits/spglue_plus_meat.hpp
 d/usr/local/include/armadillo_bits/spglue_minus_meat.hpp
 d/usr/local/include/armadillo_bits/spglue_times_meat.hpp
 d/usr/local/include/armadillo_bits/compiler_setup_post.hpp
-lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection74"Compile /Users/chengtai/Documents/2014/MOTR/modules/beta/beta/convcore.cpp188"CompileC DerivedData/beta/Build/Intermediates/beta.build/Release/beta.build/Objects-normal/x86_64/convcore.o beta/convcore.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler13bab765aa46b941^aad5a367aa46b941^---0#0#1#-19%DVTDocumentLocation2@82"file://localhost/Users/chengtai/Documents/2014/MOTR/modules/beta/beta/convcore.cpp0000000000000000^3164"CompileC DerivedData/beta/Build/Intermediates/beta.build/Release/beta.build/Objects-normal/x86_64/convcore.o beta/convcore.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/chengtai/Documents/2014/MOTR/modules/beta    export LANG=en_US.US-ASCII    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x c++ -arch x86_64 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -std=c++11 -stdlib=libc++ -fmodules -fmodules-cache-path=/Users/chengtai/Documents/2014/MOTR/modules/beta/DerivedData/ModuleCache -Wno-trigraphs -fpascal-strings -Os -Wno-missing-field-initializers -Wno-missing-prototypes -Werror=return-type -Werror=deprecated-objc-isa-usage -Werror=objc-root-class -Wno-non-virtual-dtor -Wno-overloaded-virtual -Wno-exit-time-destructors -Wno-missing-braces -Wparentheses -Wswitch -Wunused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wconditional-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wbool-conversion -Wenum-conversion -Wshorten-64-to-32 -Wno-newline-eof -Wno-c++11-extensions -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk -fasm-blocks -fstrict-aliasing -Wdeprecated-declarations -Winvalid-offsetof -mmacosx-version-min=10.8 -g -fvisibility=hidden -fvisibility-inlines-hidden -Wno-sign-conversion -iquote /Users/chengtai/Documents/2014/MOTR/modules/beta/DerivedData/beta/Build/Intermediates/beta.build/Release/beta.build/beta-generated-files.hmap -I/Users/chengtai/Documents/2014/MOTR/modules/beta/DerivedData/beta/Build/Intermediates/beta.build/Release/beta.build/beta-own-target-headers.hmap -I/Users/chengtai/Documents/2014/MOTR/modules/beta/DerivedData/beta/Build/Intermediates/beta.build/Release/beta.build/beta-all-target-headers.hmap -iquote /Users/chengtai/Documents/2014/MOTR/modules/beta/DerivedData/beta/Build/Intermediates/beta.build/Release/beta.build/beta-project-headers.hmap -I/Users/chengtai/Documents/2014/MOTR/modules/beta/DerivedData/beta/Build/Products/Release/include -I/usr/local/include -I/Users/chengtai/Documents/2014/MOTR/modules/beta/DerivedData/beta/Build/Intermediates/beta.build/Release/beta.build/DerivedSources/x86_64 -I/Users/chengtai/Documents/2014/MOTR/modules/beta/DerivedData/beta/Build/Intermediates/beta.build/Release/beta.build/DerivedSources -F/Users/chengtai/Documents/2014/MOTR/modules/beta/DerivedData/beta/Build/Products/Release -MMD -MT dependencies -MF /Users/chengtai/Documents/2014/MOTR/modules/beta/DerivedData/beta/Build/Intermediates/beta.build/Release/beta.build/Objects-normal/x86_64/convcore.d --serialize-diagnostics /Users/chengtai/Documents/2014/MOTR/modules/beta/DerivedData/beta/Build/Intermediates/beta.build/Release/beta.build/Objects-normal/x86_64/convcore.dia -c /Users/chengtai/Documents/2014/MOTR/modules/beta/beta/convcore.cpp -o /Users/chengtai/Documents/2014/MOTR/modules/beta/DerivedData/beta/Build/Intermediates/beta.build/Release/beta.build/Objects-normal/x86_64/convcore.o36"DDC868EE-CECE-4DF5-A9FB-C03546AC858D-
-b028702A7-3B10-4EAC-9969-D52794EA54AF
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection74"Compile /Users/chengtai/Documents/2014/MOTR/modules/beta/beta/convcore.cpp188"CompileC DerivedData/beta/Build/Intermediates/beta.build/Release/beta.build/Objects-normal/x86_64/convcore.o beta/convcore.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compilera19f850ece46b941^b8922911ce46b941^---0#0#1#-19%DVTDocumentLocation2@82"file://localhost/Users/chengtai/Documents/2014/MOTR/modules/beta/beta/convcore.cpp0000000000000000^3164"CompileC DerivedData/beta/Build/Intermediates/beta.build/Release/beta.build/Objects-normal/x86_64/convcore.o beta/convcore.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/chengtai/Documents/2014/MOTR/modules/beta    export LANG=en_US.US-ASCII    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x c++ -arch x86_64 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -std=c++11 -stdlib=libc++ -fmodules -fmodules-cache-path=/Users/chengtai/Documents/2014/MOTR/modules/beta/DerivedData/ModuleCache -Wno-trigraphs -fpascal-strings -Os -Wno-missing-field-initializers -Wno-missing-prototypes -Werror=return-type -Werror=deprecated-objc-isa-usage -Werror=objc-root-class -Wno-non-virtual-dtor -Wno-overloaded-virtual -Wno-exit-time-destructors -Wno-missing-braces -Wparentheses -Wswitch -Wunused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wconditional-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wbool-conversion -Wenum-conversion -Wshorten-64-to-32 -Wno-newline-eof -Wno-c++11-extensions -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk -fasm-blocks -fstrict-aliasing -Wdeprecated-declarations -Winvalid-offsetof -mmacosx-version-min=10.8 -g -fvisibility=hidden -fvisibility-inlines-hidden -Wno-sign-conversion -iquote /Users/chengtai/Documents/2014/MOTR/modules/beta/DerivedData/beta/Build/Intermediates/beta.build/Release/beta.build/beta-generated-files.hmap -I/Users/chengtai/Documents/2014/MOTR/modules/beta/DerivedData/beta/Build/Intermediates/beta.build/Release/beta.build/beta-own-target-headers.hmap -I/Users/chengtai/Documents/2014/MOTR/modules/beta/DerivedData/beta/Build/Intermediates/beta.build/Release/beta.build/beta-all-target-headers.hmap -iquote /Users/chengtai/Documents/2014/MOTR/modules/beta/DerivedData/beta/Build/Intermediates/beta.build/Release/beta.build/beta-project-headers.hmap -I/Users/chengtai/Documents/2014/MOTR/modules/beta/DerivedData/beta/Build/Products/Release/include -I/usr/local/include -I/Users/chengtai/Documents/2014/MOTR/modules/beta/DerivedData/beta/Build/Intermediates/beta.build/Release/beta.build/DerivedSources/x86_64 -I/Users/chengtai/Documents/2014/MOTR/modules/beta/DerivedData/beta/Build/Intermediates/beta.build/Release/beta.build/DerivedSources -F/Users/chengtai/Documents/2014/MOTR/modules/beta/DerivedData/beta/Build/Products/Release -MMD -MT dependencies -MF /Users/chengtai/Documents/2014/MOTR/modules/beta/DerivedData/beta/Build/Intermediates/beta.build/Release/beta.build/Objects-normal/x86_64/convcore.d --serialize-diagnostics /Users/chengtai/Documents/2014/MOTR/modules/beta/DerivedData/beta/Build/Intermediates/beta.build/Release/beta.build/Objects-normal/x86_64/convcore.dia -c /Users/chengtai/Documents/2014/MOTR/modules/beta/beta/convcore.cpp -o /Users/chengtai/Documents/2014/MOTR/modules/beta/DerivedData/beta/Build/Intermediates/beta.build/Release/beta.build/Objects-normal/x86_64/convcore.o36"74166D9F-D188-4CEF-ABF2-E248F8C29658-
+bAB98BB4D-EECD-45E8-AEC8-BDC28A50DDF6
 
 CCompileC DerivedData/beta/Build/Intermediates/beta.build/Release/beta.build/Objects-normal/x86_64/layer.o /Users/chengtai/Documents/2014/MOTR/modules/beta/beta/layer.cpp normal x86_64 c++ com.apple.compilers.gcc.4_8
 s424061442.867767
@@ -3763,8 +3781,8 @@ lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection71"Compile
 b7245929D-F6C3-463D-91E9-DBA00D768148
 
 CCompileC DerivedData/beta/Build/Intermediates/beta.build/Release/beta.build/Objects-normal/x86_64/layer.o /Users/chengtai/Documents/2014/MOTR/modules/beta/beta/layer.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler
-s424061541.717352
-e424061543.428983
+s424070670.520783
+e424070672.861231
 r1
 xCompileC
 xDerivedData/beta/Build/Intermediates/beta.build/Release/beta.build/Objects-normal/x86_64/layer.o
@@ -4202,8 +4220,8 @@ d/usr/local/include/armadillo_bits/spglue_plus_meat.hpp
 d/usr/local/include/armadillo_bits/spglue_minus_meat.hpp
 d/usr/local/include/armadillo_bits/spglue_times_meat.hpp
 d/usr/local/include/armadillo_bits/compiler_setup_post.hpp
-lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection71"Compile /Users/chengtai/Documents/2014/MOTR/modules/beta/beta/layer.cpp182"CompileC DerivedData/beta/Build/Intermediates/beta.build/Release/beta.build/Objects-normal/x86_64/layer.o beta/layer.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler45bab765aa46b941^89d36d67aa46b941^---0#0#1#-19%DVTDocumentLocation2@79"file://localhost/Users/chengtai/Documents/2014/MOTR/modules/beta/beta/layer.cpp0000000000000000^3146"CompileC DerivedData/beta/Build/Intermediates/beta.build/Release/beta.build/Objects-normal/x86_64/layer.o beta/layer.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/chengtai/Documents/2014/MOTR/modules/beta    export LANG=en_US.US-ASCII    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x c++ -arch x86_64 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -std=c++11 -stdlib=libc++ -fmodules -fmodules-cache-path=/Users/chengtai/Documents/2014/MOTR/modules/beta/DerivedData/ModuleCache -Wno-trigraphs -fpascal-strings -Os -Wno-missing-field-initializers -Wno-missing-prototypes -Werror=return-type -Werror=deprecated-objc-isa-usage -Werror=objc-root-class -Wno-non-virtual-dtor -Wno-overloaded-virtual -Wno-exit-time-destructors -Wno-missing-braces -Wparentheses -Wswitch -Wunused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wconditional-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wbool-conversion -Wenum-conversion -Wshorten-64-to-32 -Wno-newline-eof -Wno-c++11-extensions -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk -fasm-blocks -fstrict-aliasing -Wdeprecated-declarations -Winvalid-offsetof -mmacosx-version-min=10.8 -g -fvisibility=hidden -fvisibility-inlines-hidden -Wno-sign-conversion -iquote /Users/chengtai/Documents/2014/MOTR/modules/beta/DerivedData/beta/Build/Intermediates/beta.build/Release/beta.build/beta-generated-files.hmap -I/Users/chengtai/Documents/2014/MOTR/modules/beta/DerivedData/beta/Build/Intermediates/beta.build/Release/beta.build/beta-own-target-headers.hmap -I/Users/chengtai/Documents/2014/MOTR/modules/beta/DerivedData/beta/Build/Intermediates/beta.build/Release/beta.build/beta-all-target-headers.hmap -iquote /Users/chengtai/Documents/2014/MOTR/modules/beta/DerivedData/beta/Build/Intermediates/beta.build/Release/beta.build/beta-project-headers.hmap -I/Users/chengtai/Documents/2014/MOTR/modules/beta/DerivedData/beta/Build/Products/Release/include -I/usr/local/include -I/Users/chengtai/Documents/2014/MOTR/modules/beta/DerivedData/beta/Build/Intermediates/beta.build/Release/beta.build/DerivedSources/x86_64 -I/Users/chengtai/Documents/2014/MOTR/modules/beta/DerivedData/beta/Build/Intermediates/beta.build/Release/beta.build/DerivedSources -F/Users/chengtai/Documents/2014/MOTR/modules/beta/DerivedData/beta/Build/Products/Release -MMD -MT dependencies -MF /Users/chengtai/Documents/2014/MOTR/modules/beta/DerivedData/beta/Build/Intermediates/beta.build/Release/beta.build/Objects-normal/x86_64/layer.d --serialize-diagnostics /Users/chengtai/Documents/2014/MOTR/modules/beta/DerivedData/beta/Build/Intermediates/beta.build/Release/beta.build/Objects-normal/x86_64/layer.dia -c /Users/chengtai/Documents/2014/MOTR/modules/beta/beta/layer.cpp -o /Users/chengtai/Documents/2014/MOTR/modules/beta/DerivedData/beta/Build/Intermediates/beta.build/Release/beta.build/Objects-normal/x86_64/layer.o36"DEF9DAF0-F67C-489E-9985-0DBBFE123232-
-b028702A7-3B10-4EAC-9969-D52794EA54AF
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection71"Compile /Users/chengtai/Documents/2014/MOTR/modules/beta/beta/layer.cpp182"CompileC DerivedData/beta/Build/Intermediates/beta.build/Release/beta.build/Objects-normal/x86_64/layer.o beta/layer.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler70b2850ece46b941^9e7edc10ce46b941^---0#0#1#-19%DVTDocumentLocation2@79"file://localhost/Users/chengtai/Documents/2014/MOTR/modules/beta/beta/layer.cpp0000000000000000^3146"CompileC DerivedData/beta/Build/Intermediates/beta.build/Release/beta.build/Objects-normal/x86_64/layer.o beta/layer.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/chengtai/Documents/2014/MOTR/modules/beta    export LANG=en_US.US-ASCII    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x c++ -arch x86_64 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -std=c++11 -stdlib=libc++ -fmodules -fmodules-cache-path=/Users/chengtai/Documents/2014/MOTR/modules/beta/DerivedData/ModuleCache -Wno-trigraphs -fpascal-strings -Os -Wno-missing-field-initializers -Wno-missing-prototypes -Werror=return-type -Werror=deprecated-objc-isa-usage -Werror=objc-root-class -Wno-non-virtual-dtor -Wno-overloaded-virtual -Wno-exit-time-destructors -Wno-missing-braces -Wparentheses -Wswitch -Wunused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wconditional-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wbool-conversion -Wenum-conversion -Wshorten-64-to-32 -Wno-newline-eof -Wno-c++11-extensions -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk -fasm-blocks -fstrict-aliasing -Wdeprecated-declarations -Winvalid-offsetof -mmacosx-version-min=10.8 -g -fvisibility=hidden -fvisibility-inlines-hidden -Wno-sign-conversion -iquote /Users/chengtai/Documents/2014/MOTR/modules/beta/DerivedData/beta/Build/Intermediates/beta.build/Release/beta.build/beta-generated-files.hmap -I/Users/chengtai/Documents/2014/MOTR/modules/beta/DerivedData/beta/Build/Intermediates/beta.build/Release/beta.build/beta-own-target-headers.hmap -I/Users/chengtai/Documents/2014/MOTR/modules/beta/DerivedData/beta/Build/Intermediates/beta.build/Release/beta.build/beta-all-target-headers.hmap -iquote /Users/chengtai/Documents/2014/MOTR/modules/beta/DerivedData/beta/Build/Intermediates/beta.build/Release/beta.build/beta-project-headers.hmap -I/Users/chengtai/Documents/2014/MOTR/modules/beta/DerivedData/beta/Build/Products/Release/include -I/usr/local/include -I/Users/chengtai/Documents/2014/MOTR/modules/beta/DerivedData/beta/Build/Intermediates/beta.build/Release/beta.build/DerivedSources/x86_64 -I/Users/chengtai/Documents/2014/MOTR/modules/beta/DerivedData/beta/Build/Intermediates/beta.build/Release/beta.build/DerivedSources -F/Users/chengtai/Documents/2014/MOTR/modules/beta/DerivedData/beta/Build/Products/Release -MMD -MT dependencies -MF /Users/chengtai/Documents/2014/MOTR/modules/beta/DerivedData/beta/Build/Intermediates/beta.build/Release/beta.build/Objects-normal/x86_64/layer.d --serialize-diagnostics /Users/chengtai/Documents/2014/MOTR/modules/beta/DerivedData/beta/Build/Intermediates/beta.build/Release/beta.build/Objects-normal/x86_64/layer.dia -c /Users/chengtai/Documents/2014/MOTR/modules/beta/beta/layer.cpp -o /Users/chengtai/Documents/2014/MOTR/modules/beta/DerivedData/beta/Build/Intermediates/beta.build/Release/beta.build/Objects-normal/x86_64/layer.o36"72357D32-1B42-4C86-8D80-B9F4A6BAE139-
+bAB98BB4D-EECD-45E8-AEC8-BDC28A50DDF6
 
 CCompileC DerivedData/beta/Build/Intermediates/beta.build/Release/beta.build/Objects-normal/x86_64/main.o /Users/chengtai/Documents/2014/MOTR/modules/beta/beta/main.cpp normal x86_64 c++ com.apple.compilers.gcc.4_8
 s424061442.867761
@@ -4220,8 +4238,8 @@ lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection70"Compile
 b7245929D-F6C3-463D-91E9-DBA00D768148
 
 CCompileC DerivedData/beta/Build/Intermediates/beta.build/Release/beta.build/Objects-normal/x86_64/main.o /Users/chengtai/Documents/2014/MOTR/modules/beta/beta/main.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler
-s424061541.717329
-e424061543.453898
+s424071304.813369
+e424071306.540996
 r1
 xCompileC
 xDerivedData/beta/Build/Intermediates/beta.build/Release/beta.build/Objects-normal/x86_64/main.o
@@ -4231,6 +4249,8 @@ xx86_64
 xc++
 xcom.apple.compilers.llvm.clang.1_0.compiler
 d/Users/chengtai/Documents/2014/MOTR/modules/beta/beta/main.cpp
+d/Users/chengtai/Documents/2014/MOTR/modules/beta/beta/convcore.h
+d/Users/chengtai/Documents/2014/MOTR/modules/beta/beta/stdafx.h
 d/usr/local/include/armadillo
 d/usr/local/include/armadillo_bits/config.hpp
 d/usr/local/include/armadillo_bits/compiler_setup.hpp
@@ -4657,24 +4677,467 @@ d/usr/local/include/armadillo_bits/spglue_plus_meat.hpp
 d/usr/local/include/armadillo_bits/spglue_minus_meat.hpp
 d/usr/local/include/armadillo_bits/spglue_times_meat.hpp
 d/usr/local/include/armadillo_bits/compiler_setup_post.hpp
-d/Users/chengtai/Documents/2014/MOTR/modules/beta/beta/convcore.h
+d/Users/chengtai/Documents/2014/MOTR/modules/beta/beta/utils.h
+d/Users/chengtai/Documents/2014/MOTR/modules/beta/beta/layer.h
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection70"Compile /Users/chengtai/Documents/2014/MOTR/modules/beta/beta/main.cpp180"CompileC DerivedData/beta/Build/Intermediates/beta.build/Release/beta.build/Objects-normal/x86_64/main.o beta/main.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler6075d088d046b941^6f7f8a8ad046b941^---0#0#1#-19%DVTDocumentLocation2@78"file://localhost/Users/chengtai/Documents/2014/MOTR/modules/beta/beta/main.cpp0000000000000000^3140"CompileC DerivedData/beta/Build/Intermediates/beta.build/Release/beta.build/Objects-normal/x86_64/main.o beta/main.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/chengtai/Documents/2014/MOTR/modules/beta    export LANG=en_US.US-ASCII    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x c++ -arch x86_64 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -std=c++11 -stdlib=libc++ -fmodules -fmodules-cache-path=/Users/chengtai/Documents/2014/MOTR/modules/beta/DerivedData/ModuleCache -Wno-trigraphs -fpascal-strings -Os -Wno-missing-field-initializers -Wno-missing-prototypes -Werror=return-type -Werror=deprecated-objc-isa-usage -Werror=objc-root-class -Wno-non-virtual-dtor -Wno-overloaded-virtual -Wno-exit-time-destructors -Wno-missing-braces -Wparentheses -Wswitch -Wunused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wconditional-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wbool-conversion -Wenum-conversion -Wshorten-64-to-32 -Wno-newline-eof -Wno-c++11-extensions -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk -fasm-blocks -fstrict-aliasing -Wdeprecated-declarations -Winvalid-offsetof -mmacosx-version-min=10.8 -g -fvisibility=hidden -fvisibility-inlines-hidden -Wno-sign-conversion -iquote /Users/chengtai/Documents/2014/MOTR/modules/beta/DerivedData/beta/Build/Intermediates/beta.build/Release/beta.build/beta-generated-files.hmap -I/Users/chengtai/Documents/2014/MOTR/modules/beta/DerivedData/beta/Build/Intermediates/beta.build/Release/beta.build/beta-own-target-headers.hmap -I/Users/chengtai/Documents/2014/MOTR/modules/beta/DerivedData/beta/Build/Intermediates/beta.build/Release/beta.build/beta-all-target-headers.hmap -iquote /Users/chengtai/Documents/2014/MOTR/modules/beta/DerivedData/beta/Build/Intermediates/beta.build/Release/beta.build/beta-project-headers.hmap -I/Users/chengtai/Documents/2014/MOTR/modules/beta/DerivedData/beta/Build/Products/Release/include -I/usr/local/include -I/Users/chengtai/Documents/2014/MOTR/modules/beta/DerivedData/beta/Build/Intermediates/beta.build/Release/beta.build/DerivedSources/x86_64 -I/Users/chengtai/Documents/2014/MOTR/modules/beta/DerivedData/beta/Build/Intermediates/beta.build/Release/beta.build/DerivedSources -F/Users/chengtai/Documents/2014/MOTR/modules/beta/DerivedData/beta/Build/Products/Release -MMD -MT dependencies -MF /Users/chengtai/Documents/2014/MOTR/modules/beta/DerivedData/beta/Build/Intermediates/beta.build/Release/beta.build/Objects-normal/x86_64/main.d --serialize-diagnostics /Users/chengtai/Documents/2014/MOTR/modules/beta/DerivedData/beta/Build/Intermediates/beta.build/Release/beta.build/Objects-normal/x86_64/main.dia -c /Users/chengtai/Documents/2014/MOTR/modules/beta/beta/main.cpp -o /Users/chengtai/Documents/2014/MOTR/modules/beta/DerivedData/beta/Build/Intermediates/beta.build/Release/beta.build/Objects-normal/x86_64/main.o36"512CB856-B695-4C24-AEB8-2EB6131079D0-
+bA397D04C-7F63-4E58-A44F-ED9B10F0371A
+
+CCompileC DerivedData/beta/Build/Intermediates/beta.build/Release/beta.build/Objects-normal/x86_64/utils.o /Users/chengtai/Documents/2014/MOTR/modules/beta/beta/utils.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler
+s424070690.243080
+e424070692.077282
+r1
+xCompileC
+xDerivedData/beta/Build/Intermediates/beta.build/Release/beta.build/Objects-normal/x86_64/utils.o
+x/Users/chengtai/Documents/2014/MOTR/modules/beta/beta/utils.cpp
+xnormal
+xx86_64
+xc++
+xcom.apple.compilers.llvm.clang.1_0.compiler
+d/Users/chengtai/Documents/2014/MOTR/modules/beta/beta/utils.cpp
+d/Users/chengtai/Documents/2014/MOTR/modules/beta/beta/utils.h
 d/Users/chengtai/Documents/2014/MOTR/modules/beta/beta/stdafx.h
-lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection70"Compile /Users/chengtai/Documents/2014/MOTR/modules/beta/beta/main.cpp180"CompileC DerivedData/beta/Build/Intermediates/beta.build/Release/beta.build/Objects-normal/x86_64/main.o beta/main.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler1bb8b765aa46b941^16357467aa46b941^---0#0#1#-19%DVTDocumentLocation2@78"file://localhost/Users/chengtai/Documents/2014/MOTR/modules/beta/beta/main.cpp0000000000000000^3140"CompileC DerivedData/beta/Build/Intermediates/beta.build/Release/beta.build/Objects-normal/x86_64/main.o beta/main.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/chengtai/Documents/2014/MOTR/modules/beta    export LANG=en_US.US-ASCII    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x c++ -arch x86_64 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -std=c++11 -stdlib=libc++ -fmodules -fmodules-cache-path=/Users/chengtai/Documents/2014/MOTR/modules/beta/DerivedData/ModuleCache -Wno-trigraphs -fpascal-strings -Os -Wno-missing-field-initializers -Wno-missing-prototypes -Werror=return-type -Werror=deprecated-objc-isa-usage -Werror=objc-root-class -Wno-non-virtual-dtor -Wno-overloaded-virtual -Wno-exit-time-destructors -Wno-missing-braces -Wparentheses -Wswitch -Wunused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wconditional-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wbool-conversion -Wenum-conversion -Wshorten-64-to-32 -Wno-newline-eof -Wno-c++11-extensions -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk -fasm-blocks -fstrict-aliasing -Wdeprecated-declarations -Winvalid-offsetof -mmacosx-version-min=10.8 -g -fvisibility=hidden -fvisibility-inlines-hidden -Wno-sign-conversion -iquote /Users/chengtai/Documents/2014/MOTR/modules/beta/DerivedData/beta/Build/Intermediates/beta.build/Release/beta.build/beta-generated-files.hmap -I/Users/chengtai/Documents/2014/MOTR/modules/beta/DerivedData/beta/Build/Intermediates/beta.build/Release/beta.build/beta-own-target-headers.hmap -I/Users/chengtai/Documents/2014/MOTR/modules/beta/DerivedData/beta/Build/Intermediates/beta.build/Release/beta.build/beta-all-target-headers.hmap -iquote /Users/chengtai/Documents/2014/MOTR/modules/beta/DerivedData/beta/Build/Intermediates/beta.build/Release/beta.build/beta-project-headers.hmap -I/Users/chengtai/Documents/2014/MOTR/modules/beta/DerivedData/beta/Build/Products/Release/include -I/usr/local/include -I/Users/chengtai/Documents/2014/MOTR/modules/beta/DerivedData/beta/Build/Intermediates/beta.build/Release/beta.build/DerivedSources/x86_64 -I/Users/chengtai/Documents/2014/MOTR/modules/beta/DerivedData/beta/Build/Intermediates/beta.build/Release/beta.build/DerivedSources -F/Users/chengtai/Documents/2014/MOTR/modules/beta/DerivedData/beta/Build/Products/Release -MMD -MT dependencies -MF /Users/chengtai/Documents/2014/MOTR/modules/beta/DerivedData/beta/Build/Intermediates/beta.build/Release/beta.build/Objects-normal/x86_64/main.d --serialize-diagnostics /Users/chengtai/Documents/2014/MOTR/modules/beta/DerivedData/beta/Build/Intermediates/beta.build/Release/beta.build/Objects-normal/x86_64/main.dia -c /Users/chengtai/Documents/2014/MOTR/modules/beta/beta/main.cpp -o /Users/chengtai/Documents/2014/MOTR/modules/beta/DerivedData/beta/Build/Intermediates/beta.build/Release/beta.build/Objects-normal/x86_64/main.o36"17965F60-D405-420B-818B-B2B392BEAB2B-
-b028702A7-3B10-4EAC-9969-D52794EA54AF
+d/usr/local/include/armadillo
+d/usr/local/include/armadillo_bits/config.hpp
+d/usr/local/include/armadillo_bits/compiler_setup.hpp
+d/usr/local/include/armadillo_bits/include_atlas.hpp
+d/usr/local/include/hdf5.h
+d/usr/local/include/H5public.h
+d/usr/local/include/H5pubconf.h
+d/usr/local/include/H5version.h
+d/usr/local/include/H5api_adpt.h
+d/usr/local/include/H5Apublic.h
+d/usr/local/include/H5Ipublic.h
+d/usr/local/include/H5Opublic.h
+d/usr/local/include/H5Lpublic.h
+d/usr/local/include/H5Tpublic.h
+d/usr/local/include/H5ACpublic.h
+d/usr/local/include/H5Cpublic.h
+d/usr/local/include/H5Dpublic.h
+d/usr/local/include/H5Epublic.h
+d/usr/local/include/H5Epubgen.h
+d/usr/local/include/H5Fpublic.h
+d/usr/local/include/H5FDpublic.h
+d/usr/local/include/H5Gpublic.h
+d/usr/local/include/H5MMpublic.h
+d/usr/local/include/H5Ppublic.h
+d/usr/local/include/H5Zpublic.h
+d/usr/local/include/H5Rpublic.h
+d/usr/local/include/H5Spublic.h
+d/usr/local/include/H5FDcore.h
+d/usr/local/include/H5FDfamily.h
+d/usr/local/include/H5FDlog.h
+d/usr/local/include/H5FDmpi.h
+d/usr/local/include/H5FDmpio.h
+d/usr/local/include/H5FDmpiposix.h
+d/usr/local/include/H5FDmulti.h
+d/usr/local/include/H5FDsec2.h
+d/usr/local/include/H5FDstdio.h
+d/usr/local/include/H5FDdirect.h
+d/usr/local/include/armadillo_bits/forward_bones.hpp
+d/usr/local/include/armadillo_bits/arma_static_check.hpp
+d/usr/local/include/armadillo_bits/typedef_elem.hpp
+d/usr/local/include/armadillo_bits/typedef_elem_check.hpp
+d/usr/local/include/armadillo_bits/typedef_mat.hpp
+d/usr/local/include/armadillo_bits/arma_boost.hpp
+d/usr/local/include/armadillo_bits/arma_version.hpp
+d/usr/local/include/armadillo_bits/arma_config.hpp
+d/usr/local/include/armadillo_bits/traits.hpp
+d/usr/local/include/armadillo_bits/promote_type.hpp
+d/usr/local/include/armadillo_bits/upgrade_val.hpp
+d/usr/local/include/armadillo_bits/restrictors.hpp
+d/usr/local/include/armadillo_bits/access.hpp
+d/usr/local/include/armadillo_bits/span.hpp
+d/usr/local/include/armadillo_bits/distr_param.hpp
+d/usr/local/include/armadillo_bits/constants.hpp
+d/usr/local/include/armadillo_bits/constants_compat.hpp
+d/usr/local/include/armadillo_bits/arma_rng_cxx98.hpp
+d/usr/local/include/armadillo_bits/arma_rng.hpp
+d/usr/local/include/armadillo_bits/Base_bones.hpp
+d/usr/local/include/armadillo_bits/BaseCube_bones.hpp
+d/usr/local/include/armadillo_bits/SpBase_bones.hpp
+d/usr/local/include/armadillo_bits/blas_bones.hpp
+d/usr/local/include/armadillo_bits/lapack_bones.hpp
+d/usr/local/include/armadillo_bits/atlas_bones.hpp
+d/usr/local/include/armadillo_bits/arpack_bones.hpp
+d/usr/local/include/armadillo_bits/hdf5_bones.hpp
+d/usr/local/include/armadillo_bits/blas_wrapper.hpp
+d/usr/local/include/armadillo_bits/lapack_wrapper.hpp
+d/usr/local/include/armadillo_bits/atlas_wrapper.hpp
+d/usr/local/include/armadillo_bits/arpack_wrapper.hpp
+d/usr/local/include/armadillo_bits/cond_rel_bones.hpp
+d/usr/local/include/armadillo_bits/arrayops_bones.hpp
+d/usr/local/include/armadillo_bits/podarray_bones.hpp
+d/usr/local/include/armadillo_bits/auxlib_bones.hpp
+d/usr/local/include/armadillo_bits/sp_auxlib_bones.hpp
+d/usr/local/include/armadillo_bits/injector_bones.hpp
+d/usr/local/include/armadillo_bits/Mat_bones.hpp
+d/usr/local/include/armadillo_bits/Col_bones.hpp
+d/usr/local/include/armadillo_bits/Row_bones.hpp
+d/usr/local/include/armadillo_bits/Cube_bones.hpp
+d/usr/local/include/armadillo_bits/xvec_htrans_bones.hpp
+d/usr/local/include/armadillo_bits/SizeMat_bones.hpp
+d/usr/local/include/armadillo_bits/SizeCube_bones.hpp
+d/usr/local/include/armadillo_bits/SpValProxy_bones.hpp
+d/usr/local/include/armadillo_bits/SpMat_bones.hpp
+d/usr/local/include/armadillo_bits/SpCol_bones.hpp
+d/usr/local/include/armadillo_bits/SpRow_bones.hpp
+d/usr/local/include/armadillo_bits/SpSubview_bones.hpp
+d/usr/local/include/armadillo_bits/typedef_mat_fixed.hpp
+d/usr/local/include/armadillo_bits/field_bones.hpp
+d/usr/local/include/armadillo_bits/subview_bones.hpp
+d/usr/local/include/armadillo_bits/subview_elem1_bones.hpp
+d/usr/local/include/armadillo_bits/subview_elem2_bones.hpp
+d/usr/local/include/armadillo_bits/subview_field_bones.hpp
+d/usr/local/include/armadillo_bits/subview_cube_bones.hpp
+d/usr/local/include/armadillo_bits/diagview_bones.hpp
+d/usr/local/include/armadillo_bits/subview_each_bones.hpp
+d/usr/local/include/armadillo_bits/diskio_bones.hpp
+d/usr/local/include/armadillo_bits/wall_clock_bones.hpp
+d/usr/local/include/armadillo_bits/running_stat_bones.hpp
+d/usr/local/include/armadillo_bits/running_stat_vec_bones.hpp
+d/usr/local/include/armadillo_bits/Op_bones.hpp
+d/usr/local/include/armadillo_bits/OpCube_bones.hpp
+d/usr/local/include/armadillo_bits/SpOp_bones.hpp
+d/usr/local/include/armadillo_bits/eOp_bones.hpp
+d/usr/local/include/armadillo_bits/eOpCube_bones.hpp
+d/usr/local/include/armadillo_bits/mtOp_bones.hpp
+d/usr/local/include/armadillo_bits/mtOpCube_bones.hpp
+d/usr/local/include/armadillo_bits/mtSpOp_bones.hpp
+d/usr/local/include/armadillo_bits/Glue_bones.hpp
+d/usr/local/include/armadillo_bits/eGlue_bones.hpp
+d/usr/local/include/armadillo_bits/mtGlue_bones.hpp
+d/usr/local/include/armadillo_bits/SpGlue_bones.hpp
+d/usr/local/include/armadillo_bits/GlueCube_bones.hpp
+d/usr/local/include/armadillo_bits/eGlueCube_bones.hpp
+d/usr/local/include/armadillo_bits/mtGlueCube_bones.hpp
+d/usr/local/include/armadillo_bits/eop_core_bones.hpp
+d/usr/local/include/armadillo_bits/eglue_core_bones.hpp
+d/usr/local/include/armadillo_bits/Gen_bones.hpp
+d/usr/local/include/armadillo_bits/GenCube_bones.hpp
+d/usr/local/include/armadillo_bits/op_diagmat_bones.hpp
+d/usr/local/include/armadillo_bits/op_diagvec_bones.hpp
+d/usr/local/include/armadillo_bits/op_dot_bones.hpp
+d/usr/local/include/armadillo_bits/op_inv_bones.hpp
+d/usr/local/include/armadillo_bits/op_htrans_bones.hpp
+d/usr/local/include/armadillo_bits/op_max_bones.hpp
+d/usr/local/include/armadillo_bits/op_min_bones.hpp
+d/usr/local/include/armadillo_bits/op_mean_bones.hpp
+d/usr/local/include/armadillo_bits/op_median_bones.hpp
+d/usr/local/include/armadillo_bits/op_sort_bones.hpp
+d/usr/local/include/armadillo_bits/op_sum_bones.hpp
+d/usr/local/include/armadillo_bits/op_stddev_bones.hpp
+d/usr/local/include/armadillo_bits/op_strans_bones.hpp
+d/usr/local/include/armadillo_bits/op_var_bones.hpp
+d/usr/local/include/armadillo_bits/op_repmat_bones.hpp
+d/usr/local/include/armadillo_bits/op_reshape_bones.hpp
+d/usr/local/include/armadillo_bits/op_vectorise_bones.hpp
+d/usr/local/include/armadillo_bits/op_resize_bones.hpp
+d/usr/local/include/armadillo_bits/op_cov_bones.hpp
+d/usr/local/include/armadillo_bits/op_cor_bones.hpp
+d/usr/local/include/armadillo_bits/op_shuffle_bones.hpp
+d/usr/local/include/armadillo_bits/op_prod_bones.hpp
+d/usr/local/include/armadillo_bits/op_pinv_bones.hpp
+d/usr/local/include/armadillo_bits/op_dotext_bones.hpp
+d/usr/local/include/armadillo_bits/op_flip_bones.hpp
+d/usr/local/include/armadillo_bits/op_princomp_bones.hpp
+d/usr/local/include/armadillo_bits/op_misc_bones.hpp
+d/usr/local/include/armadillo_bits/op_relational_bones.hpp
+d/usr/local/include/armadillo_bits/op_find_bones.hpp
+d/usr/local/include/armadillo_bits/op_chol_bones.hpp
+d/usr/local/include/armadillo_bits/op_cx_scalar_bones.hpp
+d/usr/local/include/armadillo_bits/op_trimat_bones.hpp
+d/usr/local/include/armadillo_bits/op_cumsum_bones.hpp
+d/usr/local/include/armadillo_bits/op_symmat_bones.hpp
+d/usr/local/include/armadillo_bits/op_hist_bones.hpp
+d/usr/local/include/armadillo_bits/op_unique_bones.hpp
+d/usr/local/include/armadillo_bits/op_toeplitz_bones.hpp
+d/usr/local/include/armadillo_bits/op_fft_bones.hpp
+d/usr/local/include/armadillo_bits/op_any_bones.hpp
+d/usr/local/include/armadillo_bits/op_all_bones.hpp
+d/usr/local/include/armadillo_bits/op_normalise_bones.hpp
+d/usr/local/include/armadillo_bits/glue_times_bones.hpp
+d/usr/local/include/armadillo_bits/glue_mixed_bones.hpp
+d/usr/local/include/armadillo_bits/glue_cov_bones.hpp
+d/usr/local/include/armadillo_bits/glue_cor_bones.hpp
+d/usr/local/include/armadillo_bits/glue_kron_bones.hpp
+d/usr/local/include/armadillo_bits/glue_cross_bones.hpp
+d/usr/local/include/armadillo_bits/glue_join_bones.hpp
+d/usr/local/include/armadillo_bits/glue_relational_bones.hpp
+d/usr/local/include/armadillo_bits/glue_solve_bones.hpp
+d/usr/local/include/armadillo_bits/glue_conv_bones.hpp
+d/usr/local/include/armadillo_bits/glue_toeplitz_bones.hpp
+d/usr/local/include/armadillo_bits/glue_hist_bones.hpp
+d/usr/local/include/armadillo_bits/glue_histc_bones.hpp
+d/usr/local/include/armadillo_bits/glue_max_bones.hpp
+d/usr/local/include/armadillo_bits/glue_min_bones.hpp
+d/usr/local/include/armadillo_bits/spop_max_bones.hpp
+d/usr/local/include/armadillo_bits/spop_min_bones.hpp
+d/usr/local/include/armadillo_bits/spop_sum_bones.hpp
+d/usr/local/include/armadillo_bits/spop_strans_bones.hpp
+d/usr/local/include/armadillo_bits/spop_htrans_bones.hpp
+d/usr/local/include/armadillo_bits/spop_misc_bones.hpp
+d/usr/local/include/armadillo_bits/spop_mean_bones.hpp
+d/usr/local/include/armadillo_bits/spop_var_bones.hpp
+d/usr/local/include/armadillo_bits/spglue_plus_bones.hpp
+d/usr/local/include/armadillo_bits/spglue_minus_bones.hpp
+d/usr/local/include/armadillo_bits/spglue_times_bones.hpp
+d/usr/local/include/armadillo_bits/debug.hpp
+d/usr/local/include/armadillo_bits/memory.hpp
+d/usr/local/include/armadillo_bits/arma_cmath.hpp
+d/usr/local/include/armadillo_bits/unwrap.hpp
+d/usr/local/include/armadillo_bits/unwrap_cube.hpp
+d/usr/local/include/armadillo_bits/unwrap_spmat.hpp
+d/usr/local/include/armadillo_bits/Proxy.hpp
+d/usr/local/include/armadillo_bits/ProxyCube.hpp
+d/usr/local/include/armadillo_bits/SpProxy.hpp
+d/usr/local/include/armadillo_bits/diagmat_proxy.hpp
+d/usr/local/include/armadillo_bits/strip.hpp
+d/usr/local/include/armadillo_bits/Op_meat.hpp
+d/usr/local/include/armadillo_bits/OpCube_meat.hpp
+d/usr/local/include/armadillo_bits/SpOp_meat.hpp
+d/usr/local/include/armadillo_bits/mtOp_meat.hpp
+d/usr/local/include/armadillo_bits/mtOpCube_meat.hpp
+d/usr/local/include/armadillo_bits/mtSpOp_meat.hpp
+d/usr/local/include/armadillo_bits/Glue_meat.hpp
+d/usr/local/include/armadillo_bits/GlueCube_meat.hpp
+d/usr/local/include/armadillo_bits/SpGlue_meat.hpp
+d/usr/local/include/armadillo_bits/eop_aux.hpp
+d/usr/local/include/armadillo_bits/eOp_meat.hpp
+d/usr/local/include/armadillo_bits/eOpCube_meat.hpp
+d/usr/local/include/armadillo_bits/eGlue_meat.hpp
+d/usr/local/include/armadillo_bits/eGlueCube_meat.hpp
+d/usr/local/include/armadillo_bits/mtGlue_meat.hpp
+d/usr/local/include/armadillo_bits/mtGlueCube_meat.hpp
+d/usr/local/include/armadillo_bits/Base_meat.hpp
+d/usr/local/include/armadillo_bits/BaseCube_meat.hpp
+d/usr/local/include/armadillo_bits/SpBase_meat.hpp
+d/usr/local/include/armadillo_bits/Gen_meat.hpp
+d/usr/local/include/armadillo_bits/GenCube_meat.hpp
+d/usr/local/include/armadillo_bits/arma_ostream_bones.hpp
+d/usr/local/include/armadillo_bits/arma_ostream_meat.hpp
+d/usr/local/include/armadillo_bits/fn_n_unique.hpp
+d/usr/local/include/armadillo_bits/operator_plus.hpp
+d/usr/local/include/armadillo_bits/operator_minus.hpp
+d/usr/local/include/armadillo_bits/operator_times.hpp
+d/usr/local/include/armadillo_bits/operator_schur.hpp
+d/usr/local/include/armadillo_bits/operator_div.hpp
+d/usr/local/include/armadillo_bits/operator_relational.hpp
+d/usr/local/include/armadillo_bits/operator_cube_plus.hpp
+d/usr/local/include/armadillo_bits/operator_cube_minus.hpp
+d/usr/local/include/armadillo_bits/operator_cube_times.hpp
+d/usr/local/include/armadillo_bits/operator_cube_schur.hpp
+d/usr/local/include/armadillo_bits/operator_cube_div.hpp
+d/usr/local/include/armadillo_bits/operator_cube_relational.hpp
+d/usr/local/include/armadillo_bits/operator_ostream.hpp
+d/usr/local/include/armadillo_bits/fn_conv_to.hpp
+d/usr/local/include/armadillo_bits/fn_min.hpp
+d/usr/local/include/armadillo_bits/fn_max.hpp
+d/usr/local/include/armadillo_bits/fn_accu.hpp
+d/usr/local/include/armadillo_bits/fn_sum.hpp
+d/usr/local/include/armadillo_bits/fn_diagmat.hpp
+d/usr/local/include/armadillo_bits/fn_diagvec.hpp
+d/usr/local/include/armadillo_bits/fn_inv.hpp
+d/usr/local/include/armadillo_bits/fn_trace.hpp
+d/usr/local/include/armadillo_bits/fn_trans.hpp
+d/usr/local/include/armadillo_bits/fn_det.hpp
+d/usr/local/include/armadillo_bits/fn_log_det.hpp
+d/usr/local/include/armadillo_bits/fn_eig_sym.hpp
+d/usr/local/include/armadillo_bits/fn_eig_gen.hpp
+d/usr/local/include/armadillo_bits/fn_eig_pair.hpp
+d/usr/local/include/armadillo_bits/fn_lu.hpp
+d/usr/local/include/armadillo_bits/fn_zeros.hpp
+d/usr/local/include/armadillo_bits/fn_ones.hpp
+d/usr/local/include/armadillo_bits/fn_eye.hpp
+d/usr/local/include/armadillo_bits/fn_misc.hpp
+d/usr/local/include/armadillo_bits/fn_find.hpp
+d/usr/local/include/armadillo_bits/fn_elem.hpp
+d/usr/local/include/armadillo_bits/fn_norm.hpp
+d/usr/local/include/armadillo_bits/fn_dot.hpp
+d/usr/local/include/armadillo_bits/fn_randu.hpp
+d/usr/local/include/armadillo_bits/fn_randn.hpp
+d/usr/local/include/armadillo_bits/fn_trig.hpp
+d/usr/local/include/armadillo_bits/fn_mean.hpp
+d/usr/local/include/armadillo_bits/fn_median.hpp
+d/usr/local/include/armadillo_bits/fn_stddev.hpp
+d/usr/local/include/armadillo_bits/fn_var.hpp
+d/usr/local/include/armadillo_bits/fn_sort.hpp
+d/usr/local/include/armadillo_bits/fn_sort_index.hpp
+d/usr/local/include/armadillo_bits/fn_strans.hpp
+d/usr/local/include/armadillo_bits/fn_chol.hpp
+d/usr/local/include/armadillo_bits/fn_qr.hpp
+d/usr/local/include/armadillo_bits/fn_svd.hpp
+d/usr/local/include/armadillo_bits/fn_solve.hpp
+d/usr/local/include/armadillo_bits/fn_repmat.hpp
+d/usr/local/include/armadillo_bits/fn_reshape.hpp
+d/usr/local/include/armadillo_bits/fn_vectorise.hpp
+d/usr/local/include/armadillo_bits/fn_resize.hpp
+d/usr/local/include/armadillo_bits/fn_cov.hpp
+d/usr/local/include/armadillo_bits/fn_cor.hpp
+d/usr/local/include/armadillo_bits/fn_shuffle.hpp
+d/usr/local/include/armadillo_bits/fn_prod.hpp
+d/usr/local/include/armadillo_bits/fn_eps.hpp
+d/usr/local/include/armadillo_bits/fn_pinv.hpp
+d/usr/local/include/armadillo_bits/fn_rank.hpp
+d/usr/local/include/armadillo_bits/fn_kron.hpp
+d/usr/local/include/armadillo_bits/fn_flip.hpp
+d/usr/local/include/armadillo_bits/fn_as_scalar.hpp
+d/usr/local/include/armadillo_bits/fn_princomp.hpp
+d/usr/local/include/armadillo_bits/fn_cross.hpp
+d/usr/local/include/armadillo_bits/fn_join.hpp
+d/usr/local/include/armadillo_bits/fn_conv.hpp
+d/usr/local/include/armadillo_bits/fn_trunc_exp.hpp
+d/usr/local/include/armadillo_bits/fn_trunc_log.hpp
+d/usr/local/include/armadillo_bits/fn_toeplitz.hpp
+d/usr/local/include/armadillo_bits/fn_trimat.hpp
+d/usr/local/include/armadillo_bits/fn_cumsum.hpp
+d/usr/local/include/armadillo_bits/fn_symmat.hpp
+d/usr/local/include/armadillo_bits/fn_syl_lyap.hpp
+d/usr/local/include/armadillo_bits/fn_hist.hpp
+d/usr/local/include/armadillo_bits/fn_histc.hpp
+d/usr/local/include/armadillo_bits/fn_unique.hpp
+d/usr/local/include/armadillo_bits/fn_fft.hpp
+d/usr/local/include/armadillo_bits/fn_fft2.hpp
+d/usr/local/include/armadillo_bits/fn_any.hpp
+d/usr/local/include/armadillo_bits/fn_all.hpp
+d/usr/local/include/armadillo_bits/fn_size.hpp
+d/usr/local/include/armadillo_bits/fn_numel.hpp
+d/usr/local/include/armadillo_bits/fn_inplace_strans.hpp
+d/usr/local/include/armadillo_bits/fn_inplace_trans.hpp
+d/usr/local/include/armadillo_bits/fn_randi.hpp
+d/usr/local/include/armadillo_bits/fn_cond.hpp
+d/usr/local/include/armadillo_bits/fn_normalise.hpp
+d/usr/local/include/armadillo_bits/fn_speye.hpp
+d/usr/local/include/armadillo_bits/fn_spones.hpp
+d/usr/local/include/armadillo_bits/fn_sprandn.hpp
+d/usr/local/include/armadillo_bits/fn_sprandu.hpp
+d/usr/local/include/armadillo_bits/fn_eigs_sym.hpp
+d/usr/local/include/armadillo_bits/fn_eigs_gen.hpp
+d/usr/local/include/armadillo_bits/fn_norm_sparse.hpp
+d/usr/local/include/armadillo_bits/hdf5_misc.hpp
+d/usr/local/include/armadillo_bits/fft_engine.hpp
+d/usr/local/include/armadillo_bits/mul_gemv.hpp
+d/usr/local/include/armadillo_bits/mul_gemm.hpp
+d/usr/local/include/armadillo_bits/mul_gemm_mixed.hpp
+d/usr/local/include/armadillo_bits/mul_syrk.hpp
+d/usr/local/include/armadillo_bits/mul_herk.hpp
+d/usr/local/include/armadillo_bits/eop_core_meat.hpp
+d/usr/local/include/armadillo_bits/eglue_core_meat.hpp
+d/usr/local/include/armadillo_bits/cond_rel_meat.hpp
+d/usr/local/include/armadillo_bits/arrayops_meat.hpp
+d/usr/local/include/armadillo_bits/podarray_meat.hpp
+d/usr/local/include/armadillo_bits/auxlib_meat.hpp
+d/usr/local/include/armadillo_bits/sp_auxlib_meat.hpp
+d/usr/local/include/armadillo_bits/injector_meat.hpp
+d/usr/local/include/armadillo_bits/Mat_meat.hpp
+d/usr/local/include/armadillo_bits/Col_meat.hpp
+d/usr/local/include/armadillo_bits/Row_meat.hpp
+d/usr/local/include/armadillo_bits/Cube_meat.hpp
+d/usr/local/include/armadillo_bits/xvec_htrans_meat.hpp
+d/usr/local/include/armadillo_bits/SizeMat_meat.hpp
+d/usr/local/include/armadillo_bits/SizeCube_meat.hpp
+d/usr/local/include/armadillo_bits/field_meat.hpp
+d/usr/local/include/armadillo_bits/subview_meat.hpp
+d/usr/local/include/armadillo_bits/subview_elem1_meat.hpp
+d/usr/local/include/armadillo_bits/subview_elem2_meat.hpp
+d/usr/local/include/armadillo_bits/subview_field_meat.hpp
+d/usr/local/include/armadillo_bits/subview_cube_meat.hpp
+d/usr/local/include/armadillo_bits/diagview_meat.hpp
+d/usr/local/include/armadillo_bits/subview_each_meat.hpp
+d/usr/local/include/armadillo_bits/SpValProxy_meat.hpp
+d/usr/local/include/armadillo_bits/SpMat_meat.hpp
+d/usr/local/include/armadillo_bits/SpMat_iterators_meat.hpp
+d/usr/local/include/armadillo_bits/SpCol_meat.hpp
+d/usr/local/include/armadillo_bits/SpRow_meat.hpp
+d/usr/local/include/armadillo_bits/SpSubview_meat.hpp
+d/usr/local/include/armadillo_bits/SpSubview_iterators_meat.hpp
+d/usr/local/include/armadillo_bits/diskio_meat.hpp
+d/usr/local/include/armadillo_bits/wall_clock_meat.hpp
+d/usr/local/include/armadillo_bits/running_stat_meat.hpp
+d/usr/local/include/armadillo_bits/running_stat_vec_meat.hpp
+d/usr/local/include/armadillo_bits/op_diagmat_meat.hpp
+d/usr/local/include/armadillo_bits/op_diagvec_meat.hpp
+d/usr/local/include/armadillo_bits/op_dot_meat.hpp
+d/usr/local/include/armadillo_bits/op_inv_meat.hpp
+d/usr/local/include/armadillo_bits/op_htrans_meat.hpp
+d/usr/local/include/armadillo_bits/op_max_meat.hpp
+d/usr/local/include/armadillo_bits/op_min_meat.hpp
+d/usr/local/include/armadillo_bits/op_mean_meat.hpp
+d/usr/local/include/armadillo_bits/op_median_meat.hpp
+d/usr/local/include/armadillo_bits/op_sort_meat.hpp
+d/usr/local/include/armadillo_bits/op_sum_meat.hpp
+d/usr/local/include/armadillo_bits/op_stddev_meat.hpp
+d/usr/local/include/armadillo_bits/op_strans_meat.hpp
+d/usr/local/include/armadillo_bits/op_var_meat.hpp
+d/usr/local/include/armadillo_bits/op_repmat_meat.hpp
+d/usr/local/include/armadillo_bits/op_reshape_meat.hpp
+d/usr/local/include/armadillo_bits/op_vectorise_meat.hpp
+d/usr/local/include/armadillo_bits/op_resize_meat.hpp
+d/usr/local/include/armadillo_bits/op_cov_meat.hpp
+d/usr/local/include/armadillo_bits/op_cor_meat.hpp
+d/usr/local/include/armadillo_bits/op_shuffle_meat.hpp
+d/usr/local/include/armadillo_bits/op_prod_meat.hpp
+d/usr/local/include/armadillo_bits/op_pinv_meat.hpp
+d/usr/local/include/armadillo_bits/op_dotext_meat.hpp
+d/usr/local/include/armadillo_bits/op_flip_meat.hpp
+d/usr/local/include/armadillo_bits/op_princomp_meat.hpp
+d/usr/local/include/armadillo_bits/op_misc_meat.hpp
+d/usr/local/include/armadillo_bits/op_relational_meat.hpp
+d/usr/local/include/armadillo_bits/op_find_meat.hpp
+d/usr/local/include/armadillo_bits/op_chol_meat.hpp
+d/usr/local/include/armadillo_bits/op_cx_scalar_meat.hpp
+d/usr/local/include/armadillo_bits/op_trimat_meat.hpp
+d/usr/local/include/armadillo_bits/op_cumsum_meat.hpp
+d/usr/local/include/armadillo_bits/op_symmat_meat.hpp
+d/usr/local/include/armadillo_bits/op_hist_meat.hpp
+d/usr/local/include/armadillo_bits/op_unique_meat.hpp
+d/usr/local/include/armadillo_bits/op_toeplitz_meat.hpp
+d/usr/local/include/armadillo_bits/op_fft_meat.hpp
+d/usr/local/include/armadillo_bits/op_any_meat.hpp
+d/usr/local/include/armadillo_bits/op_all_meat.hpp
+d/usr/local/include/armadillo_bits/op_normalise_meat.hpp
+d/usr/local/include/armadillo_bits/glue_times_meat.hpp
+d/usr/local/include/armadillo_bits/glue_mixed_meat.hpp
+d/usr/local/include/armadillo_bits/glue_cov_meat.hpp
+d/usr/local/include/armadillo_bits/glue_cor_meat.hpp
+d/usr/local/include/armadillo_bits/glue_kron_meat.hpp
+d/usr/local/include/armadillo_bits/glue_cross_meat.hpp
+d/usr/local/include/armadillo_bits/glue_join_meat.hpp
+d/usr/local/include/armadillo_bits/glue_relational_meat.hpp
+d/usr/local/include/armadillo_bits/glue_solve_meat.hpp
+d/usr/local/include/armadillo_bits/glue_conv_meat.hpp
+d/usr/local/include/armadillo_bits/glue_toeplitz_meat.hpp
+d/usr/local/include/armadillo_bits/glue_hist_meat.hpp
+d/usr/local/include/armadillo_bits/glue_histc_meat.hpp
+d/usr/local/include/armadillo_bits/glue_max_meat.hpp
+d/usr/local/include/armadillo_bits/glue_min_meat.hpp
+d/usr/local/include/armadillo_bits/spop_max_meat.hpp
+d/usr/local/include/armadillo_bits/spop_min_meat.hpp
+d/usr/local/include/armadillo_bits/spop_sum_meat.hpp
+d/usr/local/include/armadillo_bits/spop_strans_meat.hpp
+d/usr/local/include/armadillo_bits/spop_htrans_meat.hpp
+d/usr/local/include/armadillo_bits/spop_misc_meat.hpp
+d/usr/local/include/armadillo_bits/spop_mean_meat.hpp
+d/usr/local/include/armadillo_bits/spop_var_meat.hpp
+d/usr/local/include/armadillo_bits/spglue_plus_meat.hpp
+d/usr/local/include/armadillo_bits/spglue_minus_meat.hpp
+d/usr/local/include/armadillo_bits/spglue_times_meat.hpp
+d/usr/local/include/armadillo_bits/compiler_setup_post.hpp
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection71"Compile /Users/chengtai/Documents/2014/MOTR/modules/beta/beta/utils.cpp182"CompileC DerivedData/beta/Build/Intermediates/beta.build/Release/beta.build/Objects-normal/x86_64/utils.o beta/utils.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compilerd6543e22ce46b941^15c91324ce46b941^---0#0#1#-19%DVTDocumentLocation2@79"file://localhost/Users/chengtai/Documents/2014/MOTR/modules/beta/beta/utils.cpp0000000000000000^3146"CompileC DerivedData/beta/Build/Intermediates/beta.build/Release/beta.build/Objects-normal/x86_64/utils.o beta/utils.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/chengtai/Documents/2014/MOTR/modules/beta    export LANG=en_US.US-ASCII    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x c++ -arch x86_64 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -std=c++11 -stdlib=libc++ -fmodules -fmodules-cache-path=/Users/chengtai/Documents/2014/MOTR/modules/beta/DerivedData/ModuleCache -Wno-trigraphs -fpascal-strings -Os -Wno-missing-field-initializers -Wno-missing-prototypes -Werror=return-type -Werror=deprecated-objc-isa-usage -Werror=objc-root-class -Wno-non-virtual-dtor -Wno-overloaded-virtual -Wno-exit-time-destructors -Wno-missing-braces -Wparentheses -Wswitch -Wunused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wconditional-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wbool-conversion -Wenum-conversion -Wshorten-64-to-32 -Wno-newline-eof -Wno-c++11-extensions -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk -fasm-blocks -fstrict-aliasing -Wdeprecated-declarations -Winvalid-offsetof -mmacosx-version-min=10.8 -g -fvisibility=hidden -fvisibility-inlines-hidden -Wno-sign-conversion -iquote /Users/chengtai/Documents/2014/MOTR/modules/beta/DerivedData/beta/Build/Intermediates/beta.build/Release/beta.build/beta-generated-files.hmap -I/Users/chengtai/Documents/2014/MOTR/modules/beta/DerivedData/beta/Build/Intermediates/beta.build/Release/beta.build/beta-own-target-headers.hmap -I/Users/chengtai/Documents/2014/MOTR/modules/beta/DerivedData/beta/Build/Intermediates/beta.build/Release/beta.build/beta-all-target-headers.hmap -iquote /Users/chengtai/Documents/2014/MOTR/modules/beta/DerivedData/beta/Build/Intermediates/beta.build/Release/beta.build/beta-project-headers.hmap -I/Users/chengtai/Documents/2014/MOTR/modules/beta/DerivedData/beta/Build/Products/Release/include -I/usr/local/include -I/Users/chengtai/Documents/2014/MOTR/modules/beta/DerivedData/beta/Build/Intermediates/beta.build/Release/beta.build/DerivedSources/x86_64 -I/Users/chengtai/Documents/2014/MOTR/modules/beta/DerivedData/beta/Build/Intermediates/beta.build/Release/beta.build/DerivedSources -F/Users/chengtai/Documents/2014/MOTR/modules/beta/DerivedData/beta/Build/Products/Release -MMD -MT dependencies -MF /Users/chengtai/Documents/2014/MOTR/modules/beta/DerivedData/beta/Build/Intermediates/beta.build/Release/beta.build/Objects-normal/x86_64/utils.d --serialize-diagnostics /Users/chengtai/Documents/2014/MOTR/modules/beta/DerivedData/beta/Build/Intermediates/beta.build/Release/beta.build/Objects-normal/x86_64/utils.dia -c /Users/chengtai/Documents/2014/MOTR/modules/beta/beta/utils.cpp -o /Users/chengtai/Documents/2014/MOTR/modules/beta/DerivedData/beta/Build/Intermediates/beta.build/Release/beta.build/Objects-normal/x86_64/utils.o36"B89DD974-D8D1-42BC-8260-C2C20A1B6FBA-
+b420EE8F2-97CB-4366-B62F-A4A570C4063E
 
 CGenerateDSYMFile /Users/chengtai/Documents/2014/MOTR/modules/beta/DerivedData/beta/Build/Products/Release/beta.dSYM /Users/chengtai/Documents/2014/MOTR/modules/beta/DerivedData/beta/Build/Products/Release/beta
-s424061543.677401
-e424061543.715838
+s424071306.580431
+e424071306.627127
 r1
 xGenerateDSYMFile
 x/Users/chengtai/Documents/2014/MOTR/modules/beta/DerivedData/beta/Build/Products/Release/beta.dSYM
 x/Users/chengtai/Documents/2014/MOTR/modules/beta/DerivedData/beta/Build/Products/Release/beta
-lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection107"Generate /Users/chengtai/Documents/2014/MOTR/modules/beta/DerivedData/beta/Build/Products/Release/beta.dSYM111"GenerateDSYMFile DerivedData/beta/Build/Products/Release/beta.dSYM DerivedData/beta/Build/Products/Release/beta637bad67aa46b941^f241b767aa46b941^---0#0#1#-19%DVTDocumentLocation2@115"file://localhost/Users/chengtai/Documents/2014/MOTR/modules/beta/DerivedData/beta/Build/Products/Release/beta.dSYM/0000000000000000^464"GenerateDSYMFile DerivedData/beta/Build/Products/Release/beta.dSYM DerivedData/beta/Build/Products/Release/beta    cd /Users/chengtai/Documents/2014/MOTR/modules/beta    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/dsymutil /Users/chengtai/Documents/2014/MOTR/modules/beta/DerivedData/beta/Build/Products/Release/beta -o /Users/chengtai/Documents/2014/MOTR/modules/beta/DerivedData/beta/Build/Products/Release/beta.dSYM36"A0D8FAF1-FC77-4D18-84BA-5CA6D43394CF-
-b028702A7-3B10-4EAC-9969-D52794EA54AF
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection107"Generate /Users/chengtai/Documents/2014/MOTR/modules/beta/DerivedData/beta/Build/Products/Release/beta.dSYM111"GenerateDSYMFile DerivedData/beta/Build/Products/Release/beta.dSYM DerivedData/beta/Build/Products/Release/beta98a2948ad046b941^2e8ca08ad046b941^---0#0#1#-19%DVTDocumentLocation2@115"file://localhost/Users/chengtai/Documents/2014/MOTR/modules/beta/DerivedData/beta/Build/Products/Release/beta.dSYM/0000000000000000^464"GenerateDSYMFile DerivedData/beta/Build/Products/Release/beta.dSYM DerivedData/beta/Build/Products/Release/beta    cd /Users/chengtai/Documents/2014/MOTR/modules/beta    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/dsymutil /Users/chengtai/Documents/2014/MOTR/modules/beta/DerivedData/beta/Build/Products/Release/beta -o /Users/chengtai/Documents/2014/MOTR/modules/beta/DerivedData/beta/Build/Products/Release/beta.dSYM36"1A7FE8BB-79BF-4F64-B490-FB2EA8B42E4B-
+bA397D04C-7F63-4E58-A44F-ED9B10F0371A
 
 CLd /Users/chengtai/Documents/2014/MOTR/modules/beta/DerivedData/beta/Build/Products/Release/beta normal x86_64
-s424061543.649842
-e424061543.668467
+s424071306.550433
+e424071306.571784
 r1
 xLd
 x/Users/chengtai/Documents/2014/MOTR/modules/beta/DerivedData/beta/Build/Products/Release/beta
@@ -4684,6 +5147,7 @@ d/Users/chengtai/Documents/2014/MOTR/modules/beta/DerivedData/beta/Build/Interme
 d/Users/chengtai/Documents/2014/MOTR/modules/beta/DerivedData/beta/Build/Intermediates/beta.build/Release/beta.build/Objects-normal/x86_64/main.o
 d/Users/chengtai/Documents/2014/MOTR/modules/beta/DerivedData/beta/Build/Intermediates/beta.build/Release/beta.build/Objects-normal/x86_64/convcore.o
 d/Users/chengtai/Documents/2014/MOTR/modules/beta/DerivedData/beta/Build/Intermediates/beta.build/Release/beta.build/Objects-normal/x86_64/layer.o
+d/Users/chengtai/Documents/2014/MOTR/modules/beta/DerivedData/beta/Build/Intermediates/beta.build/Release/beta.build/Objects-normal/x86_64/utils.o
 d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk/usr/lib/libc++.dylib
 d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk/usr/lib/libSystem.dylib
 d/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/5.1/lib/darwin/libclang_rt.osx.a
@@ -4711,6 +5175,6 @@ d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/
 d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk/usr/lib/system/libunc.dylib
 d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk/usr/lib/system/libunwind.dylib
 d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk/usr/lib/system/libxpc.dylib
-lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection98"Link /Users/chengtai/Documents/2014/MOTR/modules/beta/DerivedData/beta/Build/Products/Release/beta61"Ld DerivedData/beta/Build/Products/Release/beta normal x86_64336aa667aa46b941^2d21ab67aa46b941^---0#0#1#--1064"Ld DerivedData/beta/Build/Products/Release/beta normal x86_64    cd /Users/chengtai/Documents/2014/MOTR/modules/beta    export MACOSX_DEPLOYMENT_TARGET=10.8    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++ -arch x86_64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk -L/Users/chengtai/Documents/2014/MOTR/modules/beta/DerivedData/beta/Build/Products/Release -F/Users/chengtai/Documents/2014/MOTR/modules/beta/DerivedData/beta/Build/Products/Release -filelist /Users/chengtai/Documents/2014/MOTR/modules/beta/DerivedData/beta/Build/Intermediates/beta.build/Release/beta.build/Objects-normal/x86_64/beta.LinkFileList -mmacosx-version-min=10.8 -stdlib=libc++ -Xlinker -dependency_info -Xlinker /Users/chengtai/Documents/2014/MOTR/modules/beta/DerivedData/beta/Build/Intermediates/beta.build/Release/beta.build/Objects-normal/x86_64/beta_dependency_info.dat -o /Users/chengtai/Documents/2014/MOTR/modules/beta/DerivedData/beta/Build/Products/Release/beta36"31565ACD-6463-441B-9EE3-9F94ADACAB92-
-b028702A7-3B10-4EAC-9969-D52794EA54AF
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection98"Link /Users/chengtai/Documents/2014/MOTR/modules/beta/DerivedData/beta/Build/Products/Release/beta61"Ld DerivedData/beta/Build/Products/Release/beta normal x86_6477f78c8ad046b941^e560928ad046b941^---0#0#1#--1064"Ld DerivedData/beta/Build/Products/Release/beta normal x86_64    cd /Users/chengtai/Documents/2014/MOTR/modules/beta    export MACOSX_DEPLOYMENT_TARGET=10.8    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++ -arch x86_64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk -L/Users/chengtai/Documents/2014/MOTR/modules/beta/DerivedData/beta/Build/Products/Release -F/Users/chengtai/Documents/2014/MOTR/modules/beta/DerivedData/beta/Build/Products/Release -filelist /Users/chengtai/Documents/2014/MOTR/modules/beta/DerivedData/beta/Build/Intermediates/beta.build/Release/beta.build/Objects-normal/x86_64/beta.LinkFileList -mmacosx-version-min=10.8 -stdlib=libc++ -Xlinker -dependency_info -Xlinker /Users/chengtai/Documents/2014/MOTR/modules/beta/DerivedData/beta/Build/Intermediates/beta.build/Release/beta.build/Objects-normal/x86_64/beta_dependency_info.dat -o /Users/chengtai/Documents/2014/MOTR/modules/beta/DerivedData/beta/Build/Products/Release/beta36"58F36694-D33F-44C9-9016-875C96E32F23-
+bA397D04C-7F63-4E58-A44F-ED9B10F0371A
 

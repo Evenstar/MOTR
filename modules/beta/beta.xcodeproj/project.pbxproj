@@ -7,8 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7211D2041946ACEE00A9F5DF /* utils.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7211D2031946ACEE00A9F5DF /* utils.cpp */; };
 		72B3D3FB19456F620085D0A1 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 72B3D3FA19456F620085D0A1 /* main.cpp */; };
-		72B3D3FD19456F620085D0A1 /* beta.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = 72B3D3FC19456F620085D0A1 /* beta.1 */; };
 		72FB456E19462B810093BE9B /* layer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 72FB456D19462B810093BE9B /* layer.cpp */; };
 		72FB45721946307A0093BE9B /* convcore.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 72FB45701946307A0093BE9B /* convcore.cpp */; };
 /* End PBXBuildFile section */
@@ -20,16 +20,16 @@
 			dstPath = /usr/share/man/man1/;
 			dstSubfolderSpec = 0;
 			files = (
-				72B3D3FD19456F620085D0A1 /* beta.1 in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 1;
 		};
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		7211D2021946ACD700A9F5DF /* utils.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = utils.h; sourceTree = "<group>"; };
+		7211D2031946ACEE00A9F5DF /* utils.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = utils.cpp; sourceTree = "<group>"; };
 		72B3D3F719456F620085D0A1 /* beta */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = beta; sourceTree = BUILT_PRODUCTS_DIR; };
 		72B3D3FA19456F620085D0A1 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
-		72B3D3FC19456F620085D0A1 /* beta.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = beta.1; sourceTree = "<group>"; };
 		72B3D4031945703C0085D0A1 /* layer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = layer.h; sourceTree = "<group>"; };
 		72B3D4041945719D0085D0A1 /* stdafx.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = stdafx.h; sourceTree = "<group>"; };
 		72FB456D19462B810093BE9B /* layer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = layer.cpp; sourceTree = "<group>"; };
@@ -68,12 +68,13 @@
 			isa = PBXGroup;
 			children = (
 				72B3D3FA19456F620085D0A1 /* main.cpp */,
-				72B3D3FC19456F620085D0A1 /* beta.1 */,
 				72B3D4031945703C0085D0A1 /* layer.h */,
 				72B3D4041945719D0085D0A1 /* stdafx.h */,
 				72FB456D19462B810093BE9B /* layer.cpp */,
 				72FB45701946307A0093BE9B /* convcore.cpp */,
 				72FB4573194631770093BE9B /* convcore.h */,
+				7211D2021946ACD700A9F5DF /* utils.h */,
+				7211D2031946ACEE00A9F5DF /* utils.cpp */,
 			);
 			path = beta;
 			sourceTree = "<group>";
@@ -132,6 +133,7 @@
 				72B3D3FB19456F620085D0A1 /* main.cpp in Sources */,
 				72FB45721946307A0093BE9B /* convcore.cpp in Sources */,
 				72FB456E19462B810093BE9B /* layer.cpp in Sources */,
+				7211D2041946ACEE00A9F5DF /* utils.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

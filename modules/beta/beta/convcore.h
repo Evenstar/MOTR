@@ -10,7 +10,9 @@
 #define CONVCORE_H
 #include "stdafx.h"
 using namespace std;
+
 MatType Conv2_Valid(const MatType& a, const MatType& b);
+
 MatType Conv2(const MatType& a, const MatType& b, string boundarytype);
 
 

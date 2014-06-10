@@ -31,6 +31,7 @@ public:
     void Print();
 };
 
+
 class InputLayer {
 public:
     InputLayer(const InputConfig& _cfg):cfg(_cfg){};

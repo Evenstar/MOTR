@@ -1,17 +1,27 @@
-#include <iostream>
-#include <armadillo>
+
 #include "convcore.h"
+#include "utils.h"
+#include "layer.h"
+#include <iomanip>
 using namespace std;
 using namespace arma;
 
 int main(int argc, char** argv)
 {
-    MatType A = randu<MatType>(28,28);
-    mat55 B= randu<MatType>(5,5);
-    //    for(int i=0; i<1000; i++)
-    //        MatType C=Conv2_Valid(A,B);
-    for(int i=0; i<100000; i++)
-        MatType C=Conv2(A,B,"valid");
+//    InputConfig config(28,28,12,5,2,2);
+//    InputLayer inputlayer(config);
+
+    vector<MatType*> xtrain;
+    vector<MatType*> ytrain;
+    ReadMnistPtr(xtrain, ytrain,10);
+    
+    
+    
+    for(int i=0; i<xtrain.size();i++){
+        delete xtrain[i];
+        delete ytrain[i];
+    }
+    
     return 0;
 }
 

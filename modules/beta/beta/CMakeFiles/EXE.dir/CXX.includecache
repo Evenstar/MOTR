@@ -10,13 +10,19 @@
 stdafx.h
 /Users/chengtai/Documents/2014/MOTR/modules/beta/beta/stdafx.h
 
+/Users/chengtai/Documents/2014/MOTR/modules/beta/beta/layer.h
+stdafx.h
+/Users/chengtai/Documents/2014/MOTR/modules/beta/beta/stdafx.h
+
 /Users/chengtai/Documents/2014/MOTR/modules/beta/beta/main.cpp
-iostream
--
-armadillo
--
 convcore.h
 /Users/chengtai/Documents/2014/MOTR/modules/beta/beta/convcore.h
+utils.h
+/Users/chengtai/Documents/2014/MOTR/modules/beta/beta/utils.h
+layer.h
+/Users/chengtai/Documents/2014/MOTR/modules/beta/beta/layer.h
+iomanip
+-
 
 /Users/chengtai/Documents/2014/MOTR/modules/beta/beta/stdafx.h
 vector
@@ -35,4 +41,8 @@ memory
 -
 armadillo
 -
+
+/Users/chengtai/Documents/2014/MOTR/modules/beta/beta/utils.h
+stdafx.h
+/Users/chengtai/Documents/2014/MOTR/modules/beta/beta/stdafx.h
 
