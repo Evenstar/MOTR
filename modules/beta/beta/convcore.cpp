@@ -37,7 +37,7 @@ MatType Conv2_Valid(const MatType& a, const MatType& b)
 MatType Conv2(const MatType& a, const MatType& b, string boundarytype){
     if (boundarytype!="valid" && boundarytype!="full")
     {
-        cerr<<"Invalid boundary type.\n";
+        LOG(FATAL)<<"Invalid boundary type.\n";
         exit(-1);
     }
     if (boundarytype=="valid")
