@@ -9,7 +9,7 @@
 #include "convcore.h"
 
 using namespace arma;
-MatType Conv2_Valid(const MatType& a, const MatType& b)
+MatType conv2_valid(const MatType& a, const MatType& b)
 {
     int m=a.n_rows;
     int n=a.n_cols;
@@ -34,7 +34,7 @@ MatType Conv2_Valid(const MatType& a, const MatType& b)
 }
 
 
-MatType Conv2(const MatType& a, const MatType& b, string boundarytype){
+MatType conv2(const MatType& a, const MatType& b, string boundarytype){
     if (boundarytype!="valid" && boundarytype!="full")
     {
         LOG(FATAL)<<"Invalid boundary type.\n";
@@ -42,7 +42,7 @@ MatType Conv2(const MatType& a, const MatType& b, string boundarytype){
     }
     if (boundarytype=="valid")
     {
-        return Conv2_Valid(a,b);
+        return conv2_valid(a,b);
     }
     else
     {
@@ -50,7 +50,7 @@ MatType Conv2(const MatType& a, const MatType& b, string boundarytype){
         int r1=b.n_rows-1;
         int r2=b.n_cols-1;
         aext.submat(r1,r2,r1+a.n_rows-1,r2+a.n_rows-1)=a;
-        return Conv2_Valid(aext, b);
+        return conv2_valid(aext, b);
     }
 }
 

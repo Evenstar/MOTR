@@ -11,9 +11,9 @@
 #include "stdafx.h"
 using namespace std;
 
-MatType Conv2_Valid(const MatType& a, const MatType& b);
+MatType conv2_valid(const MatType& a, const MatType& b);
 
-MatType Conv2(const MatType& a, const MatType& b, string boundarytype);
+MatType conv2(const MatType& a, const MatType& b, string boundarytype);
 
 MatType maxpooling(const MatType&, int stride, int side );
 

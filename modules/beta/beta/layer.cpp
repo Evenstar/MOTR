@@ -92,7 +92,7 @@ void InputLayer::setfilter(const MatType& _mat, int i)
 void InputLayer::applyfilter()
 {
     for(int i=0; i<cfg.noutmaps; i++){
-        *outdata[i]=Conv2(*indata,*filter[i],"valid");
+        *outdata[i]=conv2(*indata,*filter[i],"valid");
     }
 }
 
@@ -230,7 +230,7 @@ void ConvLayer::applyfilter()
         MatType temp(r,c);
         temp.zeros();
         for(int j=0; j<cfg.inmap[i].size();j++){
-            temp += Conv2(*indata[cfg.inmap[i][j]], *filter[i][j],"valid");
+            temp += conv2(*indata[cfg.inmap[i][j]], *filter[i][j],"valid");
         }
         *outdata[i]=temp;
     }
@@ -272,6 +272,9 @@ FuLayer::~FuLayer()
 {
     delete weight;
     delete outdata;
+    indata=0;
+    weight=0;
+    outdata=0;
 }
 
 void FuLayer::setinput( VecType* _indata)
@@ -300,6 +303,29 @@ void FuLayer::print()
 void FuLayer::randominit()
 {
     *weight=randu<MatType>(outlen,inlen)/(inlen+outlen);
+}
+
+
+OutputLayer::OutputLayer()
+{
+    outdata=new VecType;
+}
+
+OutputLayer::~OutputLayer()
+{
+    delete outdata;
+    outdata=0;
+    indata =0;
+}
+
+void OutputLayer::setinput(VecType* _indata)
+{
+    indata=_indata;
+}
+void OutputLayer::run()
+{
+    ///TODO: ADD TYPES OF OPERATIONS, SOFTMAX,SIGMOID,RELU.
+    ;
 }
 
 

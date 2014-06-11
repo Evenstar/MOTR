@@ -140,6 +140,32 @@ private:
 };
 
 
+class OutputLayer {
+public:
+    OutputLayer();
+
+    ~OutputLayer();
+    
+    void setinput(VecType*);
+    
+    ///different operations applied to input, softmax, linear,etc.
+    void run();
+    
+    VecType* data() { return outdata; }
+public:
+    VecType* indata;
+    VecType* outdata;
+};
+
+
+
+
+
+
+
+
+
+
 
 
 
