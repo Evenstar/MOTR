@@ -103,6 +103,13 @@ void InputLayer::downsample()
     }
 }
 
+void InputLayer::randominit()
+{
+    for(int i=0; i<cfg.noutmaps; i++) {
+        *filter[i]=randu<MatType>(cfg.kernelsize,cfg.kernelsize)/cfg.kernelsize/cfg.kernelsize;
+    }
+}
+
 void InputLayer::run()
 {
     applyfilter();
@@ -242,6 +249,66 @@ void ConvLayer::run()
     applyfilter();
     downsample();
 }
+
+ConvLayer::~ConvLayer()
+{
+    for(int i=0; i<cfg.noutmaps; i++){
+        delete outdata[i];
+        for(int j=0; j<filter[i].size(); j++){
+            delete filter[i][j];
+        }
+    }
+}
+
+FuLayer::FuLayer(int _inlength, int _outlength)
+{
+    inlen=_inlength;
+    outlen=_outlength;
+    weight=new MatType(outlen, inlen);
+    outdata=new VecType(outlen);
+}
+
+FuLayer::~FuLayer()
+{
+    delete weight;
+    delete outdata;
+}
+
+void FuLayer::setinput( VecType* _indata)
+{
+    indata=_indata;
+}
+
+void FuLayer::setweight( MatType* _mat)
+{
+    weight=_mat;
+}
+
+void FuLayer::run()
+{
+    *outdata=*weight*(*indata);
+}
+
+void FuLayer::print()
+{
+    cout<<"Info of FuLayer"<<endl;
+    cout<<"inlen        "<<inlen<<endl;
+    cout<<"outlen       "<<outlen<<endl;
+    cout<<"weight       "<<"("<<weight->n_rows<<","<<weight->n_cols<<")"<<endl;
+}
+
+void FuLayer::randominit()
+{
+    *weight=randu<MatType>(outlen,inlen)/(inlen+outlen);
+}
+
+
+
+
+
+
+
+
 
 
 

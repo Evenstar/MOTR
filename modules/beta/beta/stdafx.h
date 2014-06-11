@@ -18,7 +18,8 @@
 #include <armadillo>
 #include "../easylogging++.h"
 typedef arma::mat MatType;
-typedef arma::mat55 FilterType;
+typedef arma::mat FilterType;
+typedef arma::vec VecType;
 
 using namespace std;
 using namespace arma;

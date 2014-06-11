@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		7211D2041946ACEE00A9F5DF /* utils.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7211D2031946ACEE00A9F5DF /* utils.cpp */; };
+		7226E8061947FD2C00CE5C24 /* libarmadillo.4.30.3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 7226E8051947FD2C00CE5C24 /* libarmadillo.4.30.3.dylib */; };
 		72B3D3FB19456F620085D0A1 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 72B3D3FA19456F620085D0A1 /* main.cpp */; };
 		72FB456E19462B810093BE9B /* layer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 72FB456D19462B810093BE9B /* layer.cpp */; };
 		72FB45721946307A0093BE9B /* convcore.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 72FB45701946307A0093BE9B /* convcore.cpp */; };
@@ -28,6 +29,7 @@
 /* Begin PBXFileReference section */
 		7211D2021946ACD700A9F5DF /* utils.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = utils.h; sourceTree = "<group>"; };
 		7211D2031946ACEE00A9F5DF /* utils.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = utils.cpp; sourceTree = "<group>"; };
+		7226E8051947FD2C00CE5C24 /* libarmadillo.4.30.3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = libarmadillo.4.30.3.dylib; sourceTree = "<group>"; };
 		72B3D3F719456F620085D0A1 /* beta */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = beta; sourceTree = BUILT_PRODUCTS_DIR; };
 		72B3D3FA19456F620085D0A1 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		72B3D4031945703C0085D0A1 /* layer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = layer.h; sourceTree = "<group>"; };
@@ -42,6 +44,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7226E8061947FD2C00CE5C24 /* libarmadillo.4.30.3.dylib in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -51,6 +54,7 @@
 		72B3D3EE19456F620085D0A1 = {
 			isa = PBXGroup;
 			children = (
+				7226E8051947FD2C00CE5C24 /* libarmadillo.4.30.3.dylib */,
 				72B3D3F919456F620085D0A1 /* beta */,
 				72B3D3F819456F620085D0A1 /* Products */,
 			);
@@ -173,6 +177,10 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				"HEADER_SEARCH_PATHS[arch=*]" = (
+					"/usr/local/include,",
+					/usr/include,
+				);
 				MACOSX_DEPLOYMENT_TARGET = 10.8;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = macosx10.8;
@@ -208,6 +216,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				"HEADER_SEARCH_PATHS[arch=*]" = "/usr/local/include,/usr/include";
 				MACOSX_DEPLOYMENT_TARGET = 10.8;
 				SDKROOT = macosx10.8;
 			};
@@ -217,6 +226,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				"HEADER_SEARCH_PATHS[arch=*]" = /usr/local/include;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -225,6 +238,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				HEADER_SEARCH_PATHS = /usr/local/include;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;

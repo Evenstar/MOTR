@@ -49,6 +49,8 @@ public:
     
     void run();
     
+    void randominit();
+    
     ///return the data ptr, dangerous, only used for initialization of next layer.
     MatType** data() { return &outdata[0]; }
 private:
@@ -87,6 +89,8 @@ class ConvLayer {
 public:
     ConvLayer(const ConvlayerConfig& _cfg);
     
+    ~ConvLayer();
+    
     void print();
     
     void setfilter(const MatType&, int i, int j);
@@ -99,14 +103,40 @@ public:
     
     void run();
     
-public:
+    MatType** data() { return &outdata[0] ;}
+private:
     vector<MatType*> indata;
     vector<MatType*> outdata;
     vector<vector<MatType*> > filter;
     ConvlayerConfig cfg;
-    
     void applyfilter();    
     void downsample();
+};
+
+class FuLayer {
+public:
+    FuLayer(int _inlength, int _outlength);
+    
+    ~FuLayer();
+    
+    void setinput(VecType*);
+    
+    void setweight(MatType*);
+    
+    void randominit();
+    
+    void run();
+    
+    VecType* data() { return outdata; }
+    
+    void print();
+
+private:
+    int inlen;
+    int outlen;
+    VecType* indata;
+    MatType* weight;
+    VecType* outdata;
 };
 
 

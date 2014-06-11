@@ -70,3 +70,5 @@
 10/06/2014 18:09:04,206 WARN  [default] Aborting application. Reason: Fatal log at [/Users/chengtai/Documents/2014/MOTR/modules/beta/beta/../easylogging++.h:5237]
 10/06/2014 18:09:20,404 FATAL [default] CRASH HANDLED; Application has crashed due to [SIGSEGV] signal
 10/06/2014 18:09:20,405 WARN  [default] Aborting application. Reason: Fatal log at [/Users/chengtai/Documents/2014/MOTR/modules/beta/beta/../easylogging++.h:5237]
+10/06/2014 22:43:56,294 FATAL [default] CRASH HANDLED; Application has crashed due to [SIGSEGV] signal
+10/06/2014 22:43:56,298 WARN  [default] Aborting application. Reason: Fatal log at [/Users/chengtai/Documents/2014/MOTR/modules/beta/beta/../easylogging++.h:5237]
