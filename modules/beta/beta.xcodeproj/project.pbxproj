@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		7211D2041946ACEE00A9F5DF /* utils.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7211D2031946ACEE00A9F5DF /* utils.cpp */; };
 		7226E8061947FD2C00CE5C24 /* libarmadillo.4.30.3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 7226E8051947FD2C00CE5C24 /* libarmadillo.4.30.3.dylib */; };
+		7226E8091948025900CE5C24 /* models.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7226E8081948025900CE5C24 /* models.cpp */; };
 		72B3D3FB19456F620085D0A1 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 72B3D3FA19456F620085D0A1 /* main.cpp */; };
 		72FB456E19462B810093BE9B /* layer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 72FB456D19462B810093BE9B /* layer.cpp */; };
 		72FB45721946307A0093BE9B /* convcore.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 72FB45701946307A0093BE9B /* convcore.cpp */; };
@@ -30,6 +31,8 @@
 		7211D2021946ACD700A9F5DF /* utils.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = utils.h; sourceTree = "<group>"; };
 		7211D2031946ACEE00A9F5DF /* utils.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = utils.cpp; sourceTree = "<group>"; };
 		7226E8051947FD2C00CE5C24 /* libarmadillo.4.30.3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = libarmadillo.4.30.3.dylib; sourceTree = "<group>"; };
+		7226E8071948024900CE5C24 /* models.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = models.h; sourceTree = "<group>"; };
+		7226E8081948025900CE5C24 /* models.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = models.cpp; sourceTree = "<group>"; };
 		72B3D3F719456F620085D0A1 /* beta */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = beta; sourceTree = BUILT_PRODUCTS_DIR; };
 		72B3D3FA19456F620085D0A1 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		72B3D4031945703C0085D0A1 /* layer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = layer.h; sourceTree = "<group>"; };
@@ -79,6 +82,8 @@
 				72FB4573194631770093BE9B /* convcore.h */,
 				7211D2021946ACD700A9F5DF /* utils.h */,
 				7211D2031946ACEE00A9F5DF /* utils.cpp */,
+				7226E8071948024900CE5C24 /* models.h */,
+				7226E8081948025900CE5C24 /* models.cpp */,
 			);
 			path = beta;
 			sourceTree = "<group>";
@@ -134,6 +139,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7226E8091948025900CE5C24 /* models.cpp in Sources */,
 				72B3D3FB19456F620085D0A1 /* main.cpp in Sources */,
 				72FB45721946307A0093BE9B /* convcore.cpp in Sources */,
 				72FB456E19462B810093BE9B /* layer.cpp in Sources */,

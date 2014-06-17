@@ -41,14 +41,14 @@ void InputLayer::print()
         }
         cout<<"}"<<endl;
     }
-    
+
     if (indata==0){
         cout<<"indata:      empty"<<endl;
     } else {
         cout<<"indata:      ("<<indata->n_rows
         <<","<<indata->n_cols<<")"<<endl;
     }
-    
+
     if (outdata.empty()){
         cout<<"outdata      empty"<<endl;
     } else {
@@ -178,7 +178,7 @@ void ConvLayer::print()
         }
         cout<<"}"<<endl;
     }
-    
+
 }
 
 void ConvLayer::setfilter(const vector<vector<MatType*> >& _filter)
@@ -223,7 +223,7 @@ void ConvLayer::setinput(MatType** data)
 
 void ConvLayer::applyfilter()
 {
-    
+
     int r=cfg.inputrows-cfg.kernelsize+1;
     int c=cfg.inputcols-cfg.kernelsize+1;
     for(int i=0; i<cfg.noutmaps; i++){

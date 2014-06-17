@@ -39,18 +39,18 @@ public:
     inline void setinput(MatType* ptr){
         indata=ptr;
     }
-    
+
     ///to avoid memory error, data copy is involved.
     void setfilter(const vector<MatType*> &);
-    
+
     void setfilter(const MatType&, int);
-    
+
     void print();
-    
+
     void run();
-    
+
     void randominit();
-    
+
     ///return the data ptr, dangerous, only used for initialization of next layer.
     MatType** data() { return &outdata[0]; }
 private:
@@ -58,7 +58,7 @@ private:
     vector<MatType*> outdata;
     vector<MatType*> filter;
     InputConfig cfg;
-    
+
 private:
     void applyfilter();
     void downsample();
@@ -76,7 +76,6 @@ public:
     {
         setdefaultinmaps();
     }
-    
     int ninmaps;
     int permaps;
     vector<vector<int> > inmap;
@@ -88,47 +87,47 @@ private:
 class ConvLayer {
 public:
     ConvLayer(const ConvlayerConfig& _cfg);
-    
+
     ~ConvLayer();
-    
+
     void print();
-    
+
     void setfilter(const MatType&, int i, int j);
-    
+
     void setfilter(const vector<vector<MatType*> >& _filter);
-    
+
     void randominit();
-    
+
     void setinput(MatType**);
-    
+
     void run();
-    
+
     MatType** data() { return &outdata[0] ;}
 private:
     vector<MatType*> indata;
     vector<MatType*> outdata;
     vector<vector<MatType*> > filter;
     ConvlayerConfig cfg;
-    void applyfilter();    
+    void applyfilter();
     void downsample();
 };
 
 class FuLayer {
 public:
     FuLayer(int _inlength, int _outlength);
-    
+
     ~FuLayer();
-    
+
     void setinput(VecType*);
-    
+
     void setweight(MatType*);
-    
+
     void randominit();
-    
+
     void run();
-    
+
     VecType* data() { return outdata; }
-    
+
     void print();
 
 private:
@@ -145,12 +144,12 @@ public:
     OutputLayer();
 
     ~OutputLayer();
-    
+
     void setinput(VecType*);
-    
+
     ///different operations applied to input, softmax, linear,etc.
     void run();
-    
+
     VecType* data() { return outdata; }
 public:
     VecType* indata;

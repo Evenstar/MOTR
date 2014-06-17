@@ -19,6 +19,9 @@ CMakeFiles/EXE.dir/main.cpp.o: stdafx.h
 CMakeFiles/EXE.dir/main.cpp.o: utils.h
 CMakeFiles/EXE.dir/main.cpp.o: /Users/chengtai/Documents/2014/MOTR/modules/beta/easylogging++.h
 
+CMakeFiles/EXE.dir/models.cpp.o: models.cpp
+CMakeFiles/EXE.dir/models.cpp.o: models.h
+
 CMakeFiles/EXE.dir/utils.cpp.o: stdafx.h
 CMakeFiles/EXE.dir/utils.cpp.o: utils.cpp
 CMakeFiles/EXE.dir/utils.cpp.o: utils.h

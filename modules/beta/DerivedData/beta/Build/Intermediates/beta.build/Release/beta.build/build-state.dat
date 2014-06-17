@@ -2,10 +2,11 @@ Tbeta
 v6
 r1
 cCheck dependencies
+cCompileC DerivedData/beta/Build/Intermediates/beta.build/Release/beta.build/Objects-normal/x86_64/main.o /Users/chengtai/Documents/2014/MOTR/modules/beta/beta/main.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC DerivedData/beta/Build/Intermediates/beta.build/Release/beta.build/Objects-normal/x86_64/layer.o /Users/chengtai/Documents/2014/MOTR/modules/beta/beta/layer.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC DerivedData/beta/Build/Intermediates/beta.build/Release/beta.build/Objects-normal/x86_64/models.o /Users/chengtai/Documents/2014/MOTR/modules/beta/beta/models.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler
 cCompileC DerivedData/beta/Build/Intermediates/beta.build/Release/beta.build/Objects-normal/x86_64/convcore.o /Users/chengtai/Documents/2014/MOTR/modules/beta/beta/convcore.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler
 cCompileC DerivedData/beta/Build/Intermediates/beta.build/Release/beta.build/Objects-normal/x86_64/utils.o /Users/chengtai/Documents/2014/MOTR/modules/beta/beta/utils.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler
-cCompileC DerivedData/beta/Build/Intermediates/beta.build/Release/beta.build/Objects-normal/x86_64/layer.o /Users/chengtai/Documents/2014/MOTR/modules/beta/beta/layer.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler
-cCompileC DerivedData/beta/Build/Intermediates/beta.build/Release/beta.build/Objects-normal/x86_64/main.o /Users/chengtai/Documents/2014/MOTR/modules/beta/beta/main.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler
 cLd /Users/chengtai/Documents/2014/MOTR/modules/beta/DerivedData/beta/Build/Products/Release/beta normal x86_64
 cGenerateDSYMFile /Users/chengtai/Documents/2014/MOTR/modules/beta/DerivedData/beta/Build/Products/Release/beta.dSYM /Users/chengtai/Documents/2014/MOTR/modules/beta/DerivedData/beta/Build/Products/Release/beta
 
@@ -165,37 +166,41 @@ t1400787237
 s6000
 
 N/Users/chengtai/Documents/2014/MOTR/modules/beta/DerivedData/beta/Build/Intermediates/beta.build/Release/beta.build/Objects-normal/x86_64/beta.LinkFileList
-c000000005397C5BD000000000000024A
-t1402455485
-s586
+c00000000539B4CA600000000000002DD
+t1402686630
+s733
 
 N/Users/chengtai/Documents/2014/MOTR/modules/beta/DerivedData/beta/Build/Intermediates/beta.build/Release/beta.build/Objects-normal/x86_64/convcore.o
-t1402455712
+t1402687364
 s2519664
 
 N/Users/chengtai/Documents/2014/MOTR/modules/beta/DerivedData/beta/Build/Intermediates/beta.build/Release/beta.build/Objects-normal/x86_64/layer.o
-t1402456448
-s2793056
+t1402687365
+s2793088
 
 N/Users/chengtai/Documents/2014/MOTR/modules/beta/DerivedData/beta/Build/Intermediates/beta.build/Release/beta.build/Objects-normal/x86_64/main.o
-t1402456448
+t1402687365
 s3032488
 
+N/Users/chengtai/Documents/2014/MOTR/modules/beta/DerivedData/beta/Build/Intermediates/beta.build/Release/beta.build/Objects-normal/x86_64/models.o
+t1402687359
+s1716
+
 N/Users/chengtai/Documents/2014/MOTR/modules/beta/DerivedData/beta/Build/Intermediates/beta.build/Release/beta.build/Objects-normal/x86_64/utils.o
-t1402455489
+t1402687363
 s370040
 
 N/Users/chengtai/Documents/2014/MOTR/modules/beta/DerivedData/beta/Build/Products/Release/beta
-t1402456448
+t1402687365
 s375260
 
 N/Users/chengtai/Documents/2014/MOTR/modules/beta/DerivedData/beta/Build/Products/Release/beta.dSYM
-t1402455713
+t1402687186
 s102
 
 N/Users/chengtai/Documents/2014/MOTR/modules/beta/beta/convcore.cpp
-c000000005397C69A00000000000006B7
-t1402455706
+c000000005397CA5000000000000006B7
+t1402456656
 s1719
 
 N/Users/chengtai/Documents/2014/MOTR/modules/beta/beta/convcore.h
@@ -204,24 +209,34 @@ t1402455706
 s401
 
 N/Users/chengtai/Documents/2014/MOTR/modules/beta/beta/layer.cpp
-c000000005397C97B0000000000001ADE
-t1402456443
-s6878
+c000000005397CA4B0000000000001AF9
+t1402456651
+s6905
 
 N/Users/chengtai/Documents/2014/MOTR/modules/beta/beta/layer.h
-c000000005397C97B0000000000000C4A
-t1402456443
-s3146
+c000000005397CA7F0000000000000BDD
+t1402456703
+s3037
 
 N/Users/chengtai/Documents/2014/MOTR/modules/beta/beta/main.cpp
 c000000005397C3420000000000000495
 t1402454850
 s1173
 
+N/Users/chengtai/Documents/2014/MOTR/modules/beta/beta/models.cpp
+c000000005397CB25000000000000008F
+t1402456869
+s143
+
+N/Users/chengtai/Documents/2014/MOTR/modules/beta/beta/models.h
+c000000005397CAD100000000000000A3
+t1402456785
+s163
+
 N/Users/chengtai/Documents/2014/MOTR/modules/beta/beta/stdafx.h
-c000000005397B31F00000000000001D2
-t1402450719
-s466
+c00000000539B4EC700000000000001EF
+t1402687175
+s495
 
 N/Users/chengtai/Documents/2014/MOTR/modules/beta/beta/utils.cpp
 c0000000053975AC700000000000007DE
@@ -774,9 +789,9 @@ t1361430995
 s1314
 
 N/usr/local/include/armadillo_bits/config.hpp
-c000000005396439800000000000017F7
-t1402356632
-s6135
+c00000000539B4C7200000000000017FB
+t1402686578
+s6139
 
 N/usr/local/include/armadillo_bits/constants.hpp
 c0000000051FB5A4200000000000027D3
@@ -2382,16 +2397,19 @@ r0
 CBuild AST from /Users/chengtai/Documents/2014/MOTR/modules/beta/beta/main.cpp
 r0
 
+CBuild AST from /Users/chengtai/Documents/2014/MOTR/modules/beta/beta/models.cpp
+r0
+
 CBuild AST from /Users/chengtai/Documents/2014/MOTR/modules/beta/beta/utils.cpp
 r0
 
 CCheck dependencies
 r0
-lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection18"Check dependencies18"Check dependenciesd1eb8bfb0048b941^fd838cfb0048b941^---0#1#1#--18"Check dependencies36"3F5A3864-9D00-47A3-BCEE-C614430A11FE-
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection18"Check dependencies18"Check dependencies2b4df6ff864bb941^3b8ffaff864bb941^---0#1#1#--18"Check dependencies36"FCC0D6D0-DBC5-4146-B0C1-B0C60EEC3546-
 
 CCompileC DerivedData/beta/Build/Intermediates/beta.build/Release/beta.build/Objects-normal/x86_64/convcore.o /Users/chengtai/Documents/2014/MOTR/modules/beta/beta/convcore.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler
-s424148507.002040
-e424148512.108122
+s424380159.980627
+e424380164.954824
 r1
 xCompileC
 xDerivedData/beta/Build/Intermediates/beta.build/Release/beta.build/Objects-normal/x86_64/convcore.o
@@ -2830,12 +2848,12 @@ d/usr/local/include/armadillo_bits/spglue_minus_meat.hpp
 d/usr/local/include/armadillo_bits/spglue_times_meat.hpp
 d/usr/local/include/armadillo_bits/compiler_setup_post.hpp
 d/Users/chengtai/Documents/2014/MOTR/modules/beta/easylogging++.h
-lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection74"Compile /Users/chengtai/Documents/2014/MOTR/modules/beta/beta/convcore.cpp188"CompileC DerivedData/beta/Build/Intermediates/beta.build/Release/beta.build/Objects-normal/x86_64/convcore.o beta/convcore.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler7db0001bfe47b941^3eb01b20fe47b941^---0#0#1#-19%DVTDocumentLocation2@82"file://localhost/Users/chengtai/Documents/2014/MOTR/modules/beta/beta/convcore.cpp0000000000000000^3164"CompileC DerivedData/beta/Build/Intermediates/beta.build/Release/beta.build/Objects-normal/x86_64/convcore.o beta/convcore.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/chengtai/Documents/2014/MOTR/modules/beta    export LANG=en_US.US-ASCII    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x c++ -arch x86_64 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -std=c++11 -stdlib=libc++ -fmodules -fmodules-cache-path=/Users/chengtai/Documents/2014/MOTR/modules/beta/DerivedData/ModuleCache -Wno-trigraphs -fpascal-strings -Os -Wno-missing-field-initializers -Wno-missing-prototypes -Werror=return-type -Werror=deprecated-objc-isa-usage -Werror=objc-root-class -Wno-non-virtual-dtor -Wno-overloaded-virtual -Wno-exit-time-destructors -Wno-missing-braces -Wparentheses -Wswitch -Wunused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wconditional-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wbool-conversion -Wenum-conversion -Wshorten-64-to-32 -Wno-newline-eof -Wno-c++11-extensions -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk -fasm-blocks -fstrict-aliasing -Wdeprecated-declarations -Winvalid-offsetof -mmacosx-version-min=10.8 -g -fvisibility=hidden -fvisibility-inlines-hidden -Wno-sign-conversion -iquote /Users/chengtai/Documents/2014/MOTR/modules/beta/DerivedData/beta/Build/Intermediates/beta.build/Release/beta.build/beta-generated-files.hmap -I/Users/chengtai/Documents/2014/MOTR/modules/beta/DerivedData/beta/Build/Intermediates/beta.build/Release/beta.build/beta-own-target-headers.hmap -I/Users/chengtai/Documents/2014/MOTR/modules/beta/DerivedData/beta/Build/Intermediates/beta.build/Release/beta.build/beta-all-target-headers.hmap -iquote /Users/chengtai/Documents/2014/MOTR/modules/beta/DerivedData/beta/Build/Intermediates/beta.build/Release/beta.build/beta-project-headers.hmap -I/Users/chengtai/Documents/2014/MOTR/modules/beta/DerivedData/beta/Build/Products/Release/include -I/usr/local/include -I/Users/chengtai/Documents/2014/MOTR/modules/beta/DerivedData/beta/Build/Intermediates/beta.build/Release/beta.build/DerivedSources/x86_64 -I/Users/chengtai/Documents/2014/MOTR/modules/beta/DerivedData/beta/Build/Intermediates/beta.build/Release/beta.build/DerivedSources -F/Users/chengtai/Documents/2014/MOTR/modules/beta/DerivedData/beta/Build/Products/Release -MMD -MT dependencies -MF /Users/chengtai/Documents/2014/MOTR/modules/beta/DerivedData/beta/Build/Intermediates/beta.build/Release/beta.build/Objects-normal/x86_64/convcore.d --serialize-diagnostics /Users/chengtai/Documents/2014/MOTR/modules/beta/DerivedData/beta/Build/Intermediates/beta.build/Release/beta.build/Objects-normal/x86_64/convcore.dia -c /Users/chengtai/Documents/2014/MOTR/modules/beta/beta/convcore.cpp -o /Users/chengtai/Documents/2014/MOTR/modules/beta/DerivedData/beta/Build/Intermediates/beta.build/Release/beta.build/Objects-normal/x86_64/convcore.o36"EECA1BFC-2D24-41EB-8928-28E0E0963A0B-
-b2CE42988-06A5-4969-89F9-8A3E8D83BFE3
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection74"Compile /Users/chengtai/Documents/2014/MOTR/modules/beta/beta/convcore.cpp188"CompileC DerivedData/beta/Build/Intermediates/beta.build/Release/beta.build/Objects-normal/x86_64/convcore.o beta/convcore.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compilere640fbff864bb941^c571f404874bb941^---0#0#1#-19%DVTDocumentLocation2@82"file://localhost/Users/chengtai/Documents/2014/MOTR/modules/beta/beta/convcore.cpp0000000000000000^3164"CompileC DerivedData/beta/Build/Intermediates/beta.build/Release/beta.build/Objects-normal/x86_64/convcore.o beta/convcore.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/chengtai/Documents/2014/MOTR/modules/beta    export LANG=en_US.US-ASCII    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x c++ -arch x86_64 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -std=c++11 -stdlib=libc++ -fmodules -fmodules-cache-path=/Users/chengtai/Documents/2014/MOTR/modules/beta/DerivedData/ModuleCache -Wno-trigraphs -fpascal-strings -Os -Wno-missing-field-initializers -Wno-missing-prototypes -Werror=return-type -Werror=deprecated-objc-isa-usage -Werror=objc-root-class -Wno-non-virtual-dtor -Wno-overloaded-virtual -Wno-exit-time-destructors -Wno-missing-braces -Wparentheses -Wswitch -Wunused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wconditional-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wbool-conversion -Wenum-conversion -Wshorten-64-to-32 -Wno-newline-eof -Wno-c++11-extensions -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk -fasm-blocks -fstrict-aliasing -Wdeprecated-declarations -Winvalid-offsetof -mmacosx-version-min=10.8 -g -fvisibility=hidden -fvisibility-inlines-hidden -Wno-sign-conversion -iquote /Users/chengtai/Documents/2014/MOTR/modules/beta/DerivedData/beta/Build/Intermediates/beta.build/Release/beta.build/beta-generated-files.hmap -I/Users/chengtai/Documents/2014/MOTR/modules/beta/DerivedData/beta/Build/Intermediates/beta.build/Release/beta.build/beta-own-target-headers.hmap -I/Users/chengtai/Documents/2014/MOTR/modules/beta/DerivedData/beta/Build/Intermediates/beta.build/Release/beta.build/beta-all-target-headers.hmap -iquote /Users/chengtai/Documents/2014/MOTR/modules/beta/DerivedData/beta/Build/Intermediates/beta.build/Release/beta.build/beta-project-headers.hmap -I/Users/chengtai/Documents/2014/MOTR/modules/beta/DerivedData/beta/Build/Products/Release/include -I/usr/local/include -I/Users/chengtai/Documents/2014/MOTR/modules/beta/DerivedData/beta/Build/Intermediates/beta.build/Release/beta.build/DerivedSources/x86_64 -I/Users/chengtai/Documents/2014/MOTR/modules/beta/DerivedData/beta/Build/Intermediates/beta.build/Release/beta.build/DerivedSources -F/Users/chengtai/Documents/2014/MOTR/modules/beta/DerivedData/beta/Build/Products/Release -MMD -MT dependencies -MF /Users/chengtai/Documents/2014/MOTR/modules/beta/DerivedData/beta/Build/Intermediates/beta.build/Release/beta.build/Objects-normal/x86_64/convcore.d --serialize-diagnostics /Users/chengtai/Documents/2014/MOTR/modules/beta/DerivedData/beta/Build/Intermediates/beta.build/Release/beta.build/Objects-normal/x86_64/convcore.dia -c /Users/chengtai/Documents/2014/MOTR/modules/beta/beta/convcore.cpp -o /Users/chengtai/Documents/2014/MOTR/modules/beta/DerivedData/beta/Build/Intermediates/beta.build/Release/beta.build/Objects-normal/x86_64/convcore.o36"827BD4CA-B26C-414E-BC3B-00CFAB8AA0D2-
+bA723A337-6E1A-4943-B756-33B6F77B9EA0
 
 CCompileC DerivedData/beta/Build/Intermediates/beta.build/Release/beta.build/Objects-normal/x86_64/layer.o /Users/chengtai/Documents/2014/MOTR/modules/beta/beta/layer.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler
-s424149243.556932
-e424149248.571422
+s424380159.980613
+e424380165.449104
 r1
 xCompileC
 xDerivedData/beta/Build/Intermediates/beta.build/Release/beta.build/Objects-normal/x86_64/layer.o
@@ -3275,12 +3293,12 @@ d/usr/local/include/armadillo_bits/spglue_times_meat.hpp
 d/usr/local/include/armadillo_bits/compiler_setup_post.hpp
 d/Users/chengtai/Documents/2014/MOTR/modules/beta/easylogging++.h
 d/Users/chengtai/Documents/2014/MOTR/modules/beta/beta/convcore.h
-lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection71"Compile /Users/chengtai/Documents/2014/MOTR/modules/beta/beta/layer.cpp182"CompileC DerivedData/beta/Build/Intermediates/beta.build/Release/beta.build/Objects-normal/x86_64/layer.o beta/layer.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compilere7c88efb0048b941^8c4a92000148b941^---0#0#1#-19%DVTDocumentLocation2@79"file://localhost/Users/chengtai/Documents/2014/MOTR/modules/beta/beta/layer.cpp0000000000000000^3146"CompileC DerivedData/beta/Build/Intermediates/beta.build/Release/beta.build/Objects-normal/x86_64/layer.o beta/layer.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/chengtai/Documents/2014/MOTR/modules/beta    export LANG=en_US.US-ASCII    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x c++ -arch x86_64 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -std=c++11 -stdlib=libc++ -fmodules -fmodules-cache-path=/Users/chengtai/Documents/2014/MOTR/modules/beta/DerivedData/ModuleCache -Wno-trigraphs -fpascal-strings -Os -Wno-missing-field-initializers -Wno-missing-prototypes -Werror=return-type -Werror=deprecated-objc-isa-usage -Werror=objc-root-class -Wno-non-virtual-dtor -Wno-overloaded-virtual -Wno-exit-time-destructors -Wno-missing-braces -Wparentheses -Wswitch -Wunused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wconditional-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wbool-conversion -Wenum-conversion -Wshorten-64-to-32 -Wno-newline-eof -Wno-c++11-extensions -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk -fasm-blocks -fstrict-aliasing -Wdeprecated-declarations -Winvalid-offsetof -mmacosx-version-min=10.8 -g -fvisibility=hidden -fvisibility-inlines-hidden -Wno-sign-conversion -iquote /Users/chengtai/Documents/2014/MOTR/modules/beta/DerivedData/beta/Build/Intermediates/beta.build/Release/beta.build/beta-generated-files.hmap -I/Users/chengtai/Documents/2014/MOTR/modules/beta/DerivedData/beta/Build/Intermediates/beta.build/Release/beta.build/beta-own-target-headers.hmap -I/Users/chengtai/Documents/2014/MOTR/modules/beta/DerivedData/beta/Build/Intermediates/beta.build/Release/beta.build/beta-all-target-headers.hmap -iquote /Users/chengtai/Documents/2014/MOTR/modules/beta/DerivedData/beta/Build/Intermediates/beta.build/Release/beta.build/beta-project-headers.hmap -I/Users/chengtai/Documents/2014/MOTR/modules/beta/DerivedData/beta/Build/Products/Release/include -I/usr/local/include -I/Users/chengtai/Documents/2014/MOTR/modules/beta/DerivedData/beta/Build/Intermediates/beta.build/Release/beta.build/DerivedSources/x86_64 -I/Users/chengtai/Documents/2014/MOTR/modules/beta/DerivedData/beta/Build/Intermediates/beta.build/Release/beta.build/DerivedSources -F/Users/chengtai/Documents/2014/MOTR/modules/beta/DerivedData/beta/Build/Products/Release -MMD -MT dependencies -MF /Users/chengtai/Documents/2014/MOTR/modules/beta/DerivedData/beta/Build/Intermediates/beta.build/Release/beta.build/Objects-normal/x86_64/layer.d --serialize-diagnostics /Users/chengtai/Documents/2014/MOTR/modules/beta/DerivedData/beta/Build/Intermediates/beta.build/Release/beta.build/Objects-normal/x86_64/layer.dia -c /Users/chengtai/Documents/2014/MOTR/modules/beta/beta/layer.cpp -o /Users/chengtai/Documents/2014/MOTR/modules/beta/DerivedData/beta/Build/Intermediates/beta.build/Release/beta.build/Objects-normal/x86_64/layer.o36"21045B07-CA37-42AB-AFA8-D14ADB6B5C9B-
-b810D4F94-E54B-45A2-BD99-96265B5FCD1A
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection71"Compile /Users/chengtai/Documents/2014/MOTR/modules/beta/beta/layer.cpp182"CompileC DerivedData/beta/Build/Intermediates/beta.build/Release/beta.build/Objects-normal/x86_64/layer.o beta/layer.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler1c40fbff864bb941^adf87205874bb941^---0#0#1#-19%DVTDocumentLocation2@79"file://localhost/Users/chengtai/Documents/2014/MOTR/modules/beta/beta/layer.cpp0000000000000000^3146"CompileC DerivedData/beta/Build/Intermediates/beta.build/Release/beta.build/Objects-normal/x86_64/layer.o beta/layer.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/chengtai/Documents/2014/MOTR/modules/beta    export LANG=en_US.US-ASCII    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x c++ -arch x86_64 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -std=c++11 -stdlib=libc++ -fmodules -fmodules-cache-path=/Users/chengtai/Documents/2014/MOTR/modules/beta/DerivedData/ModuleCache -Wno-trigraphs -fpascal-strings -Os -Wno-missing-field-initializers -Wno-missing-prototypes -Werror=return-type -Werror=deprecated-objc-isa-usage -Werror=objc-root-class -Wno-non-virtual-dtor -Wno-overloaded-virtual -Wno-exit-time-destructors -Wno-missing-braces -Wparentheses -Wswitch -Wunused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wconditional-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wbool-conversion -Wenum-conversion -Wshorten-64-to-32 -Wno-newline-eof -Wno-c++11-extensions -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk -fasm-blocks -fstrict-aliasing -Wdeprecated-declarations -Winvalid-offsetof -mmacosx-version-min=10.8 -g -fvisibility=hidden -fvisibility-inlines-hidden -Wno-sign-conversion -iquote /Users/chengtai/Documents/2014/MOTR/modules/beta/DerivedData/beta/Build/Intermediates/beta.build/Release/beta.build/beta-generated-files.hmap -I/Users/chengtai/Documents/2014/MOTR/modules/beta/DerivedData/beta/Build/Intermediates/beta.build/Release/beta.build/beta-own-target-headers.hmap -I/Users/chengtai/Documents/2014/MOTR/modules/beta/DerivedData/beta/Build/Intermediates/beta.build/Release/beta.build/beta-all-target-headers.hmap -iquote /Users/chengtai/Documents/2014/MOTR/modules/beta/DerivedData/beta/Build/Intermediates/beta.build/Release/beta.build/beta-project-headers.hmap -I/Users/chengtai/Documents/2014/MOTR/modules/beta/DerivedData/beta/Build/Products/Release/include -I/usr/local/include -I/Users/chengtai/Documents/2014/MOTR/modules/beta/DerivedData/beta/Build/Intermediates/beta.build/Release/beta.build/DerivedSources/x86_64 -I/Users/chengtai/Documents/2014/MOTR/modules/beta/DerivedData/beta/Build/Intermediates/beta.build/Release/beta.build/DerivedSources -F/Users/chengtai/Documents/2014/MOTR/modules/beta/DerivedData/beta/Build/Products/Release -MMD -MT dependencies -MF /Users/chengtai/Documents/2014/MOTR/modules/beta/DerivedData/beta/Build/Intermediates/beta.build/Release/beta.build/Objects-normal/x86_64/layer.d --serialize-diagnostics /Users/chengtai/Documents/2014/MOTR/modules/beta/DerivedData/beta/Build/Intermediates/beta.build/Release/beta.build/Objects-normal/x86_64/layer.dia -c /Users/chengtai/Documents/2014/MOTR/modules/beta/beta/layer.cpp -o /Users/chengtai/Documents/2014/MOTR/modules/beta/DerivedData/beta/Build/Intermediates/beta.build/Release/beta.build/Objects-normal/x86_64/layer.o36"AB007565-1B40-4A24-9B6D-CF53A3DC029F-
+bA723A337-6E1A-4943-B756-33B6F77B9EA0
 
 CCompileC DerivedData/beta/Build/Intermediates/beta.build/Release/beta.build/Objects-normal/x86_64/main.o /Users/chengtai/Documents/2014/MOTR/modules/beta/beta/main.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler
-s424149243.556960
-e424149248.786866
+s424380159.980602
+e424380165.786039
 r1
 xCompileC
 xDerivedData/beta/Build/Intermediates/beta.build/Release/beta.build/Objects-normal/x86_64/main.o
@@ -3721,12 +3739,28 @@ d/usr/local/include/armadillo_bits/compiler_setup_post.hpp
 d/Users/chengtai/Documents/2014/MOTR/modules/beta/easylogging++.h
 d/Users/chengtai/Documents/2014/MOTR/modules/beta/beta/utils.h
 d/Users/chengtai/Documents/2014/MOTR/modules/beta/beta/layer.h
-lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection70"Compile /Users/chengtai/Documents/2014/MOTR/modules/beta/beta/main.cpp180"CompileC DerivedData/beta/Build/Intermediates/beta.build/Release/beta.build/Objects-normal/x86_64/main.o beta/main.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler35d28efb0048b941^a470c9000148b941^---0#0#1#-19%DVTDocumentLocation2@78"file://localhost/Users/chengtai/Documents/2014/MOTR/modules/beta/beta/main.cpp0000000000000000^3140"CompileC DerivedData/beta/Build/Intermediates/beta.build/Release/beta.build/Objects-normal/x86_64/main.o beta/main.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/chengtai/Documents/2014/MOTR/modules/beta    export LANG=en_US.US-ASCII    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x c++ -arch x86_64 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -std=c++11 -stdlib=libc++ -fmodules -fmodules-cache-path=/Users/chengtai/Documents/2014/MOTR/modules/beta/DerivedData/ModuleCache -Wno-trigraphs -fpascal-strings -Os -Wno-missing-field-initializers -Wno-missing-prototypes -Werror=return-type -Werror=deprecated-objc-isa-usage -Werror=objc-root-class -Wno-non-virtual-dtor -Wno-overloaded-virtual -Wno-exit-time-destructors -Wno-missing-braces -Wparentheses -Wswitch -Wunused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wconditional-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wbool-conversion -Wenum-conversion -Wshorten-64-to-32 -Wno-newline-eof -Wno-c++11-extensions -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk -fasm-blocks -fstrict-aliasing -Wdeprecated-declarations -Winvalid-offsetof -mmacosx-version-min=10.8 -g -fvisibility=hidden -fvisibility-inlines-hidden -Wno-sign-conversion -iquote /Users/chengtai/Documents/2014/MOTR/modules/beta/DerivedData/beta/Build/Intermediates/beta.build/Release/beta.build/beta-generated-files.hmap -I/Users/chengtai/Documents/2014/MOTR/modules/beta/DerivedData/beta/Build/Intermediates/beta.build/Release/beta.build/beta-own-target-headers.hmap -I/Users/chengtai/Documents/2014/MOTR/modules/beta/DerivedData/beta/Build/Intermediates/beta.build/Release/beta.build/beta-all-target-headers.hmap -iquote /Users/chengtai/Documents/2014/MOTR/modules/beta/DerivedData/beta/Build/Intermediates/beta.build/Release/beta.build/beta-project-headers.hmap -I/Users/chengtai/Documents/2014/MOTR/modules/beta/DerivedData/beta/Build/Products/Release/include -I/usr/local/include -I/Users/chengtai/Documents/2014/MOTR/modules/beta/DerivedData/beta/Build/Intermediates/beta.build/Release/beta.build/DerivedSources/x86_64 -I/Users/chengtai/Documents/2014/MOTR/modules/beta/DerivedData/beta/Build/Intermediates/beta.build/Release/beta.build/DerivedSources -F/Users/chengtai/Documents/2014/MOTR/modules/beta/DerivedData/beta/Build/Products/Release -MMD -MT dependencies -MF /Users/chengtai/Documents/2014/MOTR/modules/beta/DerivedData/beta/Build/Intermediates/beta.build/Release/beta.build/Objects-normal/x86_64/main.d --serialize-diagnostics /Users/chengtai/Documents/2014/MOTR/modules/beta/DerivedData/beta/Build/Intermediates/beta.build/Release/beta.build/Objects-normal/x86_64/main.dia -c /Users/chengtai/Documents/2014/MOTR/modules/beta/beta/main.cpp -o /Users/chengtai/Documents/2014/MOTR/modules/beta/DerivedData/beta/Build/Intermediates/beta.build/Release/beta.build/Objects-normal/x86_64/main.o36"2609EE2C-FB17-4FF9-8924-4F00D66F1F1E-
-b810D4F94-E54B-45A2-BD99-96265B5FCD1A
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection70"Compile /Users/chengtai/Documents/2014/MOTR/modules/beta/beta/main.cpp180"CompileC DerivedData/beta/Build/Intermediates/beta.build/Release/beta.build/Objects-normal/x86_64/main.o beta/main.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler7b32fbff864bb941^2e3ac905874bb941^---0#0#1#-19%DVTDocumentLocation2@78"file://localhost/Users/chengtai/Documents/2014/MOTR/modules/beta/beta/main.cpp0000000000000000^3140"CompileC DerivedData/beta/Build/Intermediates/beta.build/Release/beta.build/Objects-normal/x86_64/main.o beta/main.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/chengtai/Documents/2014/MOTR/modules/beta    export LANG=en_US.US-ASCII    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x c++ -arch x86_64 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -std=c++11 -stdlib=libc++ -fmodules -fmodules-cache-path=/Users/chengtai/Documents/2014/MOTR/modules/beta/DerivedData/ModuleCache -Wno-trigraphs -fpascal-strings -Os -Wno-missing-field-initializers -Wno-missing-prototypes -Werror=return-type -Werror=deprecated-objc-isa-usage -Werror=objc-root-class -Wno-non-virtual-dtor -Wno-overloaded-virtual -Wno-exit-time-destructors -Wno-missing-braces -Wparentheses -Wswitch -Wunused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wconditional-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wbool-conversion -Wenum-conversion -Wshorten-64-to-32 -Wno-newline-eof -Wno-c++11-extensions -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk -fasm-blocks -fstrict-aliasing -Wdeprecated-declarations -Winvalid-offsetof -mmacosx-version-min=10.8 -g -fvisibility=hidden -fvisibility-inlines-hidden -Wno-sign-conversion -iquote /Users/chengtai/Documents/2014/MOTR/modules/beta/DerivedData/beta/Build/Intermediates/beta.build/Release/beta.build/beta-generated-files.hmap -I/Users/chengtai/Documents/2014/MOTR/modules/beta/DerivedData/beta/Build/Intermediates/beta.build/Release/beta.build/beta-own-target-headers.hmap -I/Users/chengtai/Documents/2014/MOTR/modules/beta/DerivedData/beta/Build/Intermediates/beta.build/Release/beta.build/beta-all-target-headers.hmap -iquote /Users/chengtai/Documents/2014/MOTR/modules/beta/DerivedData/beta/Build/Intermediates/beta.build/Release/beta.build/beta-project-headers.hmap -I/Users/chengtai/Documents/2014/MOTR/modules/beta/DerivedData/beta/Build/Products/Release/include -I/usr/local/include -I/Users/chengtai/Documents/2014/MOTR/modules/beta/DerivedData/beta/Build/Intermediates/beta.build/Release/beta.build/DerivedSources/x86_64 -I/Users/chengtai/Documents/2014/MOTR/modules/beta/DerivedData/beta/Build/Intermediates/beta.build/Release/beta.build/DerivedSources -F/Users/chengtai/Documents/2014/MOTR/modules/beta/DerivedData/beta/Build/Products/Release -MMD -MT dependencies -MF /Users/chengtai/Documents/2014/MOTR/modules/beta/DerivedData/beta/Build/Intermediates/beta.build/Release/beta.build/Objects-normal/x86_64/main.d --serialize-diagnostics /Users/chengtai/Documents/2014/MOTR/modules/beta/DerivedData/beta/Build/Intermediates/beta.build/Release/beta.build/Objects-normal/x86_64/main.dia -c /Users/chengtai/Documents/2014/MOTR/modules/beta/beta/main.cpp -o /Users/chengtai/Documents/2014/MOTR/modules/beta/DerivedData/beta/Build/Intermediates/beta.build/Release/beta.build/Objects-normal/x86_64/main.o36"42CD95DD-CFB3-479E-B0DB-E97DC903BCAD-
+bA723A337-6E1A-4943-B756-33B6F77B9EA0
+
+CCompileC DerivedData/beta/Build/Intermediates/beta.build/Release/beta.build/Objects-normal/x86_64/models.o /Users/chengtai/Documents/2014/MOTR/modules/beta/beta/models.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler
+s424380159.980615
+e424380159.997891
+r1
+xCompileC
+xDerivedData/beta/Build/Intermediates/beta.build/Release/beta.build/Objects-normal/x86_64/models.o
+x/Users/chengtai/Documents/2014/MOTR/modules/beta/beta/models.cpp
+xnormal
+xx86_64
+xc++
+xcom.apple.compilers.llvm.clang.1_0.compiler
+d/Users/chengtai/Documents/2014/MOTR/modules/beta/beta/models.cpp
+d/Users/chengtai/Documents/2014/MOTR/modules/beta/beta/models.h
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection72"Compile /Users/chengtai/Documents/2014/MOTR/modules/beta/beta/models.cpp184"CompileC DerivedData/beta/Build/Intermediates/beta.build/Release/beta.build/Objects-normal/x86_64/models.o beta/models.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler2233fbff864bb941^1d76ffff864bb941^---0#0#1#-19%DVTDocumentLocation2@80"file://localhost/Users/chengtai/Documents/2014/MOTR/modules/beta/beta/models.cpp0000000000000000^3152"CompileC DerivedData/beta/Build/Intermediates/beta.build/Release/beta.build/Objects-normal/x86_64/models.o beta/models.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/chengtai/Documents/2014/MOTR/modules/beta    export LANG=en_US.US-ASCII    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x c++ -arch x86_64 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -std=c++11 -stdlib=libc++ -fmodules -fmodules-cache-path=/Users/chengtai/Documents/2014/MOTR/modules/beta/DerivedData/ModuleCache -Wno-trigraphs -fpascal-strings -Os -Wno-missing-field-initializers -Wno-missing-prototypes -Werror=return-type -Werror=deprecated-objc-isa-usage -Werror=objc-root-class -Wno-non-virtual-dtor -Wno-overloaded-virtual -Wno-exit-time-destructors -Wno-missing-braces -Wparentheses -Wswitch -Wunused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wconditional-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wbool-conversion -Wenum-conversion -Wshorten-64-to-32 -Wno-newline-eof -Wno-c++11-extensions -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk -fasm-blocks -fstrict-aliasing -Wdeprecated-declarations -Winvalid-offsetof -mmacosx-version-min=10.8 -g -fvisibility=hidden -fvisibility-inlines-hidden -Wno-sign-conversion -iquote /Users/chengtai/Documents/2014/MOTR/modules/beta/DerivedData/beta/Build/Intermediates/beta.build/Release/beta.build/beta-generated-files.hmap -I/Users/chengtai/Documents/2014/MOTR/modules/beta/DerivedData/beta/Build/Intermediates/beta.build/Release/beta.build/beta-own-target-headers.hmap -I/Users/chengtai/Documents/2014/MOTR/modules/beta/DerivedData/beta/Build/Intermediates/beta.build/Release/beta.build/beta-all-target-headers.hmap -iquote /Users/chengtai/Documents/2014/MOTR/modules/beta/DerivedData/beta/Build/Intermediates/beta.build/Release/beta.build/beta-project-headers.hmap -I/Users/chengtai/Documents/2014/MOTR/modules/beta/DerivedData/beta/Build/Products/Release/include -I/usr/local/include -I/Users/chengtai/Documents/2014/MOTR/modules/beta/DerivedData/beta/Build/Intermediates/beta.build/Release/beta.build/DerivedSources/x86_64 -I/Users/chengtai/Documents/2014/MOTR/modules/beta/DerivedData/beta/Build/Intermediates/beta.build/Release/beta.build/DerivedSources -F/Users/chengtai/Documents/2014/MOTR/modules/beta/DerivedData/beta/Build/Products/Release -MMD -MT dependencies -MF /Users/chengtai/Documents/2014/MOTR/modules/beta/DerivedData/beta/Build/Intermediates/beta.build/Release/beta.build/Objects-normal/x86_64/models.d --serialize-diagnostics /Users/chengtai/Documents/2014/MOTR/modules/beta/DerivedData/beta/Build/Intermediates/beta.build/Release/beta.build/Objects-normal/x86_64/models.dia -c /Users/chengtai/Documents/2014/MOTR/modules/beta/beta/models.cpp -o /Users/chengtai/Documents/2014/MOTR/modules/beta/DerivedData/beta/Build/Intermediates/beta.build/Release/beta.build/Objects-normal/x86_64/models.o36"790EB70F-D23B-4207-AD3A-0A747AC7D77B-
+bA723A337-6E1A-4943-B756-33B6F77B9EA0
 
 CCompileC DerivedData/beta/Build/Intermediates/beta.build/Release/beta.build/Objects-normal/x86_64/utils.o /Users/chengtai/Documents/2014/MOTR/modules/beta/beta/utils.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler
-s424148285.445135
-e424148289.140567
+s424380159.980637
+e424380163.212379
 r1
 xCompileC
 xDerivedData/beta/Build/Intermediates/beta.build/Release/beta.build/Objects-normal/x86_64/utils.o
@@ -4165,28 +4199,29 @@ d/usr/local/include/armadillo_bits/spglue_minus_meat.hpp
 d/usr/local/include/armadillo_bits/spglue_times_meat.hpp
 d/usr/local/include/armadillo_bits/compiler_setup_post.hpp
 d/Users/chengtai/Documents/2014/MOTR/modules/beta/easylogging++.h
-lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection71"Compile /Users/chengtai/Documents/2014/MOTR/modules/beta/beta/utils.cpp182"CompileC DerivedData/beta/Build/Intermediates/beta.build/Release/beta.build/Objects-normal/x86_64/utils.o beta/utils.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler2d22723dfd47b941^81092441fd47b941^---0#0#1#-19%DVTDocumentLocation2@79"file://localhost/Users/chengtai/Documents/2014/MOTR/modules/beta/beta/utils.cpp0000000000000000^3146"CompileC DerivedData/beta/Build/Intermediates/beta.build/Release/beta.build/Objects-normal/x86_64/utils.o beta/utils.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/chengtai/Documents/2014/MOTR/modules/beta    export LANG=en_US.US-ASCII    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x c++ -arch x86_64 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -std=c++11 -stdlib=libc++ -fmodules -fmodules-cache-path=/Users/chengtai/Documents/2014/MOTR/modules/beta/DerivedData/ModuleCache -Wno-trigraphs -fpascal-strings -Os -Wno-missing-field-initializers -Wno-missing-prototypes -Werror=return-type -Werror=deprecated-objc-isa-usage -Werror=objc-root-class -Wno-non-virtual-dtor -Wno-overloaded-virtual -Wno-exit-time-destructors -Wno-missing-braces -Wparentheses -Wswitch -Wunused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wconditional-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wbool-conversion -Wenum-conversion -Wshorten-64-to-32 -Wno-newline-eof -Wno-c++11-extensions -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk -fasm-blocks -fstrict-aliasing -Wdeprecated-declarations -Winvalid-offsetof -mmacosx-version-min=10.8 -g -fvisibility=hidden -fvisibility-inlines-hidden -Wno-sign-conversion -iquote /Users/chengtai/Documents/2014/MOTR/modules/beta/DerivedData/beta/Build/Intermediates/beta.build/Release/beta.build/beta-generated-files.hmap -I/Users/chengtai/Documents/2014/MOTR/modules/beta/DerivedData/beta/Build/Intermediates/beta.build/Release/beta.build/beta-own-target-headers.hmap -I/Users/chengtai/Documents/2014/MOTR/modules/beta/DerivedData/beta/Build/Intermediates/beta.build/Release/beta.build/beta-all-target-headers.hmap -iquote /Users/chengtai/Documents/2014/MOTR/modules/beta/DerivedData/beta/Build/Intermediates/beta.build/Release/beta.build/beta-project-headers.hmap -I/Users/chengtai/Documents/2014/MOTR/modules/beta/DerivedData/beta/Build/Products/Release/include -I/usr/local/include -I/Users/chengtai/Documents/2014/MOTR/modules/beta/DerivedData/beta/Build/Intermediates/beta.build/Release/beta.build/DerivedSources/x86_64 -I/Users/chengtai/Documents/2014/MOTR/modules/beta/DerivedData/beta/Build/Intermediates/beta.build/Release/beta.build/DerivedSources -F/Users/chengtai/Documents/2014/MOTR/modules/beta/DerivedData/beta/Build/Products/Release -MMD -MT dependencies -MF /Users/chengtai/Documents/2014/MOTR/modules/beta/DerivedData/beta/Build/Intermediates/beta.build/Release/beta.build/Objects-normal/x86_64/utils.d --serialize-diagnostics /Users/chengtai/Documents/2014/MOTR/modules/beta/DerivedData/beta/Build/Intermediates/beta.build/Release/beta.build/Objects-normal/x86_64/utils.dia -c /Users/chengtai/Documents/2014/MOTR/modules/beta/beta/utils.cpp -o /Users/chengtai/Documents/2014/MOTR/modules/beta/DerivedData/beta/Build/Intermediates/beta.build/Release/beta.build/Objects-normal/x86_64/utils.o36"F7DB907F-F133-448B-9694-20A01DFED076-
-bB49A9B8D-865B-4B79-88F9-12E8449CF268
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection71"Compile /Users/chengtai/Documents/2014/MOTR/modules/beta/beta/utils.cpp182"CompileC DerivedData/beta/Build/Intermediates/beta.build/Release/beta.build/Objects-normal/x86_64/utils.o beta/utils.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler103bfbff864bb941^ff5e3603874bb941^---0#0#1#-19%DVTDocumentLocation2@79"file://localhost/Users/chengtai/Documents/2014/MOTR/modules/beta/beta/utils.cpp0000000000000000^3146"CompileC DerivedData/beta/Build/Intermediates/beta.build/Release/beta.build/Objects-normal/x86_64/utils.o beta/utils.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/chengtai/Documents/2014/MOTR/modules/beta    export LANG=en_US.US-ASCII    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x c++ -arch x86_64 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -std=c++11 -stdlib=libc++ -fmodules -fmodules-cache-path=/Users/chengtai/Documents/2014/MOTR/modules/beta/DerivedData/ModuleCache -Wno-trigraphs -fpascal-strings -Os -Wno-missing-field-initializers -Wno-missing-prototypes -Werror=return-type -Werror=deprecated-objc-isa-usage -Werror=objc-root-class -Wno-non-virtual-dtor -Wno-overloaded-virtual -Wno-exit-time-destructors -Wno-missing-braces -Wparentheses -Wswitch -Wunused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wconditional-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wbool-conversion -Wenum-conversion -Wshorten-64-to-32 -Wno-newline-eof -Wno-c++11-extensions -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk -fasm-blocks -fstrict-aliasing -Wdeprecated-declarations -Winvalid-offsetof -mmacosx-version-min=10.8 -g -fvisibility=hidden -fvisibility-inlines-hidden -Wno-sign-conversion -iquote /Users/chengtai/Documents/2014/MOTR/modules/beta/DerivedData/beta/Build/Intermediates/beta.build/Release/beta.build/beta-generated-files.hmap -I/Users/chengtai/Documents/2014/MOTR/modules/beta/DerivedData/beta/Build/Intermediates/beta.build/Release/beta.build/beta-own-target-headers.hmap -I/Users/chengtai/Documents/2014/MOTR/modules/beta/DerivedData/beta/Build/Intermediates/beta.build/Release/beta.build/beta-all-target-headers.hmap -iquote /Users/chengtai/Documents/2014/MOTR/modules/beta/DerivedData/beta/Build/Intermediates/beta.build/Release/beta.build/beta-project-headers.hmap -I/Users/chengtai/Documents/2014/MOTR/modules/beta/DerivedData/beta/Build/Products/Release/include -I/usr/local/include -I/Users/chengtai/Documents/2014/MOTR/modules/beta/DerivedData/beta/Build/Intermediates/beta.build/Release/beta.build/DerivedSources/x86_64 -I/Users/chengtai/Documents/2014/MOTR/modules/beta/DerivedData/beta/Build/Intermediates/beta.build/Release/beta.build/DerivedSources -F/Users/chengtai/Documents/2014/MOTR/modules/beta/DerivedData/beta/Build/Products/Release -MMD -MT dependencies -MF /Users/chengtai/Documents/2014/MOTR/modules/beta/DerivedData/beta/Build/Intermediates/beta.build/Release/beta.build/Objects-normal/x86_64/utils.d --serialize-diagnostics /Users/chengtai/Documents/2014/MOTR/modules/beta/DerivedData/beta/Build/Intermediates/beta.build/Release/beta.build/Objects-normal/x86_64/utils.dia -c /Users/chengtai/Documents/2014/MOTR/modules/beta/beta/utils.cpp -o /Users/chengtai/Documents/2014/MOTR/modules/beta/DerivedData/beta/Build/Intermediates/beta.build/Release/beta.build/Objects-normal/x86_64/utils.o36"0E9755A3-6A30-4517-9D7A-5B5FB7CFCB7D-
+bA723A337-6E1A-4943-B756-33B6F77B9EA0
 
 CGenerateDSYMFile /Users/chengtai/Documents/2014/MOTR/modules/beta/DerivedData/beta/Build/Products/Release/beta.dSYM /Users/chengtai/Documents/2014/MOTR/modules/beta/DerivedData/beta/Build/Products/Release/beta
-s424149248.831900
-e424149249.014432
+s424380165.828812
+e424380166.009617
 r1
 xGenerateDSYMFile
 x/Users/chengtai/Documents/2014/MOTR/modules/beta/DerivedData/beta/Build/Products/Release/beta.dSYM
 x/Users/chengtai/Documents/2014/MOTR/modules/beta/DerivedData/beta/Build/Products/Release/beta
-lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection107"Generate /Users/chengtai/Documents/2014/MOTR/modules/beta/DerivedData/beta/Build/Products/Release/beta.dSYM111"GenerateDSYMFile DerivedData/beta/Build/Products/Release/beta.dSYM DerivedData/beta/Build/Products/Release/beta1809d5000148b941^3eb403010148b941^---0#0#1#-19%DVTDocumentLocation2@115"file://localhost/Users/chengtai/Documents/2014/MOTR/modules/beta/DerivedData/beta/Build/Products/Release/beta.dSYM/0000000000000000^464"GenerateDSYMFile DerivedData/beta/Build/Products/Release/beta.dSYM DerivedData/beta/Build/Products/Release/beta    cd /Users/chengtai/Documents/2014/MOTR/modules/beta    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/dsymutil /Users/chengtai/Documents/2014/MOTR/modules/beta/DerivedData/beta/Build/Products/Release/beta -o /Users/chengtai/Documents/2014/MOTR/modules/beta/DerivedData/beta/Build/Products/Release/beta.dSYM36"BB58AD9D-BE5E-4A76-9FE4-1925CF32D174-
-b810D4F94-E54B-45A2-BD99-96265B5FCD1A
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection107"Generate /Users/chengtai/Documents/2014/MOTR/modules/beta/DerivedData/beta/Build/Products/Release/beta.dSYM111"GenerateDSYMFile DerivedData/beta/Build/Products/Release/beta.dSYM DerivedData/beta/Build/Products/Release/betade3dd405874bb941^fb760206874bb941^---0#0#1#-19%DVTDocumentLocation2@115"file://localhost/Users/chengtai/Documents/2014/MOTR/modules/beta/DerivedData/beta/Build/Products/Release/beta.dSYM/0000000000000000^464"GenerateDSYMFile DerivedData/beta/Build/Products/Release/beta.dSYM DerivedData/beta/Build/Products/Release/beta    cd /Users/chengtai/Documents/2014/MOTR/modules/beta    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/dsymutil /Users/chengtai/Documents/2014/MOTR/modules/beta/DerivedData/beta/Build/Products/Release/beta -o /Users/chengtai/Documents/2014/MOTR/modules/beta/DerivedData/beta/Build/Products/Release/beta.dSYM36"D798403A-E35F-4ACF-9BBF-0EE9EA1E3DC6-
+bA723A337-6E1A-4943-B756-33B6F77B9EA0
 
 CLd /Users/chengtai/Documents/2014/MOTR/modules/beta/DerivedData/beta/Build/Products/Release/beta normal x86_64
-s424149248.796752
-e424149248.823032
+s424380165.795740
+e424380165.820105
 r1
 xLd
 x/Users/chengtai/Documents/2014/MOTR/modules/beta/DerivedData/beta/Build/Products/Release/beta
 xnormal
 xx86_64
 d/Users/chengtai/Documents/2014/MOTR/modules/beta/DerivedData/beta/Build/Intermediates/beta.build/Release/beta.build/Objects-normal/x86_64/beta.LinkFileList
+d/Users/chengtai/Documents/2014/MOTR/modules/beta/DerivedData/beta/Build/Intermediates/beta.build/Release/beta.build/Objects-normal/x86_64/models.o
 d/Users/chengtai/Documents/2014/MOTR/modules/beta/DerivedData/beta/Build/Intermediates/beta.build/Release/beta.build/Objects-normal/x86_64/main.o
 d/Users/chengtai/Documents/2014/MOTR/modules/beta/DerivedData/beta/Build/Intermediates/beta.build/Release/beta.build/Objects-normal/x86_64/convcore.o
 d/Users/chengtai/Documents/2014/MOTR/modules/beta/DerivedData/beta/Build/Intermediates/beta.build/Release/beta.build/Objects-normal/x86_64/layer.o
@@ -4219,6 +4254,6 @@ d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/
 d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk/usr/lib/system/libunc.dylib
 d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk/usr/lib/system/libunwind.dylib
 d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk/usr/lib/system/libxpc.dylib
-lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection98"Link /Users/chengtai/Documents/2014/MOTR/modules/beta/DerivedData/beta/Build/Products/Release/beta61"Ld DerivedData/beta/Build/Products/Release/beta normal x86_64a209cc000148b941^03b3d2000148b941^---0#0#1#--1134"Ld DerivedData/beta/Build/Products/Release/beta normal x86_64    cd /Users/chengtai/Documents/2014/MOTR/modules/beta    export MACOSX_DEPLOYMENT_TARGET=10.8    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++ -arch x86_64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk -L/Users/chengtai/Documents/2014/MOTR/modules/beta/DerivedData/beta/Build/Products/Release -L/Users/chengtai/Documents/2014/MOTR/modules/beta -F/Users/chengtai/Documents/2014/MOTR/modules/beta/DerivedData/beta/Build/Products/Release -filelist /Users/chengtai/Documents/2014/MOTR/modules/beta/DerivedData/beta/Build/Intermediates/beta.build/Release/beta.build/Objects-normal/x86_64/beta.LinkFileList -mmacosx-version-min=10.8 -stdlib=libc++ -larmadillo.4.30.3 -Xlinker -dependency_info -Xlinker /Users/chengtai/Documents/2014/MOTR/modules/beta/DerivedData/beta/Build/Intermediates/beta.build/Release/beta.build/Objects-normal/x86_64/beta_dependency_info.dat -o /Users/chengtai/Documents/2014/MOTR/modules/beta/DerivedData/beta/Build/Products/Release/beta36"3ECC63F4-50D0-4951-B9F6-71B98579731F-
-b810D4F94-E54B-45A2-BD99-96265B5FCD1A
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection98"Link /Users/chengtai/Documents/2014/MOTR/modules/beta/DerivedData/beta/Build/Products/Release/beta61"Ld DerivedData/beta/Build/Products/Release/beta normal x86_649fc8cb05874bb941^e9f3d105874bb941^---0#0#1#--1134"Ld DerivedData/beta/Build/Products/Release/beta normal x86_64    cd /Users/chengtai/Documents/2014/MOTR/modules/beta    export MACOSX_DEPLOYMENT_TARGET=10.8    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++ -arch x86_64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk -L/Users/chengtai/Documents/2014/MOTR/modules/beta/DerivedData/beta/Build/Products/Release -L/Users/chengtai/Documents/2014/MOTR/modules/beta -F/Users/chengtai/Documents/2014/MOTR/modules/beta/DerivedData/beta/Build/Products/Release -filelist /Users/chengtai/Documents/2014/MOTR/modules/beta/DerivedData/beta/Build/Intermediates/beta.build/Release/beta.build/Objects-normal/x86_64/beta.LinkFileList -mmacosx-version-min=10.8 -stdlib=libc++ -larmadillo.4.30.3 -Xlinker -dependency_info -Xlinker /Users/chengtai/Documents/2014/MOTR/modules/beta/DerivedData/beta/Build/Intermediates/beta.build/Release/beta.build/Objects-normal/x86_64/beta_dependency_info.dat -o /Users/chengtai/Documents/2014/MOTR/modules/beta/DerivedData/beta/Build/Products/Release/beta36"4EFD6C5A-CCA6-42AE-9BFB-C8CFB615C517-
+bA723A337-6E1A-4943-B756-33B6F77B9EA0
 

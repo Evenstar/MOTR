@@ -144,12 +144,36 @@ CMakeFiles/EXE.dir/utils.cpp.o.provides: CMakeFiles/EXE.dir/utils.cpp.o.requires
 
 CMakeFiles/EXE.dir/utils.cpp.o.provides.build: CMakeFiles/EXE.dir/utils.cpp.o
 
+CMakeFiles/EXE.dir/models.cpp.o: CMakeFiles/EXE.dir/flags.make
+CMakeFiles/EXE.dir/models.cpp.o: models.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/chengtai/Documents/2014/MOTR/modules/beta/beta/CMakeFiles $(CMAKE_PROGRESS_5)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/EXE.dir/models.cpp.o"
+	/usr/local/bin/g++-4.8   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/EXE.dir/models.cpp.o -c /Users/chengtai/Documents/2014/MOTR/modules/beta/beta/models.cpp
+
+CMakeFiles/EXE.dir/models.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/EXE.dir/models.cpp.i"
+	/usr/local/bin/g++-4.8  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/chengtai/Documents/2014/MOTR/modules/beta/beta/models.cpp > CMakeFiles/EXE.dir/models.cpp.i
+
+CMakeFiles/EXE.dir/models.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/EXE.dir/models.cpp.s"
+	/usr/local/bin/g++-4.8  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/chengtai/Documents/2014/MOTR/modules/beta/beta/models.cpp -o CMakeFiles/EXE.dir/models.cpp.s
+
+CMakeFiles/EXE.dir/models.cpp.o.requires:
+.PHONY : CMakeFiles/EXE.dir/models.cpp.o.requires
+
+CMakeFiles/EXE.dir/models.cpp.o.provides: CMakeFiles/EXE.dir/models.cpp.o.requires
+	$(MAKE) -f CMakeFiles/EXE.dir/build.make CMakeFiles/EXE.dir/models.cpp.o.provides.build
+.PHONY : CMakeFiles/EXE.dir/models.cpp.o.provides
+
+CMakeFiles/EXE.dir/models.cpp.o.provides.build: CMakeFiles/EXE.dir/models.cpp.o
+
 # Object files for target EXE
 EXE_OBJECTS = \
 "CMakeFiles/EXE.dir/main.cpp.o" \
 "CMakeFiles/EXE.dir/convcore.cpp.o" \
 "CMakeFiles/EXE.dir/layer.cpp.o" \
-"CMakeFiles/EXE.dir/utils.cpp.o"
+"CMakeFiles/EXE.dir/utils.cpp.o" \
+"CMakeFiles/EXE.dir/models.cpp.o"
 
 # External object files for target EXE
 EXE_EXTERNAL_OBJECTS =
@@ -158,6 +182,7 @@ EXE: CMakeFiles/EXE.dir/main.cpp.o
 EXE: CMakeFiles/EXE.dir/convcore.cpp.o
 EXE: CMakeFiles/EXE.dir/layer.cpp.o
 EXE: CMakeFiles/EXE.dir/utils.cpp.o
+EXE: CMakeFiles/EXE.dir/models.cpp.o
 EXE: CMakeFiles/EXE.dir/build.make
 EXE: CMakeFiles/EXE.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --red --bold "Linking CXX executable EXE"
@@ -171,6 +196,7 @@ CMakeFiles/EXE.dir/requires: CMakeFiles/EXE.dir/main.cpp.o.requires
 CMakeFiles/EXE.dir/requires: CMakeFiles/EXE.dir/convcore.cpp.o.requires
 CMakeFiles/EXE.dir/requires: CMakeFiles/EXE.dir/layer.cpp.o.requires
 CMakeFiles/EXE.dir/requires: CMakeFiles/EXE.dir/utils.cpp.o.requires
+CMakeFiles/EXE.dir/requires: CMakeFiles/EXE.dir/models.cpp.o.requires
 .PHONY : CMakeFiles/EXE.dir/requires
 
 CMakeFiles/EXE.dir/clean:

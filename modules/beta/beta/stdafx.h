@@ -8,6 +8,7 @@
 
 #ifndef STDAFX_H
 #define STDAFX_H
+#define ARMA_DONT_USE_CXX11
 #include <vector>
 #include <set>
 #include <iostream>
@@ -23,4 +24,5 @@ typedef arma::vec VecType;
 
 using namespace std;
 using namespace arma;
+
 #endif

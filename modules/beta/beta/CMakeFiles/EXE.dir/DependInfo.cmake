@@ -7,6 +7,7 @@ SET(CMAKE_DEPENDS_CHECK_CXX
   "/Users/chengtai/Documents/2014/MOTR/modules/beta/beta/convcore.cpp" "/Users/chengtai/Documents/2014/MOTR/modules/beta/beta/CMakeFiles/EXE.dir/convcore.cpp.o"
   "/Users/chengtai/Documents/2014/MOTR/modules/beta/beta/layer.cpp" "/Users/chengtai/Documents/2014/MOTR/modules/beta/beta/CMakeFiles/EXE.dir/layer.cpp.o"
   "/Users/chengtai/Documents/2014/MOTR/modules/beta/beta/main.cpp" "/Users/chengtai/Documents/2014/MOTR/modules/beta/beta/CMakeFiles/EXE.dir/main.cpp.o"
+  "/Users/chengtai/Documents/2014/MOTR/modules/beta/beta/models.cpp" "/Users/chengtai/Documents/2014/MOTR/modules/beta/beta/CMakeFiles/EXE.dir/models.cpp.o"
   "/Users/chengtai/Documents/2014/MOTR/modules/beta/beta/utils.cpp" "/Users/chengtai/Documents/2014/MOTR/modules/beta/beta/CMakeFiles/EXE.dir/utils.cpp.o"
   )
 SET(CMAKE_CXX_COMPILER_ID "Clang")

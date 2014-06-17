@@ -1,0 +1,39 @@
+clear
+load('../data/oxfordflower/flower160.mat');
+r=4;
+N=20000;
+trainImg=titan_build_train(CImages,r,N);
+
+opts.patchSize=[r,r];
+opts.numAtoms=r*r;
+opts.lambda=10;
+opts.maxIter=200;
+[dict,recImg,ratio]=nenya_train(trainImg,opts);
+psnr(trainImg,recImg)
+ratio
+resImg=trainImg-recImg;
+L1=sum(abs(resImg(:)))
+%%
+ratio=2;
+img=CImages(:,:,81);
+st=tfdec2(img,dict,'sym',1);
+coef=cell2mat(st.coef); 
+    [~,I]=sort(abs(coef(:)),'descend');
+    id=floor(nnz(coef)/ratio);
+    mid=abs(coef(I(id)));
+    for j=1:r*r
+    st.coef{j}=st.coef{j}.*(abs(st.coef{j})>mid);
+    end
+rimg=tfrec2(st);
+imshow(rimg,[])
+psnr(img,rimg)
+%%
+img=CImages(:,:,81);
+st=tfdec2(img,dict,'sym',2);
+for i=2:r*r
+    [result,small]=maxpooling(st.coef{i},2,2);
+    st.coef{i}=zeros(size(st.coef{i}));
+end
+rimg=tfrec2(st);
+imshow(rimg,[])
+psnr(img,rimg)

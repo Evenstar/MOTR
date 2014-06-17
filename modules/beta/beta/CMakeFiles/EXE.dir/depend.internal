@@ -19,6 +19,9 @@ CMakeFiles/EXE.dir/main.cpp.o
  /Users/chengtai/Documents/2014/MOTR/modules/beta/beta/stdafx.h
  /Users/chengtai/Documents/2014/MOTR/modules/beta/beta/utils.h
  /Users/chengtai/Documents/2014/MOTR/modules/beta/easylogging++.h
+CMakeFiles/EXE.dir/models.cpp.o
+ /Users/chengtai/Documents/2014/MOTR/modules/beta/beta/models.cpp
+ /Users/chengtai/Documents/2014/MOTR/modules/beta/beta/models.h
 CMakeFiles/EXE.dir/utils.cpp.o
  /Users/chengtai/Documents/2014/MOTR/modules/beta/beta/stdafx.h
  /Users/chengtai/Documents/2014/MOTR/modules/beta/beta/utils.cpp
