@@ -1,0 +1,39 @@
+\documentclass[a4paper]{article}
+
+\usepackage[english]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath,amsthm}
+\usepackage{graphicx}
+\usepackage[colorinlistoftodos]{todonotes}
+
+\title{July Week 2}
+
+\author{Cheng Tai}
+
+\date{July 7,2014}
+
+\begin{document}
+\maketitle
+
+\begin{abstract}
+This week we consider how to devise a stable distance in the sense of Mallat. We also consider ways to numerically compare the stability of different distances.
+\end{abstract}
+The wavelet representation of a signal is:
+\begin{equation}
+	x=\sum_{k} c_{j_0,k} \phi_{j_0,k} + \sum_{j\geq j_0}\sum_{k}d_{j,k}\psi_{j,k}.
+\end{equation}
+Consider the norm defined by 
+\begin{equation}
+\|\Phi(x)\|:=\sum_k |c_{j_0,k} | + \sum_{j\geq j_0}\sum_{k}2^{-(j-j_0)}|d_{j,k}|
+\end{equation}
+This norm induces a distance between two signals. Now consider the following questions:
+\begin{itemize}
+\item How to generate $C^2$ deformation fileds?
+\item Is this distance robust to small deformations in the sense of Mallat?
+\item If so, how to measure improvements over other distances such as Euclidean distance?
+\item Is the distance using redundant wavelet transform more stable than that using orthogonal wavelet transform? In particular, this questions is related to the possibility of improving EMD.
+\item Using nearest neighbor as classifier, is the measure of stability related to the classification performance? We would hope so, but clearly they are not correlated in a trivial way, since more robustness does not guarantee better classification results, (think of the trivial contraction mapping), it has to remain discriminative. What is missing in relating the measure of stability and classification performance?
+\item Are there better weights than dyadic weights? This is also related to the improvement of EMD.
+\end{itemize}
+I had these ideas a month ago, now it's time to give them a serious thought.
+\end{document}
